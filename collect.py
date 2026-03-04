@@ -227,6 +227,8 @@ def summarize_content(text, title=''):
     text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
     text = re.sub(r'(다음과 같이|안내하오니|아래와 같이|이하 같음).*', '', text)
     text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r'\([^)]*자세한[^)]*\)', '', text)
+    text = re.sub(r'\([^)]*첨부파일[^)]*\)', '', text)
     support_match = re.search(r'([^,.。]*?(?:지원|제공|선발|모집)[^,.。]*)', text)
     def is_valid_core(s):
         if len(s) < 6: return False
@@ -245,7 +247,10 @@ def summarize_content(text, title=''):
         result = first_sentence
         if amounts:
             result = f"{first_sentence} (최대 {amounts[0]})"
-    return result[:80]
+    if len(result) > 80:
+        last_space = result.rfind(' ', 0, 80)
+        result = (result[:last_space] if last_space != -1 else result[:80]) + '...'
+    return result
 
 def format_item(i):
     d = i.get('detail', {})
