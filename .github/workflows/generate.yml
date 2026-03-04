@@ -1,10 +1,10 @@
-name: Generate Content
+name: Generate Blog Content
 
 on:
   workflow_dispatch:
     inputs:
-      target_urls:
-        description: '처리할 공고 URL (쉼표로 구분, 최대 3개)'
+      item_ids:
+        description: '처리할 item_id (쉼표로 구분, 최대 10개)'
         required: true
         type: string
 
@@ -14,19 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install chromium
 
       - name: Run generate.py
         env:
-          TARGET_URLS: ${{ github.event.inputs.target_urls }}
+          ITEM_IDS: ${{ inputs.item_ids }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
