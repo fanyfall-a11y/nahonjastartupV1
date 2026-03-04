@@ -28,9 +28,9 @@ jobs:
         env:
           TARGET_URLS: ${{ github.event.inputs.target_urls }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GMAIL_USER: ${{ secrets.EMAIL_FROM }}
-          GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          TO_EMAIL: ${{ secrets.EMAIL_TO }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
           GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
         run: python generate.py

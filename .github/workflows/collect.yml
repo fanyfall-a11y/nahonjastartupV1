@@ -24,9 +24,9 @@ jobs:
       - name: Run collect.py
         env:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
-          GMAIL_USER: ${{ secrets.EMAIL_FROM }}
-          GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          TO_EMAIL: ${{ secrets.EMAIL_TO }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
         run: python collect.py
 
       - name: Commit and push results
