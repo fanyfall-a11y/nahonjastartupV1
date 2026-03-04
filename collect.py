@@ -101,7 +101,10 @@ async def collect_kstartup():
             org = it.get('pbanc_ntrp_nm', '')
             url = it.get('detl_pg_url', '') or ''
             date_val = it.get('pbanc_rcpt_end_dt', '')
-            date = date_val[:10] if date_val else ''
+            if date_val:
+                date = f"{date_val[:4]}-{date_val[4:6]}-{date_val[6:8]}" if len(date_val) == 8 and date_val.isdigit() else date_val[:10]
+            else:
+                date = ''
             uid = str(it.get('pbanc_sn', ''))
             item = {'id':'kstartup_'+uid,'source':'kstartup','title':title,'url':url,'date':date,'org':org,'region':extract_region(title,org),'category':extract_category(title),'isTarget':False,'detail':{'period':it.get('pbanc_ctnt',''),'eligibility':it.get('aply_trgt_ctnt',''),'content':'','amount':''}}
             item['isTarget'] = is_target(item)
@@ -206,24 +209,32 @@ def summarize_content(text, title=''):
     if not text: return ''
     text = html.unescape(text).strip()
     text = re.sub(r'<[^>]+>', ' ', text)
-    text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
     text = re.sub(r'\r?\n', ' ', text)
     text = re.sub(r'\s+', ' ', text).strip()
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
+    text = re.sub(r'「[^」]+」', '', text)
+    text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
+    text = re.sub(r'(다음과 같이|안내하오니|아래와 같이|이하 같음).*', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
     support_match = re.search(r'([^,.。]*?(?:지원|제공|선발|모집)[^,.。]*)', text)
     def is_valid_core(s):
         if len(s) < 6: return False
         if re.fullmatch(r'[\d\s년도\.\-~～]+', s): return False
         return True
+    result = ''
     if support_match:
         core = support_match.group(1).strip()
         if not is_valid_core(core): return ''
-        if any(a in core for a in amounts): return core
-        return f"{core} (최대 {amounts[0]})" if amounts else core
+        result = core
+        if not any(a in core for a in amounts) and amounts:
+            result = f"{core} (최대 {amounts[0]})"
     else:
         first_sentence = re.split(r'[.。]', text)[0].strip()
         if not is_valid_core(first_sentence): return ''
-        return f"{first_sentence} (최대 {amounts[0]})" if amounts else first_sentence[:60]
+        result = first_sentence
+        if amounts:
+            result = f"{first_sentence} (최대 {amounts[0]})"
+    return result[:80]
 
 def format_item(i):
     d = i.get('detail', {})
