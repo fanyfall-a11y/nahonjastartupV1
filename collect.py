@@ -203,10 +203,18 @@ def summarize_content(text, title=''):
     text = re.sub(r'\r?\n', ' ', text).strip()
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
     support_match = re.search(r'([^,。.]{10,40}(?:지원|제공|선발|모집))', text)
-    core = support_match.group(1).strip() if support_match else re.split(r'[.。]', text)[0].strip()[:60]
-    if len(core) < 6: return ''
-    if re.fullmatch(r'[\d\s년도\.\-~～]+', core): return ''
-    return core
+    def is_valid_core(s):
+        if len(s) < 6: return False
+        if re.fullmatch(r'[\d\s년도\.\-~～]+', s): return False
+        return True
+    if support_match:
+        core = support_match.group(1).strip()
+        if not is_valid_core(core): return ''
+        return f"최대 {amounts[0]} - {core}" if amounts else core
+    else:
+        core = re.split(r'[.。]', text)[0].strip()[:60]
+        if not is_valid_core(core): return ''
+        return ', '.join(amounts) if amounts else core
 
 def format_item(i):
     d = i.get('detail', {})
