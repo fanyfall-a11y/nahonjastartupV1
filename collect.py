@@ -233,7 +233,10 @@ async def main():
     with open(cache_path, 'w', encoding='utf-8') as f: json.dump(cache, f, ensure_ascii=False, indent=2)
 
     new_items = [i for i in all_items if i['isTarget'] and i['id'] not in collected_ids]
-    await send_email(new_items)
+    try:
+        await send_email(new_items)
+    except Exception as e:
+        print(f'[이메일 오류] {e}')
 
     for item in all_items:
         collected_ids[item['id']] = today
