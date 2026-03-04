@@ -202,7 +202,7 @@ def summarize_content(text, title=''):
     text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
     text = re.sub(r'\r?\n', ' ', text).strip()
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
-    support_match = re.search(r'([^,。.]{10,40}(?:지원|제공|선발|모집))', text)
+    support_match = re.search(r'([^,.。]*?(?:지원|제공|선발|모집)[^,.。]*)', text)
     def is_valid_core(s):
         if len(s) < 6: return False
         if re.fullmatch(r'[\d\s년도\.\-~～]+', s): return False
@@ -210,11 +210,12 @@ def summarize_content(text, title=''):
     if support_match:
         core = support_match.group(1).strip()
         if not is_valid_core(core): return ''
-        return f"최대 {amounts[0]} - {core}" if amounts else core
+        if any(a in core for a in amounts): return core
+        return f"{core} (최대 {amounts[0]})" if amounts else core
     else:
-        core = re.split(r'[.。]', text)[0].strip()[:60]
-        if not is_valid_core(core): return ''
-        return ', '.join(amounts) if amounts else core
+        first_sentence = re.split(r'[.。]', text)[0].strip()
+        if not is_valid_core(first_sentence): return ''
+        return f"{first_sentence} (최대 {amounts[0]})" if amounts else first_sentence[:60]
 
 def format_item(i):
     d = i.get('detail', {})
