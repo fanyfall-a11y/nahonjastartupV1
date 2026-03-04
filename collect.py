@@ -159,6 +159,20 @@ def classify_support_type(title, content):
     if any(k in text for k in ['사업화','창업지원']): return '🚀 [사업화지원]'
     return '📋 [지원사업]'
 
+def title_similarity(t1, t2):
+    def normalize(s):
+        s = re.sub(r'20\d{2}년?도?\s*', '', s)
+        s = re.sub(r'(공고|모집|사업공고|지원사업|공모|신청|접수|안내)\s*$', '', s.strip())
+        s = re.sub(r'[\s\[\]\(\)\-_·]', '', s)
+        return s
+    def bigrams(s):
+        return set(s[i:i+2] for i in range(len(s)-1)) if len(s) >= 2 else set()
+    n1, n2 = normalize(t1), normalize(t2)
+    b1, b2 = bigrams(n1), bigrams(n2)
+    if not b1 or not b2:
+        return 0.0
+    return len(b1 & b2) / len(b1 | b2)
+
 def score_item(item):
     score = 0
     title = item.get('title', '')
@@ -167,28 +181,19 @@ def score_item(item):
     eligibility = detail.get('eligibility', '')
     org = item.get('org', '')
     region = item.get('region', '')
-
-    # [지원 유형] - title과 detail.content를 합친 텍스트 기준
     text_support = title + ' ' + content
     if any(k in text_support for k in ['보조금','지원금','출연금','사업화자금','사업비','운영비']): score += 4
     elif any(k in text_support for k in ['바우처','쿠폰']): score += 3
     elif any(k in text_support for k in ['컨설팅','멘토링','코칭','자문']): score += 2
     elif any(k in text_support for k in ['교육','훈련','아카데미','캠프','시설','공간','입주','판로','마케팅','홍보']): score += 1
-
-    # [대상 적합성] - title과 detail.eligibility를 합친 텍스트 기준
     text_target = title + ' ' + eligibility
     if any(k in text_target for k in ['예비창업자','초기창업자']): score += 3
     elif any(k in text_target for k in ['소상공인']): score += 2
     elif any(k in text_target for k in ['중소기업']): score += 1
-
-    # [지역]
     if region == '전국': score += 2
     else: score += 1
-
-    # [기관 신뢰도] - item['org'] 기준
     if any(k in org for k in ['중소벤처기업부','창업진흥원','중진공','TIPS','기술보증기금','신용보증기금','소상공인시장진흥공단']): score += 2
     else: score += 1
-
     return score
 
 def summarize_content(text, title=''):
@@ -249,13 +254,11 @@ async def main():
 
         all_items = bizinfo_items + kstartup_items
 
-        seen_keys = {}
         dedup_items = []
         for item in all_items:
-            t = re.sub(r'20\d{2}년?도?\s*', '', item.get('title', ''))
-            key = re.sub(r'[\s\[\]\(\)]', '', t)[:15]
-            if key not in seen_keys:
-                seen_keys[key] = True
+            title = item.get('title', '')
+            is_dup = any(title_similarity(title, existing.get('title', '')) >= 0.6 for existing in dedup_items)
+            if not is_dup:
                 dedup_items.append(item)
         all_items = dedup_items
 
