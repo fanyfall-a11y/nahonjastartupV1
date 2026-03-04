@@ -70,11 +70,14 @@ async def collect_bizinfo():
 
                 title = it.get('pblancNm', '')
                 org = it.get('jrsdInsttNm', '')
+                url_val = it.get('pblancUrl', '') or ''
+                if url_val and not url_val.startswith('http'):
+                    url_val = 'https://www.bizinfo.go.kr' + url_val
                 item = {
                     'id': 'bizinfo_' + str(it.get('pblancId', '')),
                     'source': 'bizinfo',
                     'title': title,
-                    'url': it.get('pblancUrl', '') or '',
+                    'url': url_val,
                     'date': date_str,
                     'org': org,
                     'region': extract_region(title, org),
@@ -171,17 +174,17 @@ async def fetch_detail(page, item, cache):
 
 def classify_support_type(title, content):
     text = title + ' ' + content
-    if any(k in text for k in ['융자','대출','보증','금융']): return '[융자/대출]'
-    if any(k in text for k in ['바우처','쿠폰']): return '[바우처]'
-    if any(k in text for k in ['보조금','지원금','출연금','R&D자금']): return '[보조금]'
-    if any(k in text for k in ['사업화자금','사업비','운영비']): return '[사업화자금]'
-    if any(k in text for k in ['컨설팅','멘토링','코칭','자문']): return '[컨설팅비용]'
-    if any(k in text for k in ['교육비','훈련비','수강료']): return '[교육비지원]'
-    if any(k in text for k in ['교육','훈련','아카데미','캠프']): return '[교육프로그램]'
-    if any(k in text for k in ['시설','공간','입주']): return '[공간지원]'
-    if any(k in text for k in ['판로','마케팅','홍보','전시']): return '[판로지원]'
-    if any(k in text for k in ['사업화','창업지원']): return '[사업화지원]'
-    return '[지원사업]'
+    if any(k in text for k in ['융자','대출','보증','금융']): return '💰 [융자/대출]'
+    if any(k in text for k in ['바우처','쿠폰']): return '🎫 [바우처]'
+    if any(k in text for k in ['보조금','지원금','출연금','R&D자금']): return '💵 [보조금]'
+    if any(k in text for k in ['사업화자금','사업비','운영비']): return '💼 [사업화자금]'
+    if any(k in text for k in ['컨설팅','멘토링','코칭','자문']): return '🤝 [컨설팅비용]'
+    if any(k in text for k in ['교육비','훈련비','수강료']): return '📚 [교육비지원]'
+    if any(k in text for k in ['교육','훈련','아카데미','캠프']): return '🎓 [교육프로그램]'
+    if any(k in text for k in ['시설','공간','입주']): return '🏢 [공간지원]'
+    if any(k in text for k in ['판로','마케팅','홍보','전시']): return '📣 [판로지원]'
+    if any(k in text for k in ['사업화','창업지원']): return '🚀 [사업화지원]'
+    return '📋 [지원사업]'
 
 def summarize_content(text, title=''):
     if not text: return ''
@@ -201,10 +204,12 @@ def format_item(i):
     support_type = classify_support_type(i.get('title',''), raw_content)
     content = summarize_content(raw_content, i.get('title',''))
     region = i.get('region', '전국')
-    lines = [f"[{region}] {i['title']}  {support_type}", f'마감: {i["date"]}  |  {i.get("org","")}']
-    if eligibility: lines.append(f'대상: {eligibility}')
-    if content: lines.append(f'내용: {content}')
-    lines.append(i['url'])
+    REGION_PATTERN = r'^\[(?:서울|부산|대구|인천|광주|대전|울산|세종|경기|강원|충북|충남|전북|전남|경북|경남|제주|전국)\]\s*'
+    clean_title = re.sub(REGION_PATTERN, '', i['title'])
+    lines = [f"📌 [{region}] {clean_title}  {support_type}", f'⏰ 마감: {i["date"]}  |  🏛️ {i.get("org","")}']
+    if eligibility: lines.append(f'👥 대상: {eligibility}')
+    if content: lines.append(f'💡 내용: {content}')
+    lines.append(f'🔗 {i["url"]}')
     return '\n'.join(lines)
 
 async def send_email(new_items, deadline_items):
@@ -216,10 +221,10 @@ async def send_email(new_items, deadline_items):
     subject = f'[나혼자창업] 신규 {len(new_items)}건 / 오늘마감 {len(deadline_items)}건 - {today}'
     body = ''
     if new_items:
-        body += '=== 신규 추천 공고 ===\n\n'
+        body += '🆕 === 신규 추천 공고 ===\n\n'
         body += '\n\n'.join([format_item(i) for i in new_items])
     if deadline_items:
-        body += '\n\n=== 오늘 마감 공고 ===\n\n'
+        body += '\n\n🔥 === 오늘 마감 공고 ===\n\n'
         body += '\n\n'.join([format_item(i) for i in deadline_items])
     yag = yagmail.SMTP(user, pw)
     yag.send(to, subject, body)
