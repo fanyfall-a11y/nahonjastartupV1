@@ -225,7 +225,8 @@ async def send_email(new_items, deadline_items):
     if not new_items and not deadline_items: return
     user = os.environ.get('GMAIL_USER','')
     pw = os.environ.get('GMAIL_APP_PASSWORD','')
-    to = os.environ.get('TO_EMAIL','nagairams1@gmail.com')
+    to_raw = os.environ.get('TO_EMAIL','nagairams1@gmail.com')
+    to = [e.strip() for e in to_raw.split(',') if e.strip()]
     if not user or not pw: return
     subject = f'[나혼자창업] 신규 {len(new_items)}건 / 오늘마감 {len(deadline_items)}건 - {today}'
     body = ''
