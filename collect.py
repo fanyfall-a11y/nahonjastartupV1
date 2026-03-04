@@ -38,9 +38,27 @@ def extract_deadline_from_period(period):
 
 async def collect_bizinfo():
     api_key = os.environ.get('BIZINFO_API_KEY','')
-    params = {'serviceKey':api_key,'pageNo':1,'numOfRows':150,'returnType':'json','schEndAt':'N'}
-    resp = requests.get('https://apis.data.go.kr/B552735/businessInfo/getBusinessInfoList', params=params, timeout=30)
-    raw = resp.json()['response']['body']['items']['item']
+    url = f'https://apis.data.go.kr/B552735/businessInfo/getBusinessInfoList?serviceKey={api_key}&pageNo=1&numOfRows=150&returnType=json&schEndAt=N'
+
+    try:
+        resp = requests.get(url, timeout=30)
+    except requests.RequestException:
+        return []
+
+    if not resp.text:
+        return []
+
+    try:
+        raw = resp.json().get('response', {}).get('body', {}).get('items', {}).get('item')
+    except ValueError:
+        return []
+
+    if not raw:
+        return []
+
+    if isinstance(raw, dict):
+        raw = [raw]
+
     items = []
     for it in raw:
         rd = it.get('reqstEndDt','')
