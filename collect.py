@@ -204,12 +204,14 @@ def summarize_content(text, title=''):
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
     support_match = re.search(r'([^,。.]{10,40}(?:지원|제공|선발|모집))', text)
     core = support_match.group(1).strip() if support_match else re.split(r'[.。]', text)[0].strip()[:60]
+    if len(core) < 6: return ''
+    if re.fullmatch(r'[\d\s년도\.\-~～]+', core): return ''
     return core
 
 def format_item(i):
     d = i.get('detail', {})
     eligibility = html.unescape(d.get('eligibility', '') or '').strip()[:60]
-    raw_content = d.get('content', '') or d.get('period', '') or ''
+    raw_content = d.get('content', '') or ''
     support_type = classify_support_type(i.get('title',''), raw_content)
     content = summarize_content(raw_content, i.get('title',''))
     region = i.get('region', '전국')
