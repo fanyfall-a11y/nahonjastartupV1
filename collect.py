@@ -1,6 +1,5 @@
-import os, json, re, asyncio, requests
+import os, json, re, asyncio, requests, html
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urljoin, urlparse, parse_qs
 from playwright.async_api import async_playwright
 import yagmail
 
@@ -26,7 +25,7 @@ def is_target(item):
     date = item.get('date','')
     if date and date < today: return False
     if not any(k in title for k in ['창업','스타트업','소상공인','중소기업','바우처','지원금','보조금','사업화','멘토링','컨설팅','글로벌']): return False
-    if any(k in title for k in ['채용','입찰','구매','물품']): return False
+    if any(k in title for k in ['채용','입찰','구매','물품','R&D','연구개발','기술개발','제조업','소부장','기술이전','실증']): return False
     return True
 
 def extract_deadline_from_period(period):
@@ -37,118 +36,103 @@ def extract_deadline_from_period(period):
     return f'{y}-{int(m):02d}-{int(d):02d}'
 
 async def collect_bizinfo():
-    api_key = os.environ.get('BIZINFO_API_KEY','')
-    url = f'https://apis.data.go.kr/B552735/businessInfo/getBusinessInfoList?serviceKey={api_key}&pageNo=1&numOfRows=150&returnType=json&schEndAt=N'
+    api_key = os.environ.get('BIZINFO_API_KEY', '')
+    url = 'https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do'
 
+    items = []
+    page_idx = 1
+    tot_cnt = 0
+
+    while True:
+        try:
+            params = {
+                'crtfcKey': api_key,
+                'dataType': 'json',
+                'pageUnit': 100,
+                'pageIndex': page_idx
+            }
+            resp = requests.get(url, params=params, timeout=30)
+            data_list = resp.json().get('jsonArray', [])
+
+            if not data_list:
+                break
+
+            if page_idx == 1:
+                tot_cnt = int(data_list[0].get('totCnt', 0))
+
+            for it in data_list:
+                raw_date_range = it.get('reqstBeginEndDe', '')
+                date_str = ''
+                matches = re.findall(r'(\d{4})[.\-](\d{2})[.\-](\d{2})', raw_date_range)
+                if matches:
+                    last_match = matches[-1]
+                    date_str = f'{last_match[0]}-{last_match[1]}-{last_match[2]}'
+
+                title = it.get('pblancNm', '')
+                org = it.get('jrsdInsttNm', '')
+                item = {
+                    'id': 'bizinfo_' + str(it.get('pblancId', '')),
+                    'source': 'bizinfo',
+                    'title': title,
+                    'url': it.get('pblancUrl', '') or '',
+                    'date': date_str,
+                    'org': org,
+                    'region': extract_region(title, org),
+                    'category': extract_category(title),
+                    'isTarget': False,
+                    'detail': {
+                        'period': raw_date_range,
+                        'eligibility': it.get('trgetNm', ''),
+                        'content': it.get('bsnsSumryCn', '')[:300],
+                        'amount': ''
+                    }
+                }
+                item['isTarget'] = is_target(item)
+                items.append(item)
+
+            if len(items) >= 50 or len(items) >= tot_cnt:
+                break
+
+            page_idx += 1
+
+        except Exception as e:
+            print(f'[bizinfo API 오류] {e}')
+            break
+
+    return items
+
+async def collect_kstartup():
+    BASE_URL = 'https://apis.data.go.kr/B552735/kisedKstartupService01/getAnnouncementInformation01'
+    api_key = os.environ.get('KSTARTUP_API_KEY', '')
+
+    items = []
     try:
-        resp = requests.get(url, timeout=30)
-    except requests.RequestException:
-        return []
+        params = {
+            'serviceKey': api_key,
+            'page': 1,
+            'perPage': 50,
+            'returnType': 'json',
+            'cond[rcrt_prgs_yn::EQ]': 'Y'
+        }
+        resp = requests.get(BASE_URL, params=params, timeout=30)
+        data_list = resp.json().get('data', [])
 
-    if not resp.text:
-        return []
-
-    try:
-        raw = resp.json().get('response', {}).get('body', {}).get('items', {}).get('item')
-    except ValueError:
-        return []
-
-    if not raw:
-        return []
-
-    if isinstance(raw, dict):
-        raw = [raw]
-
-    items = []
-    for it in raw:
-        rd = it.get('reqstEndDt','')
-        date = f'{rd[:4]}-{rd[4:6]}-{rd[6:]}' if len(rd)==8 else ''
-        title = it['pblancNm']
-        org = it.get('jrsdInsttNm','')
-        item = {'id':'bizinfo_'+it['pblancId'],'source':'bizinfo','title':title,'url':it.get('pblancUrl',''),'date':date,'org':org,'region':extract_region(title,org),'category':extract_category(title),'isTarget':False,'detail':{'period':'','eligibility':'','content':'','amount':''}}
-        item['isTarget'] = is_target(item)
-        items.append(item)
-    return items
-
-async def collect_kstartup(page):
-    BASE = 'https://www.k-startup.go.kr'
-    await page.goto(BASE+'/web/contents/bizpbanc-ongoing.do', wait_until='domcontentloaded')
-    await page.wait_for_timeout(2000)
-    items = []
-    for li in await page.query_selector_all('.board_list-wrap ul li'):
-        try:
-            el = await li.query_selector('p.tit,a.tit')
-            if not el: continue
-            t = (await el.inner_text()).strip()
-            a = await li.query_selector('a')
-            href = await a.get_attribute('href')
-            url = urljoin(BASE, href) if href else ''
-            d_el = await li.query_selector('.date')
-            date = (await d_el.inner_text()).strip() if d_el else ''
-            nums = re.findall(r'\d+', href or '')
-            uid = nums[-1] if nums else re.sub(r'\W','',t)[:20]
-            item = {'id':'kstartup_'+uid,'source':'kstartup','title':t,'url':url,'date':date,'region':extract_region(t),'category':extract_category(t),'isTarget':False,'detail':{'period':'','eligibility':'','content':'','amount':''}}
+        for it in data_list:
+            title = it.get('biz_pbanc_nm', '')
+            org = it.get('pbanc_ntrp_nm', '')
+            url = it.get('detl_pg_url', '') or ''
+            date_val = it.get('pbanc_rcpt_end_dt', '')
+            date = date_val[:10] if date_val else ''
+            uid = str(it.get('pbanc_sn', ''))
+            item = {'id':'kstartup_'+uid,'source':'kstartup','title':title,'url':url,'date':date,'org':org,'region':extract_region(title,org),'category':extract_category(title),'isTarget':False,'detail':{'period':it.get('pbanc_ctnt',''),'eligibility':it.get('aply_trgt_ctnt',''),'content':'','amount':''}}
             item['isTarget'] = is_target(item)
             items.append(item)
-            if len(items)>=15: break
-        except: continue
+
+    except Exception as e:
+        print(f'[kstartup API 오류] {e}')
+
     return items
 
-async def collect_sbiz(page):
-    BASE = 'https://www.semas.or.kr'
-    print(f'[sbiz] 크롤링 시작: {BASE}...')
-    await page.goto(BASE+'/web/board/webBoardList.kmdc?bCd=2001&pNm=BOA0121', wait_until='domcontentloaded')
-    await page.wait_for_timeout(3000)
-    html = await page.content()
-    print('[sbiz HTML]', html[1500:3500])
-    items = []
-    for tr in await page.query_selector_all('table tbody tr'):
-        try:
-            a = await tr.query_selector('td:nth-child(2) a')
-            if not a: continue
-            t = (await a.inner_text()).strip()
-            href = await a.get_attribute('href')
-            url = BASE + (href or '')
-            d_el = await tr.query_selector('td:nth-child(4)')
-            date = (await d_el.inner_text()).strip() if d_el else ''
-            nums = re.findall(r'\d+', href or '')
-            uid = nums[-1] if nums else re.sub(r'\W','',t)[:20]
-            item = {'id':'sbiz_'+uid,'source':'sbiz','title':t,'url':url,'date':date,'region':extract_region(t),'category':extract_category(t),'isTarget':False,'detail':{'period':'','eligibility':'','content':'','amount':''}}
-            item['isTarget'] = is_target(item)
-            items.append(item)
-            if len(items)>=10: break
-        except Exception as e: print(f'[sbiz 오류] {e}'); continue
-    return items
-
-async def collect_smtech(page):
-    BASE = 'https://www.smtech.go.kr'
-    print(f'[smtech] 크롤링 시작: {BASE}...')
-    await page.goto(BASE+'/front/ifg/no/notice02_list.do', wait_until='domcontentloaded')
-    await page.wait_for_timeout(3000)
-    trs = await page.query_selector_all('table tbody tr')
-    print(f'[smtech] tr 개수: {len(trs)}')
-    if trs:
-        print('[smtech 첫번째 tr]', await trs[0].inner_html())
-    items = []
-    for tr in trs:
-        try:
-            a = await tr.query_selector('td.tl a')
-            if not a: continue
-            t = (await a.inner_text()).strip()
-            href = await a.get_attribute('href')
-            url = urljoin(BASE, href) if href else ''
-            date = ''
-            for td in await tr.query_selector_all('td'):
-                txt = (await td.inner_text()).strip()
-                if re.search(r'\d{4}\.\d{2}\.\d{2}', txt): date = txt; break
-            nums = re.findall(r'\d+', href or '')
-            uid = nums[-1] if nums else re.sub(r'\W','',t)[:20]
-            item = {'id':'smtech_'+uid,'source':'smtech','title':t,'url':url,'date':date,'region':extract_region(t),'category':extract_category(t),'isTarget':False,'detail':{'period':'','eligibility':'','content':'','amount':''}}
-            item['isTarget'] = is_target(item)
-            items.append(item)
-            if len(items)>=15: break
-        except Exception as e: print(f'[smtech 오류] {e}'); continue
-    return items
 
 async def fetch_detail(page, item, cache):
     iid = item['id']
@@ -185,14 +169,58 @@ async def fetch_detail(page, item, cache):
     except:
         pass
 
-async def send_email(new_items):
-    if not new_items: return
+def classify_support_type(title, content):
+    text = title + ' ' + content
+    if any(k in text for k in ['융자','대출','보증','금융']): return '[융자/대출]'
+    if any(k in text for k in ['바우처','쿠폰']): return '[바우처]'
+    if any(k in text for k in ['보조금','지원금','출연금','R&D자금']): return '[보조금]'
+    if any(k in text for k in ['사업화자금','사업비','운영비']): return '[사업화자금]'
+    if any(k in text for k in ['컨설팅','멘토링','코칭','자문']): return '[컨설팅비용]'
+    if any(k in text for k in ['교육비','훈련비','수강료']): return '[교육비지원]'
+    if any(k in text for k in ['교육','훈련','아카데미','캠프']): return '[교육프로그램]'
+    if any(k in text for k in ['시설','공간','입주']): return '[공간지원]'
+    if any(k in text for k in ['판로','마케팅','홍보','전시']): return '[판로지원]'
+    if any(k in text for k in ['사업화','창업지원']): return '[사업화지원]'
+    return '[지원사업]'
+
+def summarize_content(text, title=''):
+    if not text: return ''
+    text = html.unescape(text).strip()
+    text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
+    text = re.sub(r'\r?\n', ' ', text).strip()
+    amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
+    # 핵심 동사구 추출: '~을 지원', '~을 제공'
+    support_match = re.search(r'([^,。.]{10,40}(?:지원|제공|선발|모집))', text)
+    core = support_match.group(1).strip() if support_match else re.split(r'[.。]', text)[0].strip()[:60]
+    return core
+
+def format_item(i):
+    d = i.get('detail', {})
+    eligibility = html.unescape(d.get('eligibility', '') or '').strip()[:60]
+    raw_content = d.get('content', '') or d.get('period', '') or ''
+    support_type = classify_support_type(i.get('title',''), raw_content)
+    content = summarize_content(raw_content, i.get('title',''))
+    region = i.get('region', '전국')
+    lines = [f"[{region}] {i['title']}  {support_type}", f'마감: {i["date"]}  |  {i.get("org","")}']
+    if eligibility: lines.append(f'대상: {eligibility}')
+    if content: lines.append(f'내용: {content}')
+    lines.append(i['url'])
+    return '\n'.join(lines)
+
+async def send_email(new_items, deadline_items):
+    if not new_items and not deadline_items: return
     user = os.environ.get('GMAIL_USER','')
     pw = os.environ.get('GMAIL_APP_PASSWORD','')
     to = os.environ.get('TO_EMAIL','nagairams1@gmail.com')
     if not user or not pw: return
-    subject = f'[나혼자창업] 오늘의 추천 공고 {len(new_items)}건 - {today}'
-    body = '\n\n'.join([f'{i["title"]}\n마감: {i["date"]}\n{i["url"]}' for i in new_items])
+    subject = f'[나혼자창업] 신규 {len(new_items)}건 / 오늘마감 {len(deadline_items)}건 - {today}'
+    body = ''
+    if new_items:
+        body += '=== 신규 추천 공고 ===\n\n'
+        body += '\n\n'.join([format_item(i) for i in new_items])
+    if deadline_items:
+        body += '\n\n=== 오늘 마감 공고 ===\n\n'
+        body += '\n\n'.join([format_item(i) for i in deadline_items])
     yag = yagmail.SMTP(user, pw)
     yag.send(to, subject, body)
 
@@ -208,31 +236,42 @@ async def main():
         page.set_default_timeout(30000)
 
         bizinfo_items = await collect_bizinfo()
-        kstartup_items = await collect_kstartup(page)
-        sbiz_items = await collect_sbiz(page)
-        smtech_items = await collect_smtech(page)
+        kstartup_items = await collect_kstartup()
 
-        all_items = bizinfo_items + kstartup_items + sbiz_items + smtech_items
+        all_items = bizinfo_items + kstartup_items
+
+        # 제목 정규화 기반 중복 제거
+        seen_keys = {}
+        dedup_items = []
+        for item in all_items:
+            t = re.sub(r'20\d{2}년?도?\s*', '', item.get('title', ''))
+            key = re.sub(r'[\s\[\]\(\)]', '', t)[:15]
+            if key not in seen_keys:
+                seen_keys[key] = True
+                dedup_items.append(item)
+        all_items = dedup_items
+
         for item in all_items:
             await fetch_detail(page, item, cache)
 
         await browser.close()
 
     source_meta = {
-        'bizinfo':  {'id':'bizinfo', 'name':'기업마당',    'icon':'🏢','color':'#1a4fa0','items':bizinfo_items},
-        'kstartup': {'id':'kstartup','name':'K-Startup',  'icon':'🚀','color':'#e8360e','items':kstartup_items},
-        'sbiz':     {'id':'sbiz',    'name':'소상공인마당','icon':'🏪','color':'#2ecc71','items':sbiz_items},
-        'smtech':   {'id':'smtech',  'name':'중소기업기술','icon':'🔬','color':'#9b59b6','items':smtech_items},
+        'bizinfo':  {'id':'bizinfo', 'name':'기업마당',  'icon':'🏢','color':'#1a4fa0','items':bizinfo_items},
+        'kstartup': {'id':'kstartup','name':'K-Startup','icon':'🚀','color':'#e8360e','items':kstartup_items},
     }
     for key, meta in source_meta.items():
         meta['count'] = len(meta['items'])
         meta['targetCount'] = sum(1 for i in meta['items'] if i['isTarget'])
 
+    deadline_items = [i for i in all_items if i.get('date') == today]
+
     output = {
         'date': today,
         'total': len(all_items),
         'targetCount': sum(1 for i in all_items if i['isTarget']),
-        'sources': {k: {**{kk:vv for kk,vv in v.items() if kk!='items'}, 'items':v['items']} for k,v in source_meta.items()}
+        'sources': {k: {**{kk:vv for kk,vv in v.items() if kk!='items'}, 'items':v['items']} for k,v in source_meta.items()},
+        'todayDeadline': deadline_items
     }
 
     daily_path = f'docs/daily/{today}.json'
@@ -242,7 +281,7 @@ async def main():
 
     new_items = [i for i in all_items if i['isTarget'] and i['id'] not in collected_ids]
     try:
-        await send_email(new_items)
+        await send_email(new_items, deadline_items)
     except Exception as e:
         print(f'[이메일 오류] {e}')
 
@@ -250,6 +289,6 @@ async def main():
         collected_ids[item['id']] = today
     with open(ids_path, 'w', encoding='utf-8') as f: json.dump(collected_ids, f, ensure_ascii=False, indent=2)
 
-    print(f'완료: 전체 {len(all_items)}건, 추천 {output["targetCount"]}건, 신규 {len(new_items)}건')
+    print(f'완료: 전체 {len(all_items)}건, 추천 {output["targetCount"]}건, 신규 {len(new_items)}건, 오늘마감 {len(deadline_items)}건')
 
 asyncio.run(main())

@@ -26,6 +26,7 @@ jobs:
       - name: Run collect.py
         env:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
+          KSTARTUP_API_KEY: ${{ secrets.KSTARTUP_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
