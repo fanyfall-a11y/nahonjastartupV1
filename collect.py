@@ -38,28 +38,17 @@ def extract_deadline_from_period(period):
 async def collect_bizinfo():
     api_key = os.environ.get('BIZINFO_API_KEY', '')
     url = 'https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do'
-
     items = []
     page_idx = 1
     tot_cnt = 0
-
     while True:
         try:
-            params = {
-                'crtfcKey': api_key,
-                'dataType': 'json',
-                'pageUnit': 100,
-                'pageIndex': page_idx
-            }
+            params = {'crtfcKey': api_key, 'dataType': 'json', 'pageUnit': 100, 'pageIndex': page_idx}
             resp = requests.get(url, params=params, timeout=30)
             data_list = resp.json().get('jsonArray', [])
-
-            if not data_list:
-                break
-
+            if not data_list: break
             if page_idx == 1:
                 tot_cnt = int(data_list[0].get('totCnt', 0))
-
             for it in data_list:
                 raw_date_range = it.get('reqstBeginEndDe', '')
                 date_str = ''
@@ -67,7 +56,6 @@ async def collect_bizinfo():
                 if matches:
                     last_match = matches[-1]
                     date_str = f'{last_match[0]}-{last_match[1]}-{last_match[2]}'
-
                 title = it.get('pblancNm', '')
                 org = it.get('jrsdInsttNm', '')
                 url_val = it.get('pblancUrl', '') or ''
@@ -92,34 +80,22 @@ async def collect_bizinfo():
                 }
                 item['isTarget'] = is_target(item)
                 items.append(item)
-
             if len(items) >= 50 or len(items) >= tot_cnt:
                 break
-
             page_idx += 1
-
         except Exception as e:
             print(f'[bizinfo API 오류] {e}')
             break
-
     return items
 
 async def collect_kstartup():
     BASE_URL = 'https://apis.data.go.kr/B552735/kisedKstartupService01/getAnnouncementInformation01'
     api_key = os.environ.get('KSTARTUP_API_KEY', '')
-
     items = []
     try:
-        params = {
-            'serviceKey': api_key,
-            'page': 1,
-            'perPage': 50,
-            'returnType': 'json',
-            'cond[rcrt_prgs_yn::EQ]': 'Y'
-        }
+        params = {'serviceKey': api_key, 'page': 1, 'perPage': 50, 'returnType': 'json', 'cond[rcrt_prgs_yn::EQ]': 'Y'}
         resp = requests.get(BASE_URL, params=params, timeout=30)
         data_list = resp.json().get('data', [])
-
         for it in data_list:
             title = it.get('biz_pbanc_nm', '')
             org = it.get('pbanc_ntrp_nm', '')
@@ -130,12 +106,9 @@ async def collect_kstartup():
             item = {'id':'kstartup_'+uid,'source':'kstartup','title':title,'url':url,'date':date,'org':org,'region':extract_region(title,org),'category':extract_category(title),'isTarget':False,'detail':{'period':it.get('pbanc_ctnt',''),'eligibility':it.get('aply_trgt_ctnt',''),'content':'','amount':''}}
             item['isTarget'] = is_target(item)
             items.append(item)
-
     except Exception as e:
         print(f'[kstartup API 오류] {e}')
-
     return items
-
 
 async def fetch_detail(page, item, cache):
     iid = item['id']
@@ -186,13 +159,44 @@ def classify_support_type(title, content):
     if any(k in text for k in ['사업화','창업지원']): return '🚀 [사업화지원]'
     return '📋 [지원사업]'
 
+def score_item(item):
+    score = 0
+    title = item.get('title', '')
+    detail = item.get('detail', {})
+    content = detail.get('content', '')
+    eligibility = detail.get('eligibility', '')
+    org = item.get('org', '')
+    region = item.get('region', '')
+
+    # [지원 유형] - title과 detail.content를 합친 텍스트 기준
+    text_support = title + ' ' + content
+    if any(k in text_support for k in ['보조금','지원금','출연금','사업화자금','사업비','운영비']): score += 4
+    elif any(k in text_support for k in ['바우처','쿠폰']): score += 3
+    elif any(k in text_support for k in ['컨설팅','멘토링','코칭','자문']): score += 2
+    elif any(k in text_support for k in ['교육','훈련','아카데미','캠프','시설','공간','입주','판로','마케팅','홍보']): score += 1
+
+    # [대상 적합성] - title과 detail.eligibility를 합친 텍스트 기준
+    text_target = title + ' ' + eligibility
+    if any(k in text_target for k in ['예비창업자','초기창업자']): score += 3
+    elif any(k in text_target for k in ['소상공인']): score += 2
+    elif any(k in text_target for k in ['중소기업']): score += 1
+
+    # [지역]
+    if region == '전국': score += 2
+    else: score += 1
+
+    # [기관 신뢰도] - item['org'] 기준
+    if any(k in org for k in ['중소벤처기업부','창업진흥원','중진공','TIPS','기술보증기금','신용보증기금','소상공인시장진흥공단']): score += 2
+    else: score += 1
+
+    return score
+
 def summarize_content(text, title=''):
     if not text: return ''
     text = html.unescape(text).strip()
     text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
     text = re.sub(r'\r?\n', ' ', text).strip()
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
-    # 핵심 동사구 추출: '~을 지원', '~을 제공'
     support_match = re.search(r'([^,。.]{10,40}(?:지원|제공|선발|모집))', text)
     core = support_match.group(1).strip() if support_match else re.split(r'[.。]', text)[0].strip()[:60]
     return core
@@ -245,7 +249,6 @@ async def main():
 
         all_items = bizinfo_items + kstartup_items
 
-        # 제목 정규화 기반 중복 제거
         seen_keys = {}
         dedup_items = []
         for item in all_items:
@@ -285,6 +288,8 @@ async def main():
     with open(cache_path, 'w', encoding='utf-8') as f: json.dump(cache, f, ensure_ascii=False, indent=2)
 
     new_items = [i for i in all_items if i['isTarget'] and i['id'] not in collected_ids]
+    new_items = sorted(new_items, key=score_item, reverse=True)[:20]
+
     try:
         await send_email(new_items, deadline_items)
     except Exception as e:
@@ -294,6 +299,6 @@ async def main():
         collected_ids[item['id']] = today
     with open(ids_path, 'w', encoding='utf-8') as f: json.dump(collected_ids, f, ensure_ascii=False, indent=2)
 
-    print(f'완료: 전체 {len(all_items)}건, 추천 {output["targetCount"]}건, 신규 {len(new_items)}건, 오늘마감 {len(deadline_items)}건')
+    print(f'완료: 전체 {len(all_items)}건, 추천 {output["targetCount"]}건, 신규(상위20) {len(new_items)}건, 오늘마감 {len(deadline_items)}건')
 
 asyncio.run(main())
