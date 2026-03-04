@@ -97,7 +97,10 @@ async def collect_kstartup(page):
 async def collect_sbiz(page):
     BASE = 'https://www.semas.or.kr'
     print(f'[sbiz] 크롤링 시작: {BASE}...')
-    await page.goto(BASE+'/web/board/boardList.kmdc?bbs_cd_n=1', wait_until='domcontentloaded')
+    await page.goto(BASE+'/web/board/webBoardList.kmdc?bCd=2001&pNm=BOA0121', wait_until='domcontentloaded')
+    await page.wait_for_timeout(3000)
+    html = await page.content()
+    print('[sbiz HTML]', html[1500:3500])
     items = []
     for tr in await page.query_selector_all('table tbody tr'):
         try:
@@ -121,8 +124,13 @@ async def collect_smtech(page):
     BASE = 'https://www.smtech.go.kr'
     print(f'[smtech] 크롤링 시작: {BASE}...')
     await page.goto(BASE+'/front/ifg/no/notice02_list.do', wait_until='domcontentloaded')
+    await page.wait_for_timeout(3000)
+    trs = await page.query_selector_all('table tbody tr')
+    print(f'[smtech] tr 개수: {len(trs)}')
+    if trs:
+        print('[smtech 첫번째 tr]', await trs[0].inner_html())
     items = []
-    for tr in await page.query_selector_all('table tbody tr'):
+    for tr in trs:
         try:
             a = await tr.query_selector('td.tl a')
             if not a: continue
