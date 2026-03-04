@@ -331,11 +331,22 @@ async def main():
 
     deadline_items = [i for i in all_items if i.get('date') == today]
 
+    # daily JSON: 신규 항목(collected_ids에 없는 것)만 저장
+    new_sources = {}
+    new_total = 0
+    new_target_count = 0
+    for k, v in source_meta.items():
+        filtered_items = [i for i in v['items'] if i['id'] not in collected_ids]
+        new_total += len(filtered_items)
+        new_target_count += sum(1 for i in filtered_items if i.get('isTarget'))
+        new_sources[k] = {kk: vv for kk, vv in v.items() if kk != 'items'}
+        new_sources[k]['items'] = filtered_items
+
     output = {
         'date': today,
-        'total': len(all_items),
-        'targetCount': sum(1 for i in all_items if i['isTarget']),
-        'sources': {k: {**{kk:vv for kk,vv in v.items() if kk!='items'}, 'items':v['items']} for k,v in source_meta.items()},
+        'total': new_total,
+        'targetCount': new_target_count,
+        'sources': new_sources,
         'todayDeadline': deadline_items
     }
 
@@ -356,6 +367,6 @@ async def main():
         collected_ids[item['id']] = today
     with open(ids_path, 'w', encoding='utf-8') as f: json.dump(collected_ids, f, ensure_ascii=False, indent=2)
 
-    print(f'완료: 전체 {len(all_items)}건, 추천 {output["targetCount"]}건, 신규(상위20) {len(new_items)}건, 오늘마감 {len(deadline_items)}건')
+    print(f'완료: 전체 {output["total"]}건, 추천 {output["targetCount"]}건, 신규(상위20) {len(new_items)}건, 오늘마감 {len(deadline_items)}건')
 
 asyncio.run(main())
