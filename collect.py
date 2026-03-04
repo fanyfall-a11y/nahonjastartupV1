@@ -1,6 +1,6 @@
 import os, json, re, asyncio, requests, html
 from datetime import datetime, timezone, timedelta
-from playwright.async_api import async_playwright
+from bs4 import BeautifulSoup
 import yagmail
 
 KST = timezone(timedelta(hours=9))
@@ -113,7 +113,7 @@ async def collect_kstartup():
         print(f'[kstartup API 오류] {e}')
     return items
 
-async def fetch_detail(page, item, cache):
+def fetch_detail(item, cache):
     iid = item['id']
     original_content = item.get('detail', {}).get('content', '')
     if iid in cache:
@@ -123,29 +123,40 @@ async def fetch_detail(page, item, cache):
             cache[iid]['content'] = original_content
         return
     try:
-        await page.goto(item['url'], wait_until='domcontentloaded', timeout=30000)
+        resp = requests.get(item['url'], headers={'User-Agent': 'Mozilla/5.0'}, timeout=15)
+        soup = BeautifulSoup(resp.text, 'html.parser')
         detail = {'period':'','eligibility':'','content':'','amount':''}
-        TRASH = {'구 분','구분','-','·','해당없음','없음',''}
-        th_map = {
-            'period': ['신청기간','접수기간','모집기간','공모기간'],
-            'eligibility': ['지원대상','지원자격','신청자격','참여대상'],
-            'content': ['지원내용','사업내용','지원사항'],
-            'amount': ['지원규모','지원금액','지원한도']
-        }
-        rows = await page.query_selector_all('th')
-        for th in rows:
-            th_txt = (await th.inner_text()).strip()
-            for key, labels in th_map.items():
-                if th_txt in labels:
-                    td = await th.evaluate_handle('el => el.nextElementSibling')
-                    val = (await td.inner_text()).strip()[:300] if td else ''
-                    if val not in TRASH:
-                        detail[key] = val
+        source = item.get('source', '')
+        if source == 'bizinfo':
+            for li in soup.find_all('li'):
+                s = li.find('span', class_='s_title')
+                if not s: continue
+                t = s.get_text(strip=True)
+                li_str = str(li)
+                val_raw = li_str.split('class="txt">', 1)[-1] if 'class="txt">' in li_str else ''
+                val = re.sub(r'<[^>]+>', ' ', val_raw)
+                val = re.sub(r'\s+', ' ', val).strip()[:300]
+                if t in ['신청기간','접수기간','모집기간','공모기간'] and not detail['period']:
+                    detail['period'] = val
+                elif t == '사업개요' and not detail['content']:
+                    detail['content'] = val
+        elif source == 'kstartup':
+            for p in soup.find_all('p', class_='title'):
+                if '지원내용' in p.get_text():
+                    ul = p.find_next('ul', class_='dot_list-wrap')
+                    if ul:
+                        detail['content'] = re.sub(r'\s+', ' ', ul.get_text()).strip()[:300]
+                    break
+            p_tit = soup.find('p', class_='tit', string=re.compile('신청기간'))
+            if p_tit:
+                txt_p = p_tit.find_next('p', class_='txt')
+                if txt_p:
+                    detail['period'] = re.sub(r'\s+', ' ', txt_p.get_text()).strip()
         if not detail['period']:
-            body = await page.inner_text('body')
-            m = re.search(r'(\d{4}[.\-]\d{2}[.\-]\d{2})\s*[~～]\s*(\d{4}[.\-]\d{2}[.\-]\d{2})', body)
+            body_text = soup.get_text()
+            m = re.search(r'(\d{4}[.\-]\d{2}[.\-]\d{2})\s*[~～]\s*(\d{4}[.\-]\d{2}[.\-]\d{2})', body_text)
             if m: detail['period'] = m.group(0)
-        if detail['period'] and not item['date']:
+        if detail['period'] and not item.get('date'):
             item['date'] = extract_deadline_from_period(detail['period'])
         if not detail['content'] and original_content:
             detail['content'] = original_content
@@ -275,28 +286,21 @@ async def main():
     with open(cache_path) as f: cache = json.load(f)
     with open(ids_path) as f: collected_ids = json.load(f)
 
-    async with async_playwright() as pw:
-        browser = await pw.chromium.launch(headless=True, args=['--no-sandbox','--disable-dev-shm-usage'])
-        page = await browser.new_page()
-        page.set_default_timeout(30000)
+    bizinfo_items = await collect_bizinfo()
+    kstartup_items = await collect_kstartup()
 
-        bizinfo_items = await collect_bizinfo()
-        kstartup_items = await collect_kstartup()
+    all_items = bizinfo_items + kstartup_items
 
-        all_items = bizinfo_items + kstartup_items
+    dedup_items = []
+    for item in all_items:
+        title = item.get('title', '')
+        is_dup = any(title_similarity(title, existing.get('title', '')) >= 0.6 for existing in dedup_items)
+        if not is_dup:
+            dedup_items.append(item)
+    all_items = dedup_items
 
-        dedup_items = []
-        for item in all_items:
-            title = item.get('title', '')
-            is_dup = any(title_similarity(title, existing.get('title', '')) >= 0.6 for existing in dedup_items)
-            if not is_dup:
-                dedup_items.append(item)
-        all_items = dedup_items
-
-        for item in all_items:
-            await fetch_detail(page, item, cache)
-
-        await browser.close()
+    for item in all_items:
+        fetch_detail(item, cache)
 
     source_meta = {
         'bizinfo':  {'id':'bizinfo', 'name':'기업마당',  'icon':'🏢','color':'#1a4fa0','items':bizinfo_items},
