@@ -96,6 +96,7 @@ async def collect_kstartup(page):
 
 async def collect_sbiz(page):
     BASE = 'https://www.semas.or.kr'
+    print(f'[sbiz] 크롤링 시작: {BASE}...')
     await page.goto(BASE+'/web/board/boardList.kmdc?bbs_cd_n=1', wait_until='domcontentloaded')
     items = []
     for tr in await page.query_selector_all('table tbody tr'):
@@ -113,11 +114,12 @@ async def collect_sbiz(page):
             item['isTarget'] = is_target(item)
             items.append(item)
             if len(items)>=10: break
-        except: continue
+        except Exception as e: print(f'[sbiz 오류] {e}'); continue
     return items
 
 async def collect_smtech(page):
     BASE = 'https://www.smtech.go.kr'
+    print(f'[smtech] 크롤링 시작: {BASE}...')
     await page.goto(BASE+'/front/ifg/no/notice02_list.do', wait_until='domcontentloaded')
     items = []
     for tr in await page.query_selector_all('table tbody tr'):
@@ -137,7 +139,7 @@ async def collect_smtech(page):
             item['isTarget'] = is_target(item)
             items.append(item)
             if len(items)>=15: break
-        except: continue
+        except Exception as e: print(f'[smtech 오류] {e}'); continue
     return items
 
 async def fetch_detail(page, item, cache):
