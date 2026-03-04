@@ -112,8 +112,12 @@ async def collect_kstartup():
 
 async def fetch_detail(page, item, cache):
     iid = item['id']
+    original_content = item.get('detail', {}).get('content', '')
     if iid in cache:
         item['detail'] = cache[iid]
+        if not item['detail'].get('content') and original_content:
+            item['detail']['content'] = original_content
+            cache[iid]['content'] = original_content
         return
     try:
         await page.goto(item['url'], wait_until='domcontentloaded', timeout=30000)
@@ -140,8 +144,8 @@ async def fetch_detail(page, item, cache):
             if m: detail['period'] = m.group(0)
         if detail['period'] and not item['date']:
             item['date'] = extract_deadline_from_period(detail['period'])
-        if not detail['content'] and item.get('detail'):
-            detail['content'] = item['detail'].get('content', '')
+        if not detail['content'] and original_content:
+            detail['content'] = original_content
         item['detail'] = detail
         cache[iid] = detail
     except:
