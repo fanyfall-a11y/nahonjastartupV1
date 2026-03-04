@@ -222,12 +222,12 @@ def summarize_content(text, title=''):
     text = re.sub(r'<[^>]+>', ' ', text)
     text = re.sub(r'\r?\n', ' ', text)
     text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r'(\d),(\d{3})', r'\1\2', text)
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
     text = re.sub(r'「[^」]+」', '', text)
     text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
     text = re.sub(r'(다음과 같이|안내하오니|아래와 같이|이하 같음).*', '', text)
     text = re.sub(r'\s+', ' ', text).strip()
-    text = re.sub(r'(\d),(\d{3})', r'\1\2', text)
     text = re.sub(r'\([^)]*자세한[^)]*\)', '', text)
     text = re.sub(r'\([^)]*첨부파일[^)]*\)', '', text)
     support_match = re.search(r'([^,.。]*?(?:지원|제공|선발|모집)[^,.。]*)', text)
@@ -261,7 +261,6 @@ def summarize_content(text, title=''):
     result = re.sub(r'\s+[을를이가]\s*$', '', result).strip()
     result = re.sub(r'\s+\S{2,8}(합니다|됩니다)\s*$', '', result).strip()
     result = re.sub(r'\s+\S*(하고자|하기위해|하기 위해|위하여|하기위한)\s*\S*[을를이가]\s*$', '', result).strip()
-    result = re.sub(r'\s+\S+[을를]\s*$', '', result).strip()
     if len(result) > 80:
         last_space = result.rfind(' ', 0, 80)
         result = (result[:last_space] if last_space != -1 else result[:80]) + '...'
