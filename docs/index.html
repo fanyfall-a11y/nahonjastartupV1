@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>나혼자창업 공고 뷰어</title>
+<style>
+:root {
+  --main: #1a4fa0;
+  --bg: #f0f4ff;
+  --white: #fff;
+  --shadow: 0 4px 12px rgba(0,0,0,0.07);
+  --font: -apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font); background: var(--bg); color: #333; height: 100vh; overflow: hidden; }
+
+/* 헤더 */
+header { background: var(--main); color: #fff; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; height: 58px; }
+header h1 { font-size: 18px; font-weight: 700; }
+#header-date { font-size: 13px; opacity: 0.85; }
+
+/* 날짜탭 */
+#date-tabs { display: flex; gap: 8px; padding: 12px 24px 0; overflow-x: auto; background: var(--bg); }
+.date-tab { padding: 7px 14px; border-radius: 20px; background: rgba(26,79,160,0.1); color: var(--main); font-weight: 600; font-size: 13px; cursor: pointer; border: none; white-space: nowrap; transition: all .15s; }
+.date-tab.active { background: var(--main); color: #fff; }
+.date-tab.disabled { color: #bbb; background: #e4e4e4; cursor: not-allowed; pointer-events: none; }
+
+/* 메인 */
+#main-container { display: flex; gap: 16px; padding: 16px 24px 24px; height: calc(100vh - 94px); overflow: hidden; }
+#left-panel { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px; overflow: hidden; }
+
+/* 출처탭 */
+#source-tabs { display: flex; gap: 16px; padding-bottom: 4px; border-bottom: 1px solid #e0e8f5; flex-shrink: 0; }
+.source-tab { font-size: 14px; font-weight: 600; color: #999; cursor: pointer; padding-bottom: 6px; border-bottom: 2px solid transparent; background: none; border-top: none; border-left: none; border-right: none; }
+.source-tab.active { color: var(--main); border-bottom-color: var(--main); }
+
+/* 필터바 */
+#filter-bar { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
+#filter-bar select { padding: 6px 10px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; font-size: 13px; background: #fff; cursor: pointer; }
+#filter-bar label { display: flex; align-items: center; gap: 5px; font-size: 13px; cursor: pointer; white-space: nowrap; }
+#filter-count { margin-left: auto; font-size: 12px; color: #888; }
+
+/* 카드리스트 */
+#card-list { flex: 1; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; align-content: start; padding-right: 4px; }
+
+/* 카드 */
+.card { background: #fff; border-radius: 14px; box-shadow: var(--shadow); padding: 14px; cursor: pointer; transition: transform .15s, box-shadow .15s; border: 2px solid transparent; position: relative; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+.card.selected { border-color: var(--main); background: #eef3ff; }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+.tag { border-radius: 4px; font-size: 11px; padding: 2px 7px; font-weight: 600; }
+.tag-source { background: #e8f0fe; color: #1a4fa0; }
+.tag-region { background: #e8f5e9; color: #2e7d32; }
+.tag-category { background: #fce4ec; color: #c2185b; }
+.tag-target { background: #fff3cd; color: #856404; }
+.card-title { font-size: 15px; font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
+.card-deadline { font-size: 12px; color: #888; }
+.card-deadline.urgent { color: #e53e3e; font-weight: 700; }
+.card-checkbox { width: 18px; height: 18px; cursor: pointer; flex-shrink: 0; margin-top: 2px; }
+
+/* 우측 패널 */
+#right-panel { width: 300px; flex-shrink: 0; background: #fff; border-radius: 14px; box-shadow: var(--shadow); padding: 18px; display: flex; flex-direction: column; }
+#cart-header { font-size: 16px; font-weight: 700; padding-bottom: 12px; border-bottom: 1px solid #eee; margin-bottom: 12px; }
+#cart-items { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; min-height: 60px; }
+.cart-item { background: #f5f7ff; padding: 10px 12px; border-radius: 8px; font-size: 13px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.cart-item-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+.cart-remove { background: none; border: none; color: #e53e3e; cursor: pointer; font-size: 16px; flex-shrink: 0; line-height: 1; }
+#cart-empty { color: #bbb; font-size: 13px; text-align: center; padding: 16px 0; }
+#cart-hint { font-size: 11px; color: #aaa; margin-top: 8px; }
+#cart-footer { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+.btn-primary { width: 100%; padding: 11px; background: var(--main); color: #fff; border: none; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; }
+.btn-primary:disabled { background: #c0cde8; cursor: not-allowed; }
+.btn-secondary { width: 100%; padding: 9px; background: #eee; color: #555; border: none; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; }
+
+/* 로그인 오버레이 */
+#login-overlay { position: fixed; inset: 0; background: rgba(240,244,255,0.97); display: flex; justify-content: center; align-items: center; z-index: 2000; }
+.login-box { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.12); text-align: center; width: 320px; }
+.login-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--main); }
+.login-sub { font-size: 13px; color: #888; margin-bottom: 24px; }
+.login-input { width: 100%; padding: 12px; margin-bottom: 14px; border: 1.5px solid #ddd; border-radius: 10px; font-size: 16px; text-align: center; outline: none; }
+.login-input:focus { border-color: var(--main); }
+
+/* 툴팁 */
+#tooltip { display: none; position: fixed; z-index: 1000; background: rgba(20,30,60,0.92); color: #fff; padding: 12px 14px; border-radius: 10px; font-size: 12px; line-height: 1.6; max-width: 300px; pointer-events: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.25); }
+.tooltip-row { display: flex; gap: 6px; margin-bottom: 2px; }
+.tooltip-label { color: #9bb4e0; font-weight: 600; white-space: nowrap; }
+.tooltip-link { display: block; margin-top: 8px; color: #7ec8ff; font-size: 11px; }
+
+/* 토큰 모달 */
+#token-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; justify-content: center; align-items: center; z-index: 1500; }
+#token-modal.open { display: flex; }
+.modal-box { background: #fff; padding: 28px; border-radius: 16px; width: 400px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+.modal-title { font-size: 17px; font-weight: 700; margin-bottom: 12px; }
+.modal-desc { font-size: 13px; color: #666; margin-bottom: 16px; line-height: 1.6; }
+.modal-input { width: 100%; padding: 10px; border: 1.5px solid #ddd; border-radius: 8px; font-family: monospace; font-size: 14px; margin-bottom: 16px; }
+.modal-footer { display: flex; justify-content: flex-end; gap: 8px; }
+.btn-modal-cancel { padding: 9px 18px; background: #eee; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.btn-modal-ok { padding: 9px 18px; background: var(--main); color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+
+/* 흔들림 */
+@keyframes shake { 0%,100%{transform:translateX(0)} 20%,60%{transform:translateX(-6px)} 40%,80%{transform:translateX(6px)} }
+.shake { animation: shake .45s; }
+
+/* 빈 상태 */
+#empty-msg { text-align: center; color: #bbb; padding: 48px 0; font-size: 15px; grid-column: 1 / -1; }
+</style>
+</head>
+<body>
+
+<!-- 로그인 오버레이 -->
+<div id="login-overlay">
+  <div class="login-box">
+    <div class="login-title">🔷 나혼자창업</div>
+    <div class="login-sub">공고 뷰어에 오신 것을 환영합니다</div>
+    <input id="login-input" class="login-input" type="password" placeholder="비밀번호 입력">
+    <button class="btn-primary" onclick="checkLogin()">확인</button>
+  </div>
+</div>
+
+<!-- 헤더 -->
+<header>
+  <h1>🔷 나혼자창업 공고 뷰어</h1>
+  <span id="header-date"></span>
+</header>
+
+<!-- 날짜탭 -->
+<div id="date-tabs"></div>
+
+<!-- 메인 -->
+<div id="main-container">
+  <div id="left-panel">
+    <div id="source-tabs"></div>
+    <div id="filter-bar"></div>
+    <div id="card-list"></div>
+  </div>
+  <div id="right-panel">
+    <div id="cart-header">장바구니 (0)</div>
+    <div id="cart-items"><div id="cart-empty">아직 선택한 공고가 없습니다</div></div>
+    <div id="cart-hint">최대 3개까지 선택 가능</div>
+    <div id="cart-footer">
+      <button id="btn-generate" class="btn-primary" disabled onclick="onGenerateClick()">콘텐츠 생성</button>
+    </div>
+  </div>
+</div>
+
+<!-- 툴팁 -->
+<div id="tooltip"></div>
+
+<!-- 토큰 모달 -->
+<div id="token-modal">
+  <div class="modal-box">
+    <div class="modal-title">🔑 GitHub Personal Access Token</div>
+    <div class="modal-desc">
+      콘텐츠 생성 워크플로우를 실행하려면 GitHub Token이 필요합니다.<br>
+      <code>repo</code> 권한이 필요합니다. 입력 후 로컬에 저장됩니다.
+    </div>
+    <input id="token-input" class="modal-input" type="password" placeholder="ghp_xxxxxxxxxxxx">
+    <div class="modal-footer">
+      <button class="btn-modal-cancel" onclick="closeTokenModal()">취소</button>
+      <button class="btn-modal-ok" onclick="saveAndDispatch()">저장 후 실행</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const PASSWORD = 'bizinfo2026';
+const GITHUB_OWNER = 'fanyfall-a11y';
+const GITHUB_REPO = 'nahonjastartupV1';
+
+function getKST() { return new Date(Date.now() + 9*3600*1000).toISOString().slice(0,10); }
+
+const allData = {};
+let selectedDate = getKST();
+let selectedSource = 'all';
+let filterCategory = 'all';
+let filterRegion = 'all';
+let filterTarget = 'all';
+const cart = [];
+
+// ── 로그인 ──────────────────────────────────────────────
+function checkLogin() {
+  const input = document.getElementById('login-input');
+  if (input.value === PASSWORD) {
+    sessionStorage.setItem('biz_auth', '1');
+    document.getElementById('login-overlay').style.display = 'none';
+    init();
+  } else {
+    const box = document.querySelector('.login-box');
+    box.classList.remove('shake');
+    void box.offsetWidth;
+    box.classList.add('shake');
+    input.value = '';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('login-input');
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') checkLogin(); });
+
+  if (sessionStorage.getItem('biz_auth')) {
+    document.getElementById('login-overlay').style.display = 'none';
+    init();
+  }
+});
+
+// ── 초기화 ──────────────────────────────────────────────
+async function init() {
+  updateHeaderDate(selectedDate);
+  await buildDateTabs();
+  renderAll();
+}
+
+function updateHeaderDate(d) {
+  const [y,m,day] = d.split('-');
+  document.getElementById('header-date').textContent = `${y}년 ${parseInt(m)}월 ${parseInt(day)}일`;
+}
+
+// ── 날짜탭 ──────────────────────────────────────────────
+async function buildDateTabs() {
+  const container = document.getElementById('date-tabs');
+  container.innerHTML = '';
+  const DAYS = ['일','월','화','수','목','금','토'];
+  const base = new Date(Date.now() + 9*3600*1000);
+
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(base);
+    d.setUTCDate(d.getUTCDate() - i);
+    const dateStr = d.toISOString().slice(0,10);
+    const dow = DAYS[d.getUTCDay()];
+    const label = `${parseInt(dateStr.slice(5,7))}/${parseInt(dateStr.slice(8,10))}(${dow})`;
+
+    const btn = document.createElement('button');
+    btn.className = 'date-tab';
+    btn.dataset.date = dateStr;
+
+    try {
+      const res = await fetch(`daily/${dateStr}.json?t=${Date.now()}`);
+      if (res.ok) {
+        const data = await res.json();
+        allData[dateStr] = data;
+        const total = data.total || 0;
+        btn.textContent = total ? `${label} ${total}건` : label;
+        btn.addEventListener('click', () => selectDate(dateStr));
+      } else {
+        btn.textContent = label;
+        btn.classList.add('disabled');
+      }
+    } catch {
+      btn.textContent = label;
+      btn.classList.add('disabled');
+    }
+
+    if (dateStr === selectedDate) btn.classList.add('active');
+    container.appendChild(btn);
+  }
+}
+
+function selectDate(dateStr) {
+  selectedDate = dateStr;
+  updateHeaderDate(dateStr);
+  document.querySelectorAll('.date-tab').forEach(b => {
+    b.classList.toggle('active', b.dataset.date === dateStr);
+  });
+  renderAll();
+}
+
+// ── 출처탭 ──────────────────────────────────────────────
+const SOURCES = [
+  {id:'all',name:'전체'},
+  {id:'bizinfo',name:'기업마당'},
+  {id:'kstartup',name:'K-Startup'},
+  {id:'sbiz',name:'소상공인마당'},
+  {id:'smtech',name:'중소기업기술'},
+];
+const SOURCE_NAMES = Object.fromEntries(SOURCES.slice(1).map(s=>[s.id,s.name]));
+
+function buildSourceTabs() {
+  const container = document.getElementById('source-tabs');
+  container.innerHTML = '';
+  SOURCES.forEach(src => {
+    const btn = document.createElement('button');
+    btn.className = 'source-tab' + (src.id === selectedSource ? ' active' : '');
+    btn.textContent = src.name;
+    btn.addEventListener('click', () => {
+      selectedSource = src.id;
+      renderAll();
+    });
+    container.appendChild(btn);
+  });
+}
+
+// ── 필터바 ──────────────────────────────────────────────
+const CATEGORIES = ['전체','사업화','창업교육','컨설팅/멘토링','글로벌','시설제공','자금지원','판로/마케팅'];
+const REGIONS = ['전체','전국','서울','경기','인천','부산','대구','대전','광주','울산','세종','강원','충북','충남','전북','전남','경북','경남','제주'];
+
+function buildFilters() {
+  const bar = document.getElementById('filter-bar');
+  const catVal = filterCategory;
+  const regVal = filterRegion;
+  bar.innerHTML = `
+    <select id="sel-cat">${CATEGORIES.map(c=>`<option value="${c}"${c===catVal?' selected':''}>${c}</option>`).join('')}</select>
+    <select id="sel-reg">${REGIONS.map(r=>`<option value="${r}"${r===regVal?' selected':''}>${r}</option>`).join('')}</select>
+    <label><input type="checkbox" id="chk-star"${filterTarget==='star'?' checked':''}> ⭐ 추천만</label>
+    <span id="filter-count"></span>
+  `;
+  document.getElementById('sel-cat').onchange = e => { filterCategory = e.target.value; renderAll(); };
+  document.getElementById('sel-reg').onchange = e => { filterRegion = e.target.value; renderAll(); };
+  document.getElementById('chk-star').onchange = e => { filterTarget = e.target.checked ? 'star' : 'all'; renderAll(); };
+}
+
+// ── 필터링 ──────────────────────────────────────────────
+function getFilteredItems() {
+  const data = allData[selectedDate];
+  if (!data) return [];
+  let items = [];
+  if (selectedSource === 'all') {
+    Object.values(data.sources || {}).forEach(s => items = items.concat(s.items || []));
+  } else {
+    items = (data.sources[selectedSource]?.items) || [];
+  }
+  if (filterCategory !== '전체') items = items.filter(i => i.category === filterCategory);
+  if (filterRegion !== '전체') items = items.filter(i => i.region === filterRegion);
+  if (filterTarget === 'star') items = items.filter(i => i.isTarget);
+  return items;
+}
+
+// ── 카드 렌더링 ──────────────────────────────────────────
+function renderCards() {
+  const container = document.getElementById('card-list');
+  const items = getFilteredItems();
+  const countEl = document.getElementById('filter-count');
+  if (countEl) countEl.textContent = `총 ${items.length}건`;
+
+  if (!items.length) {
+    container.innerHTML = '<div id="empty-msg">📭 해당 날짜의 공고 데이터가 없습니다</div>';
+    return;
+  }
+
+  const today = new Date(selectedDate);
+  const urgentLimit = new Date(selectedDate);
+  urgentLimit.setDate(urgentLimit.getDate() + 3);
+
+  container.innerHTML = '';
+  items.forEach(item => {
+    const isSelected = cart.some(c => c.id === item.id);
+    const deadline = item.date || '';
+    let urgentClass = '';
+    if (deadline) {
+      const deadlineDate = new Date(deadline);
+      if (deadlineDate >= today && deadlineDate <= urgentLimit) urgentClass = ' urgent';
+    }
+    const sourceName = SOURCE_NAMES[item.source] || item.source || '';
+    const card = document.createElement('div');
+    card.className = 'card' + (isSelected ? ' selected' : '');
+    card.innerHTML = `
+      <div class="card-top">
+        <div class="card-tags">
+          ${item.isTarget ? '<span class="tag tag-target">⭐추천</span>' : ''}
+          <span class="tag tag-source">${sourceName}</span>
+          <span class="tag tag-region">${item.region||''}</span>
+          <span class="tag tag-category">${item.category||''}</span>
+        </div>
+        <input type="checkbox" class="card-checkbox" ${isSelected?'checked':''}>
+      </div>
+      <div class="card-title">${item.title||''}</div>
+      <div class="card-deadline${urgentClass}">마감 ${deadline||'미정'}</div>
+    `;
+    card.addEventListener('click', () => window.open(item.url, '_blank'));
+    card.querySelector('.card-checkbox').addEventListener('click', e => {
+      e.stopPropagation();
+      toggleCart(item);
+    });
+    attachTooltip(card, item);
+    container.appendChild(card);
+  });
+}
+
+// ── 툴팁 ────────────────────────────────────────────────
+let tooltipTimer = null;
+const tooltipEl = document.getElementById('tooltip');
+let tooltipListenerAdded = false;
+
+function showTooltip(e, item) {
+  clearTimeout(tooltipTimer);
+  tooltipTimer = setTimeout(() => {
+    const d = item.detail || {};
+    const hasDetail = d.period || d.eligibility || d.content || d.amount;
+    tooltipEl.innerHTML = hasDetail ? `
+      ${d.period ? `<div class="tooltip-row"><span class="tooltip-label">기간</span><span>${d.period}</span></div>` : ''}
+      ${d.eligibility ? `<div class="tooltip-row"><span class="tooltip-label">자격</span><span>${d.eligibility}</span></div>` : ''}
+      ${d.content ? `<div class="tooltip-row"><span class="tooltip-label">내용</span><span>${d.content}</span></div>` : ''}
+      ${d.amount ? `<div class="tooltip-row"><span class="tooltip-label">규모</span><span>${d.amount}</span></div>` : ''}
+      <a class="tooltip-link" href="${item.url}" target="_blank" onclick="event.stopPropagation()">↗ 공고 바로가기</a>
+    ` : `<div style="color:#ccc;font-size:12px;">다음 수집부터 상세 정보가 표시됩니다</div>
+      <a class="tooltip-link" href="${item.url}" target="_blank" onclick="event.stopPropagation()">↗ 공고 바로가기</a>`;
+
+    tooltipEl.style.display = 'block';
+    const tw = tooltipEl.offsetWidth;
+    const x = e.clientX + tw + 20 > window.innerWidth ? e.clientX - tw - 10 : e.clientX + 15;
+    tooltipEl.style.left = x + 'px';
+    tooltipEl.style.top = (e.clientY + 12) + 'px';
+  }, 280);
+}
+
+function hideTooltip() {
+  clearTimeout(tooltipTimer);
+  tooltipTimer = setTimeout(() => { tooltipEl.style.display = 'none'; }, 120);
+}
+
+function attachTooltip(cardEl, item) {
+  cardEl.addEventListener('mouseenter', e => showTooltip(e, item));
+  cardEl.addEventListener('mouseleave', hideTooltip);
+  if (!tooltipListenerAdded) {
+    tooltipEl.addEventListener('mouseenter', () => clearTimeout(tooltipTimer));
+    tooltipEl.addEventListener('mouseleave', hideTooltip);
+    tooltipListenerAdded = true;
+  }
+}
+
+// ── 장바구니 ────────────────────────────────────────────
+function toggleCart(item) {
+  const idx = cart.findIndex(c => c.id === item.id);
+  if (idx > -1) {
+    cart.splice(idx, 1);
+  } else {
+    if (cart.length >= 3) { alert('최대 3개까지 선택할 수 있습니다.'); return; }
+    cart.push({ id: item.id, title: item.title, url: item.url });
+  }
+  renderCart();
+  renderCards();
+}
+
+function renderCart() {
+  document.getElementById('cart-header').textContent = `장바구니 (${cart.length})`;
+  const itemsEl = document.getElementById('cart-items');
+  if (cart.length === 0) {
+    itemsEl.innerHTML = '<div id="cart-empty">아직 선택한 공고가 없습니다</div>';
+  } else {
+    itemsEl.innerHTML = cart.map((c,i) => `
+      <div class="cart-item">
+        <span class="cart-item-title" title="${c.title}">${c.title}</span>
+        <button class="cart-remove" onclick="removeFromCart(${i})">×</button>
+      </div>
+    `).join('');
+  }
+  document.getElementById('btn-generate').disabled = cart.length === 0;
+
+  const footer = document.getElementById('cart-footer');
+  const existingReset = document.getElementById('btn-reset-token');
+  if (existingReset) existingReset.remove();
+  if (localStorage.getItem('gh_pat_bizinfo')) {
+    const btn = document.createElement('button');
+    btn.id = 'btn-reset-token';
+    btn.className = 'btn-secondary';
+    btn.textContent = '저장된 토큰 초기화';
+    btn.onclick = () => { localStorage.removeItem('gh_pat_bizinfo'); renderCart(); };
+    footer.appendChild(btn);
+  }
+}
+
+function removeFromCart(idx) {
+  cart.splice(idx, 1);
+  renderCart();
+  renderCards();
+}
+
+// ── GitHub Token 모달 + API ──────────────────────────────
+function onGenerateClick() {
+  const token = localStorage.getItem('gh_pat_bizinfo');
+  if (token) { dispatchWorkflow(token); }
+  else { openTokenModal(); }
+}
+
+function openTokenModal() {
+  const modal = document.getElementById('token-modal');
+  modal.classList.add('open');
+  const input = document.getElementById('token-input');
+  input.value = '';
+  input.focus();
+  input.onkeydown = e => { if (e.key === 'Enter') saveAndDispatch(); };
+}
+
+function closeTokenModal() {
+  document.getElementById('token-modal').classList.remove('open');
+}
+
+function saveAndDispatch() {
+  const token = document.getElementById('token-input').value.trim();
+  if (!token) { alert('토큰을 입력해주세요.'); return; }
+  localStorage.setItem('gh_pat_bizinfo', token);
+  closeTokenModal();
+  dispatchWorkflow(token);
+}
+
+async function dispatchWorkflow(token) {
+  const urls = cart.map(c => c.url).join(',');
+  const api = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/generate.yml/dispatches`;
+  try {
+    const res = await fetch(api, {
+      method: 'POST',
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ref: 'main', inputs: { target_urls: urls } }),
+    });
+    if (res.status === 204 || res.status === 201) {
+      alert('✅ 콘텐츠 생성 요청이 완료되었습니다!\nGitHub Actions에서 실행 중입니다.');
+    } else if (res.status === 401 || res.status === 403) {
+      localStorage.removeItem('gh_pat_bizinfo');
+      renderCart();
+      alert('❌ 토큰 인증 실패. 토큰을 다시 입력해주세요.');
+      openTokenModal();
+    } else {
+      alert(`요청 실패 (${res.status}). 잠시 후 다시 시도해주세요.`);
+    }
+  } catch (err) {
+    alert('네트워크 오류가 발생했습니다.');
+    console.error(err);
+  }
+}
+
+// ── renderAll ────────────────────────────────────────────
+function renderAll() {
+  buildSourceTabs();
+  buildFilters();
+  renderCards();
+  renderCart();
+}
+</script>
+</body>
+</html>

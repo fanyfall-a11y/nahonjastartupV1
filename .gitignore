@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+auto_log.txt
+output/
+node_modules/
