@@ -140,6 +140,8 @@ async def fetch_detail(page, item, cache):
             if m: detail['period'] = m.group(0)
         if detail['period'] and not item['date']:
             item['date'] = extract_deadline_from_period(detail['period'])
+        if not detail['content'] and item.get('detail'):
+            detail['content'] = item['detail'].get('content', '')
         item['detail'] = detail
         cache[iid] = detail
     except:
