@@ -205,8 +205,10 @@ def score_item(item):
 def summarize_content(text, title=''):
     if not text: return ''
     text = html.unescape(text).strip()
+    text = re.sub(r'<[^>]+>', ' ', text)
     text = re.sub(r'(공고하오니|알려드립니다|안내드립니다|참여 바랍니다|신청 바랍니다).*', '', text)
-    text = re.sub(r'\r?\n', ' ', text).strip()
+    text = re.sub(r'\r?\n', ' ', text)
+    text = re.sub(r'\s+', ' ', text).strip()
     amounts = re.findall(r'[\d,]+억\s*원?|[\d,]+천만\s*원?|[\d,]+만\s*원?', text)
     support_match = re.search(r'([^,.。]*?(?:지원|제공|선발|모집)[^,.。]*)', text)
     def is_valid_core(s):
