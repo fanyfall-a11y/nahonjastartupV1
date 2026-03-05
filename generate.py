@@ -270,6 +270,56 @@ async def generate_card_images(item_data: dict, output_dir: str, page):
         await html_to_image(html_content, os.path.join(output_dir, filename), page)
 
 
+async def enrich_item(item: dict, page) -> dict:
+    """API로 받은 item에 상세 페이지 내용 추가"""
+    try:
+        await page.goto(item['url'], wait_until='domcontentloaded', timeout=30000)
+        await page.wait_for_timeout(1000)
+
+        body_text = await page.evaluate("document.body.innerText")
+
+        detail = await page.evaluate("""
+        () => {
+            const FIELDS = {
+                eligibility: ['지원대상','신청자격','참여대상','대상기업'],
+                content:     ['지원내용','사업내용','지원사항','공고내용'],
+                amount:      ['지원규모','지원금액','지원한도','지원내역'],
+                method:      ['신청방법','접수방법','신청절차'],
+                period:      ['신청기간','접수기간','모집기간','공모기간'],
+                contact:     ['문의처','담당자','연락처'],
+            };
+            const result = {};
+            for (const [key, keywords] of Object.entries(FIELDS)) {
+                for (const th of document.querySelectorAll('th')) {
+                    const thText = th.innerText.replace(/\\s/g,'');
+                    if (keywords.some(k => thText.includes(k.replace(/\\s/g,'')))) {
+                        let sib = th.nextElementSibling;
+                        while (sib && sib.tagName === 'TH') sib = sib.nextElementSibling;
+                        if (sib && sib.tagName === 'TD') {
+                            const val = sib.innerText.trim().slice(0,300);
+                            if (val.length > 2) { result[key] = val; break; }
+                        }
+                    }
+                }
+            }
+            return result;
+        }
+        """)
+
+        item['body_text'] = body_text[:5000]
+        item.update(detail)
+
+    except Exception as e:
+        print(f"상세 크롤링 실패 ({item.get('url','')}): {e}")
+        item['body_text'] = f"""사업명: {item.get('title','')}
+지원대상: {item.get('eligibility','')}
+지원내용: {item.get('content','')}
+지원금액: {item.get('amount','')}
+신청기간: {item.get('period','')}""".strip()
+
+    return item
+
+
 async def main():
     date_str = datetime.now(KST).strftime("%Y-%m-%d")
     output_base = BASE_DIR / "output" / date_str
@@ -310,23 +360,32 @@ async def main():
                 region = item.get("region", "국내")
                 url = item.get("url", "")
                 detail = item.get("detail", {})
-                period = detail.get("period", "")
-                content = detail.get("content", "")
-                amount = detail.get("amount", "")
-                contact = detail.get("contact", "")
 
                 safe_title = sanitize_filename(title)
                 folder_name = f"{region}_{safe_title[:40]}"
                 item_dir = output_base / folder_name
                 item_dir.mkdir(parents=True, exist_ok=True)
 
-                context = f"""제목: {title}
+                item = await enrich_item(item, page)
+
+                period = item.get("period") or detail.get("period", "")
+                content = item.get("content") or detail.get("content", "")
+                amount = item.get("amount") or detail.get("amount", "")
+                contact = item.get("contact") or detail.get("contact", "")
+
+                combined_text = f"""=== API 제공 정보 ===
+사업명: {title}
 주관기관: {org}
 지역: {region}
-신청기간: {period}
+지원대상: {item.get('eligibility', '정보없음')}
 지원내용: {content}
 지원금액: {amount}
-상세링크: {url}"""
+신청방법: {item.get('method', '정보없음')}
+신청기간: {period}
+상세링크: {url}
+
+=== 공고 원문 전체 내용 ===
+{item.get('body_text', '')}"""
 
                 # 블로그 초안 생성
                 naver = generate_content(
@@ -335,7 +394,7 @@ async def main():
                     f"- 분량: 2000자 내외, 마크다운 형식\n"
                     f"- 구성: 도입부(공감) → 사업개요 → 지원대상 → 지원내용·금액 → 신청방법·기간 → 마무리(신청 독려)\n"
                     f"- 소제목마다 이모지 1개, 핵심 정보는 불릿으로 정리\n"
-                    f"- 네이버 검색 키워드(지원사업명, 창업지원, 정부지원금) 자연스럽게 포함\n\n{context}"
+                    f"- 네이버 검색 키워드(지원사업명, 창업지원, 정부지원금) 자연스럽게 포함\n\n{combined_text}"
                 )
                 if naver:
                     (item_dir / "01_네이버블로그.txt").write_text(naver, encoding="utf-8")
@@ -346,7 +405,7 @@ async def main():
                     f"- 분량: 1500자 내외, HTML 태그(h2, h3, ul, li, strong) 적극 활용\n"
                     f"- 구성: 개요 → 지원대상 → 지원내용 → 신청방법 → 유의사항\n"
                     f"- 표(table)로 핵심 정보 정리 포함\n"
-                    f"- 티스토리 SEO: 제목에 '2026 + 사업명 + 신청방법' 키워드 포함\n\n{context}"
+                    f"- 티스토리 SEO: 제목에 '2026 + 사업명 + 신청방법' 키워드 포함\n\n{combined_text}"
                 )
                 if tistory:
                     (item_dir / "02_티스토리.txt").write_text(tistory, encoding="utf-8")
@@ -356,7 +415,7 @@ async def main():
                     f"- 톤: 간결하고 명확하게. 검색자가 원하는 정보를 빠르게 찾을 수 있게.\n"
                     f"- 분량: 1500자 내외, HTML 태그(h2, h3, ul, li) 사용\n"
                     f"- 구성: 한줄 요약 → 지원내용 → 신청자격 → 신청기간·방법 → 원문링크 안내\n"
-                    f"- 구글 검색 SEO: 제목과 첫 문단에 핵심 키워드(지원사업명+지원금액+신청대상) 집중 배치\n\n{context}"
+                    f"- 구글 검색 SEO: 제목과 첫 문단에 핵심 키워드(지원사업명+지원금액+신청대상) 집중 배치\n\n{combined_text}"
                 )
                 if blogspot:
                     (item_dir / "03_블로그스팟.txt").write_text(blogspot, encoding="utf-8")
@@ -368,7 +427,7 @@ async def main():
                     f"- 이모지 적극 활용 (각 줄 앞에 관련 이모지)\n"
                     f"- 지원금액·마감일·신청대상을 핵심만 간결하게\n"
                     f"- 마지막에 '👉 링크는 프로필에서!' CTA 포함\n"
-                    f"- 마지막 줄: 관련 해시태그 10개 (창업지원, 정부지원금, 소상공인 등)\n\n{context}"
+                    f"- 마지막 줄: 관련 해시태그 10개 (창업지원, 정부지원금, 소상공인 등)\n\n{combined_text}"
                 )
                 if insta:
                     (item_dir / "04_인스타그램.txt").write_text(insta, encoding="utf-8")
@@ -376,7 +435,7 @@ async def main():
                 # 카드뉴스용 짧은 텍스트 생성
                 card_text = generate_content(
                     f"다음 지원사업 정보를 바탕으로 카드뉴스용 텍스트를 JSON 형식으로 추출해줘. "
-                    f"키는 ment, target, amount, method. 줄바꿈은 \\n, 불릿은 •.\n\n{context}\n\n"
+                    f"키는 ment, target, amount, method. 줄바꿈은 \\n, 불릿은 •.\n\n{combined_text}\n\n"
                     f"형식:\n{{\"ment\": \"핵심 1~2줄(이모지포함)\", "
                     f"\"target\": \"• 자격1\\n• 자격2\\n• 자격3\", "
                     f"\"amount\": \"• 지원내용1\\n• 지원내용2\\n• 지원내용3\", "
