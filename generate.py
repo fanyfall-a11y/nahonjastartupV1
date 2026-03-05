@@ -99,7 +99,7 @@ def make_card1_html(title, region, ai_ment, deadline, today_str):
         deadline_e = html.escape(deadline)
         deadline_html = f"""
         <div style='display:inline-block; background:rgba(255,200,0,0.2); border:2px solid rgba(255,200,0,0.55);
-                    border-radius:50px; padding:14px 40px; color:white; font-size:28px; font-weight:bold; width:fit-content;'>
+                    border-radius:50px; padding:14px 40px; color:white; font-size:38px; font-weight:bold; width:fit-content;'>
             ⏰ 마감 {deadline_e}
         </div>
         """
@@ -107,34 +107,34 @@ def make_card1_html(title, region, ai_ment, deadline, today_str):
     return f"""<!DOCTYPE html><html><head><meta charset='utf-8'></head>
     <body style='margin:0;padding:0;'>
     <div style='width:1080px; height:1350px; position:relative; overflow:hidden; display:flex; flex-direction:column;
-                font-family:Noto Sans KR, sans-serif; word-break:keep-all;
+                font-family:Noto Sans KR, sans-serif; word-break:keep-all; overflow-wrap:break-word;
                 background:linear-gradient(160deg, #0d2d6e 0%, #1a4fa0 40%, #0a1e4a 100%); color:white;'>
         <div style='position:absolute; width:600px; height:600px; top:-100px; right:-150px; border-radius:50%;
                     background:rgba(255,255,255,0.04);'></div>
         <div style='position:absolute; width:450px; height:450px; bottom:-80px; left:-120px; border-radius:50%;
                     background:rgba(255,255,255,0.04);'></div>
         <div style='padding:36px 60px; display:flex; justify-content:space-between; align-items:center; position:relative; z-index:10;'>
-            <div style='font-size:28px; font-weight:900;'>🔷 나혼자창업</div>
-            <div style='font-size:22px; opacity:0.6;'>{today_str_e}</div>
+            <div style='font-size:36px; font-weight:900;'>🔷 나혼자창업</div>
+            <div style='font-size:30px; opacity:0.6;'>{today_str_e}</div>
         </div>
-        <div style='flex:1; display:flex; flex-direction:column; justify-content:center; gap:36px; padding:0 60px; position:relative; z-index:10;'>
+        <div style='flex:1; display:flex; flex-direction:column; justify-content:center; gap:36px; padding:0 30px; position:relative; z-index:10;'>
             <div style='display:inline-block; background:rgba(255,255,255,0.15); border:1.5px solid rgba(255,255,255,0.35);
-                        border-radius:50px; padding:10px 32px; color:white; font-size:26px; width:fit-content;'>
+                        border-radius:50px; padding:10px 32px; color:white; font-size:36px; width:fit-content;'>
                 📍 {region_e} 지원사업
             </div>
             <div>
-                <div style='color:white; font-size:72px; font-weight:900; line-height:1.2; text-shadow:0 4px 20px rgba(0,0,0,0.4);'>{line1_e}</div>
-                <div style='color:#7ec8ff; font-size:65px; font-weight:900; line-height:1.2; text-shadow:0 4px 20px rgba(0,0,0,0.4);'>{line2_e}</div>
+                <div style='color:white; font-size:100px; font-weight:900; line-height:1.15; text-shadow:0 4px 20px rgba(0,0,0,0.4);'>{line1_e}</div>
+                <div style='color:#7ec8ff; font-size:92px; font-weight:900; line-height:1.15; text-shadow:0 4px 20px rgba(0,0,0,0.4);'>{line2_e}</div>
             </div>
             <div style='background:rgba(255,255,255,0.12); border-left:5px solid #7ec8ff;
-                        padding:22px 36px; border-radius:14px; color:white; font-size:30px; line-height:1.65; text-align:center;'>
+                        padding:22px 36px; border-radius:14px; color:white; font-size:44px; line-height:1.65; text-align:center;'>
                 {ai_ment_e}
             </div>
             {deadline_html}
         </div>
         <div style='background:rgba(0,0,0,0.25); padding:26px 60px; display:flex; justify-content:space-between; align-items:center; position:relative; z-index:10;'>
-            <div style='font-size:24px; opacity:0.85;'>💡 대표님들을 위한 BIZ-TIP</div>
-            <div style='font-size:24px; opacity:0.85;'>▶ 공고 원문 확인</div>
+            <div style='font-size:36px; opacity:0.85;'>💡 대표님들을 위한 BIZ-TIP</div>
+            <div style='font-size:30px; opacity:0.85;'>▶ 공고 원문 확인</div>
         </div>
     </div>
     </body></html>"""
@@ -147,29 +147,29 @@ def make_card2_html(ai_ment, ai_target, today_str):
 
     return f"""<!DOCTYPE html><html><head><meta charset='utf-8'></head>
     <body style='margin:0;padding:0;'>
-    <div style='width:1080px; height:1350px; background:#f0f5ff; font-family:Noto Sans KR, sans-serif; word-break:keep-all;
+    <div style='width:1080px; height:1350px; background:#f0f5ff; font-family:Noto Sans KR, sans-serif; word-break:keep-all; overflow-wrap:break-word;
                 display:flex; flex-direction:column;'>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:24px 60px; color:white;'>
-            <div style='font-size:26px; font-weight:bold;'>💡 대표님들을 위한 BIZ-TIP</div>
+            <div style='font-size:36px; font-weight:bold;'>💡 대표님들을 위한 BIZ-TIP</div>
         </div>
-        <div style='flex:1; margin:30px 40px; border-radius:24px; padding:50px; background:white;
-                    box-shadow:0 8px 32px rgba(37,99,199,0.1); display:flex; flex-direction:column; gap:40px; overflow:hidden;'>
+        <div style='flex:1; margin:24px 30px; border-radius:24px; padding:40px; background:white;
+                    box-shadow:0 8px 32px rgba(37,99,199,0.1); display:flex; flex-direction:column; gap:28px; overflow:hidden;'>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
-                            font-size:24px; font-weight:bold; margin-bottom:16px;'>사업목적</div>
-                <div style='font-size:28px; line-height:1.8; color:#333;'>{ai_ment_e}</div>
+                            font-size:36px; font-weight:bold; margin-bottom:16px;'>사업목적</div>
+                <div style='font-size:84px; line-height:1.8; color:#333;'>{ai_ment_e}</div>
             </div>
             <div style='height:2px; background:#e8f0fe; flex-shrink:0;'></div>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
-                            font-size:24px; font-weight:bold; margin-bottom:16px;'>신청자격</div>
-                <div style='font-size:26px; line-height:1.9; color:#444;'>{ai_target_e}</div>
+                            font-size:36px; font-weight:bold; margin-bottom:16px;'>신청자격</div>
+                <div style='font-size:84px; line-height:1.9; color:#444;'>{ai_target_e}</div>
             </div>
         </div>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:20px 60px; color:white;
                     display:flex; justify-content:space-between; align-items:center;'>
-            <div style='font-weight:bold;'>🔷 나혼자창업</div>
-            <div style='font-size:22px;'>{today_str_e}</div>
+            <div style='font-weight:bold; font-size:36px;'>🔷 나혼자창업</div>
+            <div style='font-size:30px;'>{today_str_e}</div>
         </div>
     </div>
     </body></html>"""
@@ -186,30 +186,30 @@ def make_card3_html(ai_amount, method, today_str):
             <div style='height:2px; background:#e8f0fe; flex-shrink:0;'></div>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
-                            font-size:24px; font-weight:bold; margin-bottom:16px;'>신청방법</div>
-                <div style='font-size:26px; line-height:1.9; color:#444;'>{method_e}</div>
+                            font-size:36px; font-weight:bold; margin-bottom:16px;'>신청방법</div>
+                <div style='font-size:84px; line-height:1.9; color:#444;'>{method_e}</div>
             </div>"""
 
     return f"""<!DOCTYPE html><html><head><meta charset='utf-8'></head>
     <body style='margin:0;padding:0;'>
-    <div style='width:1080px; height:1350px; background:#f0f5ff; font-family:Noto Sans KR, sans-serif; word-break:keep-all;
+    <div style='width:1080px; height:1350px; background:#f0f5ff; font-family:Noto Sans KR, sans-serif; word-break:keep-all; overflow-wrap:break-word;
                 display:flex; flex-direction:column;'>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:24px 60px; color:white;'>
-            <div style='font-size:26px; font-weight:bold;'>💡 대표님들을 위한 BIZ-TIP</div>
+            <div style='font-size:36px; font-weight:bold;'>💡 대표님들을 위한 BIZ-TIP</div>
         </div>
-        <div style='flex:1; margin:30px 40px; border-radius:24px; padding:50px; background:white;
-                    box-shadow:0 8px 32px rgba(37,99,199,0.1); display:flex; flex-direction:column; gap:40px; overflow:hidden;'>
+        <div style='flex:1; margin:24px 30px; border-radius:24px; padding:40px; background:white;
+                    box-shadow:0 8px 32px rgba(37,99,199,0.1); display:flex; flex-direction:column; gap:28px; overflow:hidden;'>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
-                            font-size:24px; font-weight:bold; margin-bottom:16px;'>지원내용</div>
-                <div style='font-size:26px; line-height:1.9; color:#444;'>{ai_amount_e}</div>
+                            font-size:36px; font-weight:bold; margin-bottom:16px;'>지원내용</div>
+                <div style='font-size:84px; line-height:1.9; color:#444;'>{ai_amount_e}</div>
             </div>
             {method_html}
         </div>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:20px 60px; color:white;
                     display:flex; justify-content:space-between; align-items:center;'>
-            <div style='font-weight:bold;'>🔷 나혼자창업</div>
-            <div style='font-size:22px;'>{today_str_e}</div>
+            <div style='font-weight:bold; font-size:36px;'>🔷 나혼자창업</div>
+            <div style='font-size:30px;'>{today_str_e}</div>
         </div>
     </div>
     </body></html>"""
@@ -226,36 +226,36 @@ def make_card4_html(deadline, org, contact, url, today_str):
 
     return f"""<!DOCTYPE html><html><head><meta charset='utf-8'></head>
     <body style='margin:0;padding:0;'>
-    <div style='width:1080px; height:1350px; background:#f0f5ff; font-family:Noto Sans KR, sans-serif; word-break:keep-all;
+    <div style='width:1080px; height:1350px; background:#f0f5ff; font-family:Noto Sans KR, sans-serif; word-break:keep-all; overflow-wrap:break-word;
                 display:flex; flex-direction:column;'>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:24px 60px; color:white;'>
-            <div style='font-size:26px; font-weight:bold;'>💡 대표님들을 위한 BIZ-TIP</div>
+            <div style='font-size:36px; font-weight:bold;'>💡 대표님들을 위한 BIZ-TIP</div>
         </div>
-        <div style='flex:1; margin:30px 40px; border-radius:24px; padding:50px; background:white;
-                    box-shadow:0 8px 32px rgba(37,99,199,0.1); display:flex; flex-direction:column; gap:40px; overflow:hidden;'>
+        <div style='flex:1; margin:24px 30px; border-radius:24px; padding:40px; background:white;
+                    box-shadow:0 8px 32px rgba(37,99,199,0.1); display:flex; flex-direction:column; gap:28px; overflow:hidden;'>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
-                            font-size:24px; font-weight:bold; margin-bottom:16px;'>신청 일정</div>
-                <div style='font-size:28px; line-height:2.0; color:#333;'>
+                            font-size:36px; font-weight:bold; margin-bottom:16px;'>신청 일정</div>
+                <div style='font-size:84px; line-height:2.0; color:#333;'>
                     📅 신청기간: {deadline_e}<br>🏢 주관기관: {org_e}
                 </div>
             </div>
             <div style='height:2px; background:#e8f0fe; flex-shrink:0;'></div>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
-                            font-size:24px; font-weight:bold; margin-bottom:16px;'>문의 및 신청</div>
-                <div style='font-size:26px; line-height:2.0; color:#444;'>
+                            font-size:36px; font-weight:bold; margin-bottom:16px;'>문의 및 신청</div>
+                <div style='font-size:84px; line-height:2.0; color:#444; word-break:break-all;'>
                     {contact_line}🔗 공고 원문: <a href='{url_e}' style='color:#2563c7; text-decoration:none;'>{url_e[:60]}...</a>
                 </div>
             </div>
-            <div style='font-size:20px; color:#aaa; text-align:center; padding:16px; margin-top:auto;'>
+            <div style='font-size:60px; color:#aaa; text-align:center; padding:16px; margin-top:auto;'>
                 ※ 자세한 내용은 공고 원문을 확인하세요
             </div>
         </div>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:20px 60px; color:white;
                     display:flex; justify-content:space-between; align-items:center;'>
-            <div style='font-weight:bold;'>🔷 나혼자창업</div>
-            <div style='font-size:22px;'>{today_str_e}</div>
+            <div style='font-weight:bold; font-size:36px;'>🔷 나혼자창업</div>
+            <div style='font-size:30px;'>{today_str_e}</div>
         </div>
     </div>
     </body></html>"""
