@@ -5,7 +5,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
@@ -69,8 +69,8 @@ def get_items_by_ids(data, target_ids):
 
 def generate_content(prompt):
     try:
-        model = genai.GenerativeModel("gemini-2.0-flash-lite")
-        response = model.generate_content(prompt)
+        client = genai.Client(api_key=GEMINI_API_KEY)
+        response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
         return response.text
     except Exception as e:
         log(f"Gemini API Error: {e}")
@@ -126,7 +126,7 @@ def main():
         log("Error: ITEM_IDS 없음")
         return
 
-    genai.configure(api_key=GEMINI_API_KEY)
+    # genai client는 generate_content 호출 시 생성
     data = load_json_data(date_str)
     target_items = get_items_by_ids(data, ITEM_IDS)
 
