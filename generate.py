@@ -70,7 +70,7 @@ def get_items_by_ids(data, target_ids):
 def generate_content(prompt):
     try:
         client = genai.Client(api_key=GEMINI_API_KEY)
-        response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+        response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
         return response.text
     except Exception as e:
         log(f"Gemini API Error: {e}")
