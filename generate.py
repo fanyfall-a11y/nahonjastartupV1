@@ -543,122 +543,110 @@ async def main():
 === 공고 원문 전체 내용 ===
 {item.get('body_text', '')}"""
 
-                # 통합 콘텐츠 생성 (1회 호출)
-                unified_prompt = (
-                    f"다음 지원사업 정보로 네이버 블로그, 티스토리, 블로그스팟, 인스타그램, 카드뉴스 텍스트를 JSON 형식 하나로 생성해줘.\n"
-                    f"JSON 구조: {{\"naver\": \"...\", \"tistory\": \"...\", \"blogspot\": \"...\", \"insta\": \"...\", "
-                    f"\"card\": {{\"ment\": \"...\", \"target\": \"...\", \"amount\": \"...\", \"method\": \"...\"}}}}\n"
-                    f"세부 요구사항:\n"
-                    f"1. naver: 톤 친근 따뜻하게 ('안녕하세요 :)' 시작), 독자 1인창업가, 2000자 마크다운, 구성 도입(공감)-개요-대상-내용-신청-마무리, 이모지/불릿/SEO(지원사업명, 창업지원, 정부지원금) 포함.\n"
-                    f"2. tistory: 톤 깔끔 정보 중심, 1500자 HTML(h2,h3,ul,li,strong), 구성 개요-대상-내용-신청-유의, 표(table) 포함, SEO(제목에 '2026 + 사업명 + 신청방법').\n"
-                    f"3. blogspot: 톤 간결 명확, 1500자 HTML(h2,h3,ul,li), 구성 요약-내용-자격-기간-링크, SEO(제목/첫문단에 '사업명+지원금액+신청대상').\n"
-                    f"4. insta: 톤 짧고 임팩트, 본문 300자 이내, 이모지, 금액/마감/대상 핵심, CTA('👉 링크는 프로필에서!'), 해시태그 10개.\n"
-                    f"5. card: ment(핵심 1~2줄 이모지포함), target(자격 • 3줄), amount(지원 • 3줄), method(신청방법 1~2줄). 줄바꿈은 \\n.\n\n"
-                    f"데이터:\n{combined_text}\n\n"
-                    f"JSON만 출력해줘 (```json 코드 블록 제외)."
-                )
-
-                response = generate_content(unified_prompt)
-
-                naver, tistory, blogspot, insta = "", "", "", ""
-                ai_ment, ai_target, ai_amount, method_text = "", "", "", ""
-
-                if response:
-                    json_str = response.strip()
-                    if "```json" in json_str:
-                        json_str = json_str.split("```json")[1].split("```")[0].strip()
-                    elif "```" in json_str:
-                        json_str = json_str.split("```")[1].split("```")[0].strip()
-
-                    try:
-                        data = json.loads(json_str)
-                        naver = data.get("naver", "")
-                        tistory = data.get("tistory", "")
-                        blogspot = data.get("blogspot", "")
-                        insta = data.get("insta", "")
-
-                        card_data = data.get("card", {})
-                        ai_ment = card_data.get("ment", "")
-                        ai_target = card_data.get("target", "")
-                        ai_amount = card_data.get("amount", "")
-                        method_text = card_data.get("method", "")
-                    except Exception as e:
-                        log(f"JSON 파싱 실패: {e}")
-
-                if not ai_ment: ai_ment = f"📢 {title[:30]}..."
-                if not ai_target: ai_target = "• 해당 지역 사업자\n• 소상공인·창업자\n• 업력 무관"
-                if not ai_amount: ai_amount = "• 사업화 자금 지원\n• 컨설팅 지원\n• 교육 참여"
-                if not method_text: method_text = "온라인 신청"
-
-                (item_dir / "01_네이버블로그.txt").write_text(naver, encoding="utf-8")
-                (item_dir / "02_티스토리.txt").write_text(tistory, encoding="utf-8")
-                (item_dir / "03_블로그스팟.txt").write_text(blogspot, encoding="utf-8")
-                (item_dir / "04_인스타그램.txt").write_text(insta, encoding="utf-8")
-
-                summary = (
-                    f"제목: {title}\n"
-                    f"URL: {url}\n"
-                    f"주관기관: {org}\n"
-                    f"신청기간: {period}\n"
-                    f"지원금액: {amount}\n\n"
-                    f"[지원대상]\n{item.get('eligibility', '')}\n\n"
-                    f"[지원내용]\n{content}\n\n"
-                    f"[신청방법]\n{item.get('method', '')}\n\n"
-                    f"[카드뉴스 핵심멘트]\n{ai_ment}"
-                )
-                (item_dir / "00_요약.txt").write_text(summary, encoding="utf-8")
-
-                # 카드뉴스 PNG 생성
-                item_data = {
-                    'title': title, 'region': region, 'deadline': period,
-                    'org': org, 'contact': contact, 'url': url,
-                    'ai_ment': ai_ment, 'ai_target': ai_target,
-                    'ai_amount': ai_amount, 'method': method_text,
-                }
-                await generate_card_images(item_data, str(item_dir), page)
-                optimize_images_for_platforms(item_dir, title, region)
-                log(f"✅ Stage1 카드뉴스 생성 완료: {title[:40]}")
-
-                # Stage 2 + Stage 3
-                stage23_prompt = (
-                    f"다음 지원정보를 바탕으로 Stage 2(상세정보)와 Stage 3(심화정보)의 콘텐츠를 생성하세요.\n"
-                    f"반드시 JSON 형식으로만 출력해주세요. (```json 코드블록 제외)\n\n"
-                    f"[지원정보]\n{combined_text}\n\n"
+                # Stage 1~4 통합 생성 (1회 호출)
+                integrated_prompt = (
+                    f"다음 지원사업 정보로 Stage 1~4까지의 모든 콘텐츠(블로그, SNS, 카드뉴스)를 하나의 JSON 형식으로 생성해줘.\n\n"
+                    f"[데이터]\n{combined_text}\n\n"
                     f"[요구사항]\n"
-                    f"1. Stage 2 (상세정보):\n"
-                    f"   - naver: 2000자 내외, 마크다운, 신청자격 체크리스트 중심, 경험적 서술 포함,\n"
-                    f"     하단에 '다음 글에서는 4천만 원을 제대로 쓰는 사업계획서 전략을 알려드립니다' 포함\n"
+                    f"1. Stage 1 (통합 콘텐츠 생성):\n"
+                    f"   - naver: 톤 친근 따뜻하게 ('안녕하세요 :)' 시작), 독자 1인창업가, 2000자 마크다운, 구성 도입(공감)-개요-대상-내용-신청-마무리, 이모지/불릿/SEO(지원사업명, 창업지원, 정부지원금) 포함.\n"
+                    f"   - tistory: 톤 깔끔 정보 중심, 1500자 HTML(h2,h3,ul,li,strong), 구성 개요-대상-내용-신청-유의, 표(table) 포함, SEO(제목에 '2026 + 사업명 + 신청방법').\n"
+                    f"   - blogspot: 톤 간결 명확, 1500자 HTML(h2,h3,ul,li), 구성 요약-내용-자격-기간-링크, SEO(제목/첫문단에 '사업명+지원금액+신청대상').\n"
+                    f"   - insta: 톤 짧고 임팩트, 본문 300자 이내, 이모지, 금액/마감/대상 핵심, CTA('👉 링크는 프로필에서!'), 해시태그 10개.\n"
+                    f"   - card: ment(핵심 1~2줄 이모지포함), target(자격 • 3줄), amount(지원 • 3줄), method(신청방법 1~2줄). 줄바꿈은 \\n.\n\n"
+                    f"2. Stage 2 (상세정보 - 자격 중심):\n"
+                    f"   - naver: 2000자 내외, 마크다운, 신청자격 체크리스트 중심, 경험적 서술 포함, 하단에 '다음 글에서는 4천만 원을 제대로 쓰는 사업계획서 전략을 알려드립니다' 포함\n"
                     f"   - tistory: 1500자 내외, HTML(h2,h3,ul,li,table), 자격요건 표 포함\n"
                     f"   - blogspot: 1500자 내외, HTML\n"
                     f"   - insta: 300자 이내, CTA: '자격 요건 잊지 않게 저장해두세요!'\n"
-                    f"   - card: {{ment, checklist(자격요건 불릿 3줄), exclusions(제외대상 불릿 3줄), next_teaser}}\n"
-                    f"2. Stage 3 (심화정보):\n"
+                    f"   - card: ment, checklist(자격요건 불릿 3줄), exclusions(제외대상 불릿 3줄), next_teaser\n\n"
+                    f"3. Stage 3 (심화정보 - 자금/계획서 중심):\n"
                     f"   - naver: 2000자 내외, 마크다운, 자금활용+사업계획서 전략, 자기부담금0원/인건비 포인트 강조\n"
                     f"   - tistory: 1500자 내외, HTML\n"
                     f"   - blogspot: 1500자 내외, HTML\n"
                     f"   - insta: 300자 이내, CTA: '자금 활용 팁 공유하기 💙'\n"
-                    f"   - card: {{ment, fund_usage(자금용도 불릿 3줄), stage_structure(1·2단계 구조), biz_plan_tips}}\n\n"
-                    f"JSON 구조: {{\"stage2\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\","
-                    f"\"card\":{{\"ment\":\"...\",\"checklist\":\"...\",\"exclusions\":\"...\",\"next_teaser\":\"...\"}}}}, "
-                    f"\"stage3\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\","
-                    f"\"card\":{{\"ment\":\"...\",\"fund_usage\":\"...\",\"stage_structure\":\"...\",\"biz_plan_tips\":\"...\"}}}}}}\n"
-                    f"줄바꿈은 \\n. JSON만 출력."
+                    f"   - card: ment, fund_usage(자금용도 불릿 3줄), stage_structure(1·2단계 구조), biz_plan_tips\n\n"
+                    f"4. Stage 4 (마감 긴급성 - 최종 점검):\n"
+                    f"   - 마감일 강조 (긴박감)\n"
+                    f"   - naver: 2000자 내외, 마크다운, 마감 긴박감 + 체크리스트 + 행동촉구, '댓글로 궁금한 점 남겨주세요' 포함\n"
+                    f"   - tistory: 1500자 내외, HTML, 마감 표 + 체크리스트\n"
+                    f"   - blogspot: 1500자 내외, HTML\n"
+                    f"   - insta: 300자 이내, 첫문구 '오늘 16시 종료!', CTA: '제출 전 이 체크리스트 꼭 확인하세요!'\n"
+                    f"   - card: ment(마감 긴박감), checklist(제출 체크리스트 불릿 3줄), deadline_warning(마감 경고), cta(행동 촉구)\n\n"
+                    f"[JSON 출력 형식]\n"
+                    f"반드시 JSON 형식으로만 출력해주세요. (```json 코드블록 제외)\n"
+                    f"구조: {{\n"
+                    f"  \"stage1\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\",\"card\":{{\"ment\":\"...\",\"target\":\"...\",\"amount\":\"...\",\"method\":\"...\"}}}},\n"
+                    f"  \"stage2\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\",\"card\":{{\"ment\":\"...\",\"checklist\":\"...\",\"exclusions\":\"...\",\"next_teaser\":\"...\"}}}},\n"
+                    f"  \"stage3\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\",\"card\":{{\"ment\":\"...\",\"fund_usage\":\"...\",\"stage_structure\":\"...\",\"biz_plan_tips\":\"...\"}}}},\n"
+                    f"  \"stage4\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\",\"card\":{{\"ment\":\"...\",\"checklist\":\"...\",\"deadline_warning\":\"...\",\"cta\":\"...\"}}}}\n"
+                    f"}}\n"
+                    f"줄바꿈은 \\n 사용."
                 )
 
-                response23 = generate_content(stage23_prompt)
-                stage2_data, stage3_data = {}, {}
-                if response23:
+                response = generate_content(integrated_prompt)
+                all_data = {}
+                if response:
                     try:
-                        json_str23 = response23.strip()
-                        if "```json" in json_str23:
-                            json_str23 = json_str23.split("```json")[1].split("```")[0].strip()
-                        elif "```" in json_str23:
-                            json_str23 = json_str23.split("```")[1].split("```")[0].strip()
-                        parsed23 = json.loads(json_str23)
-                        stage2_data = parsed23.get("stage2", {})
-                        stage3_data = parsed23.get("stage3", {})
+                        json_str = response.strip()
+                        if "```json" in json_str:
+                            json_str = json_str.split("```json")[1].split("```")[0].strip()
+                        elif "```" in json_str:
+                            json_str = json_str.split("```")[1].split("```")[0].strip()
+                        all_data = json.loads(json_str)
                     except Exception as e:
-                        log(f"Stage2/3 JSON 파싱 실패: {e}")
+                        log(f"통합 JSON 파싱 실패: {e}")
+
+                stage1_data = all_data.get("stage1", {})
+                stage2_data = all_data.get("stage2", {})
+                stage3_data = all_data.get("stage3", {})
+                stage4_data = all_data.get("stage4", {})
+
+                # Stage 1 처리
+                if stage1_data:
+                    naver = stage1_data.get("naver", "")
+                    tistory = stage1_data.get("tistory", "")
+                    blogspot = stage1_data.get("blogspot", "")
+                    insta = stage1_data.get("insta", "")
+
+                    card1 = stage1_data.get("card", {})
+                    ai_ment = card1.get("ment", "")
+                    ai_target = card1.get("target", "")
+                    ai_amount = card1.get("amount", "")
+                    method_text = card1.get("method", "")
+
+                    if not ai_ment: ai_ment = f"📢 {title[:30]}..."
+                    if not ai_target: ai_target = "• 해당 지역 사업자\n• 소상공인·창업자\n• 업력 무관"
+                    if not ai_amount: ai_amount = "• 사업화 자금 지원\n• 컨설팅 지원\n• 교육 참여"
+                    if not method_text: method_text = "온라인 신청"
+
+                    (item_dir / "01_네이버블로그.txt").write_text(naver, encoding="utf-8")
+                    (item_dir / "02_티스토리.txt").write_text(tistory, encoding="utf-8")
+                    (item_dir / "03_블로그스팟.txt").write_text(blogspot, encoding="utf-8")
+                    (item_dir / "04_인스타그램.txt").write_text(insta, encoding="utf-8")
+
+                    summary = (
+                        f"제목: {title}\n"
+                        f"URL: {url}\n"
+                        f"주관기관: {org}\n"
+                        f"신청기간: {period}\n"
+                        f"지원금액: {amount}\n\n"
+                        f"[지원대상]\n{item.get('eligibility', '')}\n\n"
+                        f"[지원내용]\n{content}\n\n"
+                        f"[신청방법]\n{item.get('method', '')}\n\n"
+                        f"[카드뉴스 핵심멘트]\n{ai_ment}"
+                    )
+                    (item_dir / "00_요약.txt").write_text(summary, encoding="utf-8")
+
+                    item_data = {
+                        'title': title, 'region': region, 'deadline': period,
+                        'org': org, 'contact': contact, 'url': url,
+                        'ai_ment': ai_ment, 'ai_target': ai_target,
+                        'ai_amount': ai_amount, 'method': method_text,
+                    }
+                    await generate_card_images(item_data, str(item_dir), page)
+                    optimize_images_for_platforms(item_dir, title, region)
+                    log(f"✅ Stage1 카드뉴스 생성 완료: {title[:40]}")
 
                 # Stage 2 처리
                 if stage2_data:
@@ -707,32 +695,6 @@ async def main():
                     log(f"✅ Stage3 생성 완료: {title[:40]}")
 
                 # Stage 4 처리
-                stage4_prompt = (
-                    f"다음 정보를 바탕으로 Stage 4 [마감: 최종 점검 및 행동 촉구] 콘텐츠를 생성하세요.\n"
-                    f"마감일: 2026.03.24 16:00 (긴박감 강조, Push 전략)\n"
-                    f"반드시 JSON 형식으로만 출력해주세요. (```json 코드블록 제외)\n\n"
-                    f"[지원정보]\n{combined_text}\n\n"
-                    f"[요구사항]\n"
-                    f"- naver: 2000자 내외, 마크다운, 마감 긴박감 + 체크리스트 + 행동촉구, '댓글로 궁금한 점 남겨주세요' 포함\n"
-                    f"- tistory: 1500자 내외, HTML, 마감 표 + 체크리스트\n"
-                    f"- blogspot: 1500자 내외, HTML\n"
-                    f"- insta: 300자 이내, 첫문구 '오늘 16시 종료!', CTA: '제출 전 이 체크리스트 꼭 확인하세요!'\n"
-                    f"- card: {{ment(마감 긴박감 핵심 메시지), checklist(제출 체크리스트 불릿 3줄), deadline_warning(마감 경고 문구), cta(행동 촉구 문구)}}\n\n"
-                    f"JSON 구조: {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\","
-                    f"\"card\":{{\"ment\":\"...\",\"checklist\":\"...\",\"deadline_warning\":\"...\",\"cta\":\"...\"}}}}\n"
-                    f"줄바꿈은 \\n. JSON만 출력."
-                )
-                response4 = generate_content(stage4_prompt)
-                stage4_data = {}
-                if response4:
-                    try:
-                        json_str4 = response4.strip()
-                        if json_str4.startswith("```"):
-                            json_str4 = json_str4.split("```")[1].split("```")[0].strip()
-                        stage4_data = json.loads(json_str4)
-                    except Exception as e:
-                        log(f"Stage4 JSON 파싱 실패: {e}")
-
                 if stage4_data:
                     stage4_dir = item_dir / "Stage_4_마감"
                     stage4_dir.mkdir(exist_ok=True)
