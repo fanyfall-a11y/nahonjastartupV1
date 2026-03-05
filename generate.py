@@ -593,6 +593,7 @@ async def main():
                             json_str = json_str.split("```json")[1].split("```")[0].strip()
                         elif "```" in json_str:
                             json_str = json_str.split("```")[1].split("```")[0].strip()
+                        json_str = re.sub(r'"(?:[^"\\]|\\.)*"', lambda m: m.group().replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t'), json_str, flags=re.DOTALL)
                         all_data = json.loads(json_str)
                     except Exception as e:
                         log(f"통합 JSON 파싱 실패: {e}")
