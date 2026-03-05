@@ -69,7 +69,7 @@ def get_items_by_ids(data, target_ids):
 
 def generate_content(prompt):
     try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-2.0-flash-lite")
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
