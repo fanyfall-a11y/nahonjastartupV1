@@ -706,6 +706,55 @@ async def main():
                     optimize_images_for_platforms(stage3_dir, title, region, cta_text="자금 활용 팁 공유하기 💙")
                     log(f"✅ Stage3 생성 완료: {title[:40]}")
 
+                # Stage 4 처리
+                stage4_prompt = (
+                    f"다음 정보를 바탕으로 Stage 4 [마감: 최종 점검 및 행동 촉구] 콘텐츠를 생성하세요.\n"
+                    f"마감일: 2026.03.24 16:00 (긴박감 강조, Push 전략)\n"
+                    f"반드시 JSON 형식으로만 출력해주세요. (```json 코드블록 제외)\n\n"
+                    f"[지원정보]\n{combined_text}\n\n"
+                    f"[요구사항]\n"
+                    f"- naver: 2000자 내외, 마크다운, 마감 긴박감 + 체크리스트 + 행동촉구, '댓글로 궁금한 점 남겨주세요' 포함\n"
+                    f"- tistory: 1500자 내외, HTML, 마감 표 + 체크리스트\n"
+                    f"- blogspot: 1500자 내외, HTML\n"
+                    f"- insta: 300자 이내, 첫문구 '오늘 16시 종료!', CTA: '제출 전 이 체크리스트 꼭 확인하세요!'\n"
+                    f"- card: {{ment(마감 긴박감 핵심 메시지), checklist(제출 체크리스트 불릿 3줄), deadline_warning(마감 경고 문구), cta(행동 촉구 문구)}}\n\n"
+                    f"JSON 구조: {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\","
+                    f"\"card\":{{\"ment\":\"...\",\"checklist\":\"...\",\"deadline_warning\":\"...\",\"cta\":\"...\"}}}}\n"
+                    f"줄바꿈은 \\n. JSON만 출력."
+                )
+                response4 = generate_content(stage4_prompt)
+                stage4_data = {}
+                if response4:
+                    try:
+                        json_str4 = response4.strip()
+                        if json_str4.startswith("```"):
+                            json_str4 = json_str4.split("```")[1].split("```")[0].strip()
+                        stage4_data = json.loads(json_str4)
+                    except Exception as e:
+                        log(f"Stage4 JSON 파싱 실패: {e}")
+
+                if stage4_data:
+                    stage4_dir = item_dir / "Stage_4_마감"
+                    stage4_dir.mkdir(exist_ok=True)
+                    s4_naver = stage4_data.get("naver", "")
+                    (stage4_dir / "01_네이버블로그.txt").write_text(s4_naver, encoding="utf-8")
+                    (stage4_dir / "02_티스토리.txt").write_text(stage4_data.get("tistory", ""), encoding="utf-8")
+                    (stage4_dir / "03_블로그스팟.txt").write_text(stage4_data.get("blogspot", ""), encoding="utf-8")
+                    (stage4_dir / "04_인스타그램.txt").write_text(stage4_data.get("insta", ""), encoding="utf-8")
+                    words4 = check_prohibited_words(s4_naver)
+                    if words4:
+                        log(f"⚠️ Stage4 금칙어 발견: {words4}")
+                    card4 = stage4_data.get("card", {})
+                    stage4_card_data = {
+                        'title': title, 'region': region, 'deadline': period,
+                        'org': org, 'contact': contact, 'url': url,
+                        'ai_ment': card4.get('ment', ''), 'ai_target': card4.get('checklist', ''),
+                        'ai_amount': card4.get('deadline_warning', ''), 'method': card4.get('cta', ''),
+                    }
+                    await generate_card_images(stage4_card_data, str(stage4_dir), page)
+                    optimize_images_for_platforms(stage4_dir, title, region, cta_text="제출 전 이 체크리스트 꼭 확인하세요!")
+                    log(f"✅ Stage4 생성 완료: {title[:40]}")
+
                 attachments = sorted(item_dir.iterdir())
                 email_results.append({"title": title, "url": url, "attachments": attachments})
                 log(f"✅ 완료: {title[:40]}")
