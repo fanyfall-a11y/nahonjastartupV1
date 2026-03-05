@@ -387,81 +387,70 @@ async def main():
 === 공고 원문 전체 내용 ===
 {item.get('body_text', '')}"""
 
-                # 블로그 초안 생성
-                naver = generate_content(
-                    f"다음 지원사업 정보로 네이버 블로그 포스팅을 작성해줘.\n"
-                    f"- 톤: 친근하고 따뜻하게. '안녕하세요 :)' 로 시작. 독자는 1인창업가·소상공인 대표님.\n"
-                    f"- 분량: 2000자 내외, 마크다운 형식\n"
-                    f"- 구성: 도입부(공감) → 사업개요 → 지원대상 → 지원내용·금액 → 신청방법·기간 → 마무리(신청 독려)\n"
-                    f"- 소제목마다 이모지 1개, 핵심 정보는 불릿으로 정리\n"
-                    f"- 네이버 검색 키워드(지원사업명, 창업지원, 정부지원금) 자연스럽게 포함\n\n{combined_text}"
-                )
-                if naver:
-                    (item_dir / "01_네이버블로그.txt").write_text(naver, encoding="utf-8")
-
-                tistory = generate_content(
-                    f"다음 지원사업 정보로 티스토리 블로그 포스팅을 작성해줘.\n"
-                    f"- 톤: 깔끔하고 정보 중심. 전문성 있게. 불필요한 감탄사 없이 핵심만.\n"
-                    f"- 분량: 1500자 내외, HTML 태그(h2, h3, ul, li, strong) 적극 활용\n"
-                    f"- 구성: 개요 → 지원대상 → 지원내용 → 신청방법 → 유의사항\n"
-                    f"- 표(table)로 핵심 정보 정리 포함\n"
-                    f"- 티스토리 SEO: 제목에 '2026 + 사업명 + 신청방법' 키워드 포함\n\n{combined_text}"
-                )
-                if tistory:
-                    (item_dir / "02_티스토리.txt").write_text(tistory, encoding="utf-8")
-
-                blogspot = generate_content(
-                    f"다음 지원사업 정보로 블로그스팟(Blogger) 포스팅을 한국어로 작성해줘.\n"
-                    f"- 톤: 간결하고 명확하게. 검색자가 원하는 정보를 빠르게 찾을 수 있게.\n"
-                    f"- 분량: 1500자 내외, HTML 태그(h2, h3, ul, li) 사용\n"
-                    f"- 구성: 한줄 요약 → 지원내용 → 신청자격 → 신청기간·방법 → 원문링크 안내\n"
-                    f"- 구글 검색 SEO: 제목과 첫 문단에 핵심 키워드(지원사업명+지원금액+신청대상) 집중 배치\n\n{combined_text}"
-                )
-                if blogspot:
-                    (item_dir / "03_블로그스팟.txt").write_text(blogspot, encoding="utf-8")
-
-                insta = generate_content(
-                    f"다음 지원사업 정보로 인스타그램 캡션을 작성해줘.\n"
-                    f"- 톤: 짧고 임팩트 있게. 첫 줄에 시선을 끄는 한 문장.\n"
-                    f"- 분량: 본문 300자 이내\n"
-                    f"- 이모지 적극 활용 (각 줄 앞에 관련 이모지)\n"
-                    f"- 지원금액·마감일·신청대상을 핵심만 간결하게\n"
-                    f"- 마지막에 '👉 링크는 프로필에서!' CTA 포함\n"
-                    f"- 마지막 줄: 관련 해시태그 10개 (창업지원, 정부지원금, 소상공인 등)\n\n{combined_text}"
-                )
-                if insta:
-                    (item_dir / "04_인스타그램.txt").write_text(insta, encoding="utf-8")
-
-                # 카드뉴스용 짧은 텍스트 생성
-                card_text = generate_content(
-                    f"다음 지원사업 정보를 바탕으로 카드뉴스용 텍스트를 JSON 형식으로 추출해줘. "
-                    f"키는 ment, target, amount, method. 줄바꿈은 \\n, 불릿은 •.\n\n{combined_text}\n\n"
-                    f"형식:\n{{\"ment\": \"핵심 1~2줄(이모지포함)\", "
-                    f"\"target\": \"• 자격1\\n• 자격2\\n• 자격3\", "
-                    f"\"amount\": \"• 지원내용1\\n• 지원내용2\\n• 지원내용3\", "
-                    f"\"method\": \"신청방법 1~2줄\"}}"
+                # 통합 콘텐츠 생성 (1회 호출)
+                unified_prompt = (
+                    f"다음 지원사업 정보로 네이버 블로그, 티스토리, 블로그스팟, 인스타그램, 카드뉴스 텍스트를 JSON 형식 하나로 생성해줘.\n"
+                    f"JSON 구조: {{\"naver\": \"...\", \"tistory\": \"...\", \"blogspot\": \"...\", \"insta\": \"...\", "
+                    f"\"card\": {{\"ment\": \"...\", \"target\": \"...\", \"amount\": \"...\", \"method\": \"...\"}}}}\n"
+                    f"세부 요구사항:\n"
+                    f"1. naver: 톤 친근 따뜻하게 ('안녕하세요 :)' 시작), 독자 1인창업가, 2000자 마크다운, 구성 도입(공감)-개요-대상-내용-신청-마무리, 이모지/불릿/SEO(지원사업명, 창업지원, 정부지원금) 포함.\n"
+                    f"2. tistory: 톤 깔끔 정보 중심, 1500자 HTML(h2,h3,ul,li,strong), 구성 개요-대상-내용-신청-유의, 표(table) 포함, SEO(제목에 '2026 + 사업명 + 신청방법').\n"
+                    f"3. blogspot: 톤 간결 명확, 1500자 HTML(h2,h3,ul,li), 구성 요약-내용-자격-기간-링크, SEO(제목/첫문단에 '사업명+지원금액+신청대상').\n"
+                    f"4. insta: 톤 짧고 임팩트, 본문 300자 이내, 이모지, 금액/마감/대상 핵심, CTA('👉 링크는 프로필에서!'), 해시태그 10개.\n"
+                    f"5. card: ment(핵심 1~2줄 이모지포함), target(자격 • 3줄), amount(지원 • 3줄), method(신청방법 1~2줄). 줄바꿈은 \\n.\n\n"
+                    f"데이터:\n{combined_text}\n\n"
+                    f"JSON만 출력해줘 (```json 코드 블록 제외)."
                 )
 
+                response = generate_content(unified_prompt)
+
+                naver, tistory, blogspot, insta = "", "", "", ""
                 ai_ment, ai_target, ai_amount, method_text = "", "", "", ""
-                if card_text:
+
+                if response:
+                    json_str = response.strip()
+                    if "```json" in json_str:
+                        json_str = json_str.split("```json")[1].split("```")[0].strip()
+                    elif "```" in json_str:
+                        json_str = json_str.split("```")[1].split("```")[0].strip()
+
                     try:
-                        json_str = card_text
-                        if "```json" in card_text:
-                            json_str = card_text.split("```json")[1].split("```")[0].strip()
-                        elif "```" in card_text:
-                            json_str = card_text.split("```")[1].split("```")[0].strip()
-                        card_data = json.loads(json_str)
+                        data = json.loads(json_str)
+                        naver = data.get("naver", "")
+                        tistory = data.get("tistory", "")
+                        blogspot = data.get("blogspot", "")
+                        insta = data.get("insta", "")
+
+                        card_data = data.get("card", {})
                         ai_ment = card_data.get("ment", "")
                         ai_target = card_data.get("target", "")
                         ai_amount = card_data.get("amount", "")
                         method_text = card_data.get("method", "")
                     except Exception as e:
-                        log(f"카드 JSON 파싱 실패: {e}")
+                        log(f"JSON 파싱 실패: {e}")
 
                 if not ai_ment: ai_ment = f"📢 {title[:30]}..."
                 if not ai_target: ai_target = "• 해당 지역 사업자\n• 소상공인·창업자\n• 업력 무관"
                 if not ai_amount: ai_amount = "• 사업화 자금 지원\n• 컨설팅 지원\n• 교육 참여"
                 if not method_text: method_text = "온라인 신청"
+
+                (item_dir / "01_네이버블로그.txt").write_text(naver, encoding="utf-8")
+                (item_dir / "02_티스토리.txt").write_text(tistory, encoding="utf-8")
+                (item_dir / "03_블로그스팟.txt").write_text(blogspot, encoding="utf-8")
+                (item_dir / "04_인스타그램.txt").write_text(insta, encoding="utf-8")
+
+                summary = (
+                    f"제목: {title}\n"
+                    f"URL: {url}\n"
+                    f"주관기관: {org}\n"
+                    f"신청기간: {period}\n"
+                    f"지원금액: {amount}\n\n"
+                    f"[지원대상]\n{item.get('eligibility', '')}\n\n"
+                    f"[지원내용]\n{content}\n\n"
+                    f"[신청방법]\n{item.get('method', '')}\n\n"
+                    f"[카드뉴스 핵심멘트]\n{ai_ment}"
+                )
+                (item_dir / "00_요약.txt").write_text(summary, encoding="utf-8")
 
                 # 카드뉴스 PNG 생성
                 item_data = {
@@ -472,9 +461,6 @@ async def main():
                 }
                 await generate_card_images(item_data, str(item_dir), page)
                 log(f"✅ 카드뉴스 생성 완료: {title[:40]}")
-
-                summary = f"제목: {title}\nURL: {url}\n주관기관: {org}\n신청기간: {period}\n지원금액: {amount}\n\n지원내용:\n{content}"
-                (item_dir / "00_요약.txt").write_text(summary, encoding="utf-8")
 
                 attachments = sorted(item_dir.iterdir())
                 email_results.append({"title": title, "url": url, "attachments": attachments})
