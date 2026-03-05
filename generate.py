@@ -594,7 +594,10 @@ async def main():
                             json_str = json_str.split("```json")[1].split("```")[0].strip()
                         elif "```" in json_str:
                             json_str = json_str.split("```")[1].split("```")[0].strip()
-                        json_str = re.sub(r'"(?:[^"\\]|\\.)*"', lambda m: m.group().replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t'), json_str, flags=re.DOTALL)
+                        def _clean_str(m):
+                            s = m.group()
+                            return re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', s).replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t')
+                        json_str = re.sub(r'"(?:[^"\\]|\\.)*"', _clean_str, json_str, flags=re.DOTALL)
                         all_data = json.loads(json_str)
                     except Exception as e:
                         log(f"통합 JSON 파싱 실패: {e}")
@@ -740,6 +743,10 @@ async def main():
                         if file_path.is_file():
                             zipf.write(file_path, arcname=file_path.relative_to(r["item_dir"]))
                             file_count += 1
+                if file_count == 0:
+                    os.remove(zip_path)
+                    log(f"⚠️ 이메일 건너뜀 (생성된 파일 없음): {r['title'][:40]}")
+                    continue
                 zip_size_mb = Path(zip_path).stat().st_size / 1024 / 1024
                 subject = f"📝 블로그 초안 - {r['title'][:40]}"
                 body = f"Stage 1~4 콘텐츠 생성 완료\n총 {file_count}개 파일 ({zip_size_mb:.1f}MB)\n\n제목: {r['title']}\n원문: {r['url']}\n\n첨부파일을 확인하세요."
