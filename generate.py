@@ -3,6 +3,9 @@ import json
 import re
 import html
 import asyncio
+import io
+import requests
+import pdfplumber
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -270,6 +273,52 @@ async def generate_card_images(item_data: dict, output_dir: str, page):
         await html_to_image(html_content, os.path.join(output_dir, filename), page)
 
 
+async def fetch_pdf_text(page) -> str:
+    try:
+        links = await page.query_selector_all('a')
+
+        pdf_url = ""
+        # 우선순위 1: bizinfo (fileDown.do)
+        for link in links:
+            href = await link.get_attribute('href')
+            if href and 'fileDown.do' in href:
+                pdf_url = href
+                break
+
+        # 우선순위 2: .pdf 포함 href 또는 download 속성
+        if not pdf_url:
+            for link in links:
+                href = await link.get_attribute('href')
+                download_attr = await link.get_attribute('download')
+                if (href and '.pdf' in href.lower()) or download_attr:
+                    pdf_url = href
+                    break
+
+        if not pdf_url:
+            return ""
+
+        cookies = await page.context.cookies()
+        cookie_dict = {c['name']: c['value'] for c in cookies}
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+
+        response = requests.get(pdf_url, cookies=cookie_dict, headers=headers, timeout=20)
+        if response.status_code != 200 or not response.content[:4] == b'%PDF':
+            return ""
+
+        text_content = ""
+        with pdfplumber.open(io.BytesIO(response.content)) as pdf:
+            for p in pdf.pages[:6]:
+                text = p.extract_text()
+                if text:
+                    text_content += text + "\n"
+
+        return text_content[:6000]
+
+    except Exception as e:
+        print(f"PDF 추출 실패: {e}")
+        return ""
+
+
 async def enrich_item(item: dict, page) -> dict:
     """API로 받은 item에 상세 페이지 내용 추가"""
     try:
@@ -306,7 +355,11 @@ async def enrich_item(item: dict, page) -> dict:
         }
         """)
 
-        item['body_text'] = body_text[:5000]
+        pdf_text = await fetch_pdf_text(page)
+        if pdf_text:
+            item['body_text'] = body_text[:2000] + "\n\n=== PDF 첨부파일 내용 ===\n" + pdf_text
+        else:
+            item['body_text'] = body_text[:5000]
         item.update(detail)
 
     except Exception as e:
