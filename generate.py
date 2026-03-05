@@ -4,6 +4,7 @@ import re
 import html
 import asyncio
 import io
+import zipfile
 import requests
 import pdfplumber
 from urllib.parse import urljoin
@@ -718,8 +719,7 @@ async def main():
                     optimize_images_for_platforms(stage4_dir, title, region, cta_text="제출 전 이 체크리스트 꼭 확인하세요!")
                     log(f"✅ Stage4 생성 완료: {title[:40]}")
 
-                attachments = sorted(p for p in item_dir.rglob("*") if p.is_file())
-                email_results.append({"title": title, "url": url, "attachments": attachments})
+                email_results.append({"title": title, "url": url, "item_dir": item_dir})
                 log(f"✅ 완료: {title[:40]}")
 
             except Exception as e:
@@ -732,10 +732,20 @@ async def main():
         try:
             yag = yagmail.SMTP(GMAIL_USER, GMAIL_APP_PASSWORD)
             for r in email_results:
+                safe_title = re.sub(r'[\\/:*?"<>|]', '_', r['title'])
+                zip_path = str(Path(r["item_dir"]).parent / f"{safe_title[:50]}.zip")
+                file_count = 0
+                with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+                    for file_path in Path(r["item_dir"]).rglob("*"):
+                        if file_path.is_file():
+                            zipf.write(file_path, arcname=file_path.relative_to(r["item_dir"]))
+                            file_count += 1
+                zip_size_mb = Path(zip_path).stat().st_size / 1024 / 1024
                 subject = f"📝 블로그 초안 - {r['title'][:40]}"
-                body = f"제목: {r['title']}\n원문: {r['url']}\n\n첨부파일을 확인하세요."
-                yag.send(TO_EMAIL, subject, body, attachments=[str(fp) for fp in r["attachments"]])
-                log(f"✅ 이메일 발송: {r['title'][:40]}")
+                body = f"Stage 1~4 콘텐츠 생성 완료\n총 {file_count}개 파일 ({zip_size_mb:.1f}MB)\n\n제목: {r['title']}\n원문: {r['url']}\n\n첨부파일을 확인하세요."
+                yag.send(TO_EMAIL, subject, body, attachments=[zip_path])
+                log(f"✅ 이메일 발송: {r['title'][:40]} ({file_count}개 파일, {zip_size_mb:.1f}MB)")
+                os.remove(zip_path)
         except Exception as e:
             log(f"이메일 발송 실패: {e}")
 
