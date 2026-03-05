@@ -35,6 +35,11 @@ def log(message):
         f.write(log_msg + "\n")
 
 
+def check_prohibited_words(text: str) -> list:
+    prohibited = ["교정", "치료", "의료기기", "진단", "처방", "치유", "완치"]
+    return [w for w in prohibited if w in text]
+
+
 def sanitize_filename(name):
     return re.sub(r'[\\/*?:"<>|]', "", name).strip()
 
@@ -262,7 +267,7 @@ def make_card4_html(deadline, org, contact, url, today_str):
     </body></html>"""
 
 
-def optimize_images_for_platforms(item_dir: Path, title: str, region: str) -> None:
+def optimize_images_for_platforms(item_dir: Path, title: str, region: str, cta_text: str = "이 정보가 도움됐다면 저장/공유해주세요!") -> None:
     try:
         files = sorted(item_dir.glob("0[5678]_*.png"))
         if not files:
@@ -345,7 +350,6 @@ def optimize_images_for_platforms(item_dir: Path, title: str, region: str) -> No
                     final_rgba = wm_img.convert("RGBA")
                     draw = ImageDraw.Draw(final_rgba)
                     draw.rectangle([(0, 980), (1080, 1080)], fill=(26, 79, 160, 200))
-                    cta_text = "이 정보가 도움됐다면 저장/공유해주세요!"
                     font28 = get_font(28)
                     bbox = draw.textbbox((0, 0), cta_text, font=font28)
                     text_w = bbox[2] - bbox[0]
@@ -613,7 +617,94 @@ async def main():
                 }
                 await generate_card_images(item_data, str(item_dir), page)
                 optimize_images_for_platforms(item_dir, title, region)
-                log(f"✅ 카드뉴스 생성 완료: {title[:40]}")
+                log(f"✅ Stage1 카드뉴스 생성 완료: {title[:40]}")
+
+                # Stage 2 + Stage 3
+                stage23_prompt = (
+                    f"다음 지원정보를 바탕으로 Stage 2(상세정보)와 Stage 3(심화정보)의 콘텐츠를 생성하세요.\n"
+                    f"반드시 JSON 형식으로만 출력해주세요. (```json 코드블록 제외)\n\n"
+                    f"[지원정보]\n{combined_text}\n\n"
+                    f"[요구사항]\n"
+                    f"1. Stage 2 (상세정보):\n"
+                    f"   - naver: 2000자 내외, 마크다운, 신청자격 체크리스트 중심, 경험적 서술 포함,\n"
+                    f"     하단에 '다음 글에서는 4천만 원을 제대로 쓰는 사업계획서 전략을 알려드립니다' 포함\n"
+                    f"   - tistory: 1500자 내외, HTML(h2,h3,ul,li,table), 자격요건 표 포함\n"
+                    f"   - blogspot: 1500자 내외, HTML\n"
+                    f"   - insta: 300자 이내, CTA: '자격 요건 잊지 않게 저장해두세요!'\n"
+                    f"   - card: {{ment, checklist(자격요건 불릿 3줄), exclusions(제외대상 불릿 3줄), next_teaser}}\n"
+                    f"2. Stage 3 (심화정보):\n"
+                    f"   - naver: 2000자 내외, 마크다운, 자금활용+사업계획서 전략, 자기부담금0원/인건비 포인트 강조\n"
+                    f"   - tistory: 1500자 내외, HTML\n"
+                    f"   - blogspot: 1500자 내외, HTML\n"
+                    f"   - insta: 300자 이내, CTA: '자금 활용 팁 공유하기 💙'\n"
+                    f"   - card: {{ment, fund_usage(자금용도 불릿 3줄), stage_structure(1·2단계 구조), biz_plan_tips}}\n\n"
+                    f"JSON 구조: {{\"stage2\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\","
+                    f"\"card\":{{\"ment\":\"...\",\"checklist\":\"...\",\"exclusions\":\"...\",\"next_teaser\":\"...\"}}}}, "
+                    f"\"stage3\": {{\"naver\":\"...\",\"tistory\":\"...\",\"blogspot\":\"...\",\"insta\":\"...\","
+                    f"\"card\":{{\"ment\":\"...\",\"fund_usage\":\"...\",\"stage_structure\":\"...\",\"biz_plan_tips\":\"...\"}}}}}}\n"
+                    f"줄바꿈은 \\n. JSON만 출력."
+                )
+
+                response23 = generate_content(stage23_prompt)
+                stage2_data, stage3_data = {}, {}
+                if response23:
+                    try:
+                        json_str23 = response23.strip()
+                        if "```json" in json_str23:
+                            json_str23 = json_str23.split("```json")[1].split("```")[0].strip()
+                        elif "```" in json_str23:
+                            json_str23 = json_str23.split("```")[1].split("```")[0].strip()
+                        parsed23 = json.loads(json_str23)
+                        stage2_data = parsed23.get("stage2", {})
+                        stage3_data = parsed23.get("stage3", {})
+                    except Exception as e:
+                        log(f"Stage2/3 JSON 파싱 실패: {e}")
+
+                # Stage 2 처리
+                if stage2_data:
+                    stage2_dir = item_dir / "Stage_2_상세"
+                    stage2_dir.mkdir(exist_ok=True)
+                    s2_naver = stage2_data.get("naver", "")
+                    (stage2_dir / "01_네이버블로그.txt").write_text(s2_naver, encoding="utf-8")
+                    (stage2_dir / "02_티스토리.txt").write_text(stage2_data.get("tistory", ""), encoding="utf-8")
+                    (stage2_dir / "03_블로그스팟.txt").write_text(stage2_data.get("blogspot", ""), encoding="utf-8")
+                    (stage2_dir / "04_인스타그램.txt").write_text(stage2_data.get("insta", ""), encoding="utf-8")
+                    words2 = check_prohibited_words(s2_naver)
+                    if words2:
+                        log(f"⚠️ Stage2 금칙어 발견: {words2}")
+                    card2 = stage2_data.get("card", {})
+                    stage2_card_data = {
+                        'title': title, 'region': region, 'deadline': period,
+                        'org': org, 'contact': contact, 'url': url,
+                        'ai_ment': card2.get('ment', ''), 'ai_target': card2.get('checklist', ''),
+                        'ai_amount': card2.get('exclusions', ''), 'method': card2.get('next_teaser', ''),
+                    }
+                    await generate_card_images(stage2_card_data, str(stage2_dir), page)
+                    optimize_images_for_platforms(stage2_dir, title, region, cta_text="자격 요건 잊지 않게 저장해두세요!")
+                    log(f"✅ Stage2 생성 완료: {title[:40]}")
+
+                # Stage 3 처리
+                if stage3_data:
+                    stage3_dir = item_dir / "Stage_3_심화"
+                    stage3_dir.mkdir(exist_ok=True)
+                    s3_naver = stage3_data.get("naver", "")
+                    (stage3_dir / "01_네이버블로그.txt").write_text(s3_naver, encoding="utf-8")
+                    (stage3_dir / "02_티스토리.txt").write_text(stage3_data.get("tistory", ""), encoding="utf-8")
+                    (stage3_dir / "03_블로그스팟.txt").write_text(stage3_data.get("blogspot", ""), encoding="utf-8")
+                    (stage3_dir / "04_인스타그램.txt").write_text(stage3_data.get("insta", ""), encoding="utf-8")
+                    words3 = check_prohibited_words(s3_naver)
+                    if words3:
+                        log(f"⚠️ Stage3 금칙어 발견: {words3}")
+                    card3 = stage3_data.get("card", {})
+                    stage3_card_data = {
+                        'title': title, 'region': region, 'deadline': period,
+                        'org': org, 'contact': contact, 'url': url,
+                        'ai_ment': card3.get('ment', ''), 'ai_target': card3.get('fund_usage', ''),
+                        'ai_amount': card3.get('stage_structure', ''), 'method': card3.get('biz_plan_tips', ''),
+                    }
+                    await generate_card_images(stage3_card_data, str(stage3_dir), page)
+                    optimize_images_for_platforms(stage3_dir, title, region, cta_text="자금 활용 팁 공유하기 💙")
+                    log(f"✅ Stage3 생성 완료: {title[:40]}")
 
                 attachments = sorted(item_dir.iterdir())
                 email_results.append({"title": title, "url": url, "attachments": attachments})
