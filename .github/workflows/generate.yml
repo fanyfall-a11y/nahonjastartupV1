@@ -24,6 +24,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install system fonts
+        run: sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium
+
       - name: Run generate.py
         env:
           ITEM_IDS: ${{ inputs.item_ids }}
