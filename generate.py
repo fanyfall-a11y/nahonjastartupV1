@@ -157,13 +157,13 @@ def make_card2_html(ai_ment, ai_target, today_str):
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
                             font-size:36px; font-weight:bold; margin-bottom:16px;'>사업목적</div>
-                <div style='font-size:84px; line-height:1.8; color:#333;'>{ai_ment_e}</div>
+                <div style='font-size:42px; line-height:1.8; color:#333;'>{ai_ment_e}</div>
             </div>
             <div style='height:2px; background:#e8f0fe; flex-shrink:0;'></div>
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
                             font-size:36px; font-weight:bold; margin-bottom:16px;'>신청자격</div>
-                <div style='font-size:84px; line-height:1.9; color:#444;'>{ai_target_e}</div>
+                <div style='font-size:42px; line-height:1.9; color:#444;'>{ai_target_e}</div>
             </div>
         </div>
         <div style='background:linear-gradient(90deg, #1a4fa0, #2563c7); padding:20px 60px; color:white;
@@ -187,7 +187,7 @@ def make_card3_html(ai_amount, method, today_str):
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
                             font-size:36px; font-weight:bold; margin-bottom:16px;'>신청방법</div>
-                <div style='font-size:84px; line-height:1.9; color:#444;'>{method_e}</div>
+                <div style='font-size:42px; line-height:1.9; color:#444;'>{method_e}</div>
             </div>"""
 
     return f"""<!DOCTYPE html><html><head><meta charset='utf-8'></head>
@@ -202,7 +202,7 @@ def make_card3_html(ai_amount, method, today_str):
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
                             font-size:36px; font-weight:bold; margin-bottom:16px;'>지원내용</div>
-                <div style='font-size:84px; line-height:1.9; color:#444;'>{ai_amount_e}</div>
+                <div style='font-size:42px; line-height:1.9; color:#444;'>{ai_amount_e}</div>
             </div>
             {method_html}
         </div>
@@ -236,7 +236,7 @@ def make_card4_html(deadline, org, contact, url, today_str):
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
                             font-size:36px; font-weight:bold; margin-bottom:16px;'>신청 일정</div>
-                <div style='font-size:84px; line-height:2.0; color:#333;'>
+                <div style='font-size:42px; line-height:2.0; color:#333;'>
                     📅 신청기간: {deadline_e}<br>🏢 주관기관: {org_e}
                 </div>
             </div>
@@ -244,11 +244,11 @@ def make_card4_html(deadline, org, contact, url, today_str):
             <div>
                 <div style='display:inline-block; background:#2563c7; color:white; padding:10px 24px; border-radius:20px;
                             font-size:36px; font-weight:bold; margin-bottom:16px;'>문의 및 신청</div>
-                <div style='font-size:84px; line-height:2.0; color:#444; word-break:break-all;'>
+                <div style='font-size:42px; line-height:2.0; color:#444; word-break:break-all;'>
                     {contact_line}🔗 공고 원문: <a href='{url_e}' style='color:#2563c7; text-decoration:none;'>{url_e[:60]}...</a>
                 </div>
             </div>
-            <div style='font-size:60px; color:#aaa; text-align:center; padding:16px; margin-top:auto;'>
+            <div style='font-size:30px; color:#aaa; text-align:center; padding:16px; margin-top:auto;'>
                 ※ 자세한 내용은 공고 원문을 확인하세요
             </div>
         </div>
