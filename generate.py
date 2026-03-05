@@ -10,6 +10,7 @@ from urllib.parse import urljoin
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+from PIL import Image, ImageDraw, ImageFont
 from google import genai
 import yagmail
 from playwright.async_api import async_playwright
@@ -259,6 +260,102 @@ def make_card4_html(deadline, org, contact, url, today_str):
         </div>
     </div>
     </body></html>"""
+
+
+def optimize_images_for_platforms(item_dir: Path, title: str, region: str) -> None:
+    try:
+        files = sorted(item_dir.glob("0[5678]_*.png"))
+        if not files:
+            return
+
+        font_paths = [
+            "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+            "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc"
+        ]
+        font_path = None
+        for p in font_paths:
+            if Path(p).exists():
+                font_path = p
+                break
+
+        def get_font(size):
+            return ImageFont.truetype(font_path, size) if font_path else ImageFont.load_default()
+
+        region_map = {
+            "전국": "national", "서울": "seoul", "경기": "gyeonggi", "부산": "busan",
+            "인천": "incheon", "대구": "daegu", "광주": "gwangju", "대전": "daejeon",
+            "울산": "ulsan", "제주": "jeju"
+        }
+        region_slug = region_map.get(region, "korea")
+        title_slug = "-".join(word.lower() for word in re.sub(r'[^\w\s]', '', title).split()[:4])
+        base_slug = f"{region_slug}-{title_slug}-2026"
+
+        def add_watermark(img):
+            img_rgba = img.convert("RGBA")
+            overlay = Image.new("RGBA", img_rgba.size, (255, 255, 255, 0))
+            draw = ImageDraw.Draw(overlay)
+            w, h = img_rgba.size
+            draw.text((w - 200, h - 60), "나혼자창업", font=get_font(36), fill=(255, 255, 255, 128))
+            return Image.alpha_composite(img_rgba, overlay).convert("RGB")
+
+        # naver/
+        naver_dir = item_dir / "naver"
+        naver_dir.mkdir(exist_ok=True)
+        for f in files:
+            with Image.open(f) as img:
+                wm_img = add_watermark(img)
+                w, h = wm_img.size
+                new_img = Image.new("RGB", (w, h + 80), (255, 255, 255))
+                new_img.paste(wm_img, (0, 0))
+                draw = ImageDraw.Draw(new_img)
+                notice_text = "본 포스팅은 '나혼자창업' 브랜드 운영자가 직접 작성한 홍보성 콘텐츠입니다"
+                font22 = get_font(22)
+                text_bbox = draw.textbbox((0, 0), notice_text, font=font22)
+                text_w = text_bbox[2] - text_bbox[0]
+                text_h = text_bbox[3] - text_bbox[1]
+                draw.text(((w - text_w) / 2, h + (80 - text_h) / 2), notice_text, fill="black", font=font22)
+                new_img.save(naver_dir / f.name)
+
+        # tistory/
+        tistory_dir = item_dir / "tistory"
+        tistory_dir.mkdir(exist_ok=True)
+        for idx, f in enumerate(files, 1):
+            with Image.open(f) as img:
+                wm_img = add_watermark(img)
+                wm_img.save(tistory_dir / f"{base_slug}-{idx:02d}.webp", "WEBP", quality=85)
+                (tistory_dir / f"{base_slug}-{idx:02d}.txt").write_text(f"{title} - {region} 지원사업 카드뉴스 {idx}번", encoding="utf-8")
+
+        # blogspot/
+        blogspot_dir = item_dir / "blogspot"
+        blogspot_dir.mkdir(exist_ok=True)
+        for idx, f in enumerate(files, 1):
+            with Image.open(f) as img:
+                wm_img = add_watermark(img)
+                wm_img.save(blogspot_dir / f"{base_slug}-{idx:02d}.webp", "WEBP", quality=85)
+                (blogspot_dir / f"{base_slug}-{idx:02d}.txt").write_text(f"{title} - {region} 지원사업 카드뉴스 {idx}번", encoding="utf-8")
+
+        # instagram/
+        insta_dir = item_dir / "instagram"
+        insta_dir.mkdir(exist_ok=True)
+        for f in files:
+            with Image.open(f) as img:
+                cropped = img.crop((0, 135, 1080, 1215))
+                wm_img = add_watermark(cropped)
+                if "08_" in f.name:
+                    final_rgba = wm_img.convert("RGBA")
+                    draw = ImageDraw.Draw(final_rgba)
+                    draw.rectangle([(0, 980), (1080, 1080)], fill=(26, 79, 160, 200))
+                    cta_text = "이 정보가 도움됐다면 저장/공유해주세요!"
+                    font28 = get_font(28)
+                    bbox = draw.textbbox((0, 0), cta_text, font=font28)
+                    text_w = bbox[2] - bbox[0]
+                    text_h = bbox[3] - bbox[1]
+                    draw.text(((1080 - text_w) / 2, 980 + (100 - text_h) / 2), cta_text, fill="white", font=font28)
+                    wm_img = final_rgba.convert("RGB")
+                wm_img.save(insta_dir / f.name)
+
+    except Exception as e:
+        print(f"이미지 최적화 실패: {e}")
 
 
 async def generate_card_images(item_data: dict, output_dir: str, page):
@@ -515,6 +612,7 @@ async def main():
                     'ai_amount': ai_amount, 'method': method_text,
                 }
                 await generate_card_images(item_data, str(item_dir), page)
+                optimize_images_for_platforms(item_dir, title, region)
                 log(f"✅ 카드뉴스 생성 완료: {title[:40]}")
 
                 attachments = sorted(item_dir.iterdir())

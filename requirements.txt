@@ -6,3 +6,4 @@ google-auth==2.30.0
 yagmail==0.15.293
 playwright
 pdfplumber
+Pillow
