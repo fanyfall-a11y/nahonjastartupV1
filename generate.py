@@ -6,6 +6,7 @@ import asyncio
 import io
 import requests
 import pdfplumber
+from urllib.parse import urljoin
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -277,12 +278,13 @@ async def fetch_pdf_text(page) -> str:
     try:
         links = await page.query_selector_all('a')
 
+        base_url = page.url
         pdf_url = ""
         # 우선순위 1: bizinfo (fileDown.do)
         for link in links:
             href = await link.get_attribute('href')
             if href and 'fileDown.do' in href:
-                pdf_url = href
+                pdf_url = urljoin(base_url, href)
                 break
 
         # 우선순위 2: .pdf 포함 href 또는 download 속성
@@ -291,7 +293,7 @@ async def fetch_pdf_text(page) -> str:
                 href = await link.get_attribute('href')
                 download_attr = await link.get_attribute('download')
                 if (href and '.pdf' in href.lower()) or download_attr:
-                    pdf_url = href
+                    pdf_url = urljoin(base_url, href)
                     break
 
         if not pdf_url:
@@ -302,7 +304,7 @@ async def fetch_pdf_text(page) -> str:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
 
         response = requests.get(pdf_url, cookies=cookie_dict, headers=headers, timeout=20)
-        if response.status_code != 200 or not response.content[:4] == b'%PDF':
+        if response.status_code != 200 or response.content[:4] != b'%PDF':
             return ""
 
         text_content = ""
