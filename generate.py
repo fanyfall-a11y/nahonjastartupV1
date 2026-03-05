@@ -14,7 +14,7 @@ ITEM_IDS = [x.strip() for x in os.getenv("ITEM_IDS", "").split(",") if x.strip()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GMAIL_USER = os.getenv("GMAIL_USER")
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
-TO_EMAIL = os.getenv("TO_EMAIL")
+TO_EMAIL = os.getenv("GENERATE_TO_EMAIL")  # 블로그 초안 전용 수신 이메일
 
 BASE_DIR = Path(__file__).parent
 LOG_FILE = BASE_DIR / "generate_log.txt"
@@ -135,12 +135,19 @@ def main():
             if tistory:
                 (item_dir / "02_티스토리.txt").write_text(tistory, encoding="utf-8")
 
+            blogspot = generate_content(
+                f"다음 지원사업 정보로 블로그스팟(Blogger)용 포스팅을 작성해줘. "
+                f"1500자 내외, HTML 태그 사용, 영어권 검색 최적화 고려.\n\n{context}"
+            )
+            if blogspot:
+                (item_dir / "03_블로그스팟.txt").write_text(blogspot, encoding="utf-8")
+
             insta = generate_content(
                 f"다음 지원사업 정보로 인스타그램 캡션을 작성해줘. "
                 f"본문 300자 이내, 마지막 줄에 해시태그 10개.\n\n{context}"
             )
             if insta:
-                (item_dir / "03_인스타그램.txt").write_text(insta, encoding="utf-8")
+                (item_dir / "04_인스타그램.txt").write_text(insta, encoding="utf-8")
 
             summary = f"제목: {title}\nURL: {url}\n주관기관: {org}\n신청기간: {period}\n지원금액: {amount}\n\n지원내용:\n{content}"
             (item_dir / "00_요약.txt").write_text(summary, encoding="utf-8")
