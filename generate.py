@@ -717,7 +717,7 @@ async def main():
                     optimize_images_for_platforms(stage4_dir, title, region, cta_text="제출 전 이 체크리스트 꼭 확인하세요!")
                     log(f"✅ Stage4 생성 완료: {title[:40]}")
 
-                attachments = sorted(p for p in item_dir.iterdir() if p.is_file())
+                attachments = sorted(p for p in item_dir.rglob("*") if p.is_file())
                 email_results.append({"title": title, "url": url, "attachments": attachments})
                 log(f"✅ 완료: {title[:40]}")
 
