@@ -7,6 +7,10 @@ on:
         description: '처리할 item_id (쉼표로 구분, 최대 10개)'
         required: true
         type: string
+      generate_date:
+        description: '데이터 날짜 (YYYY-MM-DD, 비우면 오늘)'
+        required: false
+        type: string
 
 jobs:
   generate:
@@ -37,4 +41,5 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GENERATE_TO_EMAIL: ${{ secrets.GENERATE_TO_EMAIL }}
+          GENERATE_DATE: ${{ inputs.generate_date }}
         run: python generate.py

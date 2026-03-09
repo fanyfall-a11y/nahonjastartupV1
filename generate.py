@@ -539,7 +539,7 @@ async def enrich_item(item: dict, page) -> dict:
 
 
 async def main():
-    date_str = datetime.now(KST).strftime("%Y-%m-%d")
+    date_str = os.getenv("GENERATE_DATE") or datetime.now(KST).strftime("%Y-%m-%d")
     output_base = BASE_DIR / "output" / date_str
 
     log(f"=== 블로그 초안 생성 시작 ({date_str}) ===")
