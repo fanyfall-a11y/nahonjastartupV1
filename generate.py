@@ -72,6 +72,13 @@ def get_items_by_ids(data, target_ids):
     return found_items
 
 
+def _to_str(v):
+    """Gemini가 list를 반환할 경우 줄바꿈으로 합쳐 문자열로 변환"""
+    if isinstance(v, list):
+        return '\n'.join(str(x) for x in v)
+    return str(v) if v is not None else ''
+
+
 def generate_content(prompt):
     try:
         client = genai.Client(api_key=GEMINI_API_KEY)
@@ -674,10 +681,10 @@ async def main():
                     insta = stage1_data.get("insta", "")
 
                     card1 = stage1_data.get("card", {})
-                    ai_ment = card1.get("ment", "")
-                    ai_target = card1.get("target", "")
-                    ai_amount = card1.get("amount", "")
-                    method_text = card1.get("method", "")
+                    ai_ment = _to_str(card1.get("ment", ""))
+                    ai_target = _to_str(card1.get("target", ""))
+                    ai_amount = _to_str(card1.get("amount", ""))
+                    method_text = _to_str(card1.get("method", ""))
 
                     if not ai_ment: ai_ment = f"📢 {title[:30]}..."
                     if not ai_target: ai_target = "• 해당 지역 사업자\n• 소상공인·창업자\n• 업력 무관"
@@ -728,8 +735,8 @@ async def main():
                     stage2_card_data = {
                         'title': title, 'region': region, 'deadline': period,
                         'org': org, 'contact': contact, 'url': url,
-                        'ai_ment': card2.get('ment', ''), 'ai_target': card2.get('checklist', ''),
-                        'ai_amount': card2.get('exclusions', ''), 'method': card2.get('next_teaser', ''),
+                        'ai_ment': _to_str(card2.get('ment', '')), 'ai_target': _to_str(card2.get('checklist', '')),
+                        'ai_amount': _to_str(card2.get('exclusions', '')), 'method': _to_str(card2.get('next_teaser', '')),
                     }
                     await generate_card_images(stage2_card_data, str(stage2_dir), page, stage=2)
                     optimize_images_for_platforms(stage2_dir, title, region, cta_text="자격 요건 잊지 않게 저장해두세요!")
@@ -751,8 +758,8 @@ async def main():
                     stage3_card_data = {
                         'title': title, 'region': region, 'deadline': period,
                         'org': org, 'contact': contact, 'url': url,
-                        'ai_ment': card3.get('ment', ''), 'ai_target': card3.get('fund_usage', ''),
-                        'ai_amount': card3.get('stage_structure', ''), 'method': card3.get('biz_plan_tips', ''),
+                        'ai_ment': _to_str(card3.get('ment', '')), 'ai_target': _to_str(card3.get('fund_usage', '')),
+                        'ai_amount': _to_str(card3.get('stage_structure', '')), 'method': _to_str(card3.get('biz_plan_tips', '')),
                     }
                     await generate_card_images(stage3_card_data, str(stage3_dir), page, stage=3)
                     optimize_images_for_platforms(stage3_dir, title, region, cta_text="자금 활용 팁 공유하기 💙")
@@ -774,8 +781,8 @@ async def main():
                     stage4_card_data = {
                         'title': title, 'region': region, 'deadline': period,
                         'org': org, 'contact': contact, 'url': url,
-                        'ai_ment': card4.get('ment', ''), 'ai_target': card4.get('checklist', ''),
-                        'ai_amount': card4.get('deadline_warning', ''), 'method': card4.get('cta', ''),
+                        'ai_ment': _to_str(card4.get('ment', '')), 'ai_target': _to_str(card4.get('checklist', '')),
+                        'ai_amount': _to_str(card4.get('deadline_warning', '')), 'method': _to_str(card4.get('cta', '')),
                     }
                     await generate_card_images(stage4_card_data, str(stage4_dir), page, stage=4)
                     optimize_images_for_platforms(stage4_dir, title, region, cta_text="제출 전 이 체크리스트 꼭 확인하세요!")
