@@ -505,7 +505,7 @@ async function dispatchWorkflow(token) {
         'Accept': 'application/vnd.github.v3+json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ref: 'main', inputs: { item_ids: ids } }),
+      body: JSON.stringify({ ref: 'main', inputs: { item_ids: ids, generate_date: selectedDate } }),
     });
     if (res.status === 204 || res.status === 201) {
       alert('✅ 콘텐츠 생성 요청이 완료되었습니다!\nGitHub Actions에서 실행 중입니다.');
