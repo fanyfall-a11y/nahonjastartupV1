@@ -1,16 +1,1717 @@
 {
   "date": "2026-06-30",
-  "total": 21,
-  "targetCount": 12,
+  "total": 100,
+  "targetCount": 20,
   "sources": {
-    "bizinfo": {
-      "id": "bizinfo",
-      "name": "기업마당",
-      "icon": "🏢",
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
       "color": "#1a4fa0",
-      "count": 0,
-      "targetCount": 0,
-      "items": []
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1069454",
+          "source": "mss",
+          "title": "K-뷰티 사우디 진출 지원사업 참여기업 모집",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069454",
+          "date": "2026-07-23",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-29 ~ 2026-07-23",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업부와 주사우디아라비아왕국 대한민국대사관은 K-뷰티 기업의 사우디 진출을 지원하고자 붙임과 같이 &lsquo;K-뷰티 사우디 진출 지원사업&rsquo;을 추진하오니 역량 있는 기업들의 많은 참여 바랍니다.<br />\n<br />\n&nbsp;* 지원사업 사전설명회 :&nbsp;&lsquo;26.7.2(목) 14:00~15:30, 스타트업브랜치 피칭센터(서울시 강남구 영동대로 513(코엑스 2층))\n<div data-hjsonver=\"1.0\" data-jsonlen=\"10567\" id=\"hwpEditorBoardC",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069284",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 전략과제 해결형(Top-Down) 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069284",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "대&middot;중견기업 공공기관 등 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 &#39;전략과제 해결형&#39; 협업 과제 수행에 참여할 창업기업을 다음과 같이 모집합니다.<br />\n&nbsp;<br />\n□ 사업목적 : 수요기업(대&middot;중견기업&middot;공공기관 등)과 창업기업 간 오픈이노베이션 활성화 및 상호 협력을 통한 동반 성장 지원\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9030\" id=\"hwpEdit",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069207",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지–방산) 수요기업 협업 과제 모집 수정(2차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069207",
+          "date": "2026-06-29",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-02 ~ 2026-06-29",
+            "eligibility": "",
+            "content": "방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지&ndash;방산)<br />\n수요기업 협업 과제 모집을 다음과 같이 수정하여 공고합니다.<br />\n&nbsp;<br />\n□ 사업목적 : 방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 오픈이노베이션 활성화 및 동반 성장 지원<br />\n□ 모집대상 : 창업기업과 협업을 희망하는 군 및 방산 분야 수요기업<br />\n",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069198",
+          "source": "mss",
+          "title": "2027년 신규 병역지정업체(산업기능요원) 선정 및 필요인원 신청·접수 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069198",
+          "date": "2026-07-10",
+          "org": "인력정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-29 ~ 2026-07-10",
+            "eligibility": "",
+            "content": "2027년 신규 병역지정업체(산업기능요원) 선정 및 필요인원 신청&middot;접수 계획을 붙임과 같이 공고합니다.<br />\n<br />\n※ 신청&middot;접수 관련 문의처 : 1899-3001(산업기능요원 상담센터)&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069194",
+          "source": "mss",
+          "title": "2026년 창업도시 조성 프로젝트 창업기업 모집 통합공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069194",
+          "date": "2026-07-07",
+          "org": "창업생태계과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026-06-22 ~ 2026-07-07",
+            "eligibility": "",
+            "content": "<br />\n수도권-비수도권의 창업 양극화 해소 및 지역 창업 생태계 강화를 촉진하는 창업도시 조성 프로젝트의 추진을 위해,&nbsp;｢투자연계형 창업패키지(초기&middot;도약)｣ 및 ｢지역창업패키지(성장&middot;이전)｣에 참여할 창업기업을 4개 광역시(대구, 광주, 대전, 울산)로 구분하여 모집공고 하오니, 많은 참여 바랍니다.<br />\n<br />\nㅇ <strong>(접수 기간)</strong> : 2026년 6월 22일(월) ~ 7월 7일(화) 15:00까지<br />\n&nbsp; * 접수는 2026년 7월 7일(화",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069184",
+          "source": "mss",
+          "title": "2026년도 중소기업기술혁신개발사업 수출지향형(함께달리기, 이어달리기) 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069184",
+          "date": "2026-07-22",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "2026-07-08 ~ 2026-07-22",
+            "eligibility": "",
+            "content": "2026년 중소기업기술혁신개발사업 수출지향형(함께달리기, 이어달리기)를 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069172",
+          "source": "mss",
+          "title": "2026년 소공인 클린제조환경조성사업 추가 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069172",
+          "date": "2026-07-06",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-19 ~ 2026-07-06",
+            "eligibility": "",
+            "content": "<br />\n소공인 작업장의 안전사고 예방 및 에너지효율개선 지원을 목적으로 추진하는「2026년 소공인 클린제조환경조성」사업을 붙임과 같이 추가 모집 공고하오니 많은 관심과 참여바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"7633\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069153",
+          "source": "mss",
+          "title": "2026년도 딥테크 특화 창업중심대학 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069153",
+          "date": "",
+          "org": "청년정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "과학기술원발 신산업 창업 분야의 유망 창업기업을 발굴‧지원하는 「2026년도 딥테크 특화 창업중심대학」 창업기업 모집계획을 붙임과 같이 공고하오니 많은 참여 바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"10489\" id=\"hwpEditorBoardContent\">자세한 사항은 붙임의 공고문을 확인해주시기 바랍니다.<br />\n감사합니다.<br />\n<br />\n<strong>□ 신청자격</strong><br />\n<br />\n&nbsp;◦ 신산업 창업 분야의 아이템을 보유하고, ｢중소기업창업 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069052",
+          "source": "mss",
+          "title": "2026년 민관협력 오픈이노베이션 (모두의 챌린지 기후테크) 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069052",
+          "date": "2026-07-10",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026-06-16 ~ 2026-07-10",
+            "eligibility": "",
+            "content": "『2026년 민관협력 오픈이노베이션(기후테크 분야)』&lsquo;전략과제 해결형&rsquo; 협업과제 수행에 참여할 창업기업을 다음과 같이 모집합니다.<br />\n<br />\n<br />\n1. 사업목적 :&nbsp;오픈이노베이션 수요가 있는 대기업&middot;공공기관과 협업을 희망하는 창업기업을 발굴하여 사업화 자금 지원\n<div data-hjsonver=\"1.0\" data-jsonlen=\"8066\" id=\"hwpEditorBoardContent\"><br />\n2. 지원대상 :&nbsp;공고일 기준으로「중소기업창업 지원법」의 창업",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069018",
+          "source": "mss",
+          "title": "2026년 소공인 판로개척지원사업 추가 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069018",
+          "date": "2026-06-19",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "판로/마케팅",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-15 ~ 2026-06-19",
+            "eligibility": "",
+            "content": "<br />\n민간 플랫폼과의 협업을 통해 성장 가능성이 높은 소공인의 브랜드화, 판로 확대 및 시장진출을 지원하는,<br />\n2026년 소공인 판로개척지원사업 민간협업형(Track1) 참여 소공인을 붙임과 같이 추가 모집하오니&nbsp; 많은 신청 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1069002",
+          "source": "mss",
+          "title": "2026년 소공인 스마트제조지원 추가 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1069002",
+          "date": "2026-07-03",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-15 ~ 2026-07-03",
+            "eligibility": "",
+            "content": "<br />\n소공인의 제조 경쟁력 강화 및 디지털전환을 위해 ｢소공인 스마트 제조지원사업｣을 붙임과 같이 공고하오니 참여를 희망하는 소공인의 많은 신청 바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"10580\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068955",
+          "source": "mss",
+          "title": "「2026년 민관협력 오픈이노베이션 지원」 모두의 챌린지 바이오 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068955",
+          "date": "2026-07-01",
+          "org": "기술혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026-06-11 ~ 2026-07-01",
+            "eligibility": "",
+            "content": "제약바이오 분야 혁신적인 기술력과 성장 가능성을 보유한 창업기업을 발굴하고,<br />\n국내 제약사와의 개방형 협업(Open Innovation)을 기반으로 기술검증(PoC) 및 공동연구를 촉진하여<br />\n글로벌 경쟁력을 갖춘 혁신기업으로의 성장을 지원하고자<br />\n「2026년 민관협력 오픈이노베이션 지원」 모두의 챌린지 바이오 참여기업을 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"10391\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068897",
+          "source": "mss",
+          "title": "「2026년 민관협력 오픈이노베이션 지원」 제2차 수요기업·기관 협업 과제 및 프로그램 모집 수정 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068897",
+          "date": "2026-06-11",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-20 ~ 2026-06-11",
+            "eligibility": "",
+            "content": "스타트업과 수요기업(대&middot;중견기업&middot;공공기관 등)간 협력을 통한 동반성장 지원을 위해<br />\n「2026년 민관협력 오픈이노베이션 지원」사업에 참여할 수요기업&middot;기관의 협업 과제(전략과제 해결형) 및 협업 프로그램(민간 선별추천형)을 다음과 같이 모집합니다.<br />\n<br />\n□ 사업목적 : 수요기업&middot;스타트업 간 오픈이노베이션 정보 제공 및 중개 플랫폼 등을 통해 기업 간 상생협력 및 스타트업 성장 촉진<br />\n□ 모집대상 : 창업기업과 협력을 희망하는 수요기업(대&middot",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068837",
+          "source": "mss",
+          "title": "2026년도 일반 물류바우처(2차) 사업 참여기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068837",
+          "date": "",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업부 공고 제2026-378호<br />\n<br />\n2026년도 일반 물류바우처(2차) 사업 참여기업 모집공고<br />\n<br />\n&nbsp;최근 글로벌 물류비 상승 및 공급망 불안정에 대응하여 수출 중소기업의 국제운송 비용 부담을 완화하고, 수출 경쟁 강화하기 위해 「2026년도 일반 물류 바우처(2차) 사업」참여기업 모집 계획을 다음과 같이 공고합니다.<br />\n&nbsp;<br />\n2026년 6월 8일<br />\n중소벤처기업부 장관",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068800",
+          "source": "mss",
+          "title": "『AI+ OpenData 챌린지』 참여기업 모집 연장 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068800",
+          "date": "",
+          "org": "정보화담당관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "AI+ OpenData 챌린지 참여기업 모집기간을 다음과 같이 연장하오니 많은 관심과 참여 부탁드립니다.<br />\n<br />\n□ 공고기간 변경사항<br />\n&nbsp;\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:319px;height:27px;\">기존 공고기간</td>\n\t\t\t<td style=\"width:319px;height:27px;\">연장 공고기간</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width:319px;height:35px;\">&rsquo;26. 5. 11.(",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068742",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지–방산) 수요기업 협업 과제 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068742",
+          "date": "2026-06-22",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-02 ~ 2026-06-22",
+            "eligibility": "",
+            "content": "방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지&ndash;방산)<br />\n수요기업 협업 과제를 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9257\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 오픈이노베이션 활성화 및 동반",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068717",
+          "source": "mss",
+          "title": "2026년도 2차 대중소기업동반진출지원사업 주관기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068717",
+          "date": "2026-06-26",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-26",
+            "eligibility": "",
+            "content": "<br />\n2026년도 2차 대중소기업동반진출지원사업 주관기업 모집을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068716",
+          "source": "mss",
+          "title": "2026년도 2차 대중소기업동반진출지원사업 주관기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068716",
+          "date": "2026-06-26",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-26",
+            "eligibility": "",
+            "content": "<br />\n2026년도 2차 대중소기업동반진출지원사업 주관기업 모집을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068710",
+          "source": "mss",
+          "title": "2026년 대한민국 소상공인 대회 유공자 포상 공고(연장)",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068710",
+          "date": "2026-06-12",
+          "org": "소상공인정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-12",
+            "eligibility": "",
+            "content": "대한민국 소상공인 대회 관련 유공자 포상 신청접수기간을 6.12일까지 연장 공고하오니 많은 신청바랍니다.<br />\n<br />\n문의처 : 각 지역별 소상공인시장진흥공단 지역센터",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068679",
+          "source": "mss",
+          "title": "2026년 K-수출전략품목 육성사업 참여기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068679",
+          "date": "2026-06-25",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-29 ~ 2026-06-25",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업의 수출경쟁력 강화를 위한 ｢2026년 K-수출전략품목 육성사업｣ 참여기업 모집을 붙임과 같이 공고합니다.&nbsp;<br />\n&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068654",
+          "source": "mss",
+          "title": "협업형 지역생활경제 활성화 시범사업 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068654",
+          "date": "2026-06-12",
+          "org": "지역혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-29 ~ 2026-06-12",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-362호<br />\n<br />\n협업형 지역생활경제 활성화 시범사업을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068626",
+          "source": "mss",
+          "title": "2026년도 디지털기반 중소사업장 산재예방 기술개발 지원사업 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068626",
+          "date": "2026-07-02",
+          "org": "기술혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-15 ~ 2026-07-02",
+            "eligibility": "",
+            "content": "2026년도 디지털기반 중소사업장 산재예방 기술개발 지원사업 시행계획을 붙임과 같이 공고합니다.<br />\n<br />\n1. 신청접수기간 : 2026. 6. 15. ~ 7. 2.&nbsp;<br />\n2. 과제접수 및 자세한 내용은 범부처통합연구지원시스템(www.iris.go.kr)에서 확인하시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068619",
+          "source": "mss",
+          "title": "2026년 글로벌비즈니스센터 입주기업 상시모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068619",
+          "date": "",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<strong>해외진출을 희망하는 중소기업</strong>에 현지 사무공간, 특화프로그램 등을 지원하는 &#39;<strong>글로벌비즈니스센터</strong>(GBC)*&#39;의 입주기업을 다음과 같이 모집합니다(재공고).<br />\n* 전세계 14개국 22개 지역에 설치&nbsp;<br />\n&nbsp;<br />\n- <strong>접수 기간</strong> : <strong>상시 모집</strong><br />\n- <strong>지원 내용 </strong>: 현지 법인설립 및 해외시장 개척 활동 등 현지 초기정착을 위한 <s",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068590",
+          "source": "mss",
+          "title": "2026년 기술개발제품 시범구매 지원계획(2차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068590",
+          "date": "",
+          "org": "판로정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n창업기업 등 기술개발제품의 공공판로 개척을 지원하기 위한 「2026년 기술개발제품 시범구매 지원계획(2차)」을 다음과 같이 공고하오니 많은 참여 바랍니다.<br />\n&nbsp;<br />\n&nbsp;\n<div data-hjsonver=\"1.0\" data-jsonlen=\"14663\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068572",
+          "source": "mss",
+          "title": "「2026년 민관협력 오픈이노베이션 지원사업」 중견기업-스타트업 오픈이노베이션 스타트업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068572",
+          "date": "2026-06-15",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-26 ~ 2026-06-15",
+            "eligibility": "",
+            "content": "중견기업과 스타트업 간 협력을 통한 동반 성장 지원을 위해<br />\n｢2026년 민관협력 오픈이노베이션 지원사업｣ 중견기업-스타트업 오픈이노베이션<br />\n협업 과제 수행에 참여할 스타트업을 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"7842\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 중견기업과 스타트업 간 오픈이노베이션 활성화 및 상호 협력을 통한 동반 성장 지원<br />\n□ 모집대상 : 공고일 기준으로「중소기업창업 지원법」의 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068560",
+          "source": "mss",
+          "title": "2026년도 민관공동기술사업화R&D 제3차 (구매연계·상생협력) 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068560",
+          "date": "2026-06-29",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-15 ~ 2026-06-29",
+            "eligibility": "",
+            "content": "<br />\n2026년도 민관공동기술사업화R&amp;D 제3차 (구매연계&middot;상생협력) 시행계획 공고&nbsp;붙임과 같이 공고하오니 많은 참여 부탁드립니다.<br />\n<br />\n자세한 사항은 붙임 &#39;시행계획 공고&#39; 및 &#39;세부 지원내용&#39;을 참고하시기 바랍니다.<br />\n<br />\n&nbsp;* (수정) 2-4 구매연계-혁신형도전 RFP가 24개로 수정되었습니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068484",
+          "source": "mss",
+          "title": "『AI+ OpenData 챌린지』 참여기업 모집 수정 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068484",
+          "date": "",
+          "org": "정보화담당관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "AI+ OpenData 챌린지 (공고 제2026-327호, &#39;26.5.11)를 다음과 같이 수정하여 공고합니다.<br />\n<br />\n&nbsp;ㅇ 신청제외 대상, 유의사항 내용 추가<br />\n<br />\n자세한 내용은 공고문을 첨부하여 주시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068445",
+          "source": "mss",
+          "title": "2026년도 글로벌협력형 R&D (예비연구형) 사업 재공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068445",
+          "date": "2026-06-09",
+          "org": "기술혁신정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-26 ~ 2026-06-09",
+            "eligibility": "",
+            "content": "2026년 글로벌협력형 R&amp;D (예비연구형) 사업의 재공고를 붙임과 같이 공고합니다.<br />\n상세한 내용은 범부처통합연구지원시스템(www.iris.go.kr)에서 확인하시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068436",
+          "source": "mss",
+          "title": "2026년 중소기업 우체국 국제 물류 서비스 이용 지원 사업 참여기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068436",
+          "date": "2026-06-05",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-20 ~ 2026-06-05",
+            "eligibility": "",
+            "content": "<br />\n중소기업의 우체국 국제물류 서비스 이용 지원을 통해 수출 물류 부담을 완화하고,<br />\n수출 경쟁력을 제고하는 &#39;2026년 중소기업 우체국 국제 물류 서비스 이용 지원사업&#39; 참여기업 공고를 붙임과 같이 게시합니다.&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068434",
+          "source": "mss",
+          "title": "「2026년 민관협력 오픈이노베이션 지원」 제2차 수요기업‧기관 협업 과제 및 프로그램 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068434",
+          "date": "2026-06-09",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-20 ~ 2026-06-09",
+            "eligibility": "",
+            "content": "스타트업과 수요기업(대&middot;중견기업&middot;공공기관 등)간 협력을 통한 동반성장 지원을 위해<br />\n「2026년 민관협력 오픈이노베이션 지원」사업에 참여할 수요기업&middot;기관의 협업 과제(전략과제 해결형) 및 협업 프로그램(민간 선별추천형)을 다음과 같이 모집합니다.<br />\n<br />\n□ 사업목적 : 수요기업&middot;스타트업 간 오픈이노베이션 정보 제공 및 중개 플랫폼 등을 통해 기업 간 상생협력 및 스타트업 성장 촉진<br />\n□ 모집대상 : 창업기업과 협력을 희망하는 수요기업(대&middot",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068431",
+          "source": "mss",
+          "title": "2026년도 스마트제조 전문인력 육성사업 참여기관(기업, 사업단) 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068431",
+          "date": "2026-06-12",
+          "org": "인력정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-20 ~ 2026-06-12",
+            "eligibility": "",
+            "content": "스마트제조 현장에 투입 가능한 전문인력의 신속한 육성, 공급을 통해 양질의 일자리를 창출하고, 제조 중소기업의 디지털 및 AI 전환 촉진을 위해<br />\n2026년도 스마트제조 전문인력 육성사업 참여기관(기업, 사업단)을 붙임과 같이 모집하고자 합니다.&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068297",
+          "source": "mss",
+          "title": "2026년 창업패키지(AI 인재 실증형) 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068297",
+          "date": "2026-06-12",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-18 ~ 2026-06-12",
+            "eligibility": "",
+            "content": "AI전문 교육프로그램을 수료한 우수인재 및 창업기업의 성장지원을 위한 2026년도 창업패키지(AI 인재 실증형)에 참여할 창업기업을 다음과 같이 모집합니다.<br />\n<br />\n- 신청접수 기간 : 2026. 5. 18.(월) ~ 6. 12.(금) 18:00<br />\n<br />\n- 신청접수 및 제출서류 등 상세내용 : K-startup 누리집(www.k-startup.go.kr) 참조",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068289",
+          "source": "mss",
+          "title": "(중기부공고 제2026-330호) 2026년 성능인증EPC 신규신청 접수 공고(2차)",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068289",
+          "date": "",
+          "org": "판로정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "중소기업 기술개발제품의 성능을 확보하였음을 확인&middot;증명하여 공공기관의 기술개발제품 구매촉진 및 조달시장 판로 확대를 위해 추진하는「2026년 성능인증(EPC) 신규신청 접수 계획」을 다음과 같이 공고합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"8813\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068239",
+          "source": "mss",
+          "title": "2026년도 중소기업기술혁신개발사업 하반기(2차) 시행계획 공고(수정)",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068239",
+          "date": "2026-06-15",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-15",
+            "eligibility": "",
+            "content": "<br />\n2026년도 중소기업기술혁신개발사업 하반기(2차) 시행계획을 붙임과 같이 공고하오니 많은 참여 부탁드립니다.<br />\n<br />\n자세한 사항은 붙임 &#39;시행계획 공고&#39; 및 &#39;세부 지원내용&#39;을 참고하시기 바랍니다.<br />\n<br />\n*&#39; [붙임2-1]중소기업기술개발(수출지향형) 세부 지원내용&#39; 파일이 변경되었습니다.(`26.5.18.) 참고하여 주시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068107",
+          "source": "mss",
+          "title": "「2026년 브랜드 소상공인 점프업」 소상공인 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068107",
+          "date": "2026-05-29",
+          "org": "디지털소상공인과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-11 ~ 2026-05-29",
+            "eligibility": "",
+            "content": "역량 있는 소상공인을 전문 광고&middot;마케팅 대행사와 함께 프리미엄 브랜드로 집중 육성하는「2026년 브랜드 소상공인 점프업」사업을 다음과 같이 공고하니, 소상공인분들의 많은 참여를 바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"7896\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068102",
+          "source": "mss",
+          "title": "『AI+ OpenData 챌린지』 참여기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068102",
+          "date": "2026-06-05",
+          "org": "정보화담당관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-11 ~ 2026-06-05",
+            "eligibility": "",
+            "content": "공공기관의 현안 해결을 위해 기관이 실제 사용하는 현장데이터를 AI 스타트업에 공개하고, 혁신적인 AI 솔루션 발굴을 지원하는&nbsp;「AI+ OpenData 챌린지」참여기업을 아래와 같이 모집합니다.<br />\n<br />\n<br />\n□ 사업목적 : 공공기관의 현안 해결을 위해 기관이 실제 사용하는 현장 데이터를 AI 스타트업에 공개하고, 혁신적인 AI 솔루션 발굴<br />\n&nbsp;<br />\n□ 주 최 : 중소벤처기업부<br />\n&nbsp;<br />\n□ 주 관 : 중소벤처기업진흥공단<br />\n&nbsp;<br />",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068087",
+          "source": "mss",
+          "title": "2026년 올해의 상생기업 대상 포상 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068087",
+          "date": "2026-06-19",
+          "org": "상생협력정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-11 ~ 2026-06-19",
+            "eligibility": "",
+            "content": "<strong>2026년도 ｢올해의 상생기업 대상｣포상 공고</strong><br />\n&nbsp;대‧중소기업 간 상생협력 문화확산에 기여한 2026년도 ｢올해의 상생기업 대상｣ 포상 후보자를 아래와 같이 모집하오니, 많은 신청 바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"11961\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n&nbsp; <strong>1. 포상목적</strong> :&nbsp;대‧중소기업 상생협력을 촉진하기 위하여 상생협력 우수기업 및 상생협력 확산",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068080",
+          "source": "mss",
+          "title": "2026년 소공인 판로개척지원사업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068080",
+          "date": "2026-06-05",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "판로/마케팅",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-08 ~ 2026-06-05",
+            "eligibility": "",
+            "content": "<br />\n성장잠재력을 갖춘 유망 소공인의 육성을 위한「2026년 소공인 판로개척지원사업」협업기관 및 소공인 모집을 아래와 같이 공고하오니 참여를 희망하는 기업은 많은 신청 바랍니다.<br />\n<br />\n&lt; 사업 신청 기간 &gt;<br />\n민간협업형 협업기관&nbsp; &#39;26.5.8.(금)~5.22(금) 18시까지<br />\n민간협업형 참여 소공인&nbsp; &#39;26.5.8.(금)~6.5.(금) 18시까지<br />\n개별형 참여 소공인 &#39;26.5.18.(월)~6.5.(금) 18시까지&nbsp;&nb",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068077",
+          "source": "mss",
+          "title": "2026년 소상공인 생활문화 혁신지원 사업 참여 소상공인 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068077",
+          "date": "2026-06-08",
+          "org": "소상공인정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-18 ~ 2026-06-08",
+            "eligibility": "",
+            "content": "지역 소상공인의 제품&middot;서비스 개선을 통한 부가가치 제고와 지역기반 성장 촉진을 위한<br />\n<br />\n「 2026년 소상공인 생활문화 혁신지원 」 사업에 참여할 소상공인을 붙임과 같이 모집합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068076",
+          "source": "mss",
+          "title": "2026년 소상공인 생활문화 혁신지원 사업 주관기관 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068076",
+          "date": "2026-05-26",
+          "org": "소상공인정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-08 ~ 2026-05-26",
+            "eligibility": "",
+            "content": "지역 소상공인의 제품&middot;서비스 개선을 통한 부가가치 제고와 지역기반 성장 촉진을 위한<br />\n<br />\n「 2026년 소상공인 생활문화 혁신지원」 사업에 참여할 주관기관을 붙임과 같이 모집합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068000",
+          "source": "mss",
+          "title": "2026년 K-스타트업 그랜드챌린지 해외 (예비) 스타트업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068000",
+          "date": "2026-06-17",
+          "org": "글로벌창업팀",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-06 ~ 2026-06-17",
+            "eligibility": "",
+            "content": "<br />\n2026년 K-스타트업 그랜드챌린지에 참여할 해외 (예비)스타트업을 모집합니다.<br />\n자세한 사항은 첨부파일 참고하시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067991",
+          "source": "mss",
+          "title": "2026년 중소기업 혁신바우처(채용지원) 사업 지원계획 수정 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067991",
+          "date": "2026-05-13",
+          "org": "지역혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-20 ~ 2026-05-13",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업부 공고 제2026-317호<br />\n2026년 중소기업 혁신바우처(채용지원) 사업 지원계획을 붙임과 같이 수정 공고합니다.<br />\n<br />\n수정내용&nbsp;<br />\n1. 신청기간(2P) &nbsp;: &#39;26. 4. 20. ~ &#39;26. 5. 6. &nbsp;&rarr; &#39;26. 5. 13.&nbsp;<br />\n2. 신정 시 유의사항(3P) : 고용유지 실패 시 제재 적용 완화<br />\n<br />\n&nbsp;* 세부내용은 혁신플랫폼(mssmiv.com)에서 확인 가능",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067945",
+          "source": "mss",
+          "title": "2026년 소공인 클린제조환경조성사업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067945",
+          "date": "2026-06-02",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-30 ~ 2026-06-02",
+            "eligibility": "",
+            "content": "<br />\n소공인 작업장의 안전사고 예방 및 에너지효율개선 지원을 목적으로 추진하는「2026년 소공인 클린제조환경조성」사업을 다음과 같이 공고하오니 많은 관심과 참여바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"7619\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067942",
+          "source": "mss",
+          "title": "2026년 소공인 스마트제조지원사업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067942",
+          "date": "2026-06-02",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-18 ~ 2026-06-02",
+            "eligibility": "",
+            "content": "<br />\n소공인의 제조 경쟁력 강화 및 디지털전환을 위해 ｢소공인 스마트 제조지원사업｣을 다음과 같이 공고하오니 참여를 희망하는 소공인의 많은 신청 바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"10580\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067939",
+          "source": "mss",
+          "title": "2026년도 공급망안정화 선도사업자 제1차 선정계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067939",
+          "date": "2026-05-29",
+          "org": "대외환경대응과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-30 ~ 2026-05-29",
+            "eligibility": "",
+            "content": "<p>『경제안보를 위한 공급망 안정화 지원 기본법』제19조에 따라&nbsp;2026년도 공급망안정화 선도사업자 제1차 선정계획&rsquo;을&nbsp;아래와 같이&nbsp;공고합니다.</p>\n\n<p>&nbsp;</p>\n\n<p>2026년&nbsp;4월&nbsp;30일</p>\n\n<p>관계부처 합동<br />\n<br />\n&nbsp;</p>\n\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td valign=\"middle\">\n\t\t\t<p>관계부처</p>\n\t\t\t</td>\n\t\t\t<td valign=\"middle\">\n\t\t\t<p>재정경제부,&n",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067938",
+          "source": "mss",
+          "title": "2026년 정부 첫 실증·구매 프로젝트 (모두의 챌린지 로봇) 스타트업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067938",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n2026년 정부 첫 실증&middot;구매 프로젝트 (모두의 챌린지 로봇) 참여 스타트업을 붙임과 같이 모집합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067880",
+          "source": "mss",
+          "title": "2026년도 중소기업기술혁신개발사업 글로벌협력형 2차 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067880",
+          "date": "2026-06-01",
+          "org": "기술혁신정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-13 ~ 2026-06-01",
+            "eligibility": "",
+            "content": "<br />\n2026년도 글로벌협력형 R&amp;D 사업 2차 사업을 붙임과 같이 공고합니다.&nbsp;&nbsp;<br />\n<br />\n1. 신청접수기간 : 2026. 5. 13(수) ~ 6. 1(월) 18시까지<br />\n<br />\n2. 과제접수 및 자세한 내용은 범부처통합연구지원시스템(www.iris.go.kr)에서 확인하시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067853",
+          "source": "mss",
+          "title": "2026년도 제2차 중소벤처기업부 혁신제품 지정기간 연장(1차연장) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067853",
+          "date": "2026-05-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-29 ~ 2026-05-28",
+            "eligibility": "",
+            "content": "<p>중소벤처기업부 공고 제2026-310호<br />\n&nbsp;<br />\n2026년도 제2차 중소벤처기업부 혁신제품 지정기간 연장(1차연장) 공고</p>\n\n<p>&nbsp;<br />\n&lt;2026년도 제2차 중소벤처기업부 혁신제품 지정기간 연장(1차연장)&gt; 공고를 다음과 같이 안내하오니, 해당하는 중소기업은 신청하여 주시기 바랍니다.<br />\n<br />\n□ (대상) 중소벤처기업부가 지정한 혁신제품을 보유한 기업으로서, 기본 지정기간*(3년)이 만료되는 혁신제품을 보유한 기업<br />\n&nbsp;<br />\n&nb",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067840",
+          "source": "mss",
+          "title": "2026년도 중소기업 수출 핵심품목 탄소감축 기술개발사업 하반기 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067840",
+          "date": "2026-05-27",
+          "org": "대외환경대응과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-13 ~ 2026-05-27",
+            "eligibility": "",
+            "content": "2026년도 중소기업 수출 핵심품목 탄소감축 기술개발사업 시행계획을 붙임과 같이 공고하오니, 많은 참여바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067798",
+          "source": "mss",
+          "title": "「2026년 민관협력 오픈이노베이션 지원」 상호 자율탐색형 수요기업 및 스타트업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067798",
+          "date": "2026-05-18",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-28 ~ 2026-05-18",
+            "eligibility": "",
+            "content": "스타트업과 수요기업(대&middot;중견기업&middot;공공기관 등)간 협력을 통한 동반성장 지원을 위해<br />\n「2026년 민관협력 오픈이노베이션 지원」 상호 자율탐색형에 참여할 수요기업 및 스타트업을 다음과 같이 모집합니다.<br />\n<br />\n□ 사업목적 : 수요기업&middot;스타트업 간 오픈이노베이션 정보 제공 및 중개 플랫폼 등을 통해 기업 간 상생협력 및 스타트업 성장 촉진<br />\n□ 지원대상 : 수요기업과 협업과제 추진을 희망하는 스타트업<br />\n□ 협약기간 : 협약 시작일로부터 7개월 이내(&rsq",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067792",
+          "source": "mss",
+          "title": "2026년 2분기 협업기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067792",
+          "date": "2026-05-11",
+          "org": "지역혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-28 ~ 2026-05-11",
+            "eligibility": "",
+            "content": "중소기업간 협업지원사업 운영요령에 따른 2026년 2분기 협업기업 신청공고입니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067790",
+          "source": "mss",
+          "title": "2026년 중소기업 CBAM대응 인프라구축 사업 참여기업 모집 수정공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067790",
+          "date": "2026-05-14",
+          "org": "대외환경대응과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-27 ~ 2026-05-14",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-304호<br />\n<br />\n2026년도 중소기업 CBAM대응 인프라구축 사업 참여기업 모집 수정공고<br />\n<br />\n중소기업이 EU 탄소국경조정제도(CBAM)등 고도의 전문성을 요구하는 글로벌 탄소규제에 대응할 수 있는 역량을 강화할 수 있도록 다음과 같이 참여기업 모집을 수정공고 합니다.<br />\n<br />\n<strong>&lt;수정사항&gt;</strong><br />\n<br />\n<strong>1. (1p) 지원내용 구체화</strong><br />\n&nbsp;:&nbsp;① (H",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067786",
+          "source": "mss",
+          "title": "2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067786",
+          "date": "2026-05-26",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-05-11 ~ 2026-05-26",
+            "eligibility": "",
+            "content": "2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고입니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067772",
+          "source": "mss",
+          "title": "2026년 글로벌베이스캠프 사업 수행기관 모집 재공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067772",
+          "date": "2026-05-10",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-27 ~ 2026-05-10",
+            "eligibility": "",
+            "content": "<br />\n민간의 역량을 활용하여 현지 거점을 기반으로 중소벤처기업의 글로벌 진출을 지원하는 &#39;글로벌베이스캠프&#39;의 민간위탁 수행기관를 다음과 같이 모집합니다(재공고).<br />\n<br />\n- 접수 기간 : 4.27.(월) ~ 5.10.(일)&nbsp;<br />\n- 신청 자격 : 아래 요건을 모두 충족하는 기관<br />\n<br />\n&nbsp; &nbsp; 1. 글로벌 거점을 보유한 기관<br />\n&nbsp; &nbsp; 2. 미국 동남부 지역 내 현지 유관기관/경제단체 협력 인프라를 보유한 기관&nbsp;<",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067733",
+          "source": "mss",
+          "title": "2026년 비즈니스지원단(현장클리닉) 사업 운영계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067733",
+          "date": "",
+          "org": "혁신행정담당관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-302호<br />\n&nbsp;<br />\n&nbsp;<br />\n<strong>2026년 비즈니스지원단(현장클리닉) 운영계획 공고</strong><br />\n&nbsp;<br />\n&nbsp;<br />\n중소기업의 경영애로를 상담부터 현장클리닉까지 신속히 해결해 주는 ｢2026년도 비즈니스지원단(현장클리닉) 사업 운영계획｣을 다음과 같이 공고합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"14397\" id=\"hwpEditorBoardContent\"><br />\n자세한 내",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067709",
+          "source": "mss",
+          "title": "2026년 온라인수출 중소기업 물류 지원사업(추경포함) 참여기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067709",
+          "date": "2026-05-15",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-24 ~ 2026-05-15",
+            "eligibility": "",
+            "content": "<br />\n중소기업 온라인수출 물류 부담 완화를 위한 &#39;2026년 온라인수출 중소기업 물류지원사업(추경포함)&#39; 참여기업 모집 공고를 붙임과 같이 게시합니다",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067692",
+          "source": "mss",
+          "title": "2026년도 상생형 AX선도모델 주관기관(대기업 등) 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067692",
+          "date": "",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "2026년도 ICT융합스마트공장 보급확산사업 &quot;상생형 AX 선도모델&quot; 주관기관(대기업 등) 모집계획을 붙임과 같이 공고합니다.<br />\n- 신청기간 : 2026.4.27.(월) ~ 예산 소진시 까지",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067660",
+          "source": "mss",
+          "title": "2026년도 스마트공장 공급기업 역량진단 지원사업 참여기업 1차 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067660",
+          "date": "2026-05-29",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-27 ~ 2026-05-29",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-293호<br />\n<br />\n2026년도 스마트공장 공급기업 역량진단 참여기업 1차 모집 공고<br />\n<br />\n스마트공장 공급기업의 역량을 체계적으로 진단하는 &#39;2026년도 스마트공장 공급기업 역량진단&#39;에 참여할 기업을 다음과 같이 모집 공고하오니 희망하는 기업의 많은 참여를 바랍니다.<br />\n<br />\n2026년 4월 23일<br />\n중소벤처기업부 장관",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067638",
+          "source": "mss",
+          "title": "2026년 해외규격인증획득(추경) 추가지원사업 참여기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067638",
+          "date": "2026-05-29",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-23 ~ 2026-05-29",
+            "eligibility": "",
+            "content": "중소기업 해외시장 진출에 필요한 해외인증 획득을 지원하는 &#39;해외규격인증획득(추경) 추가지원사업&#39; 참여기업 모집 공고를 붙임과 같이 게시합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067632",
+          "source": "mss",
+          "title": "「2026년 스타트업 법률지원사업」 참여기업 모집공고(수정)",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067632",
+          "date": "2026-12-31",
+          "org": "창업정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026-03-30 ~ 2026-12-31",
+            "eligibility": "",
+            "content": "창업기업의 법률‧규제 애로해소 지원을 위한 「2026년 스타트업 법률 지원」계획을 다음과 같이 수정 공고합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"7718\" id=\"hwpEditorBoardContent\"><br />\n&nbsp;* 대상 변경 : 2026년도 중소벤처기업부 예비창업자 대상 창업사업화 지원사업에 선정된 예비창업자 -&gt; 예비창업자 전체</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067591",
+          "source": "mss",
+          "title": "올해의 K-스타트업 2026 혁신창업리그 참여기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067591",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "올해의 K-스타트업 2026 혁신창업리그 참여기업 모집 공고를 붙임과 같이 게시합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067590",
+          "source": "mss",
+          "title": "올해의 K-스타트업 2026  AI리그 참여기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067590",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "올해의 K-스타트업 2026 &nbsp;AI리그 참여기업 모집 공고를 붙임과 같이 게시합니다.&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067533",
+          "source": "mss",
+          "title": "｢2026년 민관협력 오픈이노베이션 지원사업｣ 중견기업-스타트업 오픈이노베이션 수요기업 협업과제 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067533",
+          "date": "2026-05-11",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-21 ~ 2026-05-11",
+            "eligibility": "",
+            "content": "중견기업의 오픈이노베이션 참여를 활성화하고 스타트업과의 협력을 통한 동반 성장 지원을 위해<br />\n｢2026년 민관협력 오픈이노베이션 지원사업｣&nbsp;중견기업-스타트업 오픈이노베이션 수요기업을 다음과 같이 모집합니다.<br />\n<br />\n□ 프로그램명 : 중견기업-스타트업 오픈이노베이션<br />\n□ 모집대상 : 스타트업과 협력을 희망하는 수요기업<br />\n□ 선정규모 : 수요기업 24개 과제 내외(서류 평가 단계 1.5배수 내외 선정)<br />\n□ 모집기간 : 2026. 4. 21(화) ~ 5. 11(월) 16:00",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067495",
+          "source": "mss",
+          "title": "2026년도 중소기업 정책자금 융자계획 변경공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067495",
+          "date": "",
+          "org": "기업금융과",
+          "region": "전국",
+          "category": "자금지원",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-287호<br />\n<br />\n기존 공고문에 오기 사항이 있어 아래와 같이 정정하여 변경공고합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"8452\" id=\"hwpEditorBoardContent\"><br />\n&lt;변경사항&gt;</div>\n&nbsp;긴급경영안정자금 지원규모: 2,500억원 &rarr; 5,000억원<br />\n<br />\n<br />\n----------------------------&lt;직전 공고내용&gt;---------------------",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067487",
+          "source": "mss",
+          "title": "2026년도 중소기업 정책자금 융자계획 변경공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067487",
+          "date": "",
+          "org": "기업금융과",
+          "region": "전국",
+          "category": "자금지원",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-281호<br />\n<br />\n중소기업진흥에 관한 법률 제66조 및 제67조에 따른 &quot;2026년도 중소기업 정책자금 융자계획&quot;을 다음과 같이 변경공고합니다.<br />\n&nbsp;<br />\n&lt;주요 변경사항&gt;<br />\n1. 추가경정예산(&#39;추경&#39;) 확정에 따른 중소기업 정책자금 변경사항(증액) 반영<br />\n&nbsp; -&nbsp;해당자금 : 긴급경영안정자금, 신시장진출지원자금(수출기업 글로벌화), 혁신창업사업화자금(창업기반지원),&nbsp; 재도약지원자",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067475",
+          "source": "mss",
+          "title": "2026년 중소기업 혁신바우처(채용지원) 사업 지원계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067475",
+          "date": "2026-05-06",
+          "org": "지역혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-20 ~ 2026-05-06",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-280호<br />\n2026년 중소기업 혁신바우처(채용지원) 사업 지원계획을 붙임과 같이 공고합니다.<br />\n<br />\n<br />\n&nbsp;* 세부내용 및 지역별 공고는 혁신플랫폼(mssmiv.com)에서 확인 가능",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067461",
+          "source": "mss",
+          "title": "2026년 대한민국 소상공인 대회 유공자 포상 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067461",
+          "date": "2026-05-29",
+          "org": "소상공인정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-20 ~ 2026-05-29",
+            "eligibility": "",
+            "content": "매년 11.5일 소상공인의 날을 기념하는 대한민국 소상공인대회에서 포상(훈포장 등 정부포상 포함)을 수여하기 위한<br />\n<br />\n소상공인 유공자 포상 후보자를 붙임과 같이 5.29일까지 공고하오니 많이 신청하여 주시기 바랍니다.<br />\n<br />\n신청 연락처(13페이지)는<br />\n<br />\n소상공인시장진흥공단은 각 지역센터, 소상공인연합회는 070-4944-1943, 각 지방중소벤처기업청입니다.<br />\n<br />\n<br />\n<br />\n&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067445",
+          "source": "mss",
+          "title": "2026년도 R&D성과확산 스마트공장 구축 지원사업 2차 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067445",
+          "date": "2026-06-16",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-17 ~ 2026-06-16",
+            "eligibility": "",
+            "content": "[중소벤처기업부 공고 제2026-272호]<br />\n&nbsp;<br />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2026년도 R&amp;D성과확산 스마트공장 구축 지원사업 2차 공고<br />\n&nbsp;<br />\n『2026년도 R&amp;D성과확산 스마트공장 구축 지원사업』의 지원계획을 다음과 같이 공고합니다.<br />\n&nbsp;<br />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067431",
+          "source": "mss",
+          "title": "2026년 제조창업활성화 제품화 올인원팩 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067431",
+          "date": "2026-05-11",
+          "org": "창업생태계과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-20 ~ 2026-05-11",
+            "eligibility": "",
+            "content": "<br />\n제조 창업기업의 제품화 전 과정을 원스톱으로 지원하여 시장 진입 촉진과 안정적인 성장 기반 마련을 위한 「2026년도 제품화 올인원팩」사업에 참여할 창업기업을 다음과 같이 모집합니다.<br />\n&nbsp;<br />\n2026년 4월 20일<br />\n중소벤처기업부 장관\n<div data-hjsonver=\"1.0\" data-jsonlen=\"15291\" id=\"hwpEditorBoardContent\"><br />\n<br />\n자세한 사항은 첨부파일 참고하시기 바랍니다.</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067426",
+          "source": "mss",
+          "title": "2026년도 자율형공장 구축 지원사업 2차 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067426",
+          "date": "",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n2026년도 자율형공장 구축 지원사업 2차 공고를 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067425",
+          "source": "mss",
+          "title": "2026년 재도전성공패키지(추경) 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067425",
+          "date": "2026-05-07",
+          "org": "창업정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-17 ~ 2026-05-07",
+            "eligibility": "",
+            "content": "<br />\n2026년 재도전성공패키지(추경) 모집공고를 붙임과 같이 게시합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067383",
+          "source": "mss",
+          "title": "2026년도 소상공인 정책자금 융자계획 변경(2차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067383",
+          "date": "",
+          "org": "소상공인경영안정정책과",
+          "region": "전국",
+          "category": "자금지원",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "2026년도 소상공인 정책자금 융자계획 변경(2차) 공고를 첨부와 같이 알려드립니다.<br />\n&nbsp;<br />\n&lt; 주요 변경사항 &gt;<br />\n□ 2026년 제1차 추가경정예산(+3,200억원) 반영하여 변경 공고<br />\n&nbsp; - 긴급경영안정자금 중 일시적경영애로자금 700억<br />\n&nbsp; - 신용취약소상공인자금 1,000억<br />\n&nbsp; - 청년고용연계자금 1,500억<br />\n&nbsp;<br />\n※ 그 외 자세한 사항은 변경 공고문 참고바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067363",
+          "source": "mss",
+          "title": "「모두의 창업 프로젝트」 통합 모집 수정공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067363",
+          "date": "",
+          "org": "청년정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n<strong>중소벤처기업부 공고 제 2026-275호<br />\n<br />\n&nbsp;「모두의 창업 프로젝트」 통합 모집 수정공고</strong><br />\n<br />\n창의적 아이디어를 가진 국민 누구나 도전할 수 있는 기회를 제공하고, 실패에 대한 부담을 완화하여 혁신인재 창업을 촉진하기 위한&nbsp;&nbsp;「모두의 창업 프로젝트」 도전자를 다음과 같이 모집하오니 많은 참여 바랍니다<br />\n<br />\n신청접수기간 : 2026.3.26(목) ~ 2026.5.15(금) 16시<br />\n&nbsp;<br ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067353",
+          "source": "mss",
+          "title": "2026년 수출지원기반활용사업 참여기업 2차 모집 수정공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067353",
+          "date": "",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업부 공고 제2026-273호<br />\n<br />\n2026년도 수출지원기반활용사업 참여기업 2차 모집 수정공고<br />\n(중소벤처기업부 소관 수출바우처사업)<br />\n<br />\n중소벤처기업의 수출경쟁력 강화를 위한 「중소벤처기업부 수출바우처 참여기업 2차 모집」 계획을 다음과 같이 수정 공고합니다.<br />\n<br />\n2026년 4월 15일<br />\n중소벤처기업부 장관<br />\n<br />\n* 수정사항 5p &#39;실적 인정 중동 22개국으로 변경(튀르키예 추가)&#39;<br />\n<br /",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067349",
+          "source": "mss",
+          "title": "2026년도 디지털협업공장 구축사업 2차 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067349",
+          "date": "2026-06-16",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-27 ~ 2026-06-16",
+            "eligibility": "",
+            "content": "<br />\n디지털‧인공지능 전환을 통한 중소&middot;중견기업의 경쟁력 제고를 위해 『2026년도 디지털협업공장 구축사업』을 붙임과 같이 공고합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9837\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067320",
+          "source": "mss",
+          "title": "2026년 소공인 인프라시설 고도화 지원사업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067320",
+          "date": "2026-04-30",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-15 ~ 2026-04-30",
+            "eligibility": "",
+            "content": "소공인 인프라시설의 고도화를 통한 제조 경쟁력 제고와 지속적인 성장 기반 조성을 위한 「소공인 인프라시설 고도화 지원사업」을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067318",
+          "source": "mss",
+          "title": "「2026년 중소기업 혁신 유공」 포상 후보자 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067318",
+          "date": "2026-05-14",
+          "org": "기술혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-15 ~ 2026-05-14",
+            "eligibility": "",
+            "content": "중소기업 혁신 유공 포상 후보자를 붙임과 같이 모집하오니, 혁신적인 기업 및 관심 있는 국민 여러분의 많은 신청 바랍니다.<br />\n<br />\nㅇ 신청기간 : 2026. 4. 15(수) ~ 5. 14.(목) 18:00까지",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067311",
+          "source": "mss",
+          "title": "(추경) 2026년도 일반 물류바우처(1차) 사업 참여기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067311",
+          "date": "",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업부 공고 제2026-267호<br />\n<br />\n(추경) 2026년도 일반 물류바우처(1차) 사업 참여기업 모집공고<br />\n<br />\n&nbsp;최근 글로벌 물류비 상승 및 공급망 불안정에 대응하여 수출 중소기업의 국제운송 비용 부담을 완화하고, 수출 경쟁력을 강화하기 위해 「2026년도 일반 물류 바우처 사업」참여기업 모집 계획을 다음과 같이 공고합니다.<br />\n&nbsp;<br />\n2026년 4월 15일<br />\n중소벤처기업부 장관",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067310",
+          "source": "mss",
+          "title": "2026년 수출지원기반활용사업 참여기업 2차 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067310",
+          "date": "",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n중소벤처기업부 공고 제2026-266호<br />\n<br />\n2026년도 수출지원기반활용사업 참여기업 2차 모집공고<br />\n(중소벤처기업부 소관 수출바우처사업)<br />\n<br />\n&nbsp; 중소벤처기업의 수출경쟁력 강화를 위한「중소벤처기업부 수출바우처 참여기업 2차 모집」계획을 다음과 같이 공고합니다.<br />\n<br />\n2026년 4월 15일<br />\n중소벤처기업부 장관<br />\n&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067308",
+          "source": "mss",
+          "title": "2026년도 중소기업기술혁신개발사업 유망기술개발(구조혁신R&D) 하반기 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067308",
+          "date": "2026-07-06",
+          "org": "기업구조개선과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-23 ~ 2026-07-06",
+            "eligibility": "",
+            "content": "<br />\n2026년도 중소기업기술혁신개발사업 유망기술개발(구조혁신R&amp;D) 하반기 시행계획을 붙임과 같이 공고하오니 많은 참여 부탁드립니다.<br />\n<br />\n○&nbsp; 신청&middot;접수기간<br />\n&nbsp; -&nbsp; (1차) 2026.4.23(목)~5.11(월)<br />\n&nbsp; -&nbsp; (2차) 2026.6.22(월)~7.6(월)<br />\n&nbsp;<br />\n자세한 사항은 붙임 &#39;시행계획 공고&#39;를 참고하세요.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067280",
+          "source": "mss",
+          "title": "2026년도 전통시장 및 상점가 활성화 유공 포상 계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067280",
+          "date": "2026-05-11",
+          "org": "전통시장과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-15 ~ 2026-05-11",
+            "eligibility": "",
+            "content": "<br />\n전통시장 및 상점가 활성화에 기여한 우수시장&middot;상인, 지원기관&middot;단체 등을 발굴하여 포상함으로 상인&middot;관계자들의 사기 진작 및 자긍심 고취를 위해 &quot;2026년도 전통시장 및 상점가 활상화 유공 포상&quot;을 위한 계획을 공고합니다.<br />\n<br />\nㅇ 포상추천기간: 2026. 4. 15.(수) ~ 5.11.(월)<br />\n<br />\nㅇ 추천기관: 지방중소벤처기업청장, 시&middot;도지사, 소상공인시장진흥공단이사장, 전국상인연합회장<br />\n<br />\nㅇ 문의",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067246",
+          "source": "mss",
+          "title": "2026년 모두의 챌린지 팹리스 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067246",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n2026년 모두의 챌린지 팹리스 창업기업을 붙임과 같이 모집합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067201",
+          "source": "mss",
+          "title": "2026년 탄소중립 설비투자 지원(공급망 트랙) 사업 참여기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067201",
+          "date": "2026-05-06",
+          "org": "대외환경대응과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-13 ~ 2026-05-06",
+            "eligibility": "",
+            "content": "중소기업의 온실가스 배출량 감축 및 탄소 규제에 대한 대응력 강화를 위해 에너지 고효율 및 탄소저감 설비도입을 지원하는 &#39;2026년 탄소중립 설비투자 지원(공급망 트랙)&#39;의 참여기업을 모집합니다.<br />\n<br />\n- 지원 대상: 탄소 배출량 의무 감축 대상이 아닌 기업 중 원청기업(대기업, 1차 협력사 등)으로부터 자부담금을 지원받는 공급망 내 협력 중소기업<br />\n- 접수 기간: 4.13.(월) ~ 5.6.(수) 16시<br />\n- 신청 방법<br />\n&nbsp; 1) 협력 중소기업: ESG탄소중립 통",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067179",
+          "source": "mss",
+          "title": "2026년도 테크노파크 생산장비 고도화 제2차 지원계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067179",
+          "date": "2026-05-11",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-10 ~ 2026-05-11",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026&ndash;260호<br />\n&nbsp;<br />\n2026년도 테크노파크 생산장비 고도화 제2차 지원계획 공고<br />\n&nbsp;<br />\n&nbsp;[2026년도 테크노파크 생산장비 고도화 지원사업]의 제2차 시행계획을 다음과 같이 공고하오니, 동 사업에 참여하고자 하는 지역 테크노파크 및 참여기관은 사업안내에 따라 신청하시기 바랍니다.<br />\n&nbsp;<br />\n※ 본 공고는 중소기업(참여기업)을 지원하기 위한 프로그램 운영 TP 컨소시엄 모집 공고이며, 참여 중소기업 모집은 5월 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067114",
+          "source": "mss",
+          "title": "2026년 글로벌베이스캠프 사업 수행기관 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067114",
+          "date": "2026-04-23",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-09 ~ 2026-04-23",
+            "eligibility": "",
+            "content": "민간의 역량을 활용하여 현지 거점을 기반으로 중소벤처기업의 글로벌 진출을 지원하는 <strong>&#39;글로벌베이스캠프&#39;</strong>의 <strong>민간위탁 수행기관</strong>를 다음과 같이 모집합니다.&nbsp;<br />\n<br />\n- <strong>접수 기간</strong> : 4.9.(목) ~ 4.23.(목)&nbsp;<br />\n- <strong>신청 자격</strong> : 아래 요건을 모두 충족하는 기관<br />\n<br />\n&nbsp; &nbsp; 1. 글로벌 거점을 보유한 기관<br />\n&n",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067079",
+          "source": "mss",
+          "title": "제3기 벤처기업확인기관 모집 연장 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067079",
+          "date": "2026-04-14",
+          "org": "벤처정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-08 ~ 2026-04-14",
+            "eligibility": "",
+            "content": "제3기 벤처기업확인기관 모집 공고를 붙임과 같이 연장 공지합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067009",
+          "source": "mss",
+          "title": "2026년도 제조데이터 표준화 사업 참조모델 개발기관 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067009",
+          "date": "2026-04-24",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-06 ~ 2026-04-24",
+            "eligibility": "",
+            "content": "중소 제조기업의 공장‧기업 간 디지털 연결을 촉진하는 표준 기반 스마트공장 구축을 위해 &ldquo;제조데이터 표준화 사업&rdquo;의 참조모델 개발기관을 붙임과 같이 모집하고자 합니다.<br />\n&nbsp;<br />\n※ 참고자료 등 자세한 사항은 스마트공장사업관리시스템(www.smart-factory.kr)의 공고내용(사업안내-모집공고)을 참조하여 주시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067007",
+          "source": "mss",
+          "title": "2026년 스타트업 AI 기술인력 양성(이어드림스쿨) 교육생 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067007",
+          "date": "2026-05-10",
+          "org": "청년정책과",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-06 ~ 2026-05-10",
+            "eligibility": "",
+            "content": "혁신 벤처스타트업이 필요로 하는 인공지능 실무 기술인력을 양성하고, 청년인재의 혁신 벤처&middot;스타트업 취업을 지원하는<br />\n『2026년 스타트업 AI기술인력 양성사업(이어드림 스쿨)』에 참여할 교육생 모집하오니 많은 지원 바랍니다.<br />\n자세한 내용은 붙임의 공고문을 확인해주시기 바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"8770\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1067005",
+          "source": "mss",
+          "title": "2026년 중소기업 CBAM대응 인프라구축 사업 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1067005",
+          "date": "2026-04-27",
+          "org": "대외환경대응과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-06 ~ 2026-04-27",
+            "eligibility": "",
+            "content": "중소기업이 EU 탄소국경조정제도(CBAM)등 고도의 전문성을 요구하는 글로벌 탄소규제에 대응할 수 있는 역량을 강화할 수 있도록 아래와 같이 참여기업을 모집합니다.<br box-sizing:=\"\" font-size:=\"\" max-width:=\"\" none=\"\" noto=\"\" outline:=\"\" sans=\"\" />\n<br box-sizing:=\"\" font-size:=\"\" max-width:=\"\" none=\"\" noto=\"\" outline:=\"\" sans=\"\" />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066981",
+          "source": "mss",
+          "title": "2027년도 시군구연고산업육성 협업프로젝트 예비선정 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066981",
+          "date": "2026-04-30",
+          "org": "지역혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-06 ~ 2026-04-30",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-243호<br />\n<br />\n2027년도 시군구연고산업육성 협업프로젝트 예비선정 과제를 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066951",
+          "source": "mss",
+          "title": "2026년 소상공인 협업활성화 공동사업 연장공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066951",
+          "date": "2026-04-17",
+          "org": "지역상권과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-3-11 ~ 2026-04-17",
+            "eligibility": "",
+            "content": "중소벤처기업부는 소상공인 간 규모의 경제 실현과 자생력 제고를 위해 소상공인의 협업을 지원하는 &#39;소상공인 협업활성화 공동사업&#39; 모집공고를 다음과 같이 연장합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066917",
+          "source": "mss",
+          "title": "2026년 모두의 챌린지 AX - LLM분야 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066917",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n2026년 모두의 챌린지 AX - LLM분야 창업기업을 붙임과 같이 모집합니다.&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066916",
+          "source": "mss",
+          "title": "2026년 모두의 챌린지 AX - 버티컬분야 창업기업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066916",
+          "date": "",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n2026년 모두의 챌린지 AX - 버티컬분야 창업기업을 붙임과 같이 모집합니다.&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066885",
+          "source": "mss",
+          "title": "2026년도 딥테크 챌린지 프로젝트(DCP) 기술도전형 제1차 기술수요조사 시행계획 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066885",
+          "date": "2026-05-04",
+          "org": "기술혁신정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-01 ~ 2026-05-04",
+            "eligibility": "",
+            "content": "<br />\n2026년도 딥테크 챌린지 프로젝트(DCP) 제1차 기술수요조사 시행계획을 다음과 같이 공고하오니, 많은 참여와 신청 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066882",
+          "source": "mss",
+          "title": "2026년 지역상권육성 사업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066882",
+          "date": "2026-05-08",
+          "org": "지역상권과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-01 ~ 2026-05-08",
+            "eligibility": "",
+            "content": "<br />\n(중소벤처기업부 공고 제 2026-199호)&nbsp;<br />\n<br />\n2026년도 지역상권육성 사업을&nbsp;<br />\n<br />\n다음과 같이 모집하오니,&nbsp;많은 참여 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066857",
+          "source": "mss",
+          "title": "2026년도 중소기업 인력양성대학(기술사관, 계약학과) 모집 공고문",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066857",
+          "date": "2026-04-16",
+          "org": "인력정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-03-30 ~ 2026-04-16",
+            "eligibility": "",
+            "content": "(중소벤처기업부 공고 제 2026-231호)&nbsp;<br />\n2026년도 중소기업 인력양성대학 사업 모집 공고입니다&nbsp;<br />\n<br />\n<br />\n<br />\n2026년도 중소기업 인력양성대학 사업 관련,<br />\n<br />\n&#39;중소기업 계약학과&#39; 주관대학과 &#39;기술사관&#39; 사업단을<br />\n<br />\n신규 모집하오니 많은 참여 바랍니다.<br />\n<br />\n신청기간 : 2026.03.30.(월) ~ 2026.04.16.(목) 18시까지<br />\n&nbsp;",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066854",
+          "source": "mss",
+          "title": "2026년 「K-뷰티 수출 거점」 주관기관 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066854",
+          "date": "2026-05-14",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-03-31 ~ 2026-05-14",
+            "eligibility": "",
+            "content": "<strong>중소벤처기업부 공고 제 2026-223호<br />\n<br />\n2026년 「K-뷰티 수출 거점」 주관기관 모집공고</strong><br />\n<br />\nK-뷰티 글로벌 초격차 경쟁력 확보를 위한 2026년 「K-뷰티 수출 거점」 육성에 참여할 주관기관(지방정부)을 다음과 같이 모집하오니 많은 참여 바랍니다.<br />\n<br />\n신청접수기간 : 2026.3.31(화) ~ 2026.5.14(목) 18시<br />\n<br />\n상세한 내용은 공고문을 참조하여 주시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066810",
+          "source": "mss",
+          "title": "2026년도 도약(Jumo-Up)프로그램 연계 스마트공장 구축 지원사업 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066810",
+          "date": "2026-04-15",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-01 ~ 2026-04-15",
+            "eligibility": "",
+            "content": "<p>2026년도 도약(Jump-Up)프로그램 연계 스마트공장 구축 지원사업의 지원계획을 붙임과 같이 공고합니다.</p>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066801",
+          "source": "mss",
+          "title": "2026년 중소기업 스마트서비스 지원사업 참여기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066801",
+          "date": "2026-05-22",
+          "org": "중소기업인공지능확산추진단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-04-20 ~ 2026-05-22",
+            "eligibility": "",
+            "content": "「2026년 중소기업 스마트서비스 지원사업」의 참여기업 모집을 붙임과 같이 공고하오니, 많은 참여 부탁드립니다.<br />\n<br />\n&nbsp; &nbsp; &nbsp;- 신규&sdot;고도화 신청&sdot;접수기간 : 2026년 4월 20일 ~ 5월 22일 16:00까지<br />\n&nbsp; &nbsp; &nbsp;※ 신청서 양식 등 자세한 사항은 스마트공장사업관리시스템(www.smart-factory.kr)의<br />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;공고내용(사업안내-사업공고)을 참",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1066788",
+          "source": "mss",
+          "title": "2026년 중소기업 기술분쟁 소송보험 지원사업 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1066788",
+          "date": "",
+          "org": "기술보호과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n「2026년 중소기업 기술분쟁 소송보험 지원사업」을 붙임과 같이 공고합니다.<br />\n&nbsp;",
+            "amount": ""
+          }
+        }
+      ]
     },
     "kstartup": {
       "id": "kstartup",
@@ -19,365 +1720,7 @@
       "color": "#e8360e",
       "count": 50,
       "targetCount": 26,
-      "items": [
-        {
-          "id": "kstartup_178326",
-          "source": "kstartup",
-          "title": "26년 7월 스타트업 언론 홍보 지원사업 참가사 모집 공고(1차)",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178326",
-          "date": "2026-07-15",
-          "org": "스타트업 데일리",
-          "region": "전국",
-          "category": "판로/마케팅",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.07.01(수) 09:00 ~ 2026.07.15(수) 23:59 까지",
-            "eligibility": "",
-            "content": "언론 홍보 지원 1. 스타트업데일리 내 보도자료 게시*별도 비용 청구 없음2. 내부 검토 절차에 따라 배포가 되지 않을 수 있음",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178325",
-          "source": "kstartup",
-          "title": "판교 제2테크노밸리 소프트웨어드림센터 스타트업 입주기업 모집 공고",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178325",
-          "date": "2026-08-02",
-          "org": "소프트웨어공제조합",
-          "region": "전국",
-          "category": "시설제공",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.29(월) 09:00 ~ 2026.08.02(일) 23:59 까지",
-            "eligibility": "",
-            "content": "사무실 월 임대료 지원, 인프라 시설 지원, 경영 컨설팅 지원 등 1. 사무실 월임대료 지원- 모든 호실 월 임대료 무상으로 제공2. 인프라시설 지원- 스타트업지원센터 내 시설(무상) : O/A실, 라운지, 토크박스, 텔레부스, 멘토링실, 오도토리움 등- 대관시설 및 편의시설(할인) : 회의실, 강의실, 컨퍼런스홀, 구내식당, 카페, 주차장 등3. 경영컨설팅 지원- 전문가무료상담서비스 : 법률, 특허, 회계, 세무, 노무 등 관련 전문가 무료 상담 지원(소프트웨어공제조합 자문 위원 활용)- 네트워킹 기회 지원 : 소프트웨어공제조합의",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178324",
-          "source": "kstartup",
-          "title": "2026「글로벌 스케일업-유럽 트랙」참가기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178324",
-          "date": "2026-07-03",
-          "org": "경상국립대학교 창업중심대학사업단",
-          "region": "전국",
-          "category": "글로벌",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.29(월) 03:00 ~ 2026.07.03(금) 16:00 까지",
-            "eligibility": "",
-            "content": "지원내용 - [사전 역량강화 프로그램] 프랑스 딥테크 산업 생태계 이해 교육, 기업별 PoC 전략 수립, 영문 IR 자료 및 피치덱 고도화 등- [프랑스 현지 프로그램] 현지 기관 및 기업 대상 IR 피칭, 1:1 비즈니스 매칭 및 투자·협력 상담, 프랑스 기업·기관 후속 미팅 연계 등- [성과 관리 및 사후 지원] 기업별 현지 진출 전략보고서 제공, 후속 비즈니스 활동 및 MOU/LOI 계약 지원",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178323",
-          "source": "kstartup",
-          "title": "「앵커 G7 창업기업 투자 IR 피칭덱 제작 지원」참여기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178323",
-          "date": "2026-07-10",
-          "org": "혁신스타트업지원센터",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.29(월) 09:00 ~ 2026.07.10(금) 16:00 까지",
-            "eligibility": "",
-            "content": "피칭덱 진단 및 고도화 - 기업별 IR 분석 및 핵심 아이덴티티 도출- IR 제작 방향 설정(디자인, 톤앤매너, 레이아웃 등)1:1 온/오프라인 컨설팅 진행 피칭덱 제작 - 기업별 BM 및 투자자 유형 기반한 자료 제작- 핵심 가치가 반영된 콘텐츠, 디자인 고도화기업별 맞춤형 자료제작",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178322",
-          "source": "kstartup",
-          "title": "전북글로벌게임센터 2026 게임인재 맞춤형 인턴십 지원사업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178322",
-          "date": "2026-07-10",
-          "org": "(재)전북특별자치도 콘텐츠융합진흥원",
-          "region": "전북",
-          "category": "글로벌",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.30(화) 08:00 ~ 2026.07.10(금) 15:00 까지",
-            "eligibility": "",
-            "content": "지원사업 선정기업 인턴 인건비 보조 1. 인턴 1인당 최대 4개월 · (기본) 1인 월 급여 지원금 200만원×3개월 · (정규직 전환) 1인 월 급여 지원금 추가지원 200만원×1개월-2. 기업별 최대 2명 지원 · 선정평가 결과 70점 이상 기업 중 고득점 순으로 최종 지원기업 및 지원인원 선정 · 신청 인원이 총 지원규모를 초과할 경우, 선정평가 순위에 따라 고득점 기업부터 기업별 최대 지원인원 범위 내에서 우선 배정 ※ 평가 결과 및 예산 범위에 따라 최종 지원인원은 신청 인원보다 조정될 수 있음",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178321",
-          "source": "kstartup",
-          "title": "2026 마포비즈니스센터 3차 신규입주기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178321",
-          "date": "2026-07-07",
-          "org": "마포비즈니스센터",
-          "region": "전국",
-          "category": "시설제공",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.07.01(수) 09:00 ~ 2026.07.07(화) 23:59 까지",
-            "eligibility": "",
-            "content": "지원내용 멘토링, 창업교육, 기업 네트워킹- 수요에 따른 분야별 1:1멘토링 지원- 비즈니스모델 고도화, IR자료고도화, 피칭, 투자 활동 등 기업 경영활동과 관련된 전반적인 교육 지원- 입주기업 간담회를 통해 네트워킹 기회 마련",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178320",
-          "source": "kstartup",
-          "title": "[구리시 청년내일센터] 2026년 하반기 입주기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178320",
-          "date": "2026-07-16",
-          "org": "구리시 청년내일센터",
-          "region": "전국",
-          "category": "시설제공",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.29(월) 17:00 ~ 2026.07.16(목) 12:00 까지",
-            "eligibility": "",
-            "content": "지원내용 ￭ 공간지원- 입주 공간 임대료, 공공요금, 관리비 무료- 입주기업별 사물함 무료 제공- 교육실, 회의실, 3D프린터 이용 무료 제공- 촬영 스튜디오 이용 무료 제공- 원두 커피 머신 무료 이용￭ 지원 프로그램- 창업 멘토링, 컨설팅 지원- 청년 스타트업 역량 강화 프로그램 및 네트워킹- 로고제작, 홍보영상, 라이브커머스, 세무기장 등 사업화 지원",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178319",
-          "source": "kstartup",
-          "title": "[동대문구 창업지원센터] 7월 메이커스페이스(레이저커터, 3D프린팅) 교육 일정",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178319",
-          "date": "2026-07-28",
-          "org": "동대문구 창업지원센터",
-          "region": "전국",
-          "category": "창업교육",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.29(월) 00:00 ~ 2026.07.28(화) 18:00 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178318",
-          "source": "kstartup",
-          "title": "2026 서울창업허브 미국(보스턴) 바이오/헬스케어 액셀러레이팅 프로그램 참가기업 모집[연장]",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178318",
-          "date": "2026-07-07",
-          "org": "서울경제진흥원",
-          "region": "서울",
-          "category": "사업화",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.29(월) 15:00 ~ 2026.07.07(화) 23:59 까지",
-            "eligibility": "",
-            "content": "액셀러레이팅 프로그램 • 온라인 액셀러레이팅 프로그램 (8주)• 보스턴/캠브리지 현지 프로그램 운영(10/12 ~ 10/16 예정)• 데모데이 진행 및 VC 네트워킹 행사 참가• 미국 VC 및 현지 기업과의 비즈니스 매칭(기업당 3건 이상) 등 현지 파트너사 밀착 지원• CIC Cambridge 코워킹 스페이스 제공• 기업당 최대 450만 원 사업화 지원금 → 글로벌 진출 인건비, 체재비, 마케팅비 등 다양한 항목 활용 가능• 미국 바이오/헬스케어 시장 진출 전략 컨설팅 및 멘토링• IR 덱 고도화 및 투자유치 역량강화 지원",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178316",
-          "source": "kstartup",
-          "title": "2026 충북 이차전지 오픈이노베이션 커넥트 데이 참가 안내",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178316",
-          "date": "2026-07-06",
-          "org": "충북창조경제혁신센터",
-          "region": "충북",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.29(월) 13:00 ~ 2026.07.06(월) 12:00 까지",
-            "eligibility": "",
-            "content": "세미나 및 1:1 현장 상담회 에코프로파트너스, 미래나노텍과의 1:1 밋업 기회 제공투자 및 오픈이노베이션 연계 상담산업 전문가 강연 및 네트워킹 제공참가비 무료",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178315",
-          "source": "kstartup",
-          "title": "2026 일본 도쿄 추계 IT 전시회(JAPAN IT Week Autumn) 참가기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178315",
-          "date": "2026-07-10",
-          "org": "성남산업진흥원",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.29(월) 09:00 ~ 2026.07.10(금) 14:00 까지",
-            "eligibility": "",
-            "content": "[지원내용] - (부스임차) 부스 임차 및 장치비(1개사 1부스, 8.1m2) / 70% 이내 지원 · 미팅테이블, 휴지통, 폴딩체어, 카탈로그 스탠드, 디스플레이 테이블 등 포함- (전시품 운송) 편도 운송 1CBM 한도(기업별 최대 780,000원)- (통역 지원) 전시회 부스 상주 통역 지원(예산 범위 내)- (마케팅 지원) 디렉토리북 제작, 해외바이어플랫폼 기간 이용권 제공 등 (마케팅 지원 내용 일부 변동 가능)",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178314",
-          "source": "kstartup",
-          "title": "2026년 한국지역난방공사 5060 세컨드 챌린지 시니어 인턴십 참여기관 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178314",
-          "date": "2026-07-01",
-          "org": "함께일하는재단",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.26(금) 00:00 ~ 2026.07.01(수) 23:59 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178313",
-          "source": "kstartup",
-          "title": "「2026 청년창업 지역정착 지원사업」 신규참여자 2차 추가모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178313",
-          "date": "2026-07-10",
-          "org": "경상북도경제진흥원",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.22(월) 09:00 ~ 2026.07.10(금) 18:00 까지",
-            "eligibility": "",
-            "content": "사업화자금 및 정착활동비, 교육 및 네트워킹 등 창업지원 전반 □ 사업화자금ㅇ 일반운영비, 상품화개발비, 기자재임차료, 공간 임차료, 인테리어비 등 사업화 과정(시제품 개발)에 소요되는 필요 경비* 원자재 등 재료비는 ‘시제품 개발’ 필요 물량에 한해 집행 가능- (지급방식)사업화 계획에 따라 집행된 금액을 운영기관에 청구하여 수령하는 방식으로 사업비 지급* 사업자등록 이후 일반과세자 및 법인에 해당하는 사업자는 부가가치세법에 따라 환급이 가능한 금액에 대해서는 부가가치세를 제외한 공급가액만 지급□ 정착활동비ㅇ 참여자의 경북지역 정",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178311",
-          "source": "kstartup",
-          "title": "2026 전북콘텐츠코리아랩 창·제작자 시제품 제작지원 2차 추가모집 공고",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178311",
-          "date": "2026-07-10",
-          "org": "(재)전북특별자치도 콘텐츠융합진흥원",
-          "region": "전북",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.26(금) 09:00 ~ 2026.07.10(금) 15:00 까지",
-            "eligibility": "",
-            "content": "지원내용 ⚬ 보조금 지원- 콘텐츠 시제품 제작 및 사업화에 필요한 직접비 12,000천원 지원⚬ 멘토링 지원- 콘텐츠 창업 관련 경영, 비즈니스, 마케팅 등 교육지원⚬ 인프라 지원- 입주자 대상 공용 창업공간(오픈스페이스) 제공- 콘텐츠 창작(제작)을 위한 전문장비 지원(카메라, PC 등)",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178310",
-          "source": "kstartup",
-          "title": "2026년 경기 스타트업 아카데미 링크업 프로그램 스피치 특강 - 듣고 끄덕이게 만드는 자기(회사)소개 발표법",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178310",
-          "date": "2026-07-15",
-          "org": "경기도·경기도경제과학진흥원",
-          "region": "경기",
-          "category": "창업교육",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.29(월) 00:00 ~ 2026.07.15(수) 15:00 까지",
-            "eligibility": "",
-            "content": "지원내용 주제: 듣고 끄덕이게 만드는 자기(회사)소개 발표법특강 일시: 2026. 7. 16.(목) 14:00 – 16:00특강 장소: 경기 스타트업 브릿지 4층 브릿지홀(경기도 성남시 수정구 금토로52 E동 경기 스타트업 브릿지)* 주차공간이 협소하여 대중교통 이용 권장드립니다.신청 기간: 2026. 6. 29.(월) ~ 7. 15.(수) 15:00 * 신청 현황에 따라 조기 종료 또는 연장될 수 있습니다.참가 대상: 예비창업자, 창업기업 대표 및 임직원, 대학(원)생 등 * 예비창업자, 대학(원)생 권장본 특강은 무료로 진행됩니",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178309",
-          "source": "kstartup",
-          "title": "[제2서울핀테크랩] 2026년 블록체인 아카데미 수강생 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178309",
-          "date": "2026-07-12",
-          "org": "제2서울핀테크랩",
-          "region": "서울",
-          "category": "창업교육",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.22(월) 00:00 ~ 2026.07.12(일) 23:59 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178308",
-          "source": "kstartup",
-          "title": "2026년도 빅웨이브 글로벌(싱가포르) 참여기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178308",
-          "date": "2026-07-10",
-          "org": "인천창조경제혁신센터 대표이사",
-          "region": "인천",
-          "category": "글로벌",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.22(월) 00:00 ~ 2026.07.10(금) 17:00 까지",
-            "eligibility": "",
-            "content": "국내 역량강화 ,동남아 파트너발굴, 전시회참관 등 1. 기업현황파악, 국내열걍강화 및 파트너발굴지원 등2. 현지 비즈매칭, 기업IR, 네트워킹 등 현지프로그램 제공3. 싱가포르 창업주간(SWITCH) 전시회 참관지원4. 현지 출장비 지원여부 검토중 *예산상황에 따라 변동5. 기타 센터 사업 연계지원 검토(오픈이노베이션, 투자 등)",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178305",
-          "source": "kstartup",
-          "title": "2026 Station C 성장자립지원 'Station C Demo-Day' 참여기업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178305",
-          "date": "2026-07-06",
-          "org": "한림대학교 창업지원본부",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.23(화) 00:00 ~ 2026.07.06(월) 09:00 까지",
-            "eligibility": "",
-            "content": "투자연계지원 - 2026 Station C TIPS 발굴지원 사업 연계를 통한 후속 투자 유치 및 TIPS 추천 검토 기회 제공 - 20여개 TIPS 운영사 및 유수 투자사 참여- ㈜리벤처스, 와이앤아처, 더이노베이터스, 한국바이오투자파트너스, 한림대학교기술지주회사, 강원대학교기술지주회사 등 시상금 지원 - 우수기업 시상금 (총 600만원 규모)- 세션별 우수기업 총 8개사 시상 (1등 100만원, 2등 50만원)",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178303",
-          "source": "kstartup",
-          "title": "[서초창업스테이션] 서리풀 소상공인 창업 클리닉 - 소상공인 1:1 컨설팅",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178303",
-          "date": "2026-07-22",
-          "org": "서초창업스테이션",
-          "region": "전국",
-          "category": "컨설팅/멘토링",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.26(금) 00:00 ~ 2026.07.22(수) 23:59 까지",
-            "eligibility": "",
-            "content": "[7월 소상공인 1:1 클리닉 안내] 1. 7월 1회차■ 일시: 2026.7.6.(월) 14:00~14:50 1명(팀), 15:00~15:50 1명(팀)■ 분야: 투자유치 및 LIPS 프로그램 추천 ■ 장소: 서초창업스테이션 회의실■ 컨설턴트: ㈜오픈놀 신민석 센터장2. 7월 2회차■ 일시: 2026.7.13.(월) 14:00~14:50 1명(팀), 15:00~15:50 1명(팀)■ 분야: 행정·계약·인허가 실무 체크리스트 점검■ 장소: 서초창업스테이션 회의실■ 컨설턴트: 법무법인 디엘지(DLG) 황혜진 변호사3. 7월 3회차■ 일",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178301",
-          "source": "kstartup",
-          "title": "2026 대구여성창업사업화지원사업 참가자 모집-대구여성인력개발센터",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178301",
-          "date": "2026-07-24",
-          "org": "대구여성인력개발센터",
-          "region": "대구",
-          "category": "시설제공",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.06.15(월) 09:00 ~ 2026.07.24(금) 18:00 까지",
-            "eligibility": "",
-            "content": "창업지원금, 멘토링(컨설팅), 창업커뮤니티 지원 ❍ 선정규모 : 총24,000천원 / 총8개팀 ❍ 지원내용 - 지원금 : 사업계획서 발표 및 심사 평가에 의한 사업화 자금 지원(최대 3,000천원*8개팀) / 자부담금(부가가치세) 10% 별도 - 멘토링지원 : 전문가와 연계한 멘토링 제공 -연계지원 : 여성창업 커뮤니티를 통한 창업관련 업무지원, 사후관리(창업보육, 교육 컨설팅, 마케팅 등 후속지원)",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_178298",
-          "source": "kstartup",
-          "title": "『2026년 금천청년꿈터 TIPS 매칭데이』 참가자 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178298",
-          "date": "2026-07-14",
-          "org": "중앙대학교 산학협력단",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.06.29(월) 00:00 ~ 2026.07.12(일) 23:59 까지",
-            "eligibility": "",
-            "content": "참가비 전액 무료",
-            "amount": ""
-          }
-        }
-      ]
+      "items": []
     }
   },
   "todayDeadline": [
