@@ -1,4 +1,4 @@
-import os, json, re, asyncio, requests, html
+import os, json, re, asyncio, requests, html, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from bs4 import BeautifulSoup
 import yagmail
@@ -35,56 +35,57 @@ def extract_deadline_from_period(period):
     y, m, d = matches[-1]
     return f'{y}-{int(m):02d}-{int(d):02d}'
 
-async def collect_bizinfo():
-    api_key = os.environ.get('BIZINFO_API_KEY', '')
-    url = 'https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do'
+async def collect_mss():
+    api_key = os.environ.get('KSTARTUP_API_KEY', '')
+    url = 'https://apis.data.go.kr/1421000/mssBizService_v2/getbizList_v2'
     items = []
-    page_idx = 1
-    tot_cnt = 0
+    page = 1
     while True:
         try:
-            params = {'crtfcKey': api_key, 'dataType': 'json', 'pageUnit': 100, 'pageIndex': page_idx}
+            params = {'serviceKey': api_key, 'pageNo': page, 'numOfRows': 100}
             resp = requests.get(url, params=params, timeout=30)
-            data_list = resp.json().get('jsonArray', [])
-            if not data_list: break
-            if page_idx == 1:
-                tot_cnt = int(data_list[0].get('totCnt', 0))
-            for it in data_list:
-                raw_date_range = it.get('reqstBeginEndDe', '')
-                date_str = ''
-                matches = re.findall(r'(\d{4})[.\-](\d{2})[.\-](\d{2})', raw_date_range)
-                if matches:
-                    last_match = matches[-1]
-                    date_str = f'{last_match[0]}-{last_match[1]}-{last_match[2]}'
-                title = it.get('pblancNm', '')
-                org = it.get('jrsdInsttNm', '')
-                url_val = it.get('pblancUrl', '') or ''
-                if url_val and not url_val.startswith('http'):
-                    url_val = 'https://www.bizinfo.go.kr' + url_val
+            root = ET.fromstring(resp.text)
+            item_els = root.findall('.//item')
+            if not item_els:
+                break
+            for el in item_els:
+                def g(tag):
+                    child = el.find(tag)
+                    return (child.text or '').strip() if child is not None else ''
+                item_id = g('itemId')
+                title = g('title')
+                view_url = g('viewUrl')
+                end_date = g('applicationEndDate')
+                start_date = g('applicationStartDate')
+                content = g('dataContents')
+                writer_pos = g('writerPosition')
+                period = f'{start_date} ~ {end_date}' if start_date and end_date else end_date or ''
+                org = writer_pos or '중소벤처기업부'
                 item = {
-                    'id': 'bizinfo_' + str(it.get('pblancId', '')),
-                    'source': 'bizinfo',
+                    'id': 'mss_' + item_id,
+                    'source': 'mss',
                     'title': title,
-                    'url': url_val,
-                    'date': date_str,
+                    'url': view_url,
+                    'date': end_date,
                     'org': org,
                     'region': extract_region(title, org),
                     'category': extract_category(title),
                     'isTarget': False,
                     'detail': {
-                        'period': raw_date_range,
-                        'eligibility': it.get('trgetNm', ''),
-                        'content': it.get('bsnsSumryCn', '')[:300],
+                        'period': period,
+                        'eligibility': '',
+                        'content': content[:300] if content else '',
                         'amount': ''
                     }
                 }
                 item['isTarget'] = is_target(item)
                 items.append(item)
-            if len(items) >= 50 or len(items) >= tot_cnt:
+            total = int(root.findtext('.//totalCount') or 0)
+            if not item_els or len(items) >= total or len(items) >= 100:
                 break
-            page_idx += 1
+            page += 1
         except Exception as e:
-            print(f'[bizinfo API 오류] {e}')
+            print(f'[mss API 오류] {e}')
             break
     return items
 
@@ -127,20 +128,7 @@ def fetch_detail(item, cache):
         soup = BeautifulSoup(resp.text, 'html.parser')
         detail = {'period':'','eligibility':'','content':'','amount':''}
         source = item.get('source', '')
-        if source == 'bizinfo':
-            for li in soup.find_all('li'):
-                s = li.find('span', class_='s_title')
-                if not s: continue
-                t = s.get_text(strip=True)
-                li_str = str(li)
-                val_raw = li_str.split('class="txt">', 1)[-1] if 'class="txt">' in li_str else ''
-                val = re.sub(r'<[^>]+>', ' ', val_raw)
-                val = re.sub(r'\s+', ' ', val).strip()[:300]
-                if t in ['신청기간','접수기간','모집기간','공모기간'] and not detail['period']:
-                    detail['period'] = val
-                elif t == '사업개요' and not detail['content']:
-                    detail['content'] = val
-        elif source == 'kstartup':
+        if source == 'kstartup':
             for p in soup.find_all('p', class_='title'):
                 if '지원내용' in p.get_text():
                     ul = p.find_next('ul', class_='dot_list-wrap')
@@ -305,10 +293,10 @@ async def main():
     with open(cache_path) as f: cache = json.load(f)
     with open(ids_path) as f: collected_ids = json.load(f)
 
-    bizinfo_items = await collect_bizinfo()
+    mss_items = await collect_mss()
     kstartup_items = await collect_kstartup()
 
-    all_items = bizinfo_items + kstartup_items
+    all_items = mss_items + kstartup_items
 
     dedup_items = []
     for item in all_items:
@@ -322,8 +310,8 @@ async def main():
         fetch_detail(item, cache)
 
     source_meta = {
-        'bizinfo':  {'id':'bizinfo', 'name':'기업마당',  'icon':'🏢','color':'#1a4fa0','items':bizinfo_items},
-        'kstartup': {'id':'kstartup','name':'K-Startup','icon':'🚀','color':'#e8360e','items':kstartup_items},
+        'mss':      {'id':'mss',     'name':'중소벤처기업부','icon':'🏛️','color':'#1a4fa0','items':mss_items},
+        'kstartup': {'id':'kstartup','name':'K-Startup',   'icon':'🚀','color':'#e8360e','items':kstartup_items},
     }
     for key, meta in source_meta.items():
         meta['count'] = len(meta['items'])
