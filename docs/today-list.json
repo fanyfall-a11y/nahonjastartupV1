@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "total": 5,
   "targetCount": 0,
   "sources": {
@@ -109,5 +109,23 @@
       ]
     }
   },
-  "todayDeadline": []
+  "todayDeadline": [
+    {
+      "id": "kstartup_179399",
+      "source": "kstartup",
+      "title": "2026 DMC 이노베이션 캠프 경진대회 (DIC2026)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179399",
+      "date": "2026-10-11",
+      "org": "㈜디엠씨산학진흥재단",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.09.15(화) 00:00 ~ 2026.10.11(일) 23:59 까지",
+        "eligibility": "",
+        "content": "사업모델 고도화 및 피칭 역량 강화 지원 - 창업 아이디어 및 사업모델 고도화 지원- 전문가 멘토링 지원- 사업계획 및 피칭 역량 강화- 피칭데이 참가 및 발표 기회 제공- 우수 창업팀 선정 및 시상- 우수팀 후속 성장 및 사업화 연계 지원※ 세부 지원 및 시상내용은 공고문과 운영기관 안내에 따릅니다.",
+        "amount": ""
+      }
+    }
+  ]
 }

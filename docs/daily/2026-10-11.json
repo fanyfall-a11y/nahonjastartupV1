@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-11",
+  "total": 5,
+  "targetCount": 0,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 21,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068742",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지–방산) 수요기업 협업 과제 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068742",
+          "date": "2026-06-22",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-02 ~ 2026-06-22",
+            "eligibility": "",
+            "content": "방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지&ndash;방산)<br />\n수요기업 협업 과제를 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9257\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 오픈이노베이션 활성화 및 동반",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068716",
+          "source": "mss",
+          "title": "2026년도 2차 대중소기업동반진출지원사업 주관기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068716",
+          "date": "2026-06-26",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-26",
+            "eligibility": "",
+            "content": "<br />\n2026년도 2차 대중소기업동반진출지원사업 주관기업 모집을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 32,
+      "items": [
+        {
+          "id": "kstartup_179428",
+          "source": "kstartup",
+          "title": "2027년 초격차 스타트업 프로젝트 정부 첫 실증·구매 주관기관 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179428",
+          "date": "2026-10-29",
+          "org": "중소벤처기업부 장관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "공공 인프라에서 스타트업의 혁신 기술을 실증하고 정부의 조달 구매로 연결하여 판로 개척을 지원하는 『정부 첫 실증·구매 프로젝트』 주관기관을 다음과 같이 모집 공고합니다.",
+            "eligibility": "창업기업 기술 실증과 국내외 조달시장으로 연결을 통한 실질적 판로 개척 등 조달 역랑 강화 지원기능을 보유한 전문 기관",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179408",
+          "source": "kstartup",
+          "title": "「민관협력 오픈이노베이션 지원」2026년 제2차 상호 자율탐색형(바이오 분야) 참여기업 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179408",
+          "date": "2026-11-02",
+          "org": "중소벤처기업부 장관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "창업기업과 수요기업 간 협력을 통한 동방성장 지원을 위해 「민관협력 오픈이노베이션 지원」2026년 제2차 상호 자율탐색형(바이오 분야) 사업에 참여할 수요기업과 창업기업을 다음과 같이 모집합니다.",
+            "eligibility": "오픈이노베이션을 희망하는 수요기업 및 창업기업\r\n① 수요기업 : 국내 제약사 등 바이오 분야 수요기업(대·중견기업)\r\n② 창업기업 : 1) 공고일 기준 창업 7년 이내 창업기업 또는 2) 10년 이내 신산업 분야 창업기업",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179399",
+      "source": "kstartup",
+      "title": "2026 DMC 이노베이션 캠프 경진대회 (DIC2026)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179399",
+      "date": "2026-10-11",
+      "org": "㈜디엠씨산학진흥재단",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.09.15(화) 00:00 ~ 2026.10.11(일) 23:59 까지",
+        "eligibility": "",
+        "content": "사업모델 고도화 및 피칭 역량 강화 지원 - 창업 아이디어 및 사업모델 고도화 지원- 전문가 멘토링 지원- 사업계획 및 피칭 역량 강화- 피칭데이 참가 및 발표 기회 제공- 우수 창업팀 선정 및 시상- 우수팀 후속 성장 및 사업화 연계 지원※ 세부 지원 및 시상내용은 공고문과 운영기관 안내에 따릅니다.",
+        "amount": ""
+      }
+    }
+  ]
+}
