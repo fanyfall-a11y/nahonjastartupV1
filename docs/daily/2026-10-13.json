@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-13",
+  "total": 0,
+  "targetCount": 0,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 0,
+      "targetCount": 0,
+      "items": []
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 0,
+      "targetCount": 0,
+      "items": []
+    }
+  },
+  "todayDeadline": []
+}
