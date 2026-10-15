@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-15",
+  "total": 16,
+  "targetCount": 4,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068742",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지–방산) 수요기업 협업 과제 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068742",
+          "date": "2026-06-22",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-02 ~ 2026-06-22",
+            "eligibility": "",
+            "content": "방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지&ndash;방산)<br />\n수요기업 협업 과제를 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9257\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 오픈이노베이션 활성화 및 동반",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068716",
+          "source": "mss",
+          "title": "2026년도 2차 대중소기업동반진출지원사업 주관기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068716",
+          "date": "2026-06-26",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-26",
+            "eligibility": "",
+            "content": "<br />\n2026년도 2차 대중소기업동반진출지원사업 주관기업 모집을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 24,
+      "items": [
+        {
+          "id": "kstartup_179501",
+          "source": "kstartup",
+          "title": "[중앙사회서비스원] 2026년 제3회 사회서비스 투자교류회",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179501",
+          "date": "2026-10-22",
+          "org": "중앙사회서비스원",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.13(화) 14:00 ~ 2026.10.22(목) 15:00 까지",
+            "eligibility": "",
+            "content": "지원내용 [주요 프로그램]IR 발표, 기업 홍보테이블, (투자사 및 실증처)라운드 테이블 미팅, 네트워킹 등[트랙 구분] ● (1) 발표기업(IR 발표 및 라운드 테이블 미팅 참여) ● (2) 홍보기업(기업 홍보 테이블 운영 및 라운드 테이블 미팅 참여)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179500",
+          "source": "kstartup",
+          "title": "2026년 전남광주 제3기「지역자원 연계 청년창업 지원사업」 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179500",
+          "date": "2026-10-30",
+          "org": "전남정보문화산업진흥원",
+          "region": "광주",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.13(화) 00:59 ~ 2026.10.30(금) 17:00 까지",
+            "eligibility": "",
+            "content": "지원내용 지역자원조사: 97팀 내외, 팀당 활동비 최대 180만원 지원사업화: 지역자원조사 활동팀 중 31팀 이내 선발, 팀당 최대 2,000만원 지원재도전 트랙: 사업화 미선정 팀 중 27팀 이내 선발, 팀당 최대 1,000만원 지원고도화: 사업화 및 재도전 트랙 참여팀 중 30팀 내외 선발, 팀당 2,000만~최대 5,000만원 지원창업 기초·심화 교육, 분야별 전담 멘토링·컨설팅, 네트워킹, 투자유치 IR 및 판로 연계 지원※ 각 단계별 평가·선정을 거쳐 지원하며, 지원금액·선정 규모·일정은 변경될 수 있음※ 지역자원조사 활동",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179498",
+          "source": "kstartup",
+          "title": "[한국투자액셀러레이터] 바른동행 4차 모집｜선발 시 최대 5억원 투자",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179498",
+          "date": "2026-11-05",
+          "org": "한국투자액셀러레이터",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.27(화) 00:00 ~ 2026.11.05(목) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 1. 초기 투자 최대 5억 원 투자 집행 (밸류에이션·투자방식 개별 협의)2. 삼성역 인근 Platform 365 입주 공간 제공3. 팁스(TIPS) 프로그램 추천4. 보도자료 배포 등 투자 후 PR 지원5. 한국투자액셀러레이터 포트폴리오 커뮤니티 및 밸류업 프로그램 참여 기회6. 한국투자금융그룹 네트워킹 인프라 제공",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179497",
+          "source": "kstartup",
+          "title": "[무료 AI 역량강화 교육] 글로벌 공공조달 AX 전략 전문가 과정 (선착순 모집)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179497",
+          "date": "2026-11-13",
+          "org": "(주)글로벌창업연구소",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.12(월) 09:00 ~ 2026.11.13(금) 12:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179496",
+          "source": "kstartup",
+          "title": "2026 산업단지 오픈이노베이션프로그램 KICXUP 챌린지 & 로컬 스타트업 2차 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179496",
+          "date": "2026-10-23",
+          "org": "한국산업단지공단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.12(월) 18:00 ~ 2026.10.23(금) 17:00 까지",
+            "eligibility": "",
+            "content": "지원내용 - PoC 지원금 (건당 최대 1.5천만원 지원)- 투자유치 및 TIPS 연계 프로그램 지원- 해외 수요기업과의 연계 등 글로벌 진출 기회 제공- 신용보증기금 금융·비금융 지원- 입주 희망 시 산업단지 내 사무공간 지원 가점 (KICXUP 서울_현대아울렛 가산점 )",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179495",
+          "source": "kstartup",
+          "title": "[서울경제진흥원] 세계최대 이동통신 전시회 MWC 2027 – 4YFN 서울기업관 참가기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179495",
+          "date": "2026-10-29",
+          "org": "서울경제진흥원",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.12(월) 13:00 ~ 2026.10.29(목) 11:00 까지",
+            "eligibility": "",
+            "content": "B2B 전시홍보, 전시회 프로그램 B2B 전시홍보 · 서울기업관 부스 제공(상호간판(그래픽 포함). 인포데스크 1대, 의자 2개 제공)· 부스 내 장비(부대시설) 임차 지원전시회 프로그램· Founder & Investor 매칭지원· 현지 네트워킹 프로그램 참가 지원글로벌 진출 및 투자 유치 · 유럽 시장 투자유치, 진출 및 사업화를 위한 교육, 밋업, 네트워킹 지원· 투자자+글로벌기업+바이어+파트너 발굴 및 매칭 지원 등기업부담· 전시회 참가비용 : 1,000,000원 (선정 후 SBA 지정 계좌로 선납)· 출장자 항공료 및 현지",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179492",
+          "source": "kstartup",
+          "title": "바이오/헬스케어 기업들을 위한 「2026 혁신신약살롱 마곡」 참여 안내",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179492",
+          "date": "2026-10-21",
+          "org": "(재)서울경제진흥원",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.12(월) 09:00 ~ 2026.10.21(수) 00:00 까지",
+            "eligibility": "",
+            "content": "없음",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179491",
+          "source": "kstartup",
+          "title": "2026년 석탄전환지역 기업이전 사업",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179491",
+          "date": "2026-10-30",
+          "org": "강원대학교 KNU창업혁신원장",
+          "region": "강원",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.12(월) 18:00 ~ 2026.10.30(금) 18:00 까지",
+            "eligibility": "",
+            "content": "기업 당 지원금 최대 10억 원(㈜강원랜드) + 추가지원(협업기관) *지원금은 평가결과에 따라 차등 배정",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179489",
+          "source": "kstartup",
+          "title": "마포비즈니스센터 4차 신규입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179489",
+          "date": "2026-10-22",
+          "org": "마포비즈니스센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.13(화) 09:00 ~ 2026.10.22(목) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 멘토링, 창업교육, 기업 네트워킹- 수요에 따른 분야별 1:1멘토링 지원- 비즈니스모델 고도화, IR자료고도화, 피칭, 투자 활동 등 기업 경영활동과 관련된 전반적인 교육 지원- 입주기업 간담회를 통해 네트워킹 기회 마련",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179484",
+          "source": "kstartup",
+          "title": "TECH IP-UP: IP 창출캠프 참가팀 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179484",
+          "date": "2026-10-28",
+          "org": "단국대학교 기술지주회",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.12(월) 08:00 ~ 2026.10.28(수) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179480",
+          "source": "kstartup",
+          "title": "2026 시흥시 청년창업가 네트워킹 행사 참가자  모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179480",
+          "date": "2026-10-24",
+          "org": "시흥시청",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.12(월) 12:00 ~ 2026.10.24(토) 14:00 까지",
+            "eligibility": "",
+            "content": "저녁식사 제공 참가자 전원 행사당일 저녁식사 제공",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179462",
+          "source": "kstartup",
+          "title": "2026 여성벤처활성화사업 「여성벤처CEO 경영혁신아카데미」",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179462",
+          "date": "2026-11-02",
+          "org": "(사)한국여성벤처협회",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.12(월) 00:01 ~ 2026.11.02(월) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179444",
+          "source": "kstartup",
+          "title": "2026 영등포구 라이브커머스 판로성장 프로그램",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179444",
+          "date": "2026-10-30",
+          "org": "에이블브릿지",
+          "region": "전국",
+          "category": "판로/마케팅",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.12(월) 00:00 ~ 2026.10.30(금) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179469",
+      "source": "kstartup",
+      "title": "(창업도시조성프로젝트)울산 벤처빌더 플랫폼(Step1) 참여팀 모집 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179469",
+      "date": "2026-10-15",
+      "org": "(재)울산창조경제혁신센터",
+      "region": "울산",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.09.28(월) 09:00 ~ 2026.10.15(목) 18:00 까지",
+        "eligibility": "",
+        "content": "창업역량강화 캠프 및 MVP 제작(팀당 최대 200만원)지원 예비창업자의 창업역량 강화를 위한 창업 및 비즈니스 모델(BM) 개발·고도화 교육, 시장·고객 및 경쟁사 분석, 사업 성공 전략 및 수익모델 수립, 전문가 맞춤형 컨설팅, 사업모델 개선, MVP 기획 및 사업화 전략 수립 등을 지원하며, 우수 수료팀을 대상으로 MVP 제작비(팀당 최대 200만원)를 지원합니다.",
+        "amount": ""
+      }
+    }
+  ]
+}
