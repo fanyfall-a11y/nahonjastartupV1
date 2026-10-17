@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-17",
+  "total": 15,
+  "targetCount": 5,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068742",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지–방산) 수요기업 협업 과제 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068742",
+          "date": "2026-06-22",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-02 ~ 2026-06-22",
+            "eligibility": "",
+            "content": "방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지&ndash;방산)<br />\n수요기업 협업 과제를 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9257\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 오픈이노베이션 활성화 및 동반",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068716",
+          "source": "mss",
+          "title": "2026년도 2차 대중소기업동반진출지원사업 주관기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068716",
+          "date": "2026-06-26",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-26",
+            "eligibility": "",
+            "content": "<br />\n2026년도 2차 대중소기업동반진출지원사업 주관기업 모집을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "kstartup_179540",
+          "source": "kstartup",
+          "title": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179540",
+          "date": "2026-10-22",
+          "org": "글로벌벤처센터",
+          "region": "전국",
+          "category": "판로/마케팅",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.16(금) 11:25 ~ 2026.10.22(목) 22:20 까지",
+            "eligibility": "",
+            "content": "AI 기반 창업 과정 지원 아이템 검증부터 MVP 개발, 글로벌 런칭 및 투자 연계 단계별 창업 지원지원내용 상세AI 개발 관련 멘토링 및 심사후 소정의 AI 개발 크레딧 지원AI 기반 아이디어 검증 및 PMF(Product-Market Fit) 분석비즈니스 모델(BM) 설계 및 수익모델 고도화AI 활용 프로토타입 및 MVP 개발 멘토링플랫폼 아키텍처 및 기술 전략 자문센터 입주 1개월 무상 지원 AI 무상 멘토링 지원법인 설립 및 운영 컨설팅글로벌 서비스 출시 및 해외 결제 시스템 구축 지원마케팅 및 서비스 런칭 전략 컨설팅투자유",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179538",
+          "source": "kstartup",
+          "title": "2026년 여성CEO 비즈니스 아카데미 경상권역 시즌 2",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179538",
+          "date": "2026-11-04",
+          "org": "한국여성경제인협회",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.15(목) 00:00 ~ 2026.11.04(수) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179536",
+          "source": "kstartup",
+          "title": "2026 고양시 자금조달 계획 특강 & 네트워킹",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179536",
+          "date": "2026-11-06",
+          "org": "고양산업진흥원",
+          "region": "전국",
+          "category": "자금지원",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.16(금) 08:00 ~ 2026.11.06(금) 16:59 까지",
+            "eligibility": "",
+            "content": "지원사업을 통한 자금조달 계획 특강 및 자유 네트워킹 (식사제공)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179535",
+          "source": "kstartup",
+          "title": "2026년 웰컴 투 팁스 7차 참가기업 모집 (제주권)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179535",
+          "date": "2026-10-28",
+          "org": "(주)로우파트너스",
+          "region": "제주",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.15(목) 00:00 ~ 2026.10.28(수) 18:00 까지",
+            "eligibility": "",
+            "content": "지원 혜택 우수기업 3개사(최우수, 우수, 장려)① ’27년 프리 팁스 사업 연계, ② 상장 수여 및 상금 시상, ③ 본선(서울) IR DAY 출전 기회 제공팁스 운영사 리버스 피칭(투자관점) 참관 및 1:1 투자 상담 기회팁스 선배기업의 성장 노하우 및 투자유치 등 1:1 상담 기회",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179534",
+          "source": "kstartup",
+          "title": "글로벌 진출을 위한 법인 전략과 창업가 네트워킹 「To Flip or Not to Flip 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179534",
+          "date": "2026-10-29",
+          "org": "The Bridge Circle (TBC)",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.15(목) 00:00 ~ 2026.10.29(목) 06:00 까지",
+            "eligibility": "",
+            "content": "주요내용 ○ 창업가 경험 공유 및 대담미국 플립을 선택하지 않은 YC 출신 창업가의 의사결정 배경한국을 기반으로 한 사업 성장과 일본 시장 진출 경험글로벌 사업 운영과 투자유치 과정에서 고려할 사항※ 플립(Flip)이란 해외 투자유치와 사업 확장 등을 위해 해외 법인을 모회사로 두는 구조로 전환하는 것을 의미합니다.○ 창업가 네트워킹해외 진출 과정의 경험과 실무 노하우 공유글로벌 사업 확장에 관한 고민과 의견 교환참가자 간 후속 커피챗 및 협업 기회 모색",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179533",
+          "source": "kstartup",
+          "title": "[해수부] 2026년 해양수산 통합데모데이 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179533",
+          "date": "2026-11-12",
+          "org": "부산지역대학연합기술지주(주)",
+          "region": "부산",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.15(목) 10:00 ~ 2026.11.12(목) 13:59 까지",
+            "eligibility": "",
+            "content": "□ 참가 프로그램 및 제공사항 ① 유망 스타트업 IR피칭 참관- 해양수산 분야 유망 스타트업 12개사의 혁신기술, 사업모델 및 성장전략 소개- 해양수산·조선·항만 분야의 최신 창업 및 기술사업화 동향 공유② 창업·투자 전문가 초청강연- 해양수산 스타트업의 성장 가능성 및 창업생태계 전망에 관한 전문가 강연- 산업 변화에 따른 창업 및 사업화 기회 탐색③ 1:1 투자 및 지원사업 상담- 액셀러레이터 및 투자기관과의 개별 상담 기회 제공- 창업기업의 투자유치, 사업화 전략 및 성장지원 관련 상담※ 사전 신청자에 한하여 운영④ 해양수산 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179531",
+          "source": "kstartup",
+          "title": " 2026년 서울핀테크랩 FIN-오픈이노베이션 Meep-up Day 10회차 - DB손해보험",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179531",
+          "date": "2026-11-02",
+          "org": "서울핀테크랩",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.15(목) 09:00 ~ 2026.11.02(월) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 - DB손해보험 담당자와의 1:1 밋업",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179529",
+          "source": "kstartup",
+          "title": "2026년 하반기 과천시 창업지원센터 스마트오피스 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179529",
+          "date": "2026-10-25",
+          "org": "과천시 창업지원센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.15(목) 09:00 ~ 2026.10.25(일) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 ▪ 사업자등록에 필요한 주소지 제공▪ 임대료 및 보증금 무료▪ 관리비 공공요금 등은 매월 목적물의 면적(3.3m)에 비례하여 부과(평균 5,000원 ~ 10,000원 / 1개월, 계절 요인 등에 따라 변동 가능)▪ 제공시설ㅇ 사무공간 : 과천시 창업지원센터 오픈 스페이스 공간 제공ㅇ 이용장비 : 인터넷 무료 이용 및 복사기 사용 가능ㅇ 부대시설 : 공유주방, 스튜디오, 다목적회의실, 강의실, 오픈 스페이스▪ 창업지원ㅇ 사업자등록 주소지 제공ㅇ 미팅을 위한 회의 공간, 공유주방, 강의실 등 공간 대관ㅇ 기업진단, 1:1 멘토",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179528",
+          "source": "kstartup",
+          "title": "KETI 파트너쉽 대덕특구 연구소기업",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179528",
+          "date": "2026-11-15",
+          "org": "연구개발특구진흥재단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.15(목) 12:00 ~ 2026.11.15(일) 18:00 까지",
+            "eligibility": "",
+            "content": "지원내용 KETI 기술 및 연구자 매칭KETI Holdings 투자프로그램 연계후속 연구개발 및 실증사업 연계",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179524",
+          "source": "kstartup",
+          "title": "2026 충남창업마루나비 하반기 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179524",
+          "date": "2026-10-21",
+          "org": "충남창조경제혁신센터",
+          "region": "충남",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.07(수) 12:00 ~ 2026.10.21(수) 09:00 까지",
+            "eligibility": "",
+            "content": "공간 및 성장 지원 공간 지원: 전용 사무공간 제공(1년 계약, 연장평가를 통해 최대 3년 가능) 및 특화시설(회의실, 이벤트홀, 멘토링룸 등) 이용 지원성장 지원: 전문 멘토링(세무·법률·마케팅·투자 등), 맞춤형 창업 교육 및 포럼투자·네트워킹: 센터 직접 투자 검토, 데모데이 연계 지원 및 입주기업 간 정기 네트워킹",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179521",
+          "source": "kstartup",
+          "title": "[온라인·무료] 재고·코딩·PG심사 없이, 오늘 여는 내 쇼핑몰",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179521",
+          "date": "2026-10-29",
+          "org": "스쿨모아 주식회사",
+          "region": "전국",
+          "category": "판로/마케팅",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.14(수) 00:00 ~ 2026.10.29(목) 19:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179520",
+          "source": "kstartup",
+          "title": "(경남센터) 2026년 제9회 제대군인 창업 워크숍 개최 안내",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179520",
+          "date": "2026-11-10",
+          "org": "국가보훈부",
+          "region": "경남",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.14(수) 00:00 ~ 2026.11.10(화) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": []
+}
