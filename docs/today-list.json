@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "total": 3,
   "targetCount": 0,
   "sources": {
@@ -76,19 +76,70 @@
   },
   "todayDeadline": [
     {
-      "id": "kstartup_179494",
+      "id": "mss_1071453",
+      "source": "mss",
+      "title": "중소기업 통합관리시스템 수탁기관 모집공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071453",
+      "date": "2026-10-19",
+      "org": "중소기업정책과",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026-09-28 ~ 2026-10-19",
+        "eligibility": "",
+        "content": "<br />\n중소기업 지원정보를 체계적으로 관리&middot;제공하여 정책 접근성을 제고하고 지원사업의 효율적 추진을 도모하기 위한<br />\n「중소기업 통합관리시스템 운영」업무의 수탁기관을 붙임과 같이 공모하오니 많은 참여를 바랍니다.&nbsp;&nbsp;",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179515",
       "source": "kstartup",
-      "title": "2026 D-Global 딥테크 스케일업 세미나 참가 기업 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179494",
-      "date": "2026-10-18",
-      "org": "조슈아파트너스(주)",
+      "title": " 2026 Invest Seoul Partners Night",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179515",
+      "date": "2026-10-19",
+      "org": "서울투자진흥재단",
+      "region": "서울",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.14(수) 13:00 ~ 2026.10.19(월) 14:00 까지",
+        "eligibility": "",
+        "content": "해당없음",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179493",
+      "source": "kstartup",
+      "title": "THE RIGHT SESSION: 한국투자액셀러레이터 바른동행 Info-Day",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179493",
+      "date": "2026-10-19",
+      "org": "한국투자액셀러레이터",
       "region": "전국",
       "category": "사업화",
       "isTarget": false,
       "detail": {
-        "period": "2026.10.12(월) 17:00 ~ 2026.10.18(일) 23:59 까지",
+        "period": "2026.10.12(월) 10:00 ~ 2026.10.19(월) 23:59 까지",
         "eligibility": "",
-        "content": "스타트업 글로벌 진출 사례 특강 및 미국동부 시장 진출을 위한 페어팍스카운티 거점 활용과 사례 특강, 투자전문가 1:1 패스트 밋업 및 네트워킹",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179485",
+      "source": "kstartup",
+      "title": "「2026 슈퍼:콘 엑셀러레이팅」 지원사업 참여기업 모집공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179485",
+      "date": "2026-10-19",
+      "org": "대전정보문화산업진흥원",
+      "region": "대전",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.12(월) 00:00 ~ 2026.10.14(수) 23:59 까지",
+        "eligibility": "",
+        "content": "· 투자 연계 : 운영사 직접투자 검토(1억 원 규모), LIPS·TIPS 등 투자연계 프로그램 추천, 종료 후 6개월 후속 투자 관리 · 투자자 대면 : 콘텐츠 전문 VC 심사역 10인 내외 대면, VC 심사역 컨설팅 및 투자 검토, 타지역 VC 직접 방문· 투자 역량 강화 : 1:1 맞춤 컨설팅 3회, IR Deck 고도화, AX 전문가 매칭을 통한 AI 활용·BM 전환 진단, 변리사·회계사·노무사 전문가 Pool 연계· 제공 혜택 : 역량진단 보고서(7대 역량 점수, 90일 실행 권고안), 투자자 관점으로 재설계된 IR Dec",
         "amount": ""
       }
     }

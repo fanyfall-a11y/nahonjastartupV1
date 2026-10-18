@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-19",
+  "total": 3,
+  "targetCount": 0,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068742",
+          "source": "mss",
+          "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지–방산) 수요기업 협업 과제 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068742",
+          "date": "2026-06-22",
+          "org": "신산업기술창업과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-02 ~ 2026-06-22",
+            "eligibility": "",
+            "content": "방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 협력을 통한 동반 성장 지원을 위해<br />\n「민관협력 오픈이노베이션 지원」 2026년 제2차 방산 스타트업 챌린지(모두의 챌린지&ndash;방산)<br />\n수요기업 협업 과제를 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"9257\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 방산 분야 신기술 적용 수요가 있는 군 및 수요기업과 창업기업 간 오픈이노베이션 활성화 및 동반",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1068716",
+          "source": "mss",
+          "title": "2026년도 2차 대중소기업동반진출지원사업 주관기업 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1068716",
+          "date": "2026-06-26",
+          "org": "글로벌성장정책과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-06-01 ~ 2026-06-26",
+            "eligibility": "",
+            "content": "<br />\n2026년도 2차 대중소기업동반진출지원사업 주관기업 모집을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 20,
+      "items": []
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "mss_1071453",
+      "source": "mss",
+      "title": "중소기업 통합관리시스템 수탁기관 모집공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071453",
+      "date": "2026-10-19",
+      "org": "중소기업정책과",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026-09-28 ~ 2026-10-19",
+        "eligibility": "",
+        "content": "<br />\n중소기업 지원정보를 체계적으로 관리&middot;제공하여 정책 접근성을 제고하고 지원사업의 효율적 추진을 도모하기 위한<br />\n「중소기업 통합관리시스템 운영」업무의 수탁기관을 붙임과 같이 공모하오니 많은 참여를 바랍니다.&nbsp;&nbsp;",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179515",
+      "source": "kstartup",
+      "title": " 2026 Invest Seoul Partners Night",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179515",
+      "date": "2026-10-19",
+      "org": "서울투자진흥재단",
+      "region": "서울",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.14(수) 13:00 ~ 2026.10.19(월) 14:00 까지",
+        "eligibility": "",
+        "content": "해당없음",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179493",
+      "source": "kstartup",
+      "title": "THE RIGHT SESSION: 한국투자액셀러레이터 바른동행 Info-Day",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179493",
+      "date": "2026-10-19",
+      "org": "한국투자액셀러레이터",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.12(월) 10:00 ~ 2026.10.19(월) 23:59 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179485",
+      "source": "kstartup",
+      "title": "「2026 슈퍼:콘 엑셀러레이팅」 지원사업 참여기업 모집공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179485",
+      "date": "2026-10-19",
+      "org": "대전정보문화산업진흥원",
+      "region": "대전",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.12(월) 00:00 ~ 2026.10.14(수) 23:59 까지",
+        "eligibility": "",
+        "content": "· 투자 연계 : 운영사 직접투자 검토(1억 원 규모), LIPS·TIPS 등 투자연계 프로그램 추천, 종료 후 6개월 후속 투자 관리 · 투자자 대면 : 콘텐츠 전문 VC 심사역 10인 내외 대면, VC 심사역 컨설팅 및 투자 검토, 타지역 VC 직접 방문· 투자 역량 강화 : 1:1 맞춤 컨설팅 3회, IR Deck 고도화, AX 전문가 매칭을 통한 AI 활용·BM 전환 진단, 변리사·회계사·노무사 전문가 Pool 연계· 제공 혜택 : 역량진단 보고서(7대 역량 점수, 90일 실행 권고안), 투자자 관점으로 재설계된 IR Dec",
+        "amount": ""
+      }
+    }
+  ]
+}
