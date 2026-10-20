@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "total": 3,
   "targetCount": 0,
   "sources": {
@@ -9,7 +9,7 @@
       "icon": "🏛️",
       "color": "#1a4fa0",
       "count": 100,
-      "targetCount": 20,
+      "targetCount": 19,
       "items": [
         {
           "id": "mss_1071324",
@@ -70,76 +70,59 @@
       "icon": "🚀",
       "color": "#e8360e",
       "count": 50,
-      "targetCount": 20,
+      "targetCount": 24,
       "items": []
     }
   },
   "todayDeadline": [
     {
-      "id": "mss_1071453",
-      "source": "mss",
-      "title": "중소기업 통합관리시스템 수탁기관 모집공고",
-      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071453",
-      "date": "2026-10-19",
-      "org": "중소기업정책과",
-      "region": "전국",
-      "category": "사업화",
-      "isTarget": true,
-      "detail": {
-        "period": "2026-09-28 ~ 2026-10-19",
-        "eligibility": "",
-        "content": "<br />\n중소기업 지원정보를 체계적으로 관리&middot;제공하여 정책 접근성을 제고하고 지원사업의 효율적 추진을 도모하기 위한<br />\n「중소기업 통합관리시스템 운영」업무의 수탁기관을 붙임과 같이 공모하오니 많은 참여를 바랍니다.&nbsp;&nbsp;",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179515",
+      "id": "kstartup_179507",
       "source": "kstartup",
-      "title": " 2026 Invest Seoul Partners Night",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179515",
-      "date": "2026-10-19",
-      "org": "서울투자진흥재단",
+      "title": "가죽·패션 제품개발 협업사업 모집 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179507",
+      "date": "2026-10-20",
+      "org": "서울시 강동가죽제조지원센터",
       "region": "서울",
       "category": "사업화",
       "isTarget": false,
       "detail": {
-        "period": "2026.10.14(수) 13:00 ~ 2026.10.19(월) 14:00 까지",
+        "period": "2026.10.07(수) 15:00 ~ 2026.10.20(화) 16:00 까지",
         "eligibility": "",
-        "content": "해당없음",
+        "content": "◎ 가죽·패션산업 제조 소공인과 브랜드 매칭을 통한 제품개발 지원 - 개발 제품에 따른 맞춤형 제조 소공인 매칭 연계- 신규 제품개발 사전 컨설팅(양산형 디자인상담 및 공장방문 전 사전조율)- 제조 소공인 매칭 방문상담 동행- 시제품 개발비 지원(*샘플비 지원(1제품), 재료비 기업 자부담)",
         "amount": ""
       }
     },
     {
-      "id": "kstartup_179493",
+      "id": "kstartup_179482",
       "source": "kstartup",
-      "title": "THE RIGHT SESSION: 한국투자액셀러레이터 바른동행 Info-Day",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179493",
-      "date": "2026-10-19",
-      "org": "한국투자액셀러레이터",
-      "region": "전국",
-      "category": "사업화",
-      "isTarget": false,
-      "detail": {
-        "period": "2026.10.12(월) 10:00 ~ 2026.10.19(월) 23:59 까지",
-        "eligibility": "",
-        "content": "",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179485",
-      "source": "kstartup",
-      "title": "「2026 슈퍼:콘 엑셀러레이팅」 지원사업 참여기업 모집공고",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179485",
-      "date": "2026-10-19",
-      "org": "대전정보문화산업진흥원",
+      "title": "[대전창조경제혁신센터] 2026 대전 제조파트너스 매칭데이 참가자 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179482",
+      "date": "2026-10-20",
+      "org": "대전창조경제혁신센터",
       "region": "대전",
+      "category": "시설제공",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.08(목) 00:00 ~ 2026.10.20(화) 23:59 까지",
+        "eligibility": "",
+        "content": "전문가 1:1 멘토링 및 강연 - 양산과 사업화 분야 전문가 30분 단위 1:1 멘토링- 멘토링 분야: 제품 디자인, 설계 / 금형 설계 제작, 양산 / CMF(컬러, 소재, 마감) / PCB 및 펌웨어 / 애플리케이션, AI / BM 고도화 / 사업계획서 작성 / 창업, 경영 전략 수립 / 마케팅, 판로개척 / 투자- 강연: 시제품에서 투자까지 제조창업 로드맵 (이상호 주식회사 만드로 대표)- 참가자 네트워킹 및 저녁 식사",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179475",
+      "source": "kstartup",
+      "title": "2026-5회 호남 엔젤리더스포럼  in 전남광주",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179475",
+      "date": "2026-10-20",
+      "org": "한국엔젤투자협회 호남권 엔젤투자허브",
+      "region": "광주",
       "category": "사업화",
       "isTarget": false,
       "detail": {
-        "period": "2026.10.12(월) 00:00 ~ 2026.10.14(수) 23:59 까지",
+        "period": "2026.10.08(목) 17:00 ~ 2026.10.20(화) 13:59 까지",
         "eligibility": "",
-        "content": "· 투자 연계 : 운영사 직접투자 검토(1억 원 규모), LIPS·TIPS 등 투자연계 프로그램 추천, 종료 후 6개월 후속 투자 관리 · 투자자 대면 : 콘텐츠 전문 VC 심사역 10인 내외 대면, VC 심사역 컨설팅 및 투자 검토, 타지역 VC 직접 방문· 투자 역량 강화 : 1:1 맞춤 컨설팅 3회, IR Deck 고도화, AX 전문가 매칭을 통한 AI 활용·BM 전환 진단, 변리사·회계사·노무사 전문가 Pool 연계· 제공 혜택 : 역량진단 보고서(7대 역량 점수, 90일 실행 권고안), 투자자 관점으로 재설계된 IR Dec",
+        "content": "호남권 지역 창업기업 및 예비창업자를 대상으로 특강 및 엔젤투자 네트워킹 제공",
         "amount": ""
       }
     }
