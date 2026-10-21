@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-20",
-  "total": 3,
-  "targetCount": 0,
+  "date": "2026-10-21",
+  "total": 14,
+  "targetCount": 8,
   "sources": {
     "mss": {
       "id": "mss",
@@ -11,6 +11,40 @@
       "count": 100,
       "targetCount": 19,
       "items": [
+        {
+          "id": "mss_1071870",
+          "source": "mss",
+          "title": "2026년 소공인 클린제조환경조성사업 3차 모집 공고(연장)",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071870",
+          "date": "",
+          "org": "소공인성장촉진단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "<br />\n소공인 작업장의 안전사고 예방을 목적으로 추진하는「2026년 소공인 클린제조환경조성」사업을 첨부파일과 같이 추가 모집 공고를 연장하오니 많은 관심과 참여바랍니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"7599\" id=\"hwpEditorBoardContent\">&nbsp;</div>",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1071864",
+          "source": "mss",
+          "title": "2027년도 전통시장 및 상점가 활성화 지원사업 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071864",
+          "date": "2026-11-16",
+          "org": "전통시장과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-10-20 ~ 2026-11-16",
+            "eligibility": "",
+            "content": "2027년도 전통시장 및 상점가 활성화 지원사업을 붙임과 같이 공고합니다.",
+            "amount": ""
+          }
+        },
         {
           "id": "mss_1071324",
           "source": "mss",
@@ -70,59 +104,213 @@
       "icon": "🚀",
       "color": "#e8360e",
       "count": 50,
-      "targetCount": 24,
-      "items": []
+      "targetCount": 27,
+      "items": [
+        {
+          "id": "kstartup_179572",
+          "source": "kstartup",
+          "title": "2026년 스타트업 법률지원사업 울산광역시 법률상담회 참여 기업 모집 안내",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179572",
+          "date": "2026-11-02",
+          "org": "창업진흥원 원스톱지원실",
+          "region": "울산",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.20(화) 09:00 ~ 2026.11.02(월) 18:00 까지",
+            "eligibility": "",
+            "content": "계약·거래, 지식재산·브랜드, 개인정보 등 9개 분야 변호사 1:1 대면상담 계약·거래, 지식재산·브랜드, 개인정보·데이터 , 규제·인허가 대응, 인사·노무, 투자·자금조달, 기업운영·법무, 사업정리·재도전, 해외진출총 9개 분야 변호사-참여기업 1:1 법률상담회 운영(기업별 45분 상담)* 세부지원 분야 : 안내문 참조",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179558",
+          "source": "kstartup",
+          "title": "[인탑스 액셀러레이팅 6기 모집] 제품 디자인·설계·양산부터 IR까지! 하드웨어 스타트업 올인원 스케일업",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179558",
+          "date": "2026-11-22",
+          "org": "인탑스 주식회사 ",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 00:00 ~ 2026.11.22(일) 23:59 까지",
+            "eligibility": "",
+            "content": "지원 내용 1. OT / 사업성 검토 : 시장성과 양산성을 분석하고 주요 리스크 진단 및 개선 방향 도출2. 디자인 컨설팅 : 상품성 진단, 차별화 CMF 및 양산 적합 구조·기술 컨설팅3. 설계/제조 컨설팅 : 인탑스 EMS 역량으로 공정·품질·원가를 고려한 설계 최적화 및 양산 안정화 컨설팅4. IR 컨설팅: 투자자 관점의 사업계획 분석·진단 및 인탑스 인베스트먼트 전문가의 전략적 투자 컨설팅",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179557",
+          "source": "kstartup",
+          "title": "2026년 스타트업, 중소기업, 소상공인을 위한 M&A 전략 세미나",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179557",
+          "date": "2026-11-04",
+          "org": "광진경제허브센터",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 11:00 ~ 2026.11.04(수) 13:00 까지",
+            "eligibility": "",
+            "content": "특전(2027년도 광진경제허브센터 입주 상담) ○ 세션 1. 왜 지금인가? - 연사: 재단법인 큐네스티 지현철 부대표 - 전문 분야: 임팩트 투자, TIPS/LIPS 운영, M&A 딜 소싱 - 주요 내용: 정책 방향과 M&A 시장 지형, 매각·승계·인수 세 갈래 선택지○ 세션 2. 얼마의 가치인가? - 연사: (주)넥스트빌더스 신성진 대표 - 전문 분야: 경영진단, 턴어라운드, M&A·승계 자문 - 주요 내용: 밸류에이션 실무와 자본구조(재무·지배구조) 재설계○ 세션 3. 어떻게 추진하는가? - 연사: 법무법인 영웅 안형진 대표 변",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179555",
+          "source": "kstartup",
+          "title": "2026 글로벌 진출 - 글로벌 진출과 협력 네트워크 확장 전략",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179555",
+          "date": "2026-11-17",
+          "org": "서울창업허브 창동",
+          "region": "서울",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 09:00 ~ 2026.11.17(화) 17:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179554",
+          "source": "kstartup",
+          "title": "[GBSA] 2026 판교스타트업 투자교류회 제 4차 투자교류회",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179554",
+          "date": "2026-11-10",
+          "org": "㈜내비온파트너스",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 09:00 ~ 2026.11.10(화) 18:00 까지",
+            "eligibility": "",
+            "content": "행사 내용 - 스타트업 IR 피칭 참관- 기업별 1:1 Meet-up 참여(희망자 대상)- 투자 및 사업협력 네트워킹",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179552",
+          "source": "kstartup",
+          "title": "AI 활용 소상공인 및 전통시장 매니저  실무 역량 과정 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179552",
+          "date": "2026-11-13",
+          "org": "경남지방중소벤처기업청",
+          "region": "경남",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.21(수) 09:00 ~ 2026.11.13(금) 18:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179543",
+          "source": "kstartup",
+          "title": "2026 TEL VENTURE CAPITAL X 충남창조경제혁신센터 Nexus Connect 투자 밋업 데이",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179543",
+          "date": "2026-11-10",
+          "org": "(재)충남창조경제혁신센터 대표이사",
+          "region": "충남",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.16(금) 09:00 ~ 2026.11.10(화) 23:59 까지",
+            "eligibility": "",
+            "content": "공고문 참조 1. 수요기업(TEL VENTURE CAPITAL) - TEL VENTURE CAPITAL과의 1:1 투자 밋업 및 전략적 투자 검토 - 투자 검토 과정에서 필요시 후속 미팅 및 협력 논의 연계 2. 주관기관(충남창조경제혁신센터) - 센터 보유·연계 벤처펀드 및 투자 파트너를 통한 후속 투자 연계 - 투자 검토기업 대상 TIPS 등 정부지원사업 연계 검토 - 사업화·글로벌 진출·액셀러레이팅 등 성장단계별 후속 지원 프로그램 연계",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179542",
+          "source": "kstartup",
+          "title": "2027년 상반기 「IBK창공(創工)」혁신창업기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179542",
+          "date": "2026-11-13",
+          "org": "IBK기업은행 ",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 09:00 ~ 2026.11.13(금) 14:00 까지",
+            "eligibility": "",
+            "content": "금융지원 및 액셀러레이터 전반 지원 1) 투/융자 지원2) 교육 및 멘토링3) 컨설팅4) 판로개척 및 마케팅5) 사무공간6) 스케일업 프로그램",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179537",
+          "source": "kstartup",
+          "title": "충북테크노파크 차세대에너지 스타트업 DEMO DAY",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179537",
+          "date": "2026-10-21",
+          "org": "주식회사 내비온파트너스",
+          "region": "충북",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.15(목) 00:00 ~ 2026.10.21(수) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 충북테크노파크 차세대에너지센터 입주기업 3개사 IR 피칭",
+            "amount": ""
+          }
+        }
+      ]
     }
   },
   "todayDeadline": [
     {
-      "id": "kstartup_179507",
-      "source": "kstartup",
-      "title": "가죽·패션 제품개발 협업사업 모집 공고",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179507",
-      "date": "2026-10-20",
-      "org": "서울시 강동가죽제조지원센터",
-      "region": "서울",
+      "id": "mss_1071550",
+      "source": "mss",
+      "title": "「민관협력 오픈이노베이션 지원」 2026년 제2차 상호 자율탐색형(바이오 분야) 참여기업 모집공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071550",
+      "date": "2026-10-21",
+      "org": "신산업기술창업과",
+      "region": "전국",
       "category": "사업화",
       "isTarget": false,
       "detail": {
-        "period": "2026.10.07(수) 15:00 ~ 2026.10.20(화) 16:00 까지",
+        "period": "2026-10-01 ~ 2026-10-21",
         "eligibility": "",
-        "content": "◎ 가죽·패션산업 제조 소공인과 브랜드 매칭을 통한 제품개발 지원 - 개발 제품에 따른 맞춤형 제조 소공인 매칭 연계- 신규 제품개발 사전 컨설팅(양산형 디자인상담 및 공장방문 전 사전조율)- 제조 소공인 매칭 방문상담 동행- 시제품 개발비 지원(*샘플비 지원(1제품), 재료비 기업 자부담)",
+        "content": "창업기업과 수요기업 간 협력을 통한 동반성장 지원을 위해 ｢민관협력 오픈이노베이션 지원｣<br />\n2026년 제2차 상호 자율탐색형(바이오 분야) 사업에 참여할 수요기업과 창업기업을 다음과 같이 모집합니다.\n<div data-hjsonver=\"1.0\" data-jsonlen=\"8191\" id=\"hwpEditorBoardContent\">&nbsp;</div>\n□ 사업목적 : 수요기업-창업기업 간 오픈이노베이션 정보 제공 및 중개 플랫폼(OI 마켓) 등을 통해 기업 간 상생협력 및 성장 촉진\n\n<div data-hjsonver=\"1.",
         "amount": ""
       }
     },
     {
-      "id": "kstartup_179482",
+      "id": "kstartup_179537",
       "source": "kstartup",
-      "title": "[대전창조경제혁신센터] 2026 대전 제조파트너스 매칭데이 참가자 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179482",
-      "date": "2026-10-20",
-      "org": "대전창조경제혁신센터",
-      "region": "대전",
+      "title": "충북테크노파크 차세대에너지 스타트업 DEMO DAY",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179537",
+      "date": "2026-10-21",
+      "org": "주식회사 내비온파트너스",
+      "region": "충북",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.15(목) 00:00 ~ 2026.10.21(수) 23:59 까지",
+        "eligibility": "",
+        "content": "지원내용 충북테크노파크 차세대에너지센터 입주기업 3개사 IR 피칭",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179524",
+      "source": "kstartup",
+      "title": "2026 충남창업마루나비 하반기 입주기업 모집 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179524",
+      "date": "2026-10-21",
+      "org": "충남창조경제혁신센터",
+      "region": "충남",
       "category": "시설제공",
-      "isTarget": false,
+      "isTarget": true,
       "detail": {
-        "period": "2026.10.08(목) 00:00 ~ 2026.10.20(화) 23:59 까지",
+        "period": "2026.10.07(수) 12:00 ~ 2026.10.21(수) 09:00 까지",
         "eligibility": "",
-        "content": "전문가 1:1 멘토링 및 강연 - 양산과 사업화 분야 전문가 30분 단위 1:1 멘토링- 멘토링 분야: 제품 디자인, 설계 / 금형 설계 제작, 양산 / CMF(컬러, 소재, 마감) / PCB 및 펌웨어 / 애플리케이션, AI / BM 고도화 / 사업계획서 작성 / 창업, 경영 전략 수립 / 마케팅, 판로개척 / 투자- 강연: 시제품에서 투자까지 제조창업 로드맵 (이상호 주식회사 만드로 대표)- 참가자 네트워킹 및 저녁 식사",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179475",
-      "source": "kstartup",
-      "title": "2026-5회 호남 엔젤리더스포럼  in 전남광주",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179475",
-      "date": "2026-10-20",
-      "org": "한국엔젤투자협회 호남권 엔젤투자허브",
-      "region": "광주",
-      "category": "사업화",
-      "isTarget": false,
-      "detail": {
-        "period": "2026.10.08(목) 17:00 ~ 2026.10.20(화) 13:59 까지",
-        "eligibility": "",
-        "content": "호남권 지역 창업기업 및 예비창업자를 대상으로 특강 및 엔젤투자 네트워킹 제공",
+        "content": "공간 및 성장 지원 공간 지원: 전용 사무공간 제공(1년 계약, 연장평가를 통해 최대 3년 가능) 및 특화시설(회의실, 이벤트홀, 멘토링룸 등) 이용 지원성장 지원: 전문 멘토링(세무·법률·마케팅·투자 등), 맞춤형 창업 교육 및 포럼투자·네트워킹: 센터 직접 투자 검토, 데모데이 연계 지원 및 입주기업 간 정기 네트워킹",
         "amount": ""
       }
     }
