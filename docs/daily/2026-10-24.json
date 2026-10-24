@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-24",
+  "total": 2,
+  "targetCount": 1,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071948",
+          "source": "mss",
+          "title": "창업도시 조성 프로젝트 창업도시 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071948",
+          "date": "2026-11-30",
+          "org": "창업생태계과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026-10-23 ~ 2026-11-30",
+            "eligibility": "",
+            "content": "수도권과 비수도권 간 창업생태계 격차를 완화하고, 지역 창업생태계를 활성화하기 위한 창업도시 조성 프로젝트를 추진하고자, 창업도시 조성을 희망하는 광역지방자치단체(시&middot;도)를 모집공고 합니다.<br />\n<br />\n&nbsp;ㅇ 신청대상 : 광역지방자치단체 10곳*<br />\n&nbsp; &nbsp; &nbsp;* 전남광주통합특별시는 기존 광주광역시(북&middot;동&middot;서&middot;남&middot;광산구) 및 나주시를 제외한 지역을 창업도시(대표도시 등)로 조성하는 경우에 한해 신청 가능<br />\n&n",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 26,
+      "items": []
+    }
+  },
+  "todayDeadline": []
+}
