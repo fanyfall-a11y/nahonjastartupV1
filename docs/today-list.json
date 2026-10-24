@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-24",
-  "total": 2,
-  "targetCount": 1,
+  "date": "2026-10-25",
+  "total": 1,
+  "targetCount": 0,
   "sources": {
     "mss": {
       "id": "mss",
@@ -11,23 +11,6 @@
       "count": 100,
       "targetCount": 20,
       "items": [
-        {
-          "id": "mss_1071948",
-          "source": "mss",
-          "title": "창업도시 조성 프로젝트 창업도시 모집 공고",
-          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071948",
-          "date": "2026-11-30",
-          "org": "창업생태계과",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": true,
-          "detail": {
-            "period": "2026-10-23 ~ 2026-11-30",
-            "eligibility": "",
-            "content": "수도권과 비수도권 간 창업생태계 격차를 완화하고, 지역 창업생태계를 활성화하기 위한 창업도시 조성 프로젝트를 추진하고자, 창업도시 조성을 희망하는 광역지방자치단체(시&middot;도)를 모집공고 합니다.<br />\n<br />\n&nbsp;ㅇ 신청대상 : 광역지방자치단체 10곳*<br />\n&nbsp; &nbsp; &nbsp;* 전남광주통합특별시는 기존 광주광역시(북&middot;동&middot;서&middot;남&middot;광산구) 및 나주시를 제외한 지역을 창업도시(대표도시 등)로 조성하는 경우에 한해 신청 가능<br />\n&n",
-            "amount": ""
-          }
-        },
         {
           "id": "mss_1071324",
           "source": "mss",
@@ -57,5 +40,40 @@
       "items": []
     }
   },
-  "todayDeadline": []
+  "todayDeadline": [
+    {
+      "id": "kstartup_179553",
+      "source": "kstartup",
+      "title": "[2026 에코스타트업 Green IR DAY] 참관 신청",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179553",
+      "date": "2026-10-25",
+      "org": "마크앤컴퍼니",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.19(월) 00:00 ~ 2026.10.25(일) 23:59 까지",
+        "eligibility": "",
+        "content": "환경 분야 유망 창업팀 8개사 IR 피칭, 투자사 미팅, 참석자 간 자유 네트워킹",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179529",
+      "source": "kstartup",
+      "title": "2026년 하반기 과천시 창업지원센터 스마트오피스 입주기업 모집 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179529",
+      "date": "2026-10-25",
+      "org": "과천시 창업지원센터",
+      "region": "전국",
+      "category": "시설제공",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.15(목) 09:00 ~ 2026.10.25(일) 23:59 까지",
+        "eligibility": "",
+        "content": "지원내용 ▪ 사업자등록에 필요한 주소지 제공▪ 임대료 및 보증금 무료▪ 관리비 공공요금 등은 매월 목적물의 면적(3.3m)에 비례하여 부과(평균 5,000원 ~ 10,000원 / 1개월, 계절 요인 등에 따라 변동 가능)▪ 제공시설ㅇ 사무공간 : 과천시 창업지원센터 오픈 스페이스 공간 제공ㅇ 이용장비 : 인터넷 무료 이용 및 복사기 사용 가능ㅇ 부대시설 : 공유주방, 스튜디오, 다목적회의실, 강의실, 오픈 스페이스▪ 창업지원ㅇ 사업자등록 주소지 제공ㅇ 미팅을 위한 회의 공간, 공유주방, 강의실 등 공간 대관ㅇ 기업진단, 1:1 멘토",
+        "amount": ""
+      }
+    }
+  ]
 }

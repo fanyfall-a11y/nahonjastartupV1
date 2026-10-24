@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-25",
+  "total": 1,
+  "targetCount": 0,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 26,
+      "items": []
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179553",
+      "source": "kstartup",
+      "title": "[2026 에코스타트업 Green IR DAY] 참관 신청",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179553",
+      "date": "2026-10-25",
+      "org": "마크앤컴퍼니",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.19(월) 00:00 ~ 2026.10.25(일) 23:59 까지",
+        "eligibility": "",
+        "content": "환경 분야 유망 창업팀 8개사 IR 피칭, 투자사 미팅, 참석자 간 자유 네트워킹",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179529",
+      "source": "kstartup",
+      "title": "2026년 하반기 과천시 창업지원센터 스마트오피스 입주기업 모집 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179529",
+      "date": "2026-10-25",
+      "org": "과천시 창업지원센터",
+      "region": "전국",
+      "category": "시설제공",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.15(목) 09:00 ~ 2026.10.25(일) 23:59 까지",
+        "eligibility": "",
+        "content": "지원내용 ▪ 사업자등록에 필요한 주소지 제공▪ 임대료 및 보증금 무료▪ 관리비 공공요금 등은 매월 목적물의 면적(3.3m)에 비례하여 부과(평균 5,000원 ~ 10,000원 / 1개월, 계절 요인 등에 따라 변동 가능)▪ 제공시설ㅇ 사무공간 : 과천시 창업지원센터 오픈 스페이스 공간 제공ㅇ 이용장비 : 인터넷 무료 이용 및 복사기 사용 가능ㅇ 부대시설 : 공유주방, 스튜디오, 다목적회의실, 강의실, 오픈 스페이스▪ 창업지원ㅇ 사업자등록 주소지 제공ㅇ 미팅을 위한 회의 공간, 공유주방, 강의실 등 공간 대관ㅇ 기업진단, 1:1 멘토",
+        "amount": ""
+      }
+    }
+  ]
+}
