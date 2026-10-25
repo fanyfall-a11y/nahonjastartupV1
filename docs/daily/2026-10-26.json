@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-26",
+  "total": 1,
+  "targetCount": 0,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 25,
+      "items": []
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179578",
+      "source": "kstartup",
+      "title": "2026 TIPS SSU Final IR Day ",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179578",
+      "date": "2026-10-26",
+      "org": "주식회사 킹고스프링",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.20(화) 10:00 ~ 2026.10.26(월) 23:59 까지",
+        "eligibility": "",
+        "content": "1:1 투자 밋업 및 네트워킹 지원 1. 창업기업 IR 발표 및 투자유치 기회 제공- 숭실대학교 캠퍼스타운 및 실험실창업 기업의 IR 발표 진행- 국내 주요 TIPS 운영사 대상 사업모델 및 핵심 기술 소개- 기업의 투자유치 역량 강화 및 후속 투자 연계 기회 마련2. TIPS 운영사 리버스피칭- 국내 주요 TIPS 운영사의 투자 분야 및 투자 전략 소개- 운영사별 투자 검토 기준 및 관심 산업 분야 공유- 창업기업의 TIPS 연계 및 투자유치 전략 수립 지원3. 1:1 투자 밋업- 참여기업과 TIPS 운영사 간 개별 투자 상담 기",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179560",
+      "source": "kstartup",
+      "title": "「2026 기업지원실 운영」 지역 환경기업 육성 프로그램 참여기업 수정 모집공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179560",
+      "date": "2026-10-26",
+      "org": "(재)전라남도환경산업진흥원",
+      "region": "경기",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.19(월) 09:00 ~ 2026.10.26(월) 18:00 까지",
+        "eligibility": "",
+        "content": "환경기술 고도화, 홍보·마케팅, 지식재산권 취득, 판로개척 등 ❶ 환경기술 고도화 지원 - 지원규모: 2개 과제 - 지원한도: 기업당 최대 10,000천원(기업 부담금 매칭 필요)❷ 홍보·마케팅 지원 - 지원규모: 4개사 - 지원한도: 기업당 최대 1,000천원❸ 지식재산권 취득 지원 - 지원규모: 4개사 - 지원한도: 기업당 최대 1,500천원 ❹ 판로개척 지원 - 지원규모: 4개사 - 지원한도: 기업당 최대 1,500천원",
+        "amount": ""
+      }
+    }
+  ]
+}
