@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-27",
+  "total": 16,
+  "targetCount": 12,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 33,
+      "items": [
+        {
+          "id": "kstartup_179621",
+          "source": "kstartup",
+          "title": "예비 초기 스타트업을 위한 창업 교육 프로그램 러닝메이트 9기 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179621",
+          "date": "2026-11-11",
+          "org": "재단법인 오렌지플래닛 창업재단",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 09:00 ~ 2026.11.11(수) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179620",
+          "source": "kstartup",
+          "title": "[제주창조경제혁신센터] 글로벌(중국) 기업 수요기반 비즈캠프형 오픈이노베이션「2026 오픈 아일랜드 부트캠프」참가기업 모집(~11/5) ",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179620",
+          "date": "2026-11-05",
+          "org": "제주창조경제혁신센터",
+          "region": "제주",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 09:00 ~ 2026.11.05(목) 23:59 까지",
+            "eligibility": "",
+            "content": "글로벌 기업과의 심화 비즈니스 밋업 및 워케이션 지원 · SF Express와의 1:1 심화 비즈니스 밋업· 중국 시장 진출 인사이트 세션 및 기업 피칭· 실제 사업 수요 기반 기술협력 및 후속 사업화 가능성 검토· 제주 워케이션 연계 항공·숙박·여가/체험 프로그램 및 네트워킹 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179616",
+          "source": "kstartup",
+          "title": "2026  예비창업패키지 ST 창업준비 아카데미 참여자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179616",
+          "date": "2026-11-01",
+          "org": "서울과학기술대학교 ",
+          "region": "서울",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 10:00 ~ 2026.11.01(일) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179615",
+          "source": "kstartup",
+          "title": "제6차 해양수산 투자기관협의회(정기IR) 참여기업 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179615",
+          "date": "2026-11-13",
+          "org": "해양수산과학기술진흥원",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.26(월) 00:00 ~ 2026.11.13(금) 17:00 까지",
+            "eligibility": "",
+            "content": "해양수산 투자기관협의회회원사 및 TIPS 운영사 대상 IR 해양수산 투자기관협의회 회원사, 팁스(TIPS) 운영사 등 대상 투자자 대상 해양수산 기업 투자 설명회(IR) 진행",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179614",
+          "source": "kstartup",
+          "title": "선문대학교 맞춤형 창업멘토링 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179614",
+          "date": "2026-11-20",
+          "org": "조슈아파트너스(주)",
+          "region": "전국",
+          "category": "컨설팅/멘토링",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 00:00 ~ 2026.11.20(금) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179613",
+          "source": "kstartup",
+          "title": "인천중장년기술창업센터 4차 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179613",
+          "date": "2026-11-06",
+          "org": "인천광역시",
+          "region": "인천",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 09:00 ~ 2026.11.06(금) 15:00 까지",
+            "eligibility": "",
+            "content": "창업공간 무상 제공 및 사업운영 지원 - 사무 공간 제공(사업자등록 발급 가능)- 창업 기초과정 교육 및 창업 정보 제공- 지재권 출원, 시제품 제작, ISO 인증 비용 등 지원(센터 프로그램 참여기업중 우수기업)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179612",
+          "source": "kstartup",
+          "title": "상지대학교 창업보육센터 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179612",
+          "date": "2026-11-10",
+          "org": "상지대학교 산학협력단 창업보육센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.23(금) 00:00 ~ 2026.11.10(화) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내 - 창업보육센터 사업화지원(시제품 제작, 경영지원 마케팅 등)- 창업 교육 및 네트워크 행사 제공- 상지대학교 인적·물적 자원 연계 지원 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179611",
+          "source": "kstartup",
+          "title": "[청년 취창업 특강] 나만의 일을 만들어가는 방법",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179611",
+          "date": "2026-11-16",
+          "org": "관악구청",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.23(금) 00:00 ~ 2026.11.16(월) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179608",
+          "source": "kstartup",
+          "title": "2026 용인 반도체 스타트업 육성 전략 포럼 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179608",
+          "date": "2026-11-03",
+          "org": "카이스트청년창업투자지주 대표이사",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.23(금) 00:00 ~ 2026.11.03(화) 14:00 까지",
+            "eligibility": "",
+            "content": "반도체 스타트업 육성 전략 공유 및 네트워킹 KISTEP·한국나노기술원·반도체 스타트업·VC 연사의 정책 방향, 기업지원 사례, 현장 수요, 투자 관점 발표와 용인 반도체 클러스터 내 스타트업 육성 전략 패널토론",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179607",
+          "source": "kstartup",
+          "title": "성남 중장년 기술창업센터 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179607",
+          "date": "2026-10-30",
+          "org": "성남산업진흥",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.22(목) 20:00 ~ 2026.10.30(금) 16:00 까지",
+            "eligibility": "",
+            "content": "지원내용 전문가 멘토링, 창업교육, 네트워킹, 사업화 지원, 진흥원 사업 연계지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179606",
+          "source": "kstartup",
+          "title": "2026년 안산정보산업진흥센터(경기TP안산창업보육센터) 제4차 신규 입주자 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179606",
+          "date": "2026-11-09",
+          "org": "(재)경기테크노파크",
+          "region": "경기",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 13:00 ~ 2026.11.09(월) 13:00 까지",
+            "eligibility": "",
+            "content": "강의실, 세미나실 등 무료 공간 및 연계 지원 사업 등 지원 혜택 - 독립된 사무 공간(공유재산사용료, 관리비 부과)- 공용 공간 무료 제공 : 회의실, 세미나실 등- 연계 지원 : 창업교육 및 컨설팅, 전시회 참가, 관내 다양한 협의체와 연계한 네트워킹 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179605",
+          "source": "kstartup",
+          "title": "[창업행사] 2026 마포청년 창업데이",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179605",
+          "date": "2026-11-02",
+          "org": "마포청년창업취업지원센터 나루",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.22(목) 10:00 ~ 2026.11.02(월) 14:00 까지",
+            "eligibility": "",
+            "content": "행사내용 - 힐링 & 재미 만점! 인터랙티브 챌린지 체험- [선배 창업가 특강] 돈 쓰는 마케팅 vs 살아남는 마케팅! 선배 창업가 특강- [선배 창업가 특강] 창업 생존의 핵심, 자금 조달!- [시상식] 혁신 아이디어의 주역을 축하하는 자리- [1:1 창업 멘토링] 분야별 전문가의 맞춤 진단! (사전 신청자 대상)- [네트워킹] 함께 성장할 창업 동료를 만나는 시간!",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179603",
+          "source": "kstartup",
+          "title": "[2027 Dream Play] LGD 스타트업 육성프로그램 9기 참가기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179603",
+          "date": "2026-11-13",
+          "org": "엔슬파트너스",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.22(목) 15:00 ~ 2026.11.13(금) 16:00 까지",
+            "eligibility": "",
+            "content": "[Display 부문] 1. PoC 협업 과제 수행: LGD와의 연구/개발 및 사업 협력 가능성 검증2. PoC 지원금: 기업당 최대 5,000만원 3. 액셀러레이팅: LGD, SBA, 엔슬파트너스의 맞춤형 고도화 프로그램 지원4. 후속지원 협력 : 기술/사업 협력, 지분투자, TIPS 추천 (+연계 투자) [신사업 부문] 1. PoC 협업 과제 수행: LGD의 신사업 및 사업 영역 확장 가능성 검증2. PoC 지원금: 기업당 최대 5,000만원 ※ 모집 분야 외 신사업 협업 Item 도출 필요 시, Pre-PoC 지원금: 기업당 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179599",
+          "source": "kstartup",
+          "title": "[경남 창원 강소연구개발특구] 청년 기술창업 아이디어 경진대회",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179599",
+          "date": "2026-11-06",
+          "org": "(주)경남벤처투자",
+          "region": "경남",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.19(월) 00:00 ~ 2026.11.06(금) 18:00 까지",
+            "eligibility": "",
+            "content": "첨부파일 참조 후속지원: 창원 강소특구 이노테크 발굴 및 창업지원 사업(사업화 지원, 멘토링 프로그램, 컨설팅 지원, IR 발표자료 제작, 창업 교육 등) 연계 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179585",
+          "source": "kstartup",
+          "title": "제 7차 충남 오픈이노베이션 포럼",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179585",
+          "date": "2026-10-27",
+          "org": "한국기술교육대학교 산학협력단",
+          "region": "충남",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.20(화) 00:00 ~ 2026.10.27(화) 14:00 까지",
+            "eligibility": "",
+            "content": "강의: 오픈이노베이션의 필요성, 그리고 활용방안 - 몬드라곤대학 서울랩 이주열 교수",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179592",
+      "source": "kstartup",
+      "title": "[강원ICT융합연구원] 강원 미래산업 AX혁신과 지산학연 신사업 발굴 포럼",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179592",
+      "date": "2026-10-27",
+      "org": "강원ICT융합연구원",
+      "region": "강원",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.21(수) 12:00 ~ 2026.10.27(화) 10:00 까지",
+        "eligibility": "",
+        "content": "강연 및 종합토론 내용입니다 * 전문가 강연 1) 강원특별자치도 5극 3특 발전 전략 (이상기 지역산업진흥원 팀장) 2) 최근 AX 시대의 신기술과 국내외 적용 사례 (구본재 PwC컨설팅 본부장) 3) D-Lab Flow 소개 (김동길 강원ICT융합연구원 선임)* 종합 토론 : 강원의 미래를 만드는 혁신방안 * 사업 중간보고 : 의료기기 산업 재직자 성장지원 교육 및 AX경력개발지원 용역 중간보고",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179585",
+      "source": "kstartup",
+      "title": "제 7차 충남 오픈이노베이션 포럼",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179585",
+      "date": "2026-10-27",
+      "org": "한국기술교육대학교 산학협력단",
+      "region": "충남",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.20(화) 00:00 ~ 2026.10.27(화) 14:00 까지",
+        "eligibility": "",
+        "content": "강의: 오픈이노베이션의 필요성, 그리고 활용방안 - 몬드라곤대학 서울랩 이주열 교수",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179574",
+      "source": "kstartup",
+      "title": "2026 관광기업 동반성장 기술역량 강화교육",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179574",
+      "date": "2026-10-27",
+      "org": "한국관광공사",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.20(화) 00:00 ~ 2026.10.27(화) 15:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    }
+  ]
+}
