@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-28",
+  "total": 9,
+  "targetCount": 6,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 34,
+      "items": [
+        {
+          "id": "kstartup_179629",
+          "source": "kstartup",
+          "title": "[강동구 청년해냄센터] 전문분야 창업멘토링 11월 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179629",
+          "date": "2026-11-10",
+          "org": "강동구 청년해냄센터",
+          "region": "전국",
+          "category": "컨설팅/멘토링",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.27(화) 00:00 ~ 2026.11.10(화) 14:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179624",
+          "source": "kstartup",
+          "title": "[2026 Beyond OI] 밋업 데이 참여 스타트업 모집(~11.1)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179624",
+          "date": "2026-11-01",
+          "org": "경기창조경제혁신센터",
+          "region": "경기",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 19:00 ~ 2026.11.01(일) 23:59 까지",
+            "eligibility": "",
+            "content": "12개 수요기업-스타트업 간 1:1 사업화 협업 매칭 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179623",
+          "source": "kstartup",
+          "title": "경기과학기술대학교 창업보육센터 입주기업 모집 9차",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179623",
+          "date": "2026-11-18",
+          "org": "경기과학기술대학교 창업보육센터",
+          "region": "경기",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.27(화) 10:00 ~ 2026.11.18(수) 18:00 까지",
+            "eligibility": "",
+            "content": "입주공간, 공용시설, 사업화지원 가.창업공간지원 : 49.5㎡, 99㎡, 135.3㎡ (계약면적기준, 전용률67%)나.공용시설지원 : 공동회의실, 공용장비 등다.사업화 지원: 경영자문, 시제품 제작등 사업화 관련 활동 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179622",
+          "source": "kstartup",
+          "title": "[서초창업스테이션] 11월 창업 교육 프로그램 - 초기 스타트업을 위한 브랜드 만들기",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179622",
+          "date": "2026-11-09",
+          "org": "서초창업스테이션",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 00:00 ~ 2026.11.09(월) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179618",
+          "source": "kstartup",
+          "title": "글로벌 행사 운영 지원을 위한「아네스노트」컨퍼런스·강의 통역 이용권 지원(11월)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179618",
+          "date": "2026-12-31",
+          "org": "주식회사 팀제로코드",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.26(월) 12:00 ~ 2026.12.31(목) 23:59 까지",
+            "eligibility": "",
+            "content": "AI 컨퍼런스·강의 실시간 통역 1시간 이용권(15만원 상당) 무상 제공 - 회원가입 및 이용권 사용에 따른 비용 부담은 일체 없으며, 이용권 소진 후에도 유료 요금제로 자동 전환되지 않습니다.- 미팅통역 이용권 지원 프로그램(공고제26-04호)과 별도 운영되어 중복 신청이 가능합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179617",
+          "source": "kstartup",
+          "title": "해외진출 기업 대상 AI 통역 서비스 「아네스노트」미팅 통역 이용권 지원 (11월)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179617",
+          "date": "2026-11-30",
+          "org": "주식회사 팀제로코드",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.26(월) 12:00 ~ 2026.11.30(월) 23:59 까지",
+            "eligibility": "",
+            "content": "AI 실시간 통역 10시간 이용권 (9만원 상당) 무상 제공 - 회원가입 및 이용권 사용에 따른 비용 부담은 일체 없으며, 이용권 소진 후에도 유료 요금제로 자동 전환되지 않습니다.- 이용권은 신청 시 제출한 아네스 계정으로 지급되므로, 계정 이메일을 정확히 입력해 주시기 바랍니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179576",
+          "source": "kstartup",
+          "title": "2026년 남동발전 상생형 창업벤처기업 지원사업 참가기업 모집공고(연장)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179576",
+          "date": "2026-10-29",
+          "org": "(재)경남창조경제혁신센터",
+          "region": "경남",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.19(월) 14:00 ~ 2026.10.29(목) 18:00 까지",
+            "eligibility": "",
+            "content": "사업화 자금, 역량강화 AC 프로그램 1. 사업화 자금(기업당 40백만원 / 기업대응자금 없음 / 부가세 기업부담)2. 투자유치 및 글로벌 진출 액셀러레이팅 프로그램(25년 : 태국)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179556",
+          "source": "kstartup",
+          "title": "[모집] 글로컬 미래도시 혁신 프로그램 참가팀 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179556",
+          "date": "2026-10-29",
+          "org": "서울시립대학교 창업지원단(캠퍼스타운사업)",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.19(월) 17:00 ~ 2026.10.29(목) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "mss_1071325",
+      "source": "mss",
+      "title": "2026년 제3차 중소벤처기업부 혁신제품 지정기간 연장(2차) 공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071325",
+      "date": "2026-10-28",
+      "org": "기술개발과",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026-09-21 ~ 2026-10-28",
+        "eligibility": "",
+        "content": "<br />\n중소벤처기업부 공고 제2026-567호<br />\n&nbsp;<br />\n2026년도 제3차 중소벤처기업부 혁신제품지정기간 연장(2차) 공고<br />\n&nbsp;<br />\n「2026년도 제3차 중소벤처기업부 혁신제품 지정기간 연장(2차)」 공고를 다음과 같이 안내하오니, 해당하는 중소기업은 신청하여 주시기 바랍니다.<br />\n<br />\n&diams;&nbsp;금회 공고 건은 &lsquo;2차 연장&rsquo; 사항에만 해당<br />\n&nbsp;<br />\n□ (대상) 중소벤처기업부가 지정한 혁신제품을 보유한 기",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179581",
+      "source": "kstartup",
+      "title": "2026 초격차 클리마 데이 (Clima Day) 행사 개최 안내",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179581",
+      "date": "2026-10-28",
+      "org": "한국에너지기술평가원",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.20(화) 00:00 ~ 2026.10.28(수) 15:00 까지",
+        "eligibility": "",
+        "content": "기후테크 분야 오픈이노베이션 인사이트 공유, 유관기관·기업 교류의 장 마련",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179569",
+      "source": "kstartup",
+      "title": "COMEUP 2026 사전 오프라인 행사 '스타트업 커리어 TALK'",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179569",
+      "date": "2026-10-28",
+      "org": "(사)코리아스타트업포럼",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.19(월) 20:00 ~ 2026.10.28(수) 14:00 까지",
+        "eligibility": "",
+        "content": "프로그램 전 과정 무료 참여 및 연사·참가자 간 네트워킹 기회 제공",
+        "amount": ""
+      }
+    }
+  ]
+}
