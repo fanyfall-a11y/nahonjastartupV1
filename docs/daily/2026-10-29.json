@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-29",
+  "total": 7,
+  "targetCount": 3,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 34,
+      "items": [
+        {
+          "id": "kstartup_179635",
+          "source": "kstartup",
+          "title": "[도봉구청년창업센터]  2026  도봉 오픈 창업 스쿨 -  2027 NEXT STAGE",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179635",
+          "date": "2026-11-12",
+          "org": "도봉구 청년창업센터장",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.27(화) 18:00 ~ 2026.11.12(목) 16:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179633",
+          "source": "kstartup",
+          "title": "강남구 개포동지역 ㈜오피스허브 1인 창조기업 지원센터 입주기업 모집(1인실)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179633",
+          "date": "2026-11-04",
+          "org": "㈜오피스허브 1인 창조기업 지원센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.28(수) 09:00 ~ 2026.11.04(수) 17:00 까지",
+            "eligibility": "",
+            "content": "지원내용 ○ 사무실 지원- 독립된 전용 사무공간 입주- 24시간 365일 센터 개방- 지문인식 출입 이용- 사업자 주소지 등록- 복사기, 프린터, 팩스, 우편함 등 업무시설 지원- 세미나실, 회의실, 휴게실 등 공용 공간 지원○ 보육지원- 지식재산권 출원 및 등록, 홍보 동영상 제작, 시제품 제작 등 지원- 네이버스마트스토어 셀러 교육 지원- 마케팅 등 사업화 지원- 경영컨설팅, 맞춤형 교육 및 세미나- 분야별 전문가 상담 지원- 특허, 법률, 세무회계, 매체홍보 연계지원- 엔젤투자자 연계 및 크라우드 펀딩 기회 제공",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179631",
+          "source": "kstartup",
+          "title": "[무료 AI 역량강화 교육] 생성형 AI 기반 무역 금융 리스크 최적화 과정(선착순 모집)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179631",
+          "date": "2026-11-27",
+          "org": "(주)글로벌창업연구소",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.27(화) 09:00 ~ 2026.11.27(금) 12:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179628",
+          "source": "kstartup",
+          "title": "[창업] 합격하는 창업 사업계획서 실전",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179628",
+          "date": "2026-11-06",
+          "org": "마포청년창업취업지원센터 나루",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.27(화) 10:00 ~ 2026.11.06(금) 14:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179627",
+          "source": "kstartup",
+          "title": "[창업행사] 서울마포 대학연계 AI 청년창업포럼",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179627",
+          "date": "2026-11-06",
+          "org": "마포청년창업취업지원센터 나루",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.10.27(화) 10:00 ~ 2026.11.06(금) 14:00 까지",
+            "eligibility": "",
+            "content": "행사내용 - [AI 비즈니스 특강] \"데이터가 돈이 되는 비즈니스 설계!\" AI와 데이터를 활용한 비즈니스 빌드업 전략- [AI 콘텐츠 특강] \"AI 툴로 트래픽과 반응을 끌어오는법!\" AI를 기반으로 한 고효율 콘텐츠 생성 노하우- [네트워킹] \"함께 나누는 소통!\" 창업 동료들과 인적 네트워크를 형성하는 시간- [자금·법률 특강] \"초기 창업 생존을 위한 확실한 리스크 관리!\" 초기 자금 조달 및 창업 법률 계약 실무 노하우- [IP 자산화 특강] \"내 아이디어와 브랜드의 법적 방패 구축!\" 특허·상표·디자인 등 IP 확보 및 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179625",
+          "source": "kstartup",
+          "title": "2026 신한금융희망재단 - 함께일하는재단, 사회연대경제 먹거리 으뜸경연대회 참여기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179625",
+          "date": "2026-11-05",
+          "org": "(재)함께일하는재단 ",
+          "region": "전국",
+          "category": "자금지원",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.26(월) 16:00 ~ 2026.11.05(목) 14:00 까지",
+            "eligibility": "",
+            "content": "- (본선 진출시) 총 1천만원 상당의 시상금 지원 - 으뜸상 : 400만원(1팀)- 버금상 : 300만원(1팀)- 희망상 : 100만원(3팀) 「제8회 대한민국 사회연대경제박람회」 포럼 무대에서 제품 발표 및 시민 약 100명 대상 시식 기회 제공 본선 동시시식용 제품(110회분) 준비 실비 지원: 기업당 최대 100만원",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179576",
+      "source": "kstartup",
+      "title": "2026년 남동발전 상생형 창업벤처기업 지원사업 참가기업 모집공고(연장)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179576",
+      "date": "2026-10-29",
+      "org": "(재)경남창조경제혁신센터",
+      "region": "경남",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.19(월) 14:00 ~ 2026.10.29(목) 18:00 까지",
+        "eligibility": "",
+        "content": "사업화 자금, 역량강화 AC 프로그램 1. 사업화 자금(기업당 40백만원 / 기업대응자금 없음 / 부가세 기업부담)2. 투자유치 및 글로벌 진출 액셀러레이팅 프로그램(25년 : 태국)",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179568",
+      "source": "kstartup",
+      "title": "2026년도 투자기업 발굴 플랫폼 빅웨이브(BiiG WAVE) IR사업 3회차 초격차 분야 IR 참여기업 모집공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179568",
+      "date": "2026-10-29",
+      "org": "인천창조경제혁신센터 ",
+      "region": "인천",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.19(월) 18:00 ~ 2026.10.29(목) 16:00 까지",
+        "eligibility": "",
+        "content": "투자사 밋업, IR운영, 투자연계 등 - 초격차 분야 오픈형 IR : 인천 모펀드 투자사 및 전주기 투자 가능 VC 대상 IR 운영- 투자사-기업 1:1 밋업 : 행사 당일 수요 기반 1:1 밋업 매칭- 기업 IR 티저 제작 : 선정기업 대상 투자유치용 IR 티저 제작 지원- 직·간접투자 검토 및 연계 : 센터 직접투자 및 출자투자사 투자검토, 초격차 분야 AC·VC 및 TIPS 운영사 투자검토- 후속지원 및 사후관리 : 센터 및 참여 TIPS 운영사 추천 검토, 센터 보육기업 등록 및 연계사업 추천※ 세부 지원내용은 상황에 따라 ",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179566",
+      "source": "kstartup",
+      "title": "기업 판로 지원 프로그램 수혜기업 모집(~10/29)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179566",
+      "date": "2026-10-29",
+      "org": "경북대학교 스타트업지원센터장",
+      "region": "경북",
+      "category": "판로/마케팅",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.19(월) 09:00 ~ 2026.10.29(목) 16:00 까지",
+        "eligibility": "",
+        "content": "지원내용 - 부스임차료, 비품, 집기- 교통비, 숙박비, 식비, 여행자보험- 통역, 홍보물 제작 등",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179564",
+      "source": "kstartup",
+      "title": "TIPS · LIPS를 준비하는 스타트업을 위한 IR 전략 - 제10차 DDM 벤처스타트업 아카데미",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179564",
+      "date": "2026-10-29",
+      "org": "DDM청년창업센터 유니콘",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.19(월) 16:00 ~ 2026.10.29(목) 15:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    }
+  ]
+}
