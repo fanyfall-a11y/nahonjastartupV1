@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "total": 2,
   "targetCount": 1,
   "sources": {
@@ -58,40 +58,5 @@
       ]
     }
   },
-  "todayDeadline": [
-    {
-      "id": "kstartup_179624",
-      "source": "kstartup",
-      "title": "[2026 Beyond OI] 밋업 데이 참여 스타트업 모집(~11.1)",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179624",
-      "date": "2026-11-01",
-      "org": "경기창조경제혁신센터",
-      "region": "경기",
-      "category": "사업화",
-      "isTarget": true,
-      "detail": {
-        "period": "2026.10.26(월) 19:00 ~ 2026.11.01(일) 23:59 까지",
-        "eligibility": "",
-        "content": "12개 수요기업-스타트업 간 1:1 사업화 협업 매칭 지원",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179616",
-      "source": "kstartup",
-      "title": "2026  예비창업패키지 ST 창업준비 아카데미 참여자 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179616",
-      "date": "2026-11-01",
-      "org": "서울과학기술대학교 ",
-      "region": "서울",
-      "category": "창업교육",
-      "isTarget": true,
-      "detail": {
-        "period": "2026.10.26(월) 10:00 ~ 2026.11.01(일) 23:59 까지",
-        "eligibility": "",
-        "content": "",
-        "amount": ""
-      }
-    }
-  ]
+  "todayDeadline": []
 }
