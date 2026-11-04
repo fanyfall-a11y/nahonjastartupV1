@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-03",
-  "total": 16,
-  "targetCount": 11,
+  "date": "2026-11-04",
+  "total": 8,
+  "targetCount": 5,
   "sources": {
     "mss": {
       "id": "mss",
@@ -9,22 +9,22 @@
       "icon": "🏛️",
       "color": "#1a4fa0",
       "count": 100,
-      "targetCount": 21,
+      "targetCount": 22,
       "items": [
         {
-          "id": "mss_1072214",
+          "id": "mss_1072252",
           "source": "mss",
-          "title": "2027년도 초기창업·창업도약 패키지 사업신규 주관기관 모집 수정 공고",
-          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072214",
-          "date": "2026-11-23",
-          "org": "신산업기술창업과",
+          "title": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072252",
+          "date": "2026-11-13",
+          "org": "창업생태계과",
           "region": "전국",
-          "category": "사업화",
+          "category": "시설제공",
           "isTarget": true,
           "detail": {
-            "period": "2026-10-30 ~ 2026-11-23",
+            "period": "2026-11-03 ~ 2026-11-13",
             "eligibility": "",
-            "content": "<br />\n2027년도 초기창업&middot;창업도약 패키지 사업신규 주관기관 모집 공고를 붙임과 같이 수정 게시합니다.<br />\n<br />\n<strong>&lt; [※ 중요] 모집공고 내 수정사항 &gt;</strong><br />\n&nbsp;\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:106px;height:51px;\"><strong>수정개요</strong></td>\n\t\t\t<td colspan=\"4\" style=\"width:529px;height:51px;\">&middot;정부지원예산 변",
+            "content": "2026년도 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 공고를 붙임과 같이 게시합니다.",
             "amount": ""
           }
         },
@@ -53,243 +53,107 @@
       "icon": "🚀",
       "color": "#e8360e",
       "count": 50,
-      "targetCount": 27,
+      "targetCount": 26,
       "items": [
         {
-          "id": "kstartup_179693",
+          "id": "kstartup_179709",
           "source": "kstartup",
-          "title": "[1:1 무료 코칭데이] 하드웨어 스타트업 디자인·설계·금형·양산, 현직 엔지니어 상담",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179693",
+          "title": "한국외국어대학교 창업보육센터 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179709",
           "date": "2026-11-22",
-          "org": "인탑스 주식회사 ",
-          "region": "전국",
-          "category": "컨설팅/멘토링",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.11.02(월) 00:00 ~ 2026.11.22(일) 23:59 까지",
-            "eligibility": "",
-            "content": "지원내용 1. [디자인·상품성] CMF 기반의 차별화 솔루션- 양산 적합성 및 상품성 정밀 진단- 브랜드 경쟁력 강화를 위한 전략적 CMF 제안2. [설계·양산] 리스크 최소화를 위한 제조 최적화- 기구 설계 및 금형 제작 과정의 병목(Pain-point) 파악- 효율적인 양산을 위한 맞춤형 개선안 도출3. [심층 멘토링] 실행 가능한 문제 해결 프로세스 전수- 제조 실무 관련 1:1 맞춤형 Q&A- 실질적인 해결책 탐색 및 실행 가이드 제공",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179691",
-          "source": "kstartup",
-          "title": "2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 연장공고",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179691",
-          "date": "2026-11-13",
-          "org": "국립공주대학교 산학협력단",
+          "org": "한국외국어대학교연구산학협력단",
           "region": "전국",
           "category": "시설제공",
           "isTarget": true,
           "detail": {
-            "period": "2026.11.02(월) 09:00 ~ 2026.11.13(금) 18:00 까지",
+            "period": "2026.11.03(화) 17:00 ~ 2026.11.22(일) 23:59 까지",
             "eligibility": "",
-            "content": "K-동고동락 스타트 허브 프로그램 - 입주공간 및 공동장비 임대 지원- 창업교육 및 멘토링 등 프로그램 참여 지원- 시제품 제작, 마케팅, 디자인 개발, 제품 홍보 등 사업화 지원- 유관기관 연계 지원 등",
+            "content": "지원내용 1) 교직원식당2) 주차지원3) 사업활동 지원금4) 근로장학생 배정, 교내시설 이용 등",
             "amount": ""
           }
         },
         {
-          "id": "kstartup_179686",
+          "id": "kstartup_179708",
           "source": "kstartup",
-          "title": "2026 포스코기술투자 TIPS Scout 참여 스타트업 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179686",
-          "date": "2026-11-13",
-          "org": "파트너스라운지(유)",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.11.02(월) 11:00 ~ 2026.11.13(금) 18:00 까지",
-            "eligibility": "",
-            "content": "포스코기술투자 & 파트너스라운지 1:1 IR 컨설팅, VC 대상 실전 IR, 최종 선정팀 대상 투자검토 등",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179685",
-          "source": "kstartup",
-          "title": "2027년 청년농산업 창업지원센터 보육생  모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179685",
-          "date": "2027-03-31",
-          "org": "경북대학교 상주캠퍼스 청년농산업 창업지원센터",
-          "region": "경북",
-          "category": "시설제공",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.11.02(월) 09:00 ~ 2027.03.31(수) 18:00 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179681",
-          "source": "kstartup",
-          "title": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179681",
+          "title": "2026년 스타트업 법률지원사업 전남광주통합특별시 법률상담회 참여기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179708",
           "date": "2026-11-09",
-          "org": "글로벌벤처센터",
-          "region": "전국",
-          "category": "판로/마케팅",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.11.02(월) 09:25 ~ 2026.11.09(월) 23:59 까지",
-            "eligibility": "",
-            "content": "AI 기반 창업 과정 지원 아이템 검증부터 MVP 개발, 글로벌 런칭 및 투자 연계 단계별 창업 지원지원내용 상세AI 개발 관련 멘토링 및 심사후 소정의 AI 개발 크레딧 지원AI 기반 아이디어 검증 및 PMF(Product-Market Fit) 분석비즈니스 모델(BM) 설계 및 수익모델 고도화AI 활용 프로토타입 및 MVP 개발 멘토링플랫폼 아키텍처 및 기술 전략 자문센터 입주 1개월 무상 지원 AI 무상 멘토링 지원법인 설립 및 운영 컨설팅글로벌 서비스 출시 및 해외 결제 시스템 구축 지원마케팅 및 서비스 런칭 전략 컨설팅투자유",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179680",
-          "source": "kstartup",
-          "title": "<2026년 AI 활용 온라인 플랫폼 제작 교육> 참여자 모집",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179680",
-          "date": "2026-11-18",
-          "org": "충북Pro메이커센터",
-          "region": "충북",
-          "category": "창업교육",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.10.30(금) 18:00 ~ 2026.11.18(수) 10:00 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179679",
-          "source": "kstartup",
-          "title": "2026년 위치정보 보호조치 교육 (7차)",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179679",
-          "date": "2026-11-11",
-          "org": "(주) 아이전스",
-          "region": "전국",
-          "category": "창업교육",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.10.30(금) 00:00 ~ 2026.11.11(수) 15:00 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179678",
-          "source": "kstartup",
-          "title": "[로컬창업트랙 2기]기억되는 브랜드가 되는 법",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179678",
-          "date": "2026-11-12",
-          "org": "관악구청",
-          "region": "전국",
+          "org": "창업진흥원 원스톱지원실",
+          "region": "광주",
           "category": "사업화",
           "isTarget": true,
           "detail": {
-            "period": "2026.10.19(월) 00:00 ~ 2026.11.12(목) 23:59 까지",
+            "period": "2026.11.03(화) 12:00 ~ 2026.11.09(월) 18:00 까지",
             "eligibility": "",
-            "content": "",
+            "content": "계약&거래, 지식재산&브랜드 보 등 8개 분야 변호사 1:1 대면 상담(기업별 45분 이내) 창업 준비, 사업화, 경영 등 8개 법률 상담분야 대면상담 지원(기업별 45분 이내)1.계약·거래 : 거래처 계약서 법률 검토, 계약의 해석 등2.지식재산·브랜드 : 영업비밀 및 지식재산권(특허 등) 귀속, 보호 등3.개인정보·데이터 : 개인정보 처리 및 보호 등 이행 법령과 규정 등4.규제·인허가 대응 : 법 규제 준수 전략, 규제 및 인허가 대응 등5.인사·노무 : 고용노무, 노무 갈등 해결 등6.투자·자금조달 : 투자 계약서 검토 등7",
             "amount": ""
           }
         },
         {
-          "id": "kstartup_179677",
+          "id": "kstartup_179705",
           "source": "kstartup",
-          "title": "2026년 대전 테스트베드 연계사업 공모",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179677",
-          "date": "2026-11-11",
-          "org": "한국수자원공사",
-          "region": "대전",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.10.28(수) 09:00 ~ 2026.11.11(수) 18:00 까지",
-            "eligibility": "",
-            "content": "기술실증 비용(최대 20백민원/1개사), 교육 및 컨설팅 지원 (최대 5개사) - ‘기업지원금 집행기준’에 해당하는 기술실증 제작 및 실증비용에 대해 최대 20백만원/1개사 이내 지원하며, 지원기관은 어떠한 경우에도 해당 기술·제품에 대한 구매의무는 없음 * ① ‘26.3월 이후 발생한 실증비용(재료비, 외주용역비, 인증비)에 대해서 소급지원 가능 ② ‘기업지원금 집행기준’에 따라 증빙자료가 적절한 경우에만 지급",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179676",
-          "source": "kstartup",
-          "title": "2026 별별상상 스타트업 챌린지",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179676",
-          "date": "2026-11-08",
-          "org": "주식회사 툰즈",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.11.01(일) 00:00 ~ 2026.11.08(일) 23:59 까지",
-            "eligibility": "",
-            "content": "시상내역 대 상 / 1팀 / 국립한국교통대학교 총장상최우수상 / 2팀 / 충북창조경제혁신센터상우수상 / 3팀 / 국립한국교통대학교 대학일자리개발원장상",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179675",
-          "source": "kstartup",
-          "title": "2026 대덕특구 딥테크 혁신성장 플랫폼(전략기술 발굴 및 매칭) (11/1 ~ 12/31)",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179675",
-          "date": "2026-12-31",
-          "org": "연구개발특구진흥재단",
-          "region": "전국",
-          "category": "사업화",
-          "isTarget": false,
-          "detail": {
-            "period": "2026.11.01(일) 09:00 ~ 2026.12.31(목) 18:00 까지",
-            "eligibility": "",
-            "content": "사업화 컨설팅 기업 수요에 맞춰 대덕특구 사업화 연계 컨설팅 (기술발굴 및 매칭 등)",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179673",
-          "source": "kstartup",
-          "title": "경기대학교 2026년 예비창업패키지 KGU 창업준비 아카데미 모집 신청 공고",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179673",
+          "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집  수정공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179705",
           "date": "2026-11-23",
-          "org": "경기대학교 창업지원단",
-          "region": "경기",
-          "category": "창업교육",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.10.30(금) 13:00 ~ 2026.11.23(월) 23:59 까지",
-            "eligibility": "",
-            "content": "",
-            "amount": ""
-          }
-        },
-        {
-          "id": "kstartup_179660",
-          "source": "kstartup",
-          "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 공고",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179660",
-          "date": "2026-11-20",
           "org": "중소벤처기업부 장관",
           "region": "전국",
           "category": "사업화",
           "isTarget": true,
           "detail": {
-            "period": "성장단계별(초기·도약기) 창업기업 발굴 및 육성을 위해 우수한 창업지원 역량을 갖춘 초기창업·창업도약 패키지 사업의 주관기관을 다음과 같이 모집 공고합니다. ",
-            "eligibility": "창업기업  지원역량을 보유한 공공기관, 대학·연구기관, 민간기관 등 모든 유형의 기관",
+            "period": "성장단계별(초기·도약기) 창업기업 발굴 및 육성을 위해 우수한 창업지원 역량을 갖춘 초기창업·창업도약 패키지 사업의 주관기관을 다음과 같이 모집 공고합니다.",
+            "eligibility": "창업기업 지원역량을 보유한 공공기관, 대학·연구기관, 민간기관 등 모든 유형의 기관",
             "content": "",
             "amount": ""
           }
         },
         {
-          "id": "kstartup_179638",
+          "id": "kstartup_179692",
           "source": "kstartup",
-          "title": "2026 서구토탈창업아카데미 참가자 모집 ",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179638",
-          "date": "2026-11-18",
-          "org": "온랩",
+          "title": "[무료] 제 9회 2026 최신 기술 컨퍼런스:Practical Physical Process 과학을 현실로, 혁신을 확장으로 (11/17~18)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179692",
+          "date": "2026-11-16",
+          "org": "써모 피셔 사이언티픽 코리아",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.03(화) 00:00 ~ 2026.11.16(월) 23:59 까지",
+            "eligibility": "",
+            "content": "과정 내용 Day 1 Hall AAI·Automation 기반 바이오 연구의 실제 적용과 Scale-Up11/17 (화) 10시~17시｜에듀센터 온라인 라이브TopicAI-Automation을 실제 Lab과 연결하고, 표준화된 Process를 통해 Scale-up하는 End-to-End Scientific Workflow을 소개합니다.신약개발·Lab Automation부터 Genomics·Proteomics 기반 Multi-omics, 데이터 통합 및 Digital Twin 기반 바이오 생산까지 연구–분석–생산 전 과정을 연결하고,",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179688",
+          "source": "kstartup",
+          "title": "2026 맞춤형 창업과정 교육생 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179688",
+          "date": "2026-11-20",
+          "org": "김해시중장년기술창업센터장",
           "region": "전국",
           "category": "창업교육",
           "isTarget": true,
           "detail": {
-            "period": "2026.10.27(화) 16:45 ~ 2026.11.18(수) 16:00 까지",
+            "period": "2026.11.02(월) 10:00 ~ 2026.11.20(금) 18:00 까지",
             "eligibility": "",
             "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179670",
+          "source": "kstartup",
+          "title": "[포항연합기술지주] 대경권 캠퍼스 IR 챔피언십",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179670",
+          "date": "2026-11-13",
+          "org": "(주) 포항연합기술지주",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.15(목) 00:00 ~ 2026.11.13(금) 18:00 까지",
+            "eligibility": "",
+            "content": "총 10개 팀, 총 상금 2,500만원 □ 시상 (총 10개 팀, 총 상금 2,500만원)① 대상(포항연합기술지주 대표이사상): 1팀, 1,000만원② 우수상(포항대학교, 선린대학교 산학협력단장상): 2팀, 각 400만원③ 특별상(시제품 제작지원): 7팀, 각 100만원□ 참가혜택① 참가팀 전원 100만원 상당 스타트업 진단 프로그램 제공② 우수팀 대상 포항연합기술지주 직접 투자 및 후속 투자 연계③ 창업보육센터 입주 심사 시 가점 부여",
             "amount": ""
           }
         }
@@ -298,36 +162,36 @@
   },
   "todayDeadline": [
     {
-      "id": "kstartup_179674",
+      "id": "kstartup_179645",
       "source": "kstartup",
-      "title": "스타트업을 위한 정부 R&D 특강",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179674",
-      "date": "2026-11-03",
-      "org": "한국기술교육대학교 앵커사업단",
+      "title": "2026 연구개발특구 딥테크 스타트업 챌린지 Final Day  행사 사전접수",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179645",
+      "date": "2026-11-04",
+      "org": "(주)리벤처스 대표이사",
       "region": "전국",
       "category": "사업화",
       "isTarget": false,
       "detail": {
-        "period": "2026.10.30(금) 00:00 ~ 2026.11.03(화) 23:59 까지",
+        "period": "2026.10.28(수) 10:00 ~ 2026.10.30(금) 23:59 까지",
         "eligibility": "",
-        "content": "",
+        "content": "밋업&네트워킹, Final IR, 투자 세레머니·시상식, 특별강의 ① 1:1 전문가 상담 (사전신청 기업 대상, 20분 단위 매칭)- 투자유치·컨설팅 : 참여 VC 심사역과 투자 상담- 지식재산(IP) : 특허 전략, IP 포트폴리오 점검- 규제검토·특례 : 사업화 과정의 규제 이슈와 특례 제도 상담② 투자 네트워킹 라운지 - VC 16개사 현직자가 참여하는 오픈형 네트워킹③ 특별강연 (16:00~16:20) - 주제 : “AI 반도체, 딥테크로 여는 AI의 미래” - 연사 : 백준호 퓨리오사AI 대표이사④ 딥테크 기업 전시 - 참",
         "amount": ""
       }
     },
     {
-      "id": "kstartup_179646",
+      "id": "kstartup_179633",
       "source": "kstartup",
-      "title": "[2026 아트 스타트업 데이] 일반 참가자 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179646",
-      "date": "2026-11-03",
-      "org": "(재)예술경영지원센터",
+      "title": "강남구 개포동지역 ㈜오피스허브 1인 창조기업 지원센터 입주기업 모집(1인실)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179633",
+      "date": "2026-11-04",
+      "org": "㈜오피스허브 1인 창조기업 지원센터",
       "region": "전국",
-      "category": "사업화",
-      "isTarget": true,
+      "category": "시설제공",
+      "isTarget": false,
       "detail": {
-        "period": "2026.10.21(수) 16:00 ~ 2026.11.03(화) 14:00 까지",
+        "period": "2026.10.28(수) 09:00 ~ 2026.11.04(수) 17:00 까지",
         "eligibility": "",
-        "content": "오픈토론, IR데모데이 등 일반 참가자 대상 오픈 프로그램",
+        "content": "지원내용 ○ 사무실 지원- 독립된 전용 사무공간 입주- 24시간 365일 센터 개방- 지문인식 출입 이용- 사업자 주소지 등록- 복사기, 프린터, 팩스, 우편함 등 업무시설 지원- 세미나실, 회의실, 휴게실 등 공용 공간 지원○ 보육지원- 지식재산권 출원 및 등록, 홍보 동영상 제작, 시제품 제작 등 지원- 네이버스마트스토어 셀러 교육 지원- 마케팅 등 사업화 지원- 경영컨설팅, 맞춤형 교육 및 세미나- 분야별 전문가 상담 지원- 특허, 법률, 세무회계, 매체홍보 연계지원- 엔젤투자자 연계 및 크라우드 펀딩 기회 제공",
         "amount": ""
       }
     }
