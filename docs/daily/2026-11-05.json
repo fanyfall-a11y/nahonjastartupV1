@@ -1,0 +1,334 @@
+{
+  "date": "2026-11-05",
+  "total": 18,
+  "targetCount": 11,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 22,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 29,
+      "items": [
+        {
+          "id": "kstartup_179714",
+          "source": "kstartup",
+          "title": "김해시중장년기술창업센터 2026년 하반기  신규 입주(자)기업 모집 ",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179714",
+          "date": "2026-11-27",
+          "org": "(재)김해의생명산업진흥원",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 09:00 ~ 2026.11.27(금) 18:00 까지",
+            "eligibility": "",
+            "content": "공간 및 운영지원 [공간지원]▸ 개방형 사무 공간 내 입주자 지정석 무상 제공 * 별도 임대료 및 관리비 없음 ** 센터 주소지로 사업자등록 가능▸ 사무실 집기(1인 책상, 의자, 사물함 등) 무상 제공 * 복합기, 복사용지 등 지원▸ 회의실, 컴퓨터실, 교육장 등 무료 이용 가능[운영지원]▸ 선택형 사업 지원(시제품 제작 및 판로개척을 위한 사업화 자금)(최대500만원)▸ 전문가 자문 지원(경영, 마케팅, 법문 등 분야별 멘토링 상시 지원)▸ 창업교육(사업화 구체화), 워크숍, 세미나, 교류회 등 각종 네트워크 지원▸ 각종 정부지",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179712",
+          "source": "kstartup",
+          "title": "청년 창업의 꿈, 『성동청년 창업이룸센터』 입주자 모집 공고【10차】",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179712",
+          "date": "2026-11-13",
+          "org": "서울특별시 성동구청장",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 09:00 ~ 2026.11.13(금) 23:59 까지",
+            "eligibility": "",
+            "content": "공간지원(회의실 12개, 공유라운지, OA존, 공유공간, 대강의실 등), 사업화 성장지원, 투자유치/네트워킹, 24시간 연중무휴 오픈 및 OA 무료지원 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179711",
+          "source": "kstartup",
+          "title": "[무료 세미나] 글로벌 진출 초기 챙겨야 할 GEO 전략",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179711",
+          "date": "2026-11-30",
+          "org": "토스페이먼츠",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.03(화) 00:00 ~ 2026.11.30(월) 00:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179707",
+          "source": "kstartup",
+          "title": "[동대문구 창업지원센터] 11월 메이커스페이스(레이저커터, 3D프린팅) 교육 일정",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179707",
+          "date": "2026-11-24",
+          "org": "동대문구 창업지원센터",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.03(화) 00:00 ~ 2026.11.24(화) 18:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179705",
+          "source": "kstartup",
+          "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집  수정공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179705",
+          "date": "2026-11-23",
+          "org": "중소벤처기업부 장관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "성장단계별(초기·도약기) 창업기업 발굴 및 육성을 위해 우수한 창업지원 역량을 갖춘 초기창업·창업도약 패키지 사업의 주관기관을 다음과 같이 모집 공고합니다.",
+            "eligibility": "창업기업 지원역량을 보유한 공공기관, 대학·연구기관, 민간기관 등 모든 유형의 기관",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179704",
+          "source": "kstartup",
+          "title": "2026년 청주미래누리터(공공지식산업센터) 입주기업 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179704",
+          "date": "2026-12-31",
+          "org": "(사)한국산업진흥협회",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.04(수) 00:00 ~ 2026.12.31(목) 00:00 까지",
+            "eligibility": "",
+            "content": "입주기업 편의 및 지원사업 탕비실, 휴게실 등 편의시설회의실, 교육실 우대 이용입주기업 지원사업을 통한 기업역량강화",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179703",
+          "source": "kstartup",
+          "title": "(하반기) 2026년 서울창업허브M+ 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179703",
+          "date": "2026-11-13",
+          "org": "(재)서울경제진흥원",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 09:00 ~ 2026.11.13(금) 23:59 까지",
+            "eligibility": "",
+            "content": "입주지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179702",
+          "source": "kstartup",
+          "title": "[온라인·무료] 코딩·사업자 없이 여는 내 강의·전자책 판매 사이트",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179702",
+          "date": "2026-11-19",
+          "org": "스쿨모아 주식회사",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.03(화) 00:00 ~ 2026.11.19(목) 18:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179701",
+          "source": "kstartup",
+          "title": "2026년 경기창업혁신공간 북동부권(구리)  신규 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179701",
+          "date": "2026-11-27",
+          "org": "(재)경기도경제과학진흥원",
+          "region": "경기",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 09:30 ~ 2026.11.27(금) 18:00 까지",
+            "eligibility": "",
+            "content": "북동부권(구리) 입주기업 지원 - 지정석(틔움) 입주공간 무상 제공- 입주기업 회의실 및 멘토링실 무상사용(*단, 규정준수)- 입주기업 휴계공간 무상사용",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179700",
+          "source": "kstartup",
+          "title": "2026 제4차 노원사회적경제지원센터 입주기업 신규 공모",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179700",
+          "date": "2026-11-20",
+          "org": "노원사회적경제지원센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.02(월) 17:00 ~ 2026.11.20(금) 18:00 까지",
+            "eligibility": "",
+            "content": "지원 세부 사항 - 입주 공간- 교육실 및 회의실 대관- 책상, 서랍장, 의자, 캐비닛 등 사무실 집기",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179699",
+          "source": "kstartup",
+          "title": "2026년 탄소배출권 실무교육 안내",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179699",
+          "date": "2026-11-24",
+          "org": "서울기후테크산업지원센터장서",
+          "region": "서울",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.02(월) 18:00 ~ 2026.11.24(화) 20:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179698",
+          "source": "kstartup",
+          "title": " 신산업 분야 및 시장전문가 예비위원단 공개모집 ",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179698",
+          "date": "2026-12-11",
+          "org": "창업진흥원",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.05(목) 10:00 ~ 2026.12.11(금) 18:00 까지",
+            "eligibility": "",
+            "content": "창업지원사업 예비위원단 '예비위원단'에 등록될 시, 창업지원사업 평가 및 사업 운영 관련 심의ㆍ의결 등의 활동을 수행하게 됩니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179696",
+          "source": "kstartup",
+          "title": "[부산대학교병원]「의료·헬스케어 스타트업 인큐베이터 사업」입주기업 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179696",
+          "date": "2026-11-30",
+          "org": "부산대학교병원장",
+          "region": "부산",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 16:30 ~ 2026.11.30(월) 23:59 까지",
+            "eligibility": "",
+            "content": "입주기업 지원내용 - 입주공간 제공 : 전용 입주실과 시제품 제작실·회의실 등 부대시설 이용- 임상 연계 협력 : 관내 대학병원 소속연구자와 협력 기회 제공 및 협업 체계 구축- 의료 특화 프로그램 지원 : 교육, 멘토링, 네트워킹 및 후속지원- 창업기업 전주기 지원 프로그램 참여기회 제공",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179695",
+          "source": "kstartup",
+          "title": "2026년 대전 스타트업 원스톱 지원센터 아카데미 4회차",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179695",
+          "date": "2026-11-22",
+          "org": "대전창조경제혁신센터",
+          "region": "대전",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 09:00 ~ 2026.11.22(일) 17:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179694",
+          "source": "kstartup",
+          "title": "출연연, 대학 연구소기업 Business Development 프로그램 참여 예비창업자 모집 (11월)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179694",
+          "date": "2026-11-30",
+          "org": "연구개발특구진흥재단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.04(수) 09:00 ~ 2026.11.30(월) 18:00 까지",
+            "eligibility": "",
+            "content": "지원내용 사업화 진단, 전문인력 매칭, 투자유치·IR 지원, 수요기업 및 사업 파트너 연계 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179687",
+          "source": "kstartup",
+          "title": "2027년 청년 쿡 비즈니스·푸드테크 센터 스타트업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179687",
+          "date": "2026-11-20",
+          "org": "서울특별시",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.02(월) 11:00 ~ 2026.11.20(금) 23:59 까지",
+            "eligibility": "",
+            "content": "청년 스타트업 창업 및 보육 지원 공간 제공, 사업화 자금 지원, 전문가 멘토링, 판로개척, 투자연계 지원 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179683",
+          "source": "kstartup",
+          "title": "2026 KOREA LBS Day(~11.17)｜선도기업·투자자·전문가와 만나는 1:1 비즈니스 미팅",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179683",
+          "date": "2026-11-18",
+          "org": "한국능률협회컨설팅",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.01(일) 00:00 ~ 2026.11.18(수) 00:00 까지",
+            "eligibility": "",
+            "content": "위치정보 기반 기술·서비스의 사업화와 성장 전략 및 협업 기회 발굴 ① 인사이트 강연 - 10:00~11:00 황재선 부사장- 11:00~12:00 와이앤아처 이호재 대표- 13:00~14:00 카카오모빌리티 김종수 이사② 1:1 비즈니스 미팅 및 전문가 상담 - 선도기업 담당자와 기술·서비스 소개 및 협업 가능성 논의- 법률·특허·행정·AX 분야 사업화 상담- 공공조달·공공 수요처 관련 판로 상담③ IR 쇼케이스 - 유망 스타트업 10개사 IR 발표 및 투자자 네트워킹",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": []
+}
