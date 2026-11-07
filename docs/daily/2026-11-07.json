@@ -1,0 +1,232 @@
+{
+  "date": "2026-11-07",
+  "total": 12,
+  "targetCount": 6,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 23,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 32,
+      "items": [
+        {
+          "id": "kstartup_179744",
+          "source": "kstartup",
+          "title": "2027 Global Startup Center Workspace Call for Applications",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179744",
+          "date": "2026-11-23",
+          "org": "Korea Institute of Startup & Entrepreneurship Development",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.09(월) 14:00 ~ 2026.11.23(월) 16:00 까지",
+            "eligibility": "",
+            "content": "Workspace",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179742",
+          "source": "kstartup",
+          "title": "(인천 대학 청년 창업펀드 2호) UniVest Scale-up 참여기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179742",
+          "date": "2026-11-26",
+          "org": "(재)인천테크노파크",
+          "region": "인천",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.06(금) 11:20 ~ 2026.11.26(목) 23:59 까지",
+            "eligibility": "",
+            "content": "성장 지원 및 투자 유치 - (인사이트 클래스) : 신청 기업 대상 투자 유치 준비 전략 등 VC 강연 - (VC 맞춤형 멘토링) : 기업별 핵심 성장 역량 고도화를 위한 VC 멘토링(8개사 내외) - (직접 투자) 인천 대학 청년 창업펀드 2호 직접 투자 1억 원 이상(1개사 내외)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179741",
+          "source": "kstartup",
+          "title": "2026년도 제4차 북부창업아카데미 및 북부창업멘토링 DAY 참가자 모집(주제 : 2027 정부지원사업 합격을 위한 실전 전략)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179741",
+          "date": "2026-11-18",
+          "org": "북부여성새일센터",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.06(금) 09:00 ~ 2026.11.18(수) 17:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179740",
+          "source": "kstartup",
+          "title": "용인시산업진흥원 2026년 제5차 창업지원센터 입주기업 모집공고(~11. 25. 수 16:00까지)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179740",
+          "date": "2026-11-25",
+          "org": "용인시산업진흥원",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.05(목) 00:00 ~ 2026.11.25(수) 16:00 까지",
+            "eligibility": "",
+            "content": "공용시설 장비 및 전문 액셀러레이팅 프로그램 등 지원혜택 공용시설 장비 및 전문 액셀러레이팅 프로그램 등 지원혜택□ 창업지원센터 시설·장비 활용❍ 쥬네브썬월드(동백S) 커뮤니티룸(프로젝터·화상회의실) 이용❍ 소공인스타트업허브(영덕) 공용 라운지, 3D스캐너·열충격시험기 등 장비 이용□ 민간 액셀러레이터(AC)‘카이스트청년창업투자지주’협력 기반 투자유치 지원 등 기업성장 프로그램 실시※ 2026년 창업지원센터 입주기업 42억원 규모의 투자유치 실적 달성❍ (기업진단) 투자유치를 위한 Pin Point 핵심 보완 사항 도출 및 밀착 지",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179738",
+          "source": "kstartup",
+          "title": "2027년 인천관광기업지원센터 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179738",
+          "date": "2026-11-25",
+          "org": "인천관광공사",
+          "region": "인천",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.05(목) 14:00 ~ 2026.11.25(수) 18:00 까지",
+            "eligibility": "",
+            "content": "입주공간, 교육·컨설팅 및 네트워킹 등 센터 운영 프로그램",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179735",
+          "source": "kstartup",
+          "title": "[벤처기업협회] 2026년 예비창업패키지 특화분야(소셜벤처)「임팩트스타 IR 데모데이」개최 (11/10)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+          "date": "2026-11-09",
+          "org": "벤처기업협회",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.05(목) 00:00 ~ 2026.11.09(월) 23:59 까지",
+            "eligibility": "",
+            "content": "주요 프로그램 - 예비창업패키지 소셜벤처 9개사 IR 발표 및 투자자 Q&A- 벤처기업 확인제도 소개- 발표기업과의 미팅- 다과와 함께 자유로운 참가자 네트워킹",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179733",
+          "source": "kstartup",
+          "title": "NEST G밸리 4기 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179733",
+          "date": "2026-11-20",
+          "org": "신용보증기금 스케일업금융센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.06(금) 10:00 ~ 2026.11.20(금) 14:00 까지",
+            "eligibility": "",
+            "content": "금융 프로그램 지원 - (신용보증) 전담 조직을 통한 입주기업 맞춤형 보증상품 지원- (투자유치) 신보 민간투자유치플랫폼 U-CONNECT를 통한 VC 등 민간투자유치 지원- (투자, 보험 등) 보증연계투자, 매출채권보험 등 융복합 상품 지원 비금융 프로그램 지원 - (컨설팅) 신보 내·외부 컨설턴트가 기업 BM 및 니즈를 고려하여 맞춤형 전문 컨설팅 실시- (Talks) 입주기업 수요 맞춤형으로 전문가를 매칭하여 세미나 또는 Q&A 형식의 밋업(Meet-up) 세션 진행- (Speech) 자금조달, 경영전략 등 입주기업 역량 강화",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179732",
+          "source": "kstartup",
+          "title": "2027년 팁스 추천 화성산업진흥원 성장 자원 확보 패키지 지원 프로그램 신청 안내",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179732",
+          "date": "2026-11-19",
+          "org": "화성산업진흥원",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.05(목) 17:00 ~ 2026.11.19(목) 18:00 까지",
+            "eligibility": "",
+            "content": "팁스 활용, 투자유치, 각종 과제 획득 등 종합적인 경쟁력 강화 프로그램 지원 ◯ 경영, 재무, IR, 마케팅 등 기업의 사업 진단과 개선 기회 제공 ◯ 사업계획서, 비즈니스 모델, 투자유치 전략 등 성공 창업 교육 ◯ 정부, 경기도, 창업 지원기관 등 각종 기업 지원과제 획득 컨설팅 ◯ 분야별 전문가의 맞춤형 멘토링, TIPS 프로그램 연계(추천) 기회 제공 ◯ IR 전략 수립, IR 자료 고도화, 투자 상담회 개최 등 투자유치",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179731",
+          "source": "kstartup",
+          "title": "한국공항공사 창업보육센터 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179731",
+          "date": "2026-11-26",
+          "org": "한국공항공사",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.09(월) 08:00 ~ 2026.11.26(목) 23:59 까지",
+            "eligibility": "",
+            "content": "붙임 모집공고문 참고",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179730",
+          "source": "kstartup",
+          "title": "2026 재도전˙혁신캠퍼스 성과공유회",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179730",
+          "date": "2026-11-26",
+          "org": "대전창조경제혁신센터",
+          "region": "대전",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.05(목) 00:00 ~ 2026.11.26(목) 18:00 까지",
+            "eligibility": "",
+            "content": "프로그램 구성 - 센터 및 유관기관 지원 프로그램 안내 - 지원기업 성장 스토리 발표 - 재도전 네트워킹",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179705",
+          "source": "kstartup",
+          "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집  수정공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179705",
+          "date": "2026-11-23",
+          "org": "중소벤처기업부 장관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "성장단계별(초기·도약기) 창업기업 발굴 및 육성을 위해 우수한 창업지원 역량을 갖춘 초기창업·창업도약 패키지 사업의 주관기관을 다음과 같이 모집 공고합니다.",
+            "eligibility": "창업기업 지원역량을 보유한 공공기관, 대학·연구기관, 민간기관 등 모든 유형의 기관",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": []
+}
