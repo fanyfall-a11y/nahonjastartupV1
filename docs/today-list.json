@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "total": 2,
   "targetCount": 1,
   "sources": {
@@ -58,5 +58,74 @@
       ]
     }
   },
-  "todayDeadline": []
+  "todayDeadline": [
+    {
+      "id": "kstartup_179735",
+      "source": "kstartup",
+      "title": "[벤처기업협회] 2026년 예비창업패키지 특화분야(소셜벤처)「임팩트스타 IR 데모데이」개최 (11/10)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179735",
+      "date": "2026-11-09",
+      "org": "벤처기업협회",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.05(목) 00:00 ~ 2026.11.09(월) 23:59 까지",
+        "eligibility": "",
+        "content": "주요 프로그램 - 예비창업패키지 소셜벤처 9개사 IR 발표 및 투자자 Q&A- 벤처기업 확인제도 소개- 발표기업과의 미팅- 다과와 함께 자유로운 참가자 네트워킹",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179723",
+      "source": "kstartup",
+      "title": "2026년 중동 상황 대응 규격 컨설팅 지원사업「수혜기업 모집」",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179723",
+      "date": "2026-11-09",
+      "org": "서울경제진흥원",
+      "region": "서울",
+      "category": "컨설팅/멘토링",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.10.28(수) 16:00 ~ 2026.11.09(월) 15:59 까지",
+        "eligibility": "",
+        "content": "SBA 검증 전문 수행기관 1:1 매칭 및 실무 대행 SBA가 선발한 해외규격 전문 수행기관(3개사) 중 기업의 품목·희망 규격에 가장 적합한 수행사를 매칭하여 6개월간 1:1 전 과정 밀착 대행",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179708",
+      "source": "kstartup",
+      "title": "2026년 스타트업 법률지원사업 전남광주통합특별시 법률상담회 참여기업 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179708",
+      "date": "2026-11-09",
+      "org": "창업진흥원 원스톱지원실",
+      "region": "광주",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.03(화) 12:00 ~ 2026.11.09(월) 18:00 까지",
+        "eligibility": "",
+        "content": "계약&거래, 지식재산&브랜드 보 등 8개 분야 변호사 1:1 대면 상담(기업별 45분 이내) 창업 준비, 사업화, 경영 등 8개 법률 상담분야 대면상담 지원(기업별 45분 이내)1.계약·거래 : 거래처 계약서 법률 검토, 계약의 해석 등2.지식재산·브랜드 : 영업비밀 및 지식재산권(특허 등) 귀속, 보호 등3.개인정보·데이터 : 개인정보 처리 및 보호 등 이행 법령과 규정 등4.규제·인허가 대응 : 법 규제 준수 전략, 규제 및 인허가 대응 등5.인사·노무 : 고용노무, 노무 갈등 해결 등6.투자·자금조달 : 투자 계약서 검토 등7",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179681",
+      "source": "kstartup",
+      "title": "[ 모 집 ] GVC AI Platform Startup Enabling Program 및 스마트워크·쇼핑몰 창업지원 및 AI 전환 지원",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179681",
+      "date": "2026-11-09",
+      "org": "글로벌벤처센터",
+      "region": "전국",
+      "category": "판로/마케팅",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.02(월) 09:25 ~ 2026.11.09(월) 23:59 까지",
+        "eligibility": "",
+        "content": "AI 기반 창업 과정 지원 아이템 검증부터 MVP 개발, 글로벌 런칭 및 투자 연계 단계별 창업 지원지원내용 상세AI 개발 관련 멘토링 및 심사후 소정의 AI 개발 크레딧 지원AI 기반 아이디어 검증 및 PMF(Product-Market Fit) 분석비즈니스 모델(BM) 설계 및 수익모델 고도화AI 활용 프로토타입 및 MVP 개발 멘토링플랫폼 아키텍처 및 기술 전략 자문센터 입주 1개월 무상 지원 AI 무상 멘토링 지원법인 설립 및 운영 컨설팅글로벌 서비스 출시 및 해외 결제 시스템 구축 지원마케팅 및 서비스 런칭 전략 컨설팅투자유",
+        "amount": ""
+      }
+    }
+  ]
 }
