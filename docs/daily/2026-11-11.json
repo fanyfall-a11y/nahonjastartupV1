@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-11",
+  "total": 8,
+  "targetCount": 5,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 23,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 26,
+      "items": [
+        {
+          "id": "kstartup_179766",
+          "source": "kstartup",
+          "title": "[강동구 청년해냄센터] 2027년 정부 지원 사업 대비 성공 창업 스쿨 참가자 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179766",
+          "date": "2026-11-23",
+          "org": "강동구 청년해냄센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.09(월) 00:00 ~ 2026.11.23(월) 14:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179765",
+          "source": "kstartup",
+          "title": "STARTUP STARRY NIGHT in Seoul 1:1 밋업(투자, O.I.) 참여기업 모집(11월 허브아워)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179765",
+          "date": "2026-11-17",
+          "org": "(재)서울경제진흥원",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.11(수) 13:00 ~ 2026.11.17(화) 23:59 까지",
+            "eligibility": "",
+            "content": "1:1 밋업 -투자: 직접투자를 전제로 투자사와 1:1 밋업-O.I.: 협력을 전제로 대기업과 1:1 밋업",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179764",
+          "source": "kstartup",
+          "title": "[알파브라더스] 「2026 충청 스타트업 벤처포럼」 2회차-오픈이노베이션 교류회 참가 안내의 건",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179764",
+          "date": "2026-11-17",
+          "org": "알파브라더스",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.10(화) 00:00 ~ 2026.11.17(화) 00:00 까지",
+            "eligibility": "",
+            "content": "세부 프로그램 일정 13:30 ~ 13:40(10') : 개회사 및 행사 안내13:40 ~ 14:10(30') : 오픈이노베이션 전문가 특강 * 관악중소벤처진흥원 김준학 원장14:10 ~ 14:40(30') : 대·중견기업 오픈이노베이션 리버스 피칭(2개사)14:30 ~ 14:55(15') : 휴식 시간14:55 ~ 15:40(45') : 대·중견기업 오픈이노베이션 리버스 피칭(3개사)15:40 ~ 16:00(20') : 1부 종료 및 휴식16:00 ~ 16:20(20') : 대·중견기업 1:1 밋업(1라운드)16:20 ~ 16:4",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179763",
+          "source": "kstartup",
+          "title": "[행사 안내] 2026 경기도 R&D 성과공유회",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179763",
+          "date": "2026-11-20",
+          "org": "주식회사 내비온파트너스",
+          "region": "경기",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.10(화) 00:00 ~ 2026.11.20(금) 14:00 까지",
+            "eligibility": "",
+            "content": "경기도 R&D 신규 사업 안내, AGI 전문가 특강, 비즈니스 네트워킹 및 참석 혜택 제공 (사업 안내) 2027년도 경기도 R&D 신규 지원사업 사전 안내 및 R&D 우수성과(3개사) 사례 공유 (인사이트 제공) KAIST 김대식 교수 특별 강연(AGI 시대 생존전략)을 통한 최신 기술 트렌드 인사이트 제공 (네트워킹) 유망 스타트업, R&D 우수기업 및 유관기관 간 비즈니스 협력과 교류의 장 마련 (참석 혜택) 성과보고회 당일 참석자 200명 선착순으로 스타벅스 상품권 제공",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179761",
+          "source": "kstartup",
+          "title": "2026년 한라대학교 창업보육센터 11월 신규입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179761",
+          "date": "2026-11-30",
+          "org": "한라대학교 창업보육센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.09(월) 18:00 ~ 2026.11.30(월) 18:00 까지",
+            "eligibility": "",
+            "content": "창업지원사항 창업공간 지원, 창업정보 제공, 창업기업 역량강화(멘토링, 교육 등), 사업화 지원 등 창업지원 전반",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179760",
+          "source": "kstartup",
+          "title": "[2026년 대전창업문화주간] 제 3회 대전창업문화 주간(창업의 시작과 끝)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179760",
+          "date": "2026-11-13",
+          "org": "대전창조경제혁신센터",
+          "region": "대전",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.09(월) 00:00 ~ 2026.11.13(금) 13:00 까지",
+            "eligibility": "",
+            "content": "강연 진행 대한민국 1호 과학탐험가 문경수구독자 270만 유튜버 김작가",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179705",
+          "source": "kstartup",
+          "title": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집  수정공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179705",
+          "date": "2026-11-23",
+          "org": "중소벤처기업부 장관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "성장단계별(초기·도약기) 창업기업 발굴 및 육성을 위해 우수한 창업지원 역량을 갖춘 초기창업·창업도약 패키지 사업의 주관기관을 다음과 같이 모집 공고합니다.",
+            "eligibility": "창업기업 지원역량을 보유한 공공기관, 대학·연구기관, 민간기관 등 모든 유형의 기관",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": []
+}
