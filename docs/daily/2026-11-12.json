@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-12",
+  "total": 9,
+  "targetCount": 6,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 23,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 25,
+      "items": [
+        {
+          "id": "kstartup_179777",
+          "source": "kstartup",
+          "title": "2026년 특허출원·등록 비용 바우처 지원사업 17차(하반기 10차)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179777",
+          "date": "2026-11-30",
+          "org": "(사)한국중소기업발전협회",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.16(월) 00:00 ~ 2026.11.30(월) 19:00 까지",
+            "eligibility": "",
+            "content": "특허 1건을 등록 특허 등록 1건을 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179776",
+          "source": "kstartup",
+          "title": "호서대학교 서울창업보육센터 신규입주모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179776",
+          "date": "2026-11-20",
+          "org": "호서대학교 서울창업보육센터",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.12(목) 09:00 ~ 2026.11.20(금) 18:00 까지",
+            "eligibility": "",
+            "content": "창업보육실 및 공용회의실(화상회의실 포함) 이용 창업보육실 및 공용회의실(화상회의실 포함) 이용",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179775",
+          "source": "kstartup",
+          "title": "2026 여성벤처활성화사업 「여성벤처&스타트업 혁신성장 포럼」참여자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179775",
+          "date": "2026-11-26",
+          "org": "(사)한국여성벤처협회",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.11(수) 09:00 ~ 2026.11.26(목) 23:59 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179774",
+          "source": "kstartup",
+          "title": "2026 인수창업 설명회 - 당신의 성장을 지원합니다.",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179774",
+          "date": "2026-11-19",
+          "org": "주식회사 디유파트너스",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.10(화) 13:00 ~ 2026.11.18(수) 18:00 까지",
+            "eligibility": "",
+            "content": "인수창업 설명 및 지원 프로그램 안내 인수창업 파트너사 인사말인수창업 개념 소개인수창업 성공사례지원 프로그램 소개(국비지원, 펀드투자 등)M&ALIST 플랫폼 소개",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179772",
+          "source": "kstartup",
+          "title": "2026 전북콘텐츠코리아랩 AI 활용 콘텐츠(캐릭터) 아이디어 발굴 캠프",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179772",
+          "date": "2026-11-23",
+          "org": "(재)전북특별자치도 콘텐츠융합진흥원",
+          "region": "전북",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.10(화) 09:00 ~ 2026.11.23(월) 15:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179771",
+          "source": "kstartup",
+          "title": "2026 강남구 미래산업 기반 기업 활성화 지원사업 데모데이 참관",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179771",
+          "date": "2026-11-19",
+          "org": "더인벤션랩",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.30(금) 00:00 ~ 2026.11.19(목) 23:30 까지",
+            "eligibility": "",
+            "content": "우수기업 IR 참관, 네트워킹, 소정의 상품",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179769",
+          "source": "kstartup",
+          "title": "스타트업을 위한 B2B 영업 전략 특강",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179769",
+          "date": "2026-11-17",
+          "org": "한국기술교육대학교 앵커사업단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.10(화) 00:00 ~ 2026.11.17(화) 10:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179767",
+          "source": "kstartup",
+          "title": "2026 스타트업 언론홍보·미디어 콘텐츠 확산 지원사업 11월 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179767",
+          "date": "2026-11-30",
+          "org": "주식회사 다임",
+          "region": "전국",
+          "category": "판로/마케팅",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.10(화) 11:00 ~ 2026.11.30(월) 18:00 까지",
+            "eligibility": "",
+            "content": "언론홍보 선정기업별 언론홍보 기사 1건 제작 및 산학뉴스에 무료 게재",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179746",
+      "source": "kstartup",
+      "title": "전북핀테크지원센터 「핀테크 라이징 스타 챌린지」참가자 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179746",
+      "date": "2026-11-12",
+      "org": "(재)전북창조경제혁신센터",
+      "region": "전북",
+      "category": "시설제공",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.10.14(수) 09:00 ~ 2026.11.12(목) 16:00 까지",
+        "eligibility": "",
+        "content": "시상금 및 후속 지원 ○ 시상금 최대 10,000천원 지원 - 대상(1개사) 수상 : 시상금 10,000천원 지급 - 우수상(4개사) 수상 : 시상금 각 5,000천원 지급○ 선정기업 대상 사업화 및 성장 지원을 위한 후속 지원 - 대상 수상자가 협약 체결일로부터 1년 이내에 도내로 본사를 이전하거나 도내를 본사로 창업을 완료하는 경우, 확인 후 5일 내에 전북 정착 연계 추가 시상금으로 사업화지원금 30,000천원 지급 ※ 단, 도내 본사 이전 또는 창업일로부터 1년 이내에 본사를 폐업·휴업 및 전북 외 지역으로 이전하는 경우에는",
+        "amount": ""
+      }
+    }
+  ]
+}
