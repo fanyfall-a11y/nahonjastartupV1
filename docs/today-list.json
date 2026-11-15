@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "total": 1,
   "targetCount": 0,
   "sources": {
@@ -40,5 +40,40 @@
       "items": []
     }
   },
-  "todayDeadline": []
+  "todayDeadline": [
+    {
+      "id": "kstartup_179781",
+      "source": "kstartup",
+      "title": "[창업중심대학]2026 대학연합 지역관광 창업경진대회(K-TOURISM STARTUP CHALLENGE)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179781",
+      "date": "2026-11-15",
+      "org": "한양대 창업지원단",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.12(목) 16:01 ~ 2026.11.15(일) 23:59 까지",
+        "eligibility": "",
+        "content": "컴업 본선 참가, 멘토링 서류평가를 통해 본선 진출 10개팀 선발시, 팀별 멘토링 후 2026 컴엄 본선 무대 최종 경연 진행",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179762",
+      "source": "kstartup",
+      "title": "2026년 스타트업 법률지원사업 제주특별자치도 법률상담회 참여기업 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
+      "date": "2026-11-15",
+      "org": "창업진흥원 원스톱지원실",
+      "region": "제주",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.09(월) 18:00 ~ 2026.11.15(일) 18:00 까지",
+        "eligibility": "",
+        "content": "계약&거래, 지식재산&브랜드 보 등 9개 분야 변호사 1:1 대면 상담(기업별 45분 이내) 창업 준비, 사업화, 경영 등 8개 법률 상담분야 대면상담 지원(기업별 45분 이내)1.계약·거래 : 거래처 계약서 법률 검토, 계약의 해석 등2.지식재산·브랜드 : 영업비밀 및 지식재산권(특허 등) 귀속, 보호 등3.개인정보·데이터 : 개인정보 처리 및 보호 등 이행 법령과 규정 등4.규제·인허가 대응 : 법 규제 준수 전략, 규제 및 인허가 대응 등5.인사·노무 : 고용노무, 노무 갈등 해결 등6.투자·자금조달 : 투자 계약서 검토 등7",
+        "amount": ""
+      }
+    }
+  ]
 }
