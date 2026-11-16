@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-16",
+  "total": 1,
+  "targetCount": 0,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 22,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 26,
+      "items": []
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "mss_1071932",
+      "source": "mss",
+      "title": "2027년도 전통시장 및 상점가 활성화 지원사업 수정공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071932",
+      "date": "2026-11-16",
+      "org": "전통시장과",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026-10-20 ~ 2026-11-16",
+        "eligibility": "",
+        "content": "2027년도 전통시장 및 상점가 활성화 지원사업을 붙임과 같이 수정공고합니다.<br />\n<br />\n수정사항 : 1. 문화관광형시장 지원 제외대상 추가, 2. 시장경영지원 전국상인연합회 및 지회 신청방법 추가",
+        "amount": ""
+      }
+    },
+    {
+      "id": "mss_1071793",
+      "source": "mss",
+      "title": "2026년도 공급망안정화 선도사업자 제2차 선정계획 공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793",
+      "date": "2026-11-16",
+      "org": "대외환경대응과",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026-10-15 ~ 2026-11-16",
+        "eligibility": "",
+        "content": "『경제안보를 위한 공급망 안정화 지원 기본법』 제19조에 따라 2026년도 공급망안정화 선도사업자 제2차 선정계획을 아래와 같이 공고합니다.",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179759",
+      "source": "kstartup",
+      "title": "소공인 역량강화 아카데미 5기 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179759",
+      "date": "2026-11-16",
+      "org": "서울시 강동가죽제조지원센터",
+      "region": "서울",
+      "category": "창업교육",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.06(금) 15:00 ~ 2026.11.16(월) 23:59 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179736",
+      "source": "kstartup",
+      "title": "제8차 충남 오픈이노베이션 포럼",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "date": "2026-11-16",
+      "org": "한국기술교육대학교 앵커사업단",
+      "region": "충남",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.05(목) 18:00 ~ 2026.11.16(월) 23:59 까지",
+        "eligibility": "",
+        "content": "참가비 무료, 다과 제공 예정",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179728",
+      "source": "kstartup",
+      "title": "[\"Beyond Silicon 2026\" 화합물반도체 미래를 여는 길] 개최",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "date": "2026-11-16",
+      "org": "한국나노기술원",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.05(목) 10:00 ~ 2026.11.16(월) 18:00 까지",
+        "eligibility": "",
+        "content": "없음",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179726",
+      "source": "kstartup",
+      "title": "사례에서 배우는 지역 창업 추진 전략 수립 교육",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179726",
+      "date": "2026-11-16",
+      "org": "상지대학교 벤처창업본부 ",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.05(목) 00:00 ~ 2026.11.16(월) 18:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    }
+  ]
+}

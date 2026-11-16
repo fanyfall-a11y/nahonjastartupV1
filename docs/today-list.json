@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "total": 1,
   "targetCount": 0,
   "sources": {
@@ -42,36 +42,104 @@
   },
   "todayDeadline": [
     {
-      "id": "kstartup_179781",
-      "source": "kstartup",
-      "title": "[창업중심대학]2026 대학연합 지역관광 창업경진대회(K-TOURISM STARTUP CHALLENGE)",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179781",
-      "date": "2026-11-15",
-      "org": "한양대 창업지원단",
+      "id": "mss_1071932",
+      "source": "mss",
+      "title": "2027년도 전통시장 및 상점가 활성화 지원사업 수정공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071932",
+      "date": "2026-11-16",
+      "org": "전통시장과",
       "region": "전국",
       "category": "사업화",
-      "isTarget": true,
+      "isTarget": false,
       "detail": {
-        "period": "2026.11.12(목) 16:01 ~ 2026.11.15(일) 23:59 까지",
+        "period": "2026-10-20 ~ 2026-11-16",
         "eligibility": "",
-        "content": "컴업 본선 참가, 멘토링 서류평가를 통해 본선 진출 10개팀 선발시, 팀별 멘토링 후 2026 컴엄 본선 무대 최종 경연 진행",
+        "content": "2027년도 전통시장 및 상점가 활성화 지원사업을 붙임과 같이 수정공고합니다.<br />\n<br />\n수정사항 : 1. 문화관광형시장 지원 제외대상 추가, 2. 시장경영지원 전국상인연합회 및 지회 신청방법 추가",
         "amount": ""
       }
     },
     {
-      "id": "kstartup_179762",
-      "source": "kstartup",
-      "title": "2026년 스타트업 법률지원사업 제주특별자치도 법률상담회 참여기업 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179762",
-      "date": "2026-11-15",
-      "org": "창업진흥원 원스톱지원실",
-      "region": "제주",
+      "id": "mss_1071793",
+      "source": "mss",
+      "title": "2026년도 공급망안정화 선도사업자 제2차 선정계획 공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071793",
+      "date": "2026-11-16",
+      "org": "대외환경대응과",
+      "region": "전국",
       "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026-10-15 ~ 2026-11-16",
+        "eligibility": "",
+        "content": "『경제안보를 위한 공급망 안정화 지원 기본법』 제19조에 따라 2026년도 공급망안정화 선도사업자 제2차 선정계획을 아래와 같이 공고합니다.",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179759",
+      "source": "kstartup",
+      "title": "소공인 역량강화 아카데미 5기 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179759",
+      "date": "2026-11-16",
+      "org": "서울시 강동가죽제조지원센터",
+      "region": "서울",
+      "category": "창업교육",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.06(금) 15:00 ~ 2026.11.16(월) 23:59 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179736",
+      "source": "kstartup",
+      "title": "제8차 충남 오픈이노베이션 포럼",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179736",
+      "date": "2026-11-16",
+      "org": "한국기술교육대학교 앵커사업단",
+      "region": "충남",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.05(목) 18:00 ~ 2026.11.16(월) 23:59 까지",
+        "eligibility": "",
+        "content": "참가비 무료, 다과 제공 예정",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179728",
+      "source": "kstartup",
+      "title": "[\"Beyond Silicon 2026\" 화합물반도체 미래를 여는 길] 개최",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179728",
+      "date": "2026-11-16",
+      "org": "한국나노기술원",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.05(목) 10:00 ~ 2026.11.16(월) 18:00 까지",
+        "eligibility": "",
+        "content": "없음",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179726",
+      "source": "kstartup",
+      "title": "사례에서 배우는 지역 창업 추진 전략 수립 교육",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179726",
+      "date": "2026-11-16",
+      "org": "상지대학교 벤처창업본부 ",
+      "region": "전국",
+      "category": "창업교육",
       "isTarget": true,
       "detail": {
-        "period": "2026.11.09(월) 18:00 ~ 2026.11.15(일) 18:00 까지",
+        "period": "2026.11.05(목) 00:00 ~ 2026.11.16(월) 18:00 까지",
         "eligibility": "",
-        "content": "계약&거래, 지식재산&브랜드 보 등 9개 분야 변호사 1:1 대면 상담(기업별 45분 이내) 창업 준비, 사업화, 경영 등 8개 법률 상담분야 대면상담 지원(기업별 45분 이내)1.계약·거래 : 거래처 계약서 법률 검토, 계약의 해석 등2.지식재산·브랜드 : 영업비밀 및 지식재산권(특허 등) 귀속, 보호 등3.개인정보·데이터 : 개인정보 처리 및 보호 등 이행 법령과 규정 등4.규제·인허가 대응 : 법 규제 준수 전략, 규제 및 인허가 대응 등5.인사·노무 : 고용노무, 노무 갈등 해결 등6.투자·자금조달 : 투자 계약서 검토 등7",
+        "content": "",
         "amount": ""
       }
     }
