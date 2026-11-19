@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-18",
-  "total": 1,
-  "targetCount": 0,
+  "date": "2026-11-19",
+  "total": 25,
+  "targetCount": 12,
   "sources": {
     "mss": {
       "id": "mss",
@@ -36,42 +36,451 @@
       "icon": "🚀",
       "color": "#e8360e",
       "count": 50,
-      "targetCount": 27,
-      "items": []
+      "targetCount": 24,
+      "items": [
+        {
+          "id": "kstartup_179839",
+          "source": "kstartup",
+          "title": "2027년 상반기 경기도여성창업보육센터 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179839",
+          "date": "2026-12-04",
+          "org": "경기도일자리재단 남부사업본부장",
+          "region": "경기",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.18(수) 18:00 ~ 2026.12.04(금) 15:00 까지",
+            "eligibility": "",
+            "content": "지원내용 ○ 사무실, 사무집기 등 제공○ 시제품 제작, 홍보마케팅 등 사업화지원금 지원○ 창업역량강화교육, 입주기업 네트워킹, 멘토링 제공○ 기타 경기테크노파크 편의시설 50% 할인하여 유료 이용 가능 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179836",
+          "source": "kstartup",
+          "title": "대전 팁스타운 26년 제3차 팁스아카데미 : 스타트업의 새로운 기회, 오픈이노베이션",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179836",
+          "date": "2026-11-24",
+          "org": "창업진흥원",
+          "region": "대전",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.19(목) 09:00 ~ 2026.11.24(화) 18:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179835",
+          "source": "kstartup",
+          "title": "예비, 초기 창업자가 반드시 알아야 할 스타트업 마케팅 방법론 - 제11차 DDM 벤처스타트업 아카데미",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179835",
+          "date": "2026-11-27",
+          "org": "DDM 청년창업센터 유니콘",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.18(수) 10:00 ~ 2026.11.27(금) 15:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179834",
+          "source": "kstartup",
+          "title": "2027년 상반기「IBK창공(創工) UNIST캠프」모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179834",
+          "date": "2026-12-10",
+          "org": "IBK기업은행",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.16(월) 09:00 ~ 2026.12.10(목) 14:00 까지",
+            "eligibility": "",
+            "content": "지원기간 : 2027년 1월 ~ 5월 (5개월) - 체계적인 액셀러레이팅 프로그램 제공- 공용 오피스 공간 제공- 투자유치 및 연계 대출지원 등 금융서비스 제공- IBK의 중소기업 컨설팅 노하우를 극대화한 1:1 밀착형 멘토링",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179833",
+          "source": "kstartup",
+          "title": "Startup OI Osaka #Beauty & Wellness Tech",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179833",
+          "date": "2026-12-07",
+          "org": "재단법인 은행권청년창업재단",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.17(화) 00:00 ~ 2026.12.07(월) 23:59 까지",
+            "eligibility": "",
+            "content": "로토제약과의 협업 검토 및 글로벌 진출 준비 지원 1. 로토제약과의 협업 기회 - 로토제약 사업부 및 전문가와의 기술 검토 - 실제 산업 환경에서의 PoC 기회 - 공동 솔루션 개발 및 글로벌 사업 협력 논의 - 뷰티, 헬스케어, 바이오 분야 글로벌 파트너십 확대 - 일본 및 글로벌 시장 진출 기회2. 디캠프의 글로벌 진출 지원 - 일본 현지 전문가와의 기업별 1:1 맞춤형 멘토링 최소 1회 - 일본 기업의 수요 분석 및 사업 제안 준비 지원 - 일본어 발표를 위한 피칭 구성 및 발표 역량 강화 지원 - 디캠프 글로벌 네트워크 활용",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179832",
+          "source": "kstartup",
+          "title": "「Next OI 기술 커넥트(Pre-meetup)」 참여 스타트업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179832",
+          "date": "2026-11-26",
+          "org": "(재)대구창조경제혁신센터",
+          "region": "대구",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.18(수) 09:00 ~ 2026.11.26(목) 16:00 까지",
+            "eligibility": "",
+            "content": "수요기업 대상 기술소개자료 사전 배포 및 매칭 기업 간 1:1 밋업(회당 40분, 최대 3회) - 주요 수요기업 : 삼성전자, 현대자동차, LG전자, SK텔레콤, 삼성물산, 현대건설, 포스코홀딩스, 카카오모빌리티, 풀무원, 대웅제약, 한국전력공사 등 ※ 첨부된 수요기업 명단은 참고용이며, 실제 참여 수요기업은 변경될 수 있음.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179830",
+          "source": "kstartup",
+          "title": "2026년 위치정보 보호조치 교육 (8차)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179830",
+          "date": "2026-12-02",
+          "org": "(주)아이전스",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.17(화) 00:00 ~ 2026.12.02(수) 15:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179829",
+          "source": "kstartup",
+          "title": "「2027년 농촌창업 경진대회」 참가자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179829",
+          "date": "2026-12-10",
+          "org": "농림축산식품부장관",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.17(화) 18:00 ~ 2026.12.10(목) 18:00 까지",
+            "eligibility": "",
+            "content": "우수 사업모델 시상 및 후속 지원 ▶총 15팀 내외 시상, 총상금 1억 3,500만 원 (대상 1팀 2,500만 원, 최우수상 2팀 각 1,500만 원, 우수상 4팀 각 1,000만 원, 장려상 8팀 각 500만 원)▶신제품 개발, 브랜딩 등 맞춤형 보육 및 판로개척 지원▶입상자 대상 후속 사업화자금 지원사업 선정 시 우대. ※ 세부 지원 요건은 공고문 참조",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179828",
+          "source": "kstartup",
+          "title": "2027년 상반기 KDB NextONE 대구 1기 스타트업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179828",
+          "date": "2026-12-18",
+          "org": "씨엔티테크",
+          "region": "대구",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.16(월) 00:00 ~ 2026.12.18(금) 18:00 까지",
+            "eligibility": "",
+            "content": "우수 스타트업의 실질적 성장을 위한 산업은행 보유 역량 기반 금융·비금융 지원 제공 ○ 직접투자, 후속 투자유치 지원(KDB NextRound 연계 IR 등)○ 대·중견기업 등 사업연계 지원(NextRise 연계 등)○ 글로벌 벤처 네트워크 연계 해외진출 지원○ 기업별 니즈에 기반한 개별 보육(맞춤형 밀착 멘토링 등)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179827",
+          "source": "kstartup",
+          "title": "2026 DDM  Startup Home Coming (우리의 성장이 만드는 변화)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179827",
+          "date": "2026-12-10",
+          "org": "DDM 청년창업센터 유니콘 ",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.17(화) 15:00 ~ 2026.12.10(목) 12:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179826",
+          "source": "kstartup",
+          "title": "2027 서귀포시 STARTUPBAY  입주기업 9기 모집(~12/07)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179826",
+          "date": "2026-12-07",
+          "org": "서귀포시 스타트업베이",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.17(화) 14:00 ~ 2026.12.07(월) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 1. 공간지원 : 서귀포시 스타트업베이 (서귀포시 중정로 86, 3층)- 사무공간 지원 (3층, *서귀포시 주소이전 필수)- 독립형 사무실 4개 기업, 공동형 사무실(4인 1실) 10개 기업- 임대료 및 관리비 일체 무상 지원- 공용 사무기기, 공용 냉장고 지원- 화상회의실 지원 ( 전용공간, 홈페이지 예약 후 사용 가능)- 입주기업만을 위한 카페테리아 공간· 공용공간 (2층)- 코워킹 공간 (co-working)- 회의실 (예약 후 사용 가능)- 카페테리아 공간 (커피, 음료 및 다과제공)2. 보육기업 지원프로그램- 액셀",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179825",
+          "source": "kstartup",
+          "title": "소버린 AX 얼라이언스 참여 스타트업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179825",
+          "date": "2026-12-16",
+          "org": "서울창조경제혁신센터",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.17(화) 14:00 ~ 2026.12.16(수) 15:00 까지",
+            "eligibility": "",
+            "content": "AI API·크레딧, 전문 기술지원, 국산 풀스택 실증, 사업화 협력, 보육·입주 지원, 홍보·투자 연계 AI API·크레딧, 전문 기술지원, 국산 풀스택 실증, 사업화 협력, 보육·입주 지원, 홍보·투자 연계",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179824",
+          "source": "kstartup",
+          "title": "2027년 「송파ICT청년창업지원센터」 입주 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179824",
+          "date": "2026-12-13",
+          "org": "송파ICT청년창업지원센터장",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.13(금) 09:00 ~ 2026.12.13(일) 23:00 까지",
+            "eligibility": "",
+            "content": "지원내용 1. 창업공간 제공 ① 책상, 의자, 서랍장 제공, 유․무선 네트워크 제공 ② 사용료 안내 (사용료는 반기 마다 일괄 납부) - 개별 사무실 : 월 6만원 / 인당 - 개방 사무실 : 월 4만원 / 인당2. 부대 편의시설 제공 ① 카페테리아, 공용회의실, 공용 O/A기기, 휴게공간, 우편보관함 등3. 입주기업 지원 프로그램① 멘토링 : 1:1상시 멘토링, 전문가 상담(투자유치, 지식재산권, 법률, 세무회계 등 전문 분야에 대한 컨설팅② 창업 교육 : 기업 성장에 필요한 분야별 교육 프로그램 운영③ 사업화지원 : 지식재산권 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179823",
+          "source": "kstartup",
+          "title": "2026-6회 호남권 엔젤투자 설명회 in 전북 상담부스 참여기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179823",
+          "date": "2026-11-25",
+          "org": "한국엔젤투자협회 호남권 엔젤투자허브",
+          "region": "전북",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.17(화) 14:00 ~ 2026.11.25(수) 23:59 까지",
+            "eligibility": "",
+            "content": "투자유치 희망 기업에 대한 사업계획서 검토 및 투자 연계를 위한 투자상담회 진행 (상담회) 투자자 : 기업 매칭하여 기업당 1시간 이내 상담회 진행- 호남권 엔젤투자 피칭룸 페이지를 통한 선착순 접수 후, 선정기업 대상 상담위원 매칭하여 상담회 진행- 투자유치 가능성 진단 및 기업별 투자유치 방법 제안, 사업 아이템의 기술성 및 시장성 등에 대한 멘토링 운영",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179822",
+          "source": "kstartup",
+          "title": "2026 강원권 LIPS 민간운영사 연합 INVESTOR DAY 12월",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179822",
+          "date": "2026-11-26",
+          "org": "(재)강원창조경제혁신센터",
+          "region": "강원",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.16(월) 18:00 ~ 2026.11.26(목) 18:00 까지",
+            "eligibility": "",
+            "content": "주요 지원 프로그램 투자 및 LIPS 연계를 위한 IR피칭 기회 제공전문심사역 투자상담 기회 제공투자 및 LIPS 연계 검토",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179819",
+          "source": "kstartup",
+          "title": "\t 2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 2차 연장공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179819",
+          "date": "2026-12-08",
+          "org": "국립공주대학교 산학협력",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.17(화) 09:00 ~ 2026.12.08(화) 18:00 까지",
+            "eligibility": "",
+            "content": "K-동고동락 스타트 허브 프로그램 - 입주공간 및 공동장비 임대 지원- 창업교육 및 멘토링 등 프로그램 참여 지원- 시제품 제작, 마케팅, 디자인 개발, 제품 홍보 등 사업화 지원- 유관기관 연계 지원 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179818",
+          "source": "kstartup",
+          "title": "2027년 상반기 KDB NextONE 14기 스타트업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179818",
+          "date": "2026-12-18",
+          "org": "씨엔티테크",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "한국산업은행이 대한민국의 미래성장 및 혁신기술을 선도할 유망 스타트업 발굴 및 육성을 위해 2027년 상반기 「KDB NextONE 14기」 모집을 다음과 같이 공고합니다.\r\n",
+            "eligibility": "□ 모집대상 : 혁신성장산업*을 영위하는 창업 7년 이내 유망 스타트업(부산6기, 광주 2기, 대구 1기, 전북 1기 중복지원 불가)\r\n  *「혁신성장 공동기준」에서 정하는 품목 (‘별첨 2’ 참조)\r\n ○ ‘창업’의 정의는 관계법령(중소기업창업지원법 등)에 따름 \r\n ○ 공고 마감일 기준 설립등기일 7년 이내인 ‘법인’만 모집(개인사업자 지원 불가)",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179817",
+          "source": "kstartup",
+          "title": "2026년 서부 경기문화창조허브 제4차 가상사무실 지원기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179817",
+          "date": "2026-11-20",
+          "org": "경기콘텐츠진흥원",
+          "region": "경기",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.10.29(목) 11:05 ~ 2026.11.20(금) 14:00 까지",
+            "eligibility": "",
+            "content": "지원내용 ○ 비상주 사업자등록 주소지 사용 허가 1) 사업자등록 시 사업장 소재(주소지) 사용 ※ 경기도 부천시 부천로 198번길 18 춘의테크노파크 2차 202동 10층 서부 경기문화창조허브 가상사무실 V00 (V+부여된 번호) 2) 사업자등록을 위한 가상사무실 임대차 협약서 ○ 사용대차 내용 1) 공용사무실 개인좌석(3.3㎡) 사용 가능 가) 공용좌석으로 지정석 지원 아님 나) 매일 당일 현장예약을 통한 좌석 사용 가능 다) 공유사무실 이용 시간 : 10:00 ~ 17:00(주말 및 공휴일 미운영) 2) 가상사무실 우편함 지원 ",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179816",
+          "source": "kstartup",
+          "title": "앤틀러 이노베이션 포럼 : Breakthrough & Scale",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179816",
+          "date": "2026-12-11",
+          "org": "앤틀러코리아 주식회사 ",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.16(월) 15:30 ~ 2026.12.11(금) 00:00 까지",
+            "eligibility": "",
+            "content": "없음",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179815",
+          "source": "kstartup",
+          "title": "2027년 상반기 KDB NextONE 부산 6기 기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179815",
+          "date": "2026-12-18",
+          "org": "한국산업은행 지역성장부문장",
+          "region": "부산",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.16(월) 09:00 ~ 2026.12.18(금) 18:00 까지",
+            "eligibility": "",
+            "content": "우수 스타트업의 실질적 성장을 위한 산업은행 보유 역량 기반 금융· 비금융 지원 제공 ○ 직접투자, 후속 투자유치 지원(KDB V:Launch 연계 IR 등)○ 대·중견기업 등 사업연계 지원(NextRise 연계 등)○ 글로벌 벤처 네트워크 연계 해외진출 지원○ 기업별 니즈에 기반한 개별 보육(맞춤형 밀착 멘토링 등)▪ KDB V:Launch : 남부권 혁신기업의 수도권 및 글로벌 투자자 연결을 통한 외부 투자유치 기회 확대를 위한 플랫폼으로 매월 유망 스타트업 IR 실시▪ NextRise : 국내 최대 규모의 글로벌 스타트업 페어",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179813",
+          "source": "kstartup",
+          "title": "2026년 하반기 서울창업허브 창동 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179813",
+          "date": "2026-11-30",
+          "org": "서울창업허브 창동",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.16(월) 09:00 ~ 2026.11.30(월) 17:00 까지",
+            "eligibility": "",
+            "content": "전용 업무공간 제공 최적의 창업 환경을 위한 독립 오피스 제공 비즈니스 인프라 지원 회의실, 라운지 등 다양한 편의시설 이용 맞춤형 성장지원 데모데이, 창업 교육, 네트워킹 등 연계를 통한 성장지원 기업 연계 협업 기회 오픈이노베이션, 글로벌 등 프로그램 연계 및 추천 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179812",
+          "source": "kstartup",
+          "title": "BoomUP AI 넥스트 웨이브",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179812",
+          "date": "2026-11-20",
+          "org": "주식회사 더이노베이터스",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.16(월) 01:00 ~ 2026.11.20(금) 23:59 까지",
+            "eligibility": "",
+            "content": "AI 기술·사업전략 전문가 특강 및 현장 질의응답 - 신동형 알서포트 이사 특강: 에이전틱 AI와 원격·협업 기술을 활용한 비즈니스 혁신 - 정지훈 교수 특강: AI 시대, 스타트업의 새로운 기회 - 두 연사와의 현장 질의응답",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179810",
+          "source": "kstartup",
+          "title": "2026년 4차 단국대학교(천안) 창업보육센터 '창조플러스존'입주기업 모집 (연장)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179810",
+          "date": "2026-11-20",
+          "org": "단국대학교 생명공학창업보육센터장",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.13(금) 18:30 ~ 2026.11.20(금) 17:00 까지",
+            "eligibility": "",
+            "content": "창업지원서비스 - 창업인프라 구축 : 초기 창업자를 위한 인프라 구축- 단국대학교 산학협력 연계(학생&기업, 단국인&기업, 교원 자문, R&D, 기술이전 등)- 투자유치 역량강화 프로그램 노하우를 통한 투자자 자금조달 및 연계(자세한 내용 공고문 9. 입주시 창업지원 내용 참조)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179783",
+          "source": "kstartup",
+          "title": "[LH한국토지주택공사] 판교제2테크노밸리 기업성장센터(F2블록) 산업시설(임대) 입점기업 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179783",
+          "date": "2026-12-04",
+          "org": "한국토지주택공사",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.13(금) 14:00 ~ 2026.12.04(금) 16:00 까지",
+            "eligibility": "",
+            "content": "계약 및 입주 - 계약체결기간 : 2026.12.28(월) ~ 2026.12.30(수) 10:00~16:00- 계약장소 : LH경기남부지역본부(경기도 성남시 성남대로54번길 3) 2층 임대공급운영1팀※계약체결절차는 별도 안내예정※계약체결 후 즉시 입점가능하며 입점지정기간은 계약체결일로부터 3개월 이내입니다.",
+            "amount": ""
+          }
+        }
+      ]
     }
   },
   "todayDeadline": [
     {
-      "id": "kstartup_179747",
+      "id": "kstartup_179811",
       "source": "kstartup",
-      "title": "2026년 경기스타트업플랫폼 온라인 밋업위크(4차) 투자자 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179747",
-      "date": "2026-11-18",
-      "org": "주식회사 내비온파트너스",
-      "region": "경기",
+      "title": "제79회 단디벤처포럼 [2026 단디벤처 투자로드쇼] 일반참가자 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179811",
+      "date": "2026-11-19",
+      "org": "단디벤처포럼",
+      "region": "전국",
       "category": "사업화",
-      "isTarget": true,
+      "isTarget": false,
       "detail": {
-        "period": "2026.11.06(금) 00:00 ~ 2026.11.18(수) 17:00 까지",
+        "period": "2026.11.14(토) 00:00 ~ 2026.11.19(목) 23:59 까지",
         "eligibility": "",
-        "content": "관심 기업당 30분 1:1집중 밋업 지원",
+        "content": "창업/투자 교류 및 체험 지원 IR 피칭 참관, 인사이트 세션, 네트워킹 및 다양한 체험 프로그램 제공",
         "amount": ""
       }
     },
     {
-      "id": "kstartup_179741",
+      "id": "kstartup_179804",
       "source": "kstartup",
-      "title": "2026년도 제4차 북부창업아카데미 및 북부창업멘토링 DAY 참가자 모집(주제 : 2027 정부지원사업 합격을 위한 실전 전략)",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179741",
-      "date": "2026-11-18",
-      "org": "북부여성새일센터",
+      "title": "2026 광명시 기업박람회 (GM TECH EXPO 2026)",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179804",
+      "date": "2026-11-19",
+      "org": "광명시청",
       "region": "전국",
-      "category": "창업교육",
-      "isTarget": true,
+      "category": "사업화",
+      "isTarget": false,
       "detail": {
-        "period": "2026.11.06(금) 09:00 ~ 2026.11.18(수) 17:00 까지",
+        "period": "2026.11.13(금) 00:00 ~ 2026.11.19(목) 23:59 까지",
         "eligibility": "",
-        "content": "",
+        "content": "행사 구성 AI Zone: 인공지능 기술 및 AI 기반 혁신 서비스 전시·체험로보틱스 Zone: 로봇 기술 및 첨단 로봇 제품 전시·체험혁신기업 Zone: 다양한 산업 분야의 혁신 제품·기술·서비스 전시기업 경영·상담: 기업 성장 지원을 위한 분야별 전문 상담 주요 프로그램 기업 전시·홍보 및 혁신기술 체험투자자(VC·AC) 상담 및 매칭국내외 바이어 매칭 및 판로 개척기업 간 비즈니스 네트워킹기업 경영·애로사항 맞춤형 상담시민 참여형 전시·체험 프로그램",
         "amount": ""
       }
     }
