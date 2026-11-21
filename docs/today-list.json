@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-20",
-  "total": 2,
-  "targetCount": 1,
+  "date": "2026-11-21",
+  "total": 3,
+  "targetCount": 2,
   "sources": {
     "mss": {
       "id": "mss",
@@ -9,7 +9,7 @@
       "icon": "🏛️",
       "color": "#1a4fa0",
       "count": 100,
-      "targetCount": 22,
+      "targetCount": 21,
       "items": [
         {
           "id": "mss_1071324",
@@ -36,7 +36,7 @@
       "icon": "🚀",
       "color": "#e8360e",
       "count": 50,
-      "targetCount": 26,
+      "targetCount": 28,
       "items": [
         {
           "id": "kstartup_179818",
@@ -54,129 +54,26 @@
             "content": "",
             "amount": ""
           }
+        },
+        {
+          "id": "kstartup_179773",
+          "source": "kstartup",
+          "title": "공공임대주택 상가 활용 청년창업공간 입주기업 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179773",
+          "date": "2026-12-04",
+          "org": "전남광주통합특별시 북구청장",
+          "region": "광주",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.09(월) 09:00 ~ 2026.12.04(금) 18:00 까지",
+            "eligibility": "",
+            "content": "개별 사무실 무상 제공, 창업 전문 교육기관 연계 창업지원 프로그램 제공 개별 사무실 무상 제공 (월세 및 보증금 무료, 전기료 등 사용료는 별도) 창업 전문 교육기관 연계 창업지원 프로그램 제공",
+            "amount": ""
+          }
         }
       ]
     }
   },
-  "todayDeadline": [
-    {
-      "id": "kstartup_179817",
-      "source": "kstartup",
-      "title": "2026년 서부 경기문화창조허브 제4차 가상사무실 지원기업 모집",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179817",
-      "date": "2026-11-20",
-      "org": "경기콘텐츠진흥원",
-      "region": "경기",
-      "category": "사업화",
-      "isTarget": false,
-      "detail": {
-        "period": "2026.10.29(목) 11:05 ~ 2026.11.20(금) 14:00 까지",
-        "eligibility": "",
-        "content": "지원내용 ○ 비상주 사업자등록 주소지 사용 허가 1) 사업자등록 시 사업장 소재(주소지) 사용 ※ 경기도 부천시 부천로 198번길 18 춘의테크노파크 2차 202동 10층 서부 경기문화창조허브 가상사무실 V00 (V+부여된 번호) 2) 사업자등록을 위한 가상사무실 임대차 협약서 ○ 사용대차 내용 1) 공용사무실 개인좌석(3.3㎡) 사용 가능 가) 공용좌석으로 지정석 지원 아님 나) 매일 당일 현장예약을 통한 좌석 사용 가능 다) 공유사무실 이용 시간 : 10:00 ~ 17:00(주말 및 공휴일 미운영) 2) 가상사무실 우편함 지원 ",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179812",
-      "source": "kstartup",
-      "title": "BoomUP AI 넥스트 웨이브",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179812",
-      "date": "2026-11-20",
-      "org": "주식회사 더이노베이터스",
-      "region": "전국",
-      "category": "사업화",
-      "isTarget": false,
-      "detail": {
-        "period": "2026.11.16(월) 01:00 ~ 2026.11.20(금) 23:59 까지",
-        "eligibility": "",
-        "content": "AI 기술·사업전략 전문가 특강 및 현장 질의응답 - 신동형 알서포트 이사 특강: 에이전틱 AI와 원격·협업 기술을 활용한 비즈니스 혁신 - 정지훈 교수 특강: AI 시대, 스타트업의 새로운 기회 - 두 연사와의 현장 질의응답",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179810",
-      "source": "kstartup",
-      "title": "2026년 4차 단국대학교(천안) 창업보육센터 '창조플러스존'입주기업 모집 (연장)",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179810",
-      "date": "2026-11-20",
-      "org": "단국대학교 생명공학창업보육센터장",
-      "region": "전국",
-      "category": "시설제공",
-      "isTarget": true,
-      "detail": {
-        "period": "2026.11.13(금) 18:30 ~ 2026.11.20(금) 17:00 까지",
-        "eligibility": "",
-        "content": "창업지원서비스 - 창업인프라 구축 : 초기 창업자를 위한 인프라 구축- 단국대학교 산학협력 연계(학생&기업, 단국인&기업, 교원 자문, R&D, 기술이전 등)- 투자유치 역량강화 프로그램 노하우를 통한 투자자 자금조달 및 연계(자세한 내용 공고문 9. 입주시 창업지원 내용 참조)",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179805",
-      "source": "kstartup",
-      "title": "[충남] 2026 충남 앵커 산학프로젝트 멘토링 참여기업 모집(6개 대학 교수 1:1 기술 멘토링, 무료)",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179805",
-      "date": "2026-11-20",
-      "org": "단국대학교 천안캠퍼스 산학협력단",
-      "region": "충남",
-      "category": "컨설팅/멘토링",
-      "isTarget": true,
-      "detail": {
-        "period": "2026.11.12(목) 00:00 ~ 2026.11.20(금) 18:00 까지",
-        "eligibility": "",
-        "content": "",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179800",
-      "source": "kstartup",
-      "title": "성동안심상가(소셜벤처 허브센터) 입주기업 모집 공고",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179800",
-      "date": "2026-11-20",
-      "org": "성동구청",
-      "region": "전국",
-      "category": "시설제공",
-      "isTarget": false,
-      "detail": {
-        "period": "2026.11.12(목) 18:00 ~ 2026.11.20(금) 18:00 까지",
-        "eligibility": "",
-        "content": "소셜벤처 허브센터 입주기업 모집 성동안심상가(소셜벤처 허브센터） 입주자 모집 공고",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179795",
-      "source": "kstartup",
-      "title": "[창업 디자이너 양성과정] 마포 디자인 크리에이터 스쿨",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179795",
-      "date": "2026-11-20",
-      "org": "마포청년창업취업지원센터 나루",
-      "region": "전국",
-      "category": "사업화",
-      "isTarget": true,
-      "detail": {
-        "period": "2026.11.11(수) 10:00 ~ 2026.11.20(금) 14:00 까지",
-        "eligibility": "",
-        "content": "",
-        "amount": ""
-      }
-    },
-    {
-      "id": "kstartup_179776",
-      "source": "kstartup",
-      "title": "호서대학교 서울창업보육센터 신규입주모집 공고",
-      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179776",
-      "date": "2026-11-20",
-      "org": "호서대학교 서울창업보육센터",
-      "region": "서울",
-      "category": "시설제공",
-      "isTarget": true,
-      "detail": {
-        "period": "2026.11.12(목) 09:00 ~ 2026.11.20(금) 18:00 까지",
-        "eligibility": "",
-        "content": "창업보육실 및 공용회의실(화상회의실 포함) 이용 창업보육실 및 공용회의실(화상회의실 포함) 이용",
-        "amount": ""
-      }
-    }
-  ]
+  "todayDeadline": []
 }
