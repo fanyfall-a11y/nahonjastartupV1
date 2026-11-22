@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-21",
-  "total": 3,
-  "targetCount": 2,
+  "date": "2026-11-22",
+  "total": 2,
+  "targetCount": 1,
   "sources": {
     "mss": {
       "id": "mss",
@@ -54,26 +54,27 @@
             "content": "",
             "amount": ""
           }
-        },
-        {
-          "id": "kstartup_179773",
-          "source": "kstartup",
-          "title": "공공임대주택 상가 활용 청년창업공간 입주기업 모집 공고",
-          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179773",
-          "date": "2026-12-04",
-          "org": "전남광주통합특별시 북구청장",
-          "region": "광주",
-          "category": "시설제공",
-          "isTarget": true,
-          "detail": {
-            "period": "2026.11.09(월) 09:00 ~ 2026.12.04(금) 18:00 까지",
-            "eligibility": "",
-            "content": "개별 사무실 무상 제공, 창업 전문 교육기관 연계 창업지원 프로그램 제공 개별 사무실 무상 제공 (월세 및 보증금 무료, 전기료 등 사용료는 별도) 창업 전문 교육기관 연계 창업지원 프로그램 제공",
-            "amount": ""
-          }
         }
       ]
     }
   },
-  "todayDeadline": []
+  "todayDeadline": [
+    {
+      "id": "kstartup_179791",
+      "source": "kstartup",
+      "title": "경기창업혁신공간 서부권 「스담스담」(오픈 네트워킹) 4회차",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179791",
+      "date": "2026-11-22",
+      "org": "경기도경제과학진흥원",
+      "region": "경기",
+      "category": "시설제공",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.12(목) 12:00 ~ 2026.11.22(일) 18:00 까지",
+        "eligibility": "",
+        "content": "글로벌 진출 전문가 강연 및 브라운백 네트워킹 1. 스타트업 글로벌 진출 전문가 강연 및 질의응답(주제) 스타트업의 성장과 글로벌 진출, 어떻게 준비할까? – 스케일업 전략부터 해외시장 진출 준비까지 –★글로벌 확장을 위한 스타트업 스케일업 전략★해외시장 진출을 위한 핵심 준비사항★글로벌 진출 사례 및 현지 시장 진입 전략2.참여기업 간 브라운백 네트워킹(도시락 제공)- 스타트업 간 성장 및 글로벌 진출 관련 경험과 고민 공유- 네트워킹 도시락 제공",
+        "amount": ""
+      }
+    }
+  ]
 }
