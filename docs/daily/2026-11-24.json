@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-24",
+  "total": 5,
+  "targetCount": 2,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 20,
+      "items": [
+        {
+          "id": "mss_1072683",
+          "source": "mss",
+          "title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(변경)",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072683",
+          "date": "",
+          "org": "소상공인경영안정정책과",
+          "region": "전국",
+          "category": "자금지원",
+          "isTarget": true,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "&quot;2026년도 소상공인 정책자금 융자계획&quot;을 다음과 같이 변경 공고합니다.<br />\n<br />\n&lt;주요 변경사항&gt;<br />\n<br />\nㅇ 홈플러스 피해 소상공인 대상 「일시적 경영애로자금」 우대 확대(고정금리 2.5%)<br />\n<br />\n&nbsp; - 기존 금리 우대(기준금리-0.5%p)에서 고정금리 2.5%로 추가 인하<br />\n<br />\n&nbsp; &nbsp;* 기존 홈플러스 금리우대 지원받은 대출자도 동일한 금리인하 적용 가능<br />\n<br />\n※ 그 외 정책자금 자세한 사항",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1072666",
+          "source": "mss",
+          "title": "2027년 스마트공장 구축지원사업 모집공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072666",
+          "date": "",
+          "org": "제조혁신과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "",
+            "eligibility": "",
+            "content": "2027년도 스마트공장 구축지원사업 모집공고를 붙임과 같이 게시합니다.",
+            "amount": ""
+          }
+        },
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 28,
+      "items": [
+        {
+          "id": "kstartup_179837",
+          "source": "kstartup",
+          "title": "'2026 Shinhan Future's Lab Demo Day' 참관 기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179837",
+          "date": "2026-12-03",
+          "org": "신한퓨처스랩",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.18(수) 09:00 ~ 2026.12.03(목) 23:59 까지",
+            "eligibility": "",
+            "content": "2026 Shinhan Future's Lab Demo Day \"FUTURE IS ON! : 미래를 켜다, 혁신을 보다\" 1F) On Experience- 스타트업, 글로벌, 'S 코인' 이벤트2F) On Stage- IR, 오픈이노베이션, AWARDS, 경품 추첨",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179818",
+          "source": "kstartup",
+          "title": "2027년 상반기 KDB NextONE 14기 스타트업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179818",
+          "date": "2026-12-18",
+          "org": "씨엔티테크",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "한국산업은행이 대한민국의 미래성장 및 혁신기술을 선도할 유망 스타트업 발굴 및 육성을 위해 2027년 상반기 「KDB NextONE 14기」 모집을 다음과 같이 공고합니다.\r\n",
+            "eligibility": "□ 모집대상 : 혁신성장산업*을 영위하는 창업 7년 이내 유망 스타트업(부산6기, 광주 2기, 대구 1기, 전북 1기 중복지원 불가)\r\n  *「혁신성장 공동기준」에서 정하는 품목 (‘별첨 2’ 참조)\r\n ○ ‘창업’의 정의는 관계법령(중소기업창업지원법 등)에 따름 \r\n ○ 공고 마감일 기준 설립등기일 7년 이내인 ‘법인’만 모집(개인사업자 지원 불가)",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179836",
+      "source": "kstartup",
+      "title": "대전 팁스타운 26년 제3차 팁스아카데미 : 스타트업의 새로운 기회, 오픈이노베이션",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179836",
+      "date": "2026-11-24",
+      "org": "창업진흥원",
+      "region": "대전",
+      "category": "창업교육",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.19(목) 09:00 ~ 2026.11.24(화) 18:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179793",
+      "source": "kstartup",
+      "title": "[경과원 X 나이스디앤비] 스타트업 공공시장 진출 실전 특강 - 공공입찰부터 기업·기술평가까지 한번에!",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179793",
+      "date": "2026-11-24",
+      "org": "경기도·경기도경제과학진흥원",
+      "region": "경기",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.12(목) 00:00 ~ 2026.11.24(화) 15:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    }
+  ]
+}
