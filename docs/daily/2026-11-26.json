@@ -1,0 +1,335 @@
+{
+  "date": "2026-11-26",
+  "total": 14,
+  "targetCount": 9,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 21,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 28,
+      "items": [
+        {
+          "id": "kstartup_179887",
+          "source": "kstartup",
+          "title": "2027년 글로벌 액셀러레이팅(GMEP) 지원사업 주관기관 모집 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179887",
+          "date": "2026-12-28",
+          "org": "중소벤처기업부 장관",
+          "region": "전국",
+          "category": "글로벌",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.25(수) 09:00 ~ 2026.12.28(월) 15:00 까지",
+            "eligibility": "",
+            "content": "글로벌 액셀러레이팅 사업에 소요되는 운영비 지원",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179886",
+          "source": "kstartup",
+          "title": "서울디자인런 2026 - 돈 없이도 줄 세우는 브랜드의 비밀",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179886",
+          "date": "2026-12-02",
+          "org": "(주)오픈놀",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.25(수) 10:00 ~ 2026.12.02(수) 18:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179885",
+          "source": "kstartup",
+          "title": "성남창업센터(킨스타워) 신규 입주기업 추가 모집공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179885",
+          "date": "2026-11-27",
+          "org": "성남산업진흥원",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.24(화) 09:00 ~ 2026.11.27(금) 17:00 까지",
+            "eligibility": "",
+            "content": "·사무공간, 사업화지원, 엑셀러레이팅 프로그램 연계 지원 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179884",
+          "source": "kstartup",
+          "title": "2026년 달구벌여성창업보육센터 6차 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179884",
+          "date": "2026-12-09",
+          "org": "달구벌여성인력개발센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.24(화) 18:00 ~ 2026.12.09(수) 17:00 까지",
+            "eligibility": "",
+            "content": "입주지원 □ 공간지원- 기업 맞춤형 입주 공간 제공- 회의실, 미팅룸, 휴게실 등 다양한 공간 무상 제공- 개방형 사무 공간 내 입주자 지정석 제공- 사무실 집기(책상, 의자, 사물함 등) 무상 제공□ 운영지원- 창업교육 및 1:1 전문가 자문 지원- 창업사업화 및 멘토링 연계 지원- 워크숍, 세미나, 교류회 등 각종 창업 네트워크 지원- 달구벌여성인력개발센터 창업지원사업 프로그램 연계 지원 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179883",
+          "source": "kstartup",
+          "title": "「2026년 제4회 부기테크 투자쇼 」일반 참가자(참관객) 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179883",
+          "date": "2026-12-02",
+          "org": "부산기술창업투자원",
+          "region": "부산",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.25(수) 09:00 ~ 2026.12.02(수) 16:00 까지",
+            "eligibility": "",
+            "content": "없음",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179882",
+          "source": "kstartup",
+          "title": "[보도자료 = 기획] 창업기업을 위한 언론 홍보 실전 전략ㆍAI 활용 보도자료 작성 교육 ",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179882",
+          "date": "2026-11-26",
+          "org": "한양대학교 ERICA 산학협력단",
+          "region": "전국",
+          "category": "창업교육",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.24(화) 19:00 ~ 2026.11.26(목) 16:00 까지",
+            "eligibility": "",
+            "content": "",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179881",
+          "source": "kstartup",
+          "title": "2026 가죽·패션 소상공인 네트워킹데이 공고",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179881",
+          "date": "2026-12-09",
+          "org": "서울시 강동가죽제조지원센터",
+          "region": "서울",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.19(목) 15:00 ~ 2026.12.09(수) 15:00 까지",
+            "eligibility": "",
+            "content": "행사내용 ○ 프로그램(안) [1부] 15:00 – 16:00 - 2026 서울시 강동가죽제조지원센터 운영 성과공유 - 2027 서울시 강동가죽제조지원센터 사업계획 안내 - 2027 가죽패션산업 주요 지원사업 안내 [2부] 16:00 – 18:00 - 네트워킹데이 참여사 소개 - 참여사 네트워킹 (다과 및 식사 제공)",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179879",
+          "source": "kstartup",
+          "title": "한국항공대학교 창업보육센터 신규 입주기업 모집 공고(12월 3일까지)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179879",
+          "date": "2026-12-03",
+          "org": "한국항공대학교 창업보육센터",
+          "region": "전국",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.23(월) 00:01 ~ 2026.12.03(목) 23:59 까지",
+            "eligibility": "",
+            "content": "전문 교육 지원, 네트워킹 지원, 인터넷 전용선 무료, 주차권 및 헬스장 사용료 할인 화상 회의실, 세미나실 무료 이용창업 관련 분야별 전문 교육 지원입주기업 간 교류 협력 및 대학 창업보육센터 입주기업 등과의 대외 네트워킹 행사 지원인터넷 전용선 무료 이용대학도서관 이용 및 주차권/헬스장 할인 제공 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179878",
+          "source": "kstartup",
+          "title": "2026년 서울창업센터 관악 하반기 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179878",
+          "date": "2026-12-11",
+          "org": "서울창업센터 관악",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.26(목) 09:00 ~ 2026.12.11(금) 18:00 까지",
+            "eligibility": "",
+            "content": "지원내용 ○ 서울창업센터 관악에 사무 공간 제공- 24시간 상시 운영- 독립형 사무실 배정(1기업 1사무실 배정 원칙) 및 기본 집기(책상, 의자, 서랍장) 제공- 공용 회의실, 공용 주방 등 편의시설 및 대강당 사용 가능○ 입주기업 맞춤형 세미나 및 멘토링 제공- AI, 빅데이터, 블록체인, 로봇 기술 등 신기술, 신산업 분야○ 관악센터 자체 창업지원 프로그램 제공- 대기업 오픈이노베이션, 보육기업 투자 데모데이, 글로벌 진출 사업 등 다양한 센터 내부 지원프로그램에 참여 지원○ 관악S밸리 창업유관기관 프로그램 연계 및 추천○ (",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179875",
+          "source": "kstartup",
+          "title": "2026년 3차 서울 AI 허브 신규 입주기업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179875",
+          "date": "2026-12-11",
+          "org": "서울 AI 허브",
+          "region": "서울",
+          "category": "시설제공",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.23(월) 23:00 ~ 2026.12.11(금) 23:59 까지",
+            "eligibility": "",
+            "content": "지원내용 - 사무 인프라 제공(기본 1년, 최대 4년 입주 가능)- 서울 AI 허브 주최/주관 모든 프로그램 및 행사 신청 및 참여 자격* AX 지원사업, 오픈이노베이션, 글로벌 진출, 수요처 및 투자 연계, GPU 클라우드 등",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179874",
+          "source": "kstartup",
+          "title": "「제3회 K-ROBOTICS STARTUP CUP」 GRAND FINAL 참가 신청(~12/3 목)",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179874",
+          "date": "2026-12-02",
+          "org": "(주)아이피에스벤처스",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026.11.24(화) 00:00 ~ 2026.12.02(수) 18:00 까지",
+            "eligibility": "",
+            "content": "지원 내용 로봇 등 피지컬 AI 분야 유망 스타트업의 혁신 기술 및 IR 발표 참관, 전문가 키노트 청취, 산업·투자 관계자와의 네트워킹 기회 제공",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179873",
+          "source": "kstartup",
+          "title": "2026 서울창업허브 공덕 12월 허브아워 - 투자, 유통, 브랜드",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179873",
+          "date": "2026-12-02",
+          "org": "(재)서울경제진흥원",
+          "region": "서울",
+          "category": "판로/마케팅",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.23(월) 19:00 ~ 2026.12.02(수) 23:59 까지",
+            "eligibility": "",
+            "content": "투자, 유통판로개척 컨설팅, 브랜드 컨설팅 투자, 유통판로개척 컨설팅, 브랜드 컨설팅",
+            "amount": ""
+          }
+        },
+        {
+          "id": "kstartup_179867",
+          "source": "kstartup",
+          "title": "[ 모 집 ] GVC AI LLM API 개발 크레딧 지원 프로그램 – AI 스타트업 및 예비창업자 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179867",
+          "date": "2026-11-30",
+          "org": "글로벌벤처센터",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "2026.11.23(월) 15:10 ~ 2026.11.30(월) 23:59 까지",
+            "eligibility": "",
+            "content": "AI LLM API 개발 크레딧 지원 및 AI 모델 및 개발 인프라 지원 ① AI LLM API 개발 크레딧 지원AI 기반 제품 및 서비스 개발에 필요한 LLM API 사용 크레딧을 심사 결과에 따라 차등 지원합니다.AI Starter: $20 ~AI Builder: $100 ~AI Growth: $200 ~※ 지원 금액은 개발계획, 예상 사용량 및 심사 결과에 따라 결정됩니다.② 다양한 AI 모델 및 개발 인프라 지원자체 GPU 기반 오픈소스 LLM API 제공Alibaba Qwen 등 AI 모델 활용 지원OpenAI GPT 계열",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "kstartup_179882",
+      "source": "kstartup",
+      "title": "[보도자료 = 기획] 창업기업을 위한 언론 홍보 실전 전략ㆍAI 활용 보도자료 작성 교육 ",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179882",
+      "date": "2026-11-26",
+      "org": "한양대학교 ERICA 산학협력단",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.24(화) 19:00 ~ 2026.11.26(목) 16:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179870",
+      "source": "kstartup",
+      "title": "2026년 여성창업기업 네트워킹 DAY 참여자 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179870",
+      "date": "2026-11-26",
+      "org": "달구벌여성인력개발센터",
+      "region": "전국",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.23(월) 09:00 ~ 2026.11.25(수) 18:00 까지",
+        "eligibility": "",
+        "content": "프로그램 구성 사전프로그램(여성 창업가 프로필 사진 촬영 지원)창업 탐구 재도전 워크숍 Ⅰ(\"모두의 창업, Connect Together\" / 특강)창업사례발표창업 탐구 재도전 워크숍 Ⅱ(그룹멘토링 / 대구창조경제혁신센터 원스톱지원센터)",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179832",
+      "source": "kstartup",
+      "title": "「Next OI 기술 커넥트(Pre-meetup)」 참여 스타트업 모집",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179832",
+      "date": "2026-11-26",
+      "org": "(재)대구창조경제혁신센터",
+      "region": "대구",
+      "category": "사업화",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.18(수) 09:00 ~ 2026.11.26(목) 16:00 까지",
+        "eligibility": "",
+        "content": "수요기업 대상 기술소개자료 사전 배포 및 매칭 기업 간 1:1 밋업(회당 40분, 최대 3회) - 주요 수요기업 : 삼성전자, 현대자동차, LG전자, SK텔레콤, 삼성물산, 현대건설, 포스코홀딩스, 카카오모빌리티, 풀무원, 대웅제약, 한국전력공사 등 ※ 첨부된 수요기업 명단은 참고용이며, 실제 참여 수요기업은 변경될 수 있음.",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179822",
+      "source": "kstartup",
+      "title": "2026 강원권 LIPS 민간운영사 연합 INVESTOR DAY 12월",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179822",
+      "date": "2026-11-26",
+      "org": "(재)강원창조경제혁신센터",
+      "region": "강원",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.16(월) 18:00 ~ 2026.11.26(목) 18:00 까지",
+        "eligibility": "",
+        "content": "주요 지원 프로그램 투자 및 LIPS 연계를 위한 IR피칭 기회 제공전문심사역 투자상담 기회 제공투자 및 LIPS 연계 검토",
+        "amount": ""
+      }
+    }
+  ]
+}
