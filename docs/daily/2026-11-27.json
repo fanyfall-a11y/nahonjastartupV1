@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-27",
+  "total": 2,
+  "targetCount": 1,
+  "sources": {
+    "mss": {
+      "id": "mss",
+      "name": "중소벤처기업부",
+      "icon": "🏛️",
+      "color": "#1a4fa0",
+      "count": 100,
+      "targetCount": 21,
+      "items": [
+        {
+          "id": "mss_1071324",
+          "source": "mss",
+          "title": "2026년 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고",
+          "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1071324",
+          "date": "2026-10-28",
+          "org": "기술개발과",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": false,
+          "detail": {
+            "period": "2026-09-21 ~ 2026-10-28",
+            "eligibility": "",
+            "content": "중소벤처기업부 공고 제2026-566호<br />\n&nbsp;<br />\n2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고<br />\n&nbsp;<br />\n「2026년도 제4차 중소벤처기업부 혁신제품 지정기간 연장(1차)」을 위해 아래와 같이 공고하오니, 1차연장 자격요건에 해당하는 중소기업은 안내에 따라 신청하여 주시기 바랍니다.<br />\n<br />\n&nbsp;○ (대상) 중소벤처기업부 지정 혁신제품 보유기업으로서, <u>기본 지정기간</u><u>(3</u><u>년</u><u>)</u><u>의 만료가 도래",
+            "amount": ""
+          }
+        }
+      ]
+    },
+    "kstartup": {
+      "id": "kstartup",
+      "name": "K-Startup",
+      "icon": "🚀",
+      "color": "#e8360e",
+      "count": 50,
+      "targetCount": 26,
+      "items": [
+        {
+          "id": "kstartup_179818",
+          "source": "kstartup",
+          "title": "2027년 상반기 KDB NextONE 14기 스타트업 모집",
+          "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179818",
+          "date": "2026-12-18",
+          "org": "씨엔티테크",
+          "region": "전국",
+          "category": "사업화",
+          "isTarget": true,
+          "detail": {
+            "period": "한국산업은행이 대한민국의 미래성장 및 혁신기술을 선도할 유망 스타트업 발굴 및 육성을 위해 2027년 상반기 「KDB NextONE 14기」 모집을 다음과 같이 공고합니다.\r\n",
+            "eligibility": "□ 모집대상 : 혁신성장산업*을 영위하는 창업 7년 이내 유망 스타트업(부산6기, 광주 2기, 대구 1기, 전북 1기 중복지원 불가)\r\n  *「혁신성장 공동기준」에서 정하는 품목 (‘별첨 2’ 참조)\r\n ○ ‘창업’의 정의는 관계법령(중소기업창업지원법 등)에 따름 \r\n ○ 공고 마감일 기준 설립등기일 7년 이내인 ‘법인’만 모집(개인사업자 지원 불가)",
+            "content": "",
+            "amount": ""
+          }
+        }
+      ]
+    }
+  },
+  "todayDeadline": [
+    {
+      "id": "mss_1072438",
+      "source": "mss",
+      "title": "2027년 서울 창신 의류제조 공동인프라 운영기관 모집공고",
+      "url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1072438",
+      "date": "2026-11-27",
+      "org": "소공인성장촉진단",
+      "region": "서울",
+      "category": "사업화",
+      "isTarget": false,
+      "detail": {
+        "period": "2026-11-12 ~ 2026-11-27",
+        "eligibility": "",
+        "content": "2027년 서울 창신 의류제조 공동인프라 운영기관을 붙임과 같이 공고합니다.",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179885",
+      "source": "kstartup",
+      "title": "성남창업센터(킨스타워) 신규 입주기업 추가 모집공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179885",
+      "date": "2026-11-27",
+      "org": "성남산업진흥원",
+      "region": "전국",
+      "category": "시설제공",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.24(화) 09:00 ~ 2026.11.27(금) 17:00 까지",
+        "eligibility": "",
+        "content": "·사무공간, 사업화지원, 엑셀러레이팅 프로그램 연계 지원 등",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179868",
+      "source": "kstartup",
+      "title": "[창업] 창업가를 위한 해외 진출 첫 걸음",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179868",
+      "date": "2026-11-27",
+      "org": "마포청년창업취업지원센터 나루",
+      "region": "전국",
+      "category": "글로벌",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.23(월) 10:00 ~ 2026.11.27(금) 14:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179835",
+      "source": "kstartup",
+      "title": "예비, 초기 창업자가 반드시 알아야 할 스타트업 마케팅 방법론 - 제11차 DDM 벤처스타트업 아카데미",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179835",
+      "date": "2026-11-27",
+      "org": "DDM 청년창업센터 유니콘",
+      "region": "전국",
+      "category": "창업교육",
+      "isTarget": true,
+      "detail": {
+        "period": "2026.11.18(수) 10:00 ~ 2026.11.27(금) 15:00 까지",
+        "eligibility": "",
+        "content": "",
+        "amount": ""
+      }
+    },
+    {
+      "id": "kstartup_179820",
+      "source": "kstartup",
+      "title": "제42회 국제의료기기·병원설비전시회(KIMES 2027) 참가기업 모집 공고",
+      "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179820",
+      "date": "2026-11-27",
+      "org": "한국과학기술연구원 서울바이오허브사업단",
+      "region": "서울",
+      "category": "글로벌",
+      "isTarget": false,
+      "detail": {
+        "period": "2026.11.13(금) 09:00 ~ 2026.11.27(금) 23:59 까지",
+        "eligibility": "",
+        "content": "전시회 참가 지원(서울바이오허브 공동관 부스 참가) ○ 사 업 명: 제42회 국제의료기기·병원설비 전시회(KIMES 2027)참가 지원 ○ 공고기간: 2026년 11월 13일(금) ∼ 11월 27일(금) ○ 지원내용: 전시회 참가 지원(서울바이오허브 공동관 부스 참가) - 전시 부스 제공(기업당 1개 부스 / 임차료 및 장치비 포함) ※ 부스 디자인에 따라 기업 홍보 그래픽 제출이 요구될 수 있음 ○ 지원규모: 4개 기업 지원",
+        "amount": ""
+      }
+    }
+  ]
+}
